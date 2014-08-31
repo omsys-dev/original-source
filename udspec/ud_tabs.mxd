@@ -1,0 +1,47 @@
+<doc id="ud_tabs">
+<title>Tabs
+<idx>tabs</idx>
+</title>
+
+<p>Tabs?  In XML?  Yes, in uDoc, because sometimes they are the best answer, if not the only answer.  For example, consider a two-column list; where the first column is terms and the second is definitions.  This is a common pattern; DITA provides two forms of it, a definition list and a parameter list, where each line contains two tag pairs.  uDoc has a <xref src="ud_lists.mxd">direct equivalent</xref> to those lists.
+
+Now, go one step further, and have some of the terms sub to others.  What do you do?   In DITA, you can't nest them; the best you can do is put different outputclasses on each line so the processor can render them with different indents.  Suppose for some of them you want a third column?  You now must go to a full table, where you can straddle columns to get the effect you want.  It gets pretty messy.
+
+However, this is just the problem that old traditional *tabs* can solve.  The problem with the tabs used in Word, say, is that where you go depends on where you were, and you can't always tell where the end of the previous word will fall on the line.  So you can easily get off by one tab, with too many or too few.  The tabs used in FrameMaker improve on this a bit, by ensuring that if you are past the tab stop you wanted to go to, you don't go to the following one; the tab is just ignored.  That helps, but it's an incomplete solution.
+
+uDoc adds one more bit of info that makes all the difference: it numbers the tabs.  So when you put a numbered tab in the content, you know exactly where it will go.  If you are past its <term idref="tabstop">stop</term>, uDoc still adds one space (unlike Frame) so words don't run together.
+
+What you can do with tabs depends on the output format you want to produce.  Print outputs, like Word, support tabs in pretty much any context.  But HTML does not; you can only use tabs in ^pre^ content, where text is in a monospaced font.  Elsewhere in HTML, a tab turns into a space.
+
+So uDoc has two slightly different methods for setting tabs.  For print, you don't actually set the tabs in uDoc; you set them in the formats you will use for your output docs.  Then tab ^t1/^ means to go to the first tab stop set in the format, ^t2/^ means go to the second, and so on.  You won't see any effect in the uDoc display unless your editor knows about the formats and can simulate them.  Again, note that these tabs work like FrameMaker tabs; they are independent of the position on the line where they are called.
+<idx>tabs:for print output</idx>
+<idx>tab stops, setting</idx>
+<idx>tabs:setting stops for</idx></p>
+
+<p>For example, if the CodePara format in Word has tabs at 0.5\", then every 0.25\", tabs 1 and 7 give you:</p>
+<pre><t1/>Indented 0.5"<t7/>Indented 2"</pre>
+
+<p>For HTML, in ^pre^ elements only, tab stops are set in uDoc, with the ^tset^ element; you specify the type of tab (`left`, `center`, `right`, `align`), the numeric character position in the line, and an optional leader.  You can see how this works farther on, in the <xref src="ud_elemprops.mxd">Element Properties</xref> section.  The code looks like this:
+<idx>tabs:for HTML output</idx></p>
+
+<pre>^p^Block element properties:^/p^
+^tset t1="2" t2="3" t3="4" t4="5"  t5="11" t6="12" t7="13"^
+^pre^^t2/^  Root^t5/^    defines the start and end of a uDoc file^/pre^
+^pre^^t3/^   Doc^t6/^     uDoc document file, with text content^/pre^
+ ...
+^/tset^
+</pre>
+
+<p>Here's an example of center, right, and align tabs in HTML ^pre^:</p>
+
+<tset t1="L5" t2="C25" t3="R50" t4=".60">
+<pre><t1/>Left<t2/>  Centered<t3/>   Right<t4/>   Decimal.aligned</pre>
+<pre><t1/>Left too<t2/>  Also centered<t3/>   Right again<t4/>   $10.00</pre>
+</tset>
+
+<p>You don't have to define or use tabs set using ^tset^ in order, so if you discover you need another one, just add it to the ^tset^; no renumbering needed.  The processing for HTML ^pre^ is also effective in other outputs that preserve spaces in preformatted text, including Word.</p>
+
+
+<relref subjects="tables lists" />
+
+</doc>

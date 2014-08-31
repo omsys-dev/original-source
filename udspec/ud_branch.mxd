@@ -1,0 +1,14 @@
+<doc id="ud_branch">
+<title>Branching
+<idx>branching</idx>
+</title>
+
+<p>Sometimes you will want a project to include two or more parts that share most of their content, but require different ^conditions^ or a different set of ^key^s, and where ^xref^s to other docs resolve to the instance in the same branch.  That is when you specify a ^branch^ element in the ^map^, to wrap the part to be handled as a distinct entity, which is identified by the `@name` of the ^branch^.
+
+Within a ^branch^, ^xref^s by default reference the instance of the target file that is in the same ^branch^, if any.  Or if the ^xref^ has `@branch`, it references the instance in the named ^branch^ instead.  Likewise, a ^textref^ pulls content from the current or named ^branch^ in preference to the same referenced doc content elsewhere.  In addition, ^cond^s, ^key^s, and ^variable^s within a ^branch^, or that are referenced by a ^defref^ in the ^branch^, apply only in the scope of that ^branch^.
+
+The reason uDoc uses `@name` instead of the usual `@id` to identify a ^branch^ is so the same name can apply to more than one part of the map.  For example, you might have a ^map^ for two products, where operation and maintenance sections each have docs for both products.  By using the same ^branch^ name for each of the product-specific parts, you can ensure that the references from one part to the other go to the correct product-specific docs.</p>
+
+<relref subjects="conditions links keys" />
+
+</doc>

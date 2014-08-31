@@ -1,0 +1,61 @@
+<doc id="ud_glossary">
+<title>Glossary
+<idx>glossary:generating</idx>
+</title>
+
+<p>For a glossary list, the idea is to include all items that are referenced from related elements in the project, plus any other items that those items reference.  For example, the default ^glossary/^ contains definitions for the ^term^s used in the document.  To do this, the terms in the documents (and maps) need to reference definitions in a library of terms, which is `stdgloss.mxl` by default.  You can specify as many other libraries to search as you please with one or more ^glossrefs^, usually put in the project's root ^map^:</p>
+
+<pre>^glossref src="specialterms.mxl" /^
+</pre>
+
+<p>The glossary library can contain many ^term^s that are not used in the project; those terms should not be included in the generated glossary.  While the default sort by ^title^ is often adequate, some languages like Japanese require a different sort order, in which case the ^glossdef^s in the library need to have `@sort` attributes.  Also, if the ^title^ includes other elements that add text, such as ^var^s (but not typographics), it's better to provide a `@sort` attribute.</p>
+
+<p>A glossary item looks like this:<idx>glossary:items, defining</idx></p>
+
+<pre id="glossdef">^glossdef id="mxml" idref="xml"^
+  ^title^MicroXML^/title^
+  ^desc^MicroXML is a simplified XML version^/desc^
+  ^p^MicroXML is a simplified version of XML created in 2013 by James Clark
+  and John Cowan, two of the original creators of XML, to address what they saw as 
+  overcomplication in XML itself.  The spec for it is currently supported by a
+  ^xref src="https://dvcs.w3.org/hg/microxml/raw-file/tip/spec/microxml.html"^W3C
+  Community Group^/xref^.  The ^xref idref="udoc"^uDoc document format^/xref^
+  is one of its first applications.^/p^
+^/glossdef^
+</pre>
+
+<p>The ^glossdef^ `@id` is referenced in the ^term^ in the ^doc^ text with an `@idref`.  The ^desc^ appears as a mouseover for the term.  In the ^glossdef^ itself, the `@idref` identifies another ^glossdef^ that should be added to the ^glossary^ when this ^term^ is referenced; to add multiple terms, use `@idrefs` with space-delimited ids.  The ^term^ itself can be just:
+<idx>glossary:items, referencing</idx>
+<idx>references:to glossary items</idx>
+</p>
+
+<pre>^term idref="mxml" /^
+</pre>
+
+<p>or can also include the desired text:</p>
+
+<pre>^term idref="mxml"^MicroXML language^/term^
+</pre>
+
+<p>if you want to use text other than the ^glossdef^ ^title^.  Either way, you get the mouseover and a link to the full glossary definition in the generated ^glossary^.</p>
+
+<p>In the ^map^, the reference can be just:</p>
+
+<pre>^glossary /^
+</pre>
+
+<p>which by default references:</p>
+
+<pre>^listdef id="glosslist" sort="alpha" class="glossitem"^
+ ^usage^Defines a single-level glossary^/usage^
+ ^title^Glossary^/title^
+ ^item level="1" elpath="term/*" itemclass="glossterm"/^
+^/listdef^
+</pre>
+
+<p>in `stdlists.mxl`.  Or you can provide a `@src` and `@idref` to a definition in a project-specific library.</p>
+
+
+<relref subjects="glossary" />
+
+</doc>

@@ -1,0 +1,52 @@
+<doc id="ud_genlists">
+<title>Generated Lists and Indexes
+<idx>generated lists</idx>
+<idx>lists:generated</idx>
+</title>
+
+<p>A project can include any number of *generated lists* (items listed in document order) or *indexes* (items listed in sorted order and collated).  The reference tag ^doclist^ is used in maps for this purpose:</p>
+
+<pre> ^doclist src="stdlists.mxl" idref="doclistdef"^
+  ^title^List of Something^/title^
+ ^/doclist^
+</pre>
+
+<p>The ^title^ element is for use in the TOC.  The ^doclist^ element references a definition in a library for the kind of list wanted, like this one for a simple LOF:</p>
+
+<pre> ^listdef id="loflist" sort="doc" class="lofitem"^
+  ^item level="1" elpath="title/fig/*" itemclass="figtitle" /^
+ ^/listdef^
+</pre>
+
+<p>Several specialized ^doclist^ elements are predefined in `stdelems.mxl`, and reference ^listdef^s provided in `stdlists.mxl`.  They include: ^contents^, ^figures^, ^tables^, <xref src="ud_index.mxd">^index^</xref>, and <xref src="ud_glossary.mxd">^glossary^</xref>.  All have default `@idrefs` that point to the appropriate ^listdefs^, so they can be used in ^map^s as simply as: ^contents /^.
+<idx>elements:list:specialized for generated lists</idx>
+</p>
+
+<p>In the ^listdef^ above, the `@sort` specifies how the items are to be sorted:  `doc` (the default), `alpha`, or `numeric`. The overall list specifies `@class="lofitem"`; the classes for each level are derived from it.</p>
+
+<p>In the ^item^ elements, the `@level` specifies the subclass to use for the items; and the level 1 items are `@class="lofitem1"`.  The required `@elpath` specifies what elements to include, here any ^title^ element inside any ^fig^ element, in any context.  The optional `@itemclass` further restricts selection to those elements with `@class="figtitle"`.  To select multiple elements or classes, use multiple ^item^ elements (which may have the same level).</p>
+
+<p>For *indexes*, you might have:
+<idx>indexes</idx>
+</p>
+
+<pre> ^listdef id="subjectidx" sort="alpha" class="idxitem"^
+  ^item elpath="idx/*" itemclass="subject" /^
+ ^/listdef^
+</pre>
+
+<pre> ^listdef id="htmlidx" sort="alpha" class="idxitem"^
+  ^item elpath="idx/*" itemclass="htmlkey" /^
+ ^/listdef^
+</pre>
+
+<p>Then an index entry like:</p>
+
+<pre> ^idx class="subject htmlkey"^*\[HtmlOptions\]* section^/idx^</pre>
+
+<p>would appear in both indexes; if it had only one `@class`, it would appear in only one of them.</p>
+
+
+<relref subjects="index figures tables glossary" />
+
+</doc>

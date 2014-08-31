@@ -1,0 +1,340 @@
+<DialogFile 5.5>
+<LongChar No>
+<Font 2 1 12>
+<DialogBox
+ <MBRect -1 -1 359 301>
+ <WBRect -1 -1 332 171>
+ <XBRect -1 -1 367 388>
+ <Platforms MWX>
+ <CurrentFocus 3>
+ <FirstFocus 3>
+ <OKButton 8>
+ <CancelButton -1>
+ <DefaultButton 8>
+ <HelpButton -1>
+ <TitleLabel 0>
+>
+<Label
+ <MCorner 470 956>
+ <WCorner 139 0>
+ <XCorner 18 26>
+ <Label Conversion Designer>
+> # 0
+<Label
+ <MCorner 261 149>
+ <WCorner 7 12>
+ <XCorner 261 149>
+ <Label Project:  Name of project, followed by a very long path name to the .ini file>
+> # 1
+<Label
+ <MCorner 7 26>
+ <WCorner 7 26>
+ <XCorner 7 26>
+ <Label Paragraph Tag:>
+> # 2
+<EditBox
+ <MBaseLine 7 38 63>
+ <WBaseLine 7 38 63>
+ <XBaseLine 7 38 63>
+ <Label >
+ <StuffObject 4>
+> # 3
+<ImagePopUp
+ <MBRect 75 28 6 9>
+ <WBRect 75 28 6 9>
+ <XBRect 75 28 6 9>
+ <Label tallarrowdn>
+ <StuffObject 3>
+> # 4
+<Label
+ <MCorner 7 54>
+ <WCorner 7 54>
+ <XCorner 7 54>
+ <Label Properties:>
+> # 5
+<PopUpMenu
+ <MBaseLine 7 67 80>
+ <WBaseLine 7 67 80>
+ <XBaseLine 7 67 80>
+ <StuffObject -1>
+> # 6
+<Rule
+ <MBRect 5 72 86 1>
+ <WBRect 5 72 86 1>
+ <XBRect 5 72 86 1>
+> # 7
+<Button
+ <MBaseLine 13 87 67>
+ <WBaseLine 13 87 67>
+ <XBaseLine 13 87 67>
+ <Label Apply>
+ <ShortcutPosition 0>
+ <Active No>
+> # 8
+<Label
+ <MCorner 21 101>
+ <WCorner 7 101>
+ <XCorner 21 101>
+ <Label To All Selected Styles>
+> # 9
+<Rule
+ <MBRect 5 103 86 1>
+ <WBRect 5 103 86 1>
+ <XBRect 5 103 86 1>
+> # 10
+<Button
+ <MBaseLine 13 119 67>
+ <WBaseLine 13 119 67>
+ <XBaseLine 13 119 67>
+ <Label Update All>
+ <ShortcutPosition 0>
+ <Active No>
+> # 11
+<Label
+ <MCorner 7 134>
+ <WCorner 7 134>
+ <XCorner 7 134>
+ <Label Properties in .ini ...>
+> # 12
+<Rule
+ <MBRect 5 147 86 1>
+ <WBRect 5 147 86 1>
+ <XBRect 5 147 86 1>
+> # 13
+<Label
+ <MCorner 7 161>
+ <WCorner 7 161>
+ <XCorner 7 161>
+ <Label Commands:>
+> # 14
+<ImagePopUp
+ <MBRect 73 150 6 9>
+ <WBRect 73 150 6 9>
+ <XBRect 73 150 6 9>
+ <Label tallarrowdn>
+ <StuffObject -1>
+> # 15
+<Rule
+ <MBRect 95 3 1 165>
+ <WBRect 95 74 1 94>
+ <XBRect 95 3 1 165>
+> # 16
+<Rule
+ <MBRect 102 14 224 1>
+ <WBRect 102 14 224 1>
+ <XBRect 102 14 224 1>
+> # 17
+<CheckBox
+ <MCorner 101 30>
+ <WCorner 101 30>
+ <XCorner 101 30>
+ <Label Remap selected font name to:>
+ <Active No>
+ <StuffObject -1>
+> # 18
+<PopUpMenu
+ <MBaseLine 245 30 80>
+ <WBaseLine 245 30 80>
+ <XBaseLine 245 30 80>
+ <StuffObject -1>
+> # 19
+<Label
+ <MCorner 103 50>
+ <WCorner 103 50>
+ <XCorner 103 50>
+ <Label Type:>
+> # 20
+<RadioButton
+ <MCorner 129 49>
+ <WCorner 129 49>
+ <XCorner 129 49>
+ <Label Unknown>
+ <Active Yes>
+ <Group 2>
+ <StuffObject -1>
+> # 21
+<RadioButton
+ <MCorner 190 49>
+ <WCorner 190 49>
+ <XCorner 190 49>
+ <Label Roman>
+ <Active No>
+ <Group 2>
+ <StuffObject -1>
+> # 22
+<RadioButton
+ <MCorner 243 49>
+ <WCorner 243 49>
+ <XCorner 243 49>
+ <Label Swiss>
+ <Active No>
+ <Group 2>
+ <StuffObject -1>
+> # 23
+<RadioButton
+ <MCorner 104 65>
+ <WCorner 104 65>
+ <XCorner 104 65>
+ <Label Fixed>
+ <Active No>
+ <Group 2>
+ <StuffObject -1>
+> # 24
+<RadioButton
+ <MCorner 147 65>
+ <WCorner 147 65>
+ <XCorner 147 65>
+ <Label Script>
+ <Active No>
+ <Group 2>
+ <StuffObject -1>
+> # 25
+<RadioButton
+ <MCorner 190 65>
+ <WCorner 190 65>
+ <XCorner 190 65>
+ <Label Dingbat>
+ <Active No>
+ <Group 2>
+ <StuffObject -1>
+> # 26
+<RadioButton
+ <MCorner 243 65>
+ <WCorner 243 65>
+ <XCorner 243 65>
+ <Label Symbol>
+ <Active No>
+ <Group 2>
+ <StuffObject -1>
+> # 27
+<Rule
+ <MBRect 293 39 1 30>
+ <WBRect 293 39 1 30>
+ <XBRect 293 39 1 30>
+> # 28
+<Label
+ <MCorner 299 50>
+ <WCorner 299 50>
+ <XCorner 299 50>
+ <Label Width:>
+> # 29
+<EditBox
+ <MBaseLine 300 62 24>
+ <WBaseLine 300 62 24>
+ <XBaseLine 300 62 24>
+ <Label 123>
+ <StuffObject -1>
+> # 30
+<Rule
+ <MBRect 101 72 224 1>
+ <WBRect 101 72 224 1>
+ <XBRect 101 72 224 1>
+> # 31
+<Label
+ <MCorner 104 88>
+ <WCorner 104 88>
+ <XCorner 104 88>
+ <Label Default font width:>
+> # 32
+<EditBox
+ <MBaseLine 182 88 24>
+ <WBaseLine 182 88 24>
+ <XBaseLine 182 88 24>
+ <Label 144>
+ <StuffObject -1>
+> # 33
+<Label
+ <MCorner 219 88>
+ <WCorner 219 88>
+ <XCorner 219 88>
+ <Label Normal line space:>
+> # 34
+<EditBox
+ <MBaseLine 300 88 24>
+ <WBaseLine 300 88 24>
+ <XBaseLine 300 88 24>
+ <Label 240>
+ <StuffObject -1>
+> # 35
+<Label
+ <MCorner 104 108>
+ <WCorner 104 108>
+ <XCorner 104 108>
+ <Label Normal font:>
+> # 36
+<PopUpMenu
+ <MBaseLine 160 107 80>
+ <WBaseLine 160 107 80>
+ <XBaseLine 160 107 80>
+ <StuffObject -1>
+> # 37
+<Label
+ <MCorner 247 108>
+ <WCorner 247 108>
+ <XCorner 247 108>
+ <Label Size (twips):>
+> # 38
+<EditBox
+ <MBaseLine 300 107 24>
+ <WBaseLine 300 107 24>
+ <XBaseLine 300 107 24>
+ <Label 220>
+ <StuffObject -1>
+> # 39
+<Rule
+ <MBRect 101 113 224 1>
+ <WBRect 101 113 224 1>
+ <XBRect 101 113 224 1>
+> # 40
+<Label
+ <MCorner 104 131>
+ <WCorner 104 131>
+ <XCorner 104 131>
+ <Label Metafile font:>
+> # 41
+<PopUpMenu
+ <MBaseLine 160 130 80>
+ <WBaseLine 160 130 80>
+ <XBaseLine 160 130 80>
+ <StuffObject -1>
+> # 42
+<Label
+ <MCorner 247 131>
+ <WCorner 247 131>
+ <XCorner 247 131>
+ <Label Size (twips):>
+> # 43
+<EditBox
+ <MBaseLine 300 130 24>
+ <WBaseLine 300 130 24>
+ <XBaseLine 300 130 24>
+ <Label 220>
+ <StuffObject -1>
+> # 44
+<Rule
+ <MBRect 101 136 224 1>
+ <WBRect 101 136 224 1>
+ <XBRect 101 136 224 1>
+> # 45
+<CheckBox
+ <MCorner 101 152>
+ <WCorner 101 152>
+ <XCorner 101 152>
+ <Label Bitmap font for [BitmapChars]:>
+ <Active No>
+ <StuffObject -1>
+> # 46
+<PopUpMenu
+ <MBaseLine 245 152 80>
+ <WBaseLine 245 152 80>
+ <XBaseLine 245 152 80>
+ <StuffObject -1>
+> # 47
+<CheckBox
+ <MCorner 101 166>
+ <WCorner 101 166>
+ <XCorner 101 166>
+ <Label Remove unused fonts from document font list.>
+ <Active No>
+ <StuffObject -1>
+> # 48

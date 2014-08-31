@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA 1.1 Concept//EN"
+  "http://docs.oasis-open.org/dita/v1.1/OS/dtd/concept.dtd">
+<concept xml:lang="en-us" id="basiclists">
+<title>DITA Lists</title>
+<shortdesc>This topic describes simple lists, ordered lists,
+and unordered lists.</shortdesc>
+<conbody>
+<section>
+<title>Simple Lists</title>
+<p>Simple lists are those that do not require</p>
+<sl>
+<sli>bullets,</sli>
+<sli>numbering, or</sli>
+<sli>nesting.</sli>
+</sl>
+</section>
+<section>
+<title>Ordered Lists</title>
+<p>Ordered lists are numbered.</p>
+<ol>
+<li>
+<p>Items may have only single arabic numbers, no roman or letter
+identifiers.</p>
+</li>
+<li>
+<p>Ordered lists can be nested within other lists, except for
+simple lists.</p>
+<p>This para should be part of the previous list item.</p>
+<ol>
+<li>
+<p>This starts a new ordered list.</p>
+</li>
+<li>
+<p>This continues the new list.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>This returns to the original list.</p>
+</li>
+</ol>
+</section>
+<section>
+<title>Unordered Lists</title>
+<p>Unordered lists are bulleted.</p>
+<ul>
+<li>
+<p>Unordered lists can be nested within other non-simple lists.</p>
+<ul>
+<li>
+<p>This should nest below the item above it.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>The parent list element for both ordered and unordered lists can
+have an attribute, “compact=yes”, to reduce vertical space between
+items.</p>
+</li>
+</ul>
+</section>
+</conbody>
+</concept>

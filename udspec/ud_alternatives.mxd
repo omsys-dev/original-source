@@ -1,0 +1,21 @@
+<doc id="ud_alternatives">
+<title>uDoc Alternatives</title>
+
+<p>Before choosing any documentation process to work with, it's important to look at all the options.  No one process fits everyone, even if it seems to be a <q>standard</q>.  Many standards have come and gone, like the grandfather of structured documentation, <term idref="sgml">SGML</term>.
+
+The first question is, do you want topic-oriented processing, or is a document-oriented method better?  The document-oriented processes include <idx><term idref="dbk"/></idx><term idref="dbk">DocBook</term>, now XML-based, as well as a large number of more proprietary systems, such as those based on FrameMaker and on <idx>Arbortext</idx>Arbortext.  If all the docs you produce are books for print (or for PDF on-line), you may be better off not trying to fit your use case into a topic-oriented system.
+
+If you do need topic orientation, to enable widespread re-use of documentation parts in varying products, or to keep translation costs down by finer text granularity, or if your deliverables include on-line Help systems, you have many more possibilities to consider, some of which you may never have heard of before.  In some areas, there are specialized needs that require industry-specific systems, as for aircraft, pharmaceuticals, and the military.  There is also the possibility of designing your own system from the ground up, a very, very, expensive option but still one to consider.
+
+One topic-oriented system that you almost certainly <b>have</b> heard of is <term idref="dita" />.  Originally developed by IBM for its documentation needs, it has since become an OASIS standard.  We at <abbr idref="omni"/> have worked with it very extensively, as the creators of an application heavily used for getting from FrameMaker to DITA (<term idref="m2g" />) and a second application for producing on-line Help and Word files from DITA (<term idref="d2g" />).  We discuss its advantages and disadvantages at length throughout this spec.
+
+We created <term idref="udoc" /> largely in response to major shortcomings we saw in DITA, not just in the implementation of some tools (like the <term idref="ditaot" />), but in the core design itself.  We're not the only ones to come to that conclusion.  The rest of this spec should give you a very good idea of how uDoc differs from DITA, and why.
+
+There's another markup format with similar <xref src="http://projectmallard.org/1.1/principles">design goals</xref> to those of uDoc, called <idx>Mallard</idx><xref src="http://projectmallard.org/1.1/">Project Mallard</xref>.  The designer of Mallard, Shaun McCance, also started by studying DITA and DocBook, and had many of the <xref src="http://projectmallard.org/1.1/dita">same concerns</xref> we did.  While uDoc supports a lot that Mallard doesn't, like footnotes, variables, indexing, glossaries, abbreviations, and generated lists, we feel Mallard is a worthy effort worth a long look, especially for Linux users, the environment in which it was built.
+
+There is also <idx>SPFE</idx><xref src="http://spfe.info/">SPFE</xref>, pronounced <q>spiffy</q> and created by <xref src="http://everypageispageone.com/2012/02/05/introducing-the-spfe-architecture/">Mark Baker</xref>, which is a database-oriented approach to structured documents.  It directly inspired the addition of elements that can run <xref src="ud_queries.mxd">queries on external resources</xref> in uDoc.  This too is worh serious study; see its <xref src="http://spfe.info/spfe-vs-dita/">comparison to DITA</xref>.</p>
+
+
+<relref subjects="basics comparison" />
+
+</doc>

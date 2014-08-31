@@ -1,0 +1,17 @@
+<doc id="ud_mxllicense">
+<title>Licensing</title>
+
+<p>The MXL Parser is entirely written by Jeremy H. Griffith of Omni Systems, ^jeremy@omsys.com^.  Omni intends to use it for an upcoming product, working name uDoc, which is a MicroXML editor specifically configured for a document format similar to a simplified DITA.
+
+We are licensing at least the parser, and probably the entire uDoc editor product, as FOSS under the <xref src="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache license</xref>.  We also plan to create a SourceForge project for it.
+
+Omni currently has three products available. The first is <xref src="http://mif2go.com">Mif2Go</xref>, a commercial converter from FrameMaker source to a variety of output formats, including Word, DITA, HTML, and many forms of Help such as FOSS OmniHelp hosted on SourceForge.  Mif2Go is free for a large number of its users: the unemployed, retired, underemployed consultants, academics (staff, faculty, students), most nonprofits, and FOSS developers.  Quite a few of its paying customers are Fortune 100's and government agencies, who can afford to support the rest.
+
+The second is <xref src="http://dita2go.com">DITA2Go</xref>, a converter from DITA to the same outputs as Mif2Go, with which it shares a large part of its code.
+
+The third is <xref src="http://udoc2go.com">uDoc2Go</xref>, whick converts from uDoc to the same outputs as Mif2Go, with which it also shares a large part of its code.
+
+Part of the impetus for the newest product is concern over the deteriorating quality and increasing cost of Adobe's Framemaker.  The other part is concern over the difficulties many users are experiencing with the increasing complication of DITA.  MicroXML fits well with a product meant to improve life for the Technical Writers using both Frame and DITA.</p>
+
+</doc>
+

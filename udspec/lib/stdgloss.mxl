@@ -1,0 +1,154 @@
+<lib id="stdgloss">
+
+<!-- stdgloss.mxl describes the standard uDoc glossary -->
+<!-- Version 0.1, July 15, 2013 -->
+
+<!-- glossary definitions look like this:
+
+<glossdef id="name" idrefs="other more">
+ Idrefs link to ids of other related glossdefs, 
+ which should have their own definition entries
+
+<title>Full Name</title>
+<desc>Text for mouseover of references</desc>
+
+ Content can include text elems, figs, tables,
+ and any other block elements as needed:
+<p>Full definition with explanations.</p>
+
+</glossdef>
+
+ When the definitions are referenced, like this:
+ <term idref="name"/>
+
+ or with fallback content:
+ <term idref="name">default text</term>
+
+ the content, along with idrefs, is marked to be included
+ in a generated glossary, which will thus include only the 
+ terms actually used in the project.
+ 
+ ==> Template to copy:
+ 
+ <glossdef id="" idrefs="">
+ <title></title>
+ <desc></desc>
+ <p><xref src=""></xref></p>
+ </glossdef>
+
+ -->
+
+<glossdef id="cals">
+<title>CALS table model</title>
+<desc>A standard for representing tables in SGML or XML</desc>
+<p>CALS (Continuous Acquisition and Life-cycle Support) is a United States Department of Defense initiative designed to capture military documentation and link it to related information.  The <xref src="https://www.oasis-open.org/specs/a502.htm">DTD for the CALS table model</xref> consists of a set of element and attribute declarations that partly define the model.</p>
+</glossdef>
+
+<glossdef id="d2g">
+<title>DITA2Go</title>
+<desc>A Windows software tool that converts DITA content to several other formats</desc>
+<p><xref src="http://dita2go.com/">DITA2Go</xref> converts DITA documents to other formats; the conversion process is governed by settings in one or more configuration files.  DITA2Go is organized around the idea of formats, which are packages of presentational content, just as elements are packages of semantic content.  DITA2Go provides the means to perform two primary tasks: map DITA elements to output formats, and define presentational properties of those output formats.  DITA2Go also carries out a number of output-type-dependent secondary tasks, such as constructing Help file infrastructure.</p>
+</glossdef>
+
+<glossdef id="u2g">
+<title>uDoc2Go</title>
+<desc>A Windows software tool that converts uDoc content to several other formats</desc>
+<p><xref src="http://dita2go.com/">DITA2Go</xref> converts uDoc documents to other formats; the conversion process is governed by settings in one or more configuration files.</p>
+</glossdef>
+
+<glossdef id="ditaot" idref="dita">
+<title>DITA-OT</title>
+<desc>Set of Java-based open-source software tools for processing DITA maps and topics.</desc>
+<p>DITA-OT (DITA Open Toolkit) is primarily a publishing tool, intended to convert DITA content into various output formats, which can be extended by development of additional plug-ins.  It is written in XSLT and Java, and is available from <xref src="http://sourceforge.net/projects/dita-ot/">SourceForge</xref>.</p>
+</glossdef>
+
+<glossdef id="dbk">
+<title>DocBook</title>
+<desc>Semantic markup language for technical documentation.</desc>
+<p>DocBook is a semantic XML language that provides element tags of three broad types: structural, block-level, and inline.  DocBook is intended for technical documents related to computer hardware and software, but is also appropriate for other kinds of technical documents. See <xref src="http://docbook.org/">its Web site</xref>.</p>
+</glossdef>
+
+
+<glossdef id="mathml">
+<title>MathML</title>
+<desc>XML application for describing mathematical notation.</desc>
+<p>Mathematical Markup Language (<xref src="http://www.w3.org/TR/2010/REC-MathML3-20101021/">MathML</xref>) describes mathematical notation, including both structure and content.  Its purpose is to integrate mathematical formulae into World Wide Web pages and other documents.  MathML is a recommendation of the W3C math working group, and is part of HTML5.</p>
+</glossdef>
+
+<glossdef id="m2g">
+<title>Mif2Go</title>
+<desc>FrameMaker plug-in that converts FrameMaker content to various other formats.</desc>
+<p><xref src="http://mif2go.com/">Mif2Go</xref> provides the means to perform two primary tasks: map FrameMaker formats to output formats, and define presentational properties of those output formats.  Mif2Go also carries out a number of output-type-dependent secondary tasks, such as constructing Help file infrastructure.  Mif2Go relies on both rules and instance mark-up.  Rules come from settings in configuration files; instance mark-up is in the FrameMaker files themselves, in the form of custom FrameMaker markers.</p>
+</glossdef>
+
+<glossdef id="sgml">
+<title>SGML</title>
+<desc>Standard Generalized Markup Language for organizing and tagging elements of a document</desc>
+<p><xref src="http://www.w3.org/TR/html4/intro/sgmltut.html">SGML</xref> is an ISO standard system for defining markup languages, for tagging headings, paragraphs, tables, and graphics in a document according to their meaning and relationship to other elements rather than to the format of their presentation.  HTML is an SGML application that uses a fixed set of tags, while XML is a simplified version of SGML.</p>
+</glossdef>
+
+<glossdef id="tabstop">
+<title>tab stop</title>
+<desc>Location on a text line that marks the beginning of a column</desc>
+<p>Tab stops are preset locations on a line of text.  Although space characters can be used to line up columns of numbers and names in a monospaced font, proportional fonts, with varying widths of letters, require preset locations for proper column alignment.  Tab stops in uDoc are numbered, and the location of each is determined by the corresponding metric specified in the definition of the format in use.</p>
+</glossdef>
+
+<glossdef id="transc">
+<title>transclusion</title>
+<desc>Including part or all of a document by reference</desc>
+<p>Inclusion of a document or part of a document into another document by reference</p>
+</glossdef>
+
+<glossdef id="xml" idrefs="sgml udoc mxml">
+<title>XML</title>
+<desc>Set of rules for encoding documents in machine-readable form</desc>
+<p>Extensible Markup Language (<xref src="http://www.w3.org/TR/REC-xml/">XML</xref>) is a subset of <xref idref="sgml">SGML</xref>, designed to be used on the World Wide Web.  <xref idref="mxml">MicroXML</xref> is a simplified version of XML, and <xref idref="udoc">uDoc</xref> is a MicroXML application.</p>
+</glossdef>
+
+<glossdef id="xsd" idref="xml">
+<title>XSD</title>
+<desc>XML Schema Definition</desc>
+<p>XSD is a reference library that provides an API for manipulating the components of an XML Schema.</p>
+</glossdef>
+
+<glossdef id="xslt" idref="xml">
+<title>XSLT</title>
+<desc>Extensible Stylesheet Language Transformations</desc>
+<p><xref src="http://www.w3.org/standards/xml/transformation">XSLT</xref> is a language for transforming <xref idref="xml">XML</xref> documents into other XML documents, or into other objects such as HTML for web pages, plain text, or XSL Formatting Objects (XSL-FO) which can then be converted to PDF, PostScript, and PNG.</p>
+</glossdef>
+
+<glossdef id="xslfo" idref="xml">
+<title>XSL-FO</title>
+<desc>Extensible Stylesheet Language Formatting Objects</desc>
+<p><xref src="http://www.w3.org/standards/xml/publishing">XSL-FO</xref> is an XML markup language for describing page layout and formatting.</p>
+</glossdef>
+
+<glossdef id="mxml" idrefs="udoc xml">
+<title>MicroXML</title>
+<desc>Simplified version of XML</desc>
+<p>MicroXML is a simplified version of <xref idref="xml">XML</xref> created in 2013 by James Clark and John Cowan, two of the original creators of XML, to address what they saw as overcomplication in XML itself.  The spec for it is currently supported by a <xref src="https://dvcs.w3.org/hg/microxml/raw-file/tip/spec/microxml.html">W3C Community Group</xref>.  The <xref idref="udoc">uDoc document format</xref> is one of its first applications.</p>
+</glossdef>
+
+<glossdef id="udoc" idrefs="mxml dita">
+<title>uDoc</title>
+<desc>A MicroXML document format</desc>
+<p>The uDoc docoument format, pronounced <q>YOU-doc</q>, is a block-oriented content markup language written using <xref idref="mxml">MicroXML</xref>.  It is similar to <xref idref="dita">DITA</xref>, but much more permissive and easier to use.</p>
+</glossdef>
+
+<glossdef id="dita" idrefs="udoc xml">
+<title>Darwin Information Typing Architecture (DITA)</title>
+<desc>Darwin Information Typing Architecture</desc>
+<p>The <xref src="http://www.dita2go.com/ditaspec/_dita-1.2-specification.htm">DITA</xref> docoument format is a block-oriented content markup language written using <xref idref="xml">XML</xref>.  It is similar to <xref idref="udoc">uDoc</xref>, but much more restrictive and as a result is harder to use.</p>
+</glossdef>
+
+
+<glossdef id="foss">
+ <title>FOSS</title>
+ <desc>Free and open-source software</desc>
+ <p><xref src="https://en.wikipedia.org/wiki/Free_and_open_source_software">FOSS</xref> is computer software that is free to use and free to alter.  The source code is openly shared to encourage people to improve it.</p>
+ </glossdef>
+
+
+</lib>
+
+<!-- end of stdgloss.mxl -->

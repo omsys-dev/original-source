@@ -1,0 +1,755 @@
+<lib id="stdelems">
+
+<!-- stdelems.mxl describes the standard uDoc elements -->
+<!-- Version 0.1, July 3, 2013 -->
+
+<!-- Template for new elements:
+ <element name="elementname" props="list of element props">
+  <usage>Brief description</usage>
+  <attr name="attrname" type="attrval type"/>
+ </element>
+
+ All elements have an implied attribute set in:
+  <defref src="stdattrs.mxl" idref="CommonAttrs"/>
+ If an attr there is redefined in the element, the
+ redefinition prevails. -->
+
+
+<!-- Root elements: -->
+
+ <element name="doc" props="root doc">
+  <usage>Root element for mxl documents, .mxd</usage>
+ </element>
+
+ <element name="map" props="root map">
+  <usage>Root element for mxl maps, .mxm</usage>
+ </element>
+
+ <element name="lib" props="root lib">
+  <usage>Root element for mxl libraries, .mxl</usage>
+ </element>
+
+
+<!-- Block elements: -->
+
+ <element name="div" props="group nolevel">
+  <usage>Grouping without affecting level</usage>
+ </element>
+
+ <element name="branch" props="map group nolevel">
+  <usage>Named group in a map without affecting level</usage>
+ </element>
+
+ <element name="sect" props="doc group sect">
+  <usage>Group in a doc that nests to increase level</usage>
+ </element>
+
+ <element name="udx" props="doc group nolevel">
+  <usage>Group that requires different udx processing</usage>
+  <attr name="switch" type="enum: none nomin nofull normal"/>
+ </element>
+
+
+ <element name="table" props="doc table start">
+  <usage>Table with rows and columns</usage>
+  <attr name="order" type="enum: row col" default="row"/>
+  <attr name="rows" type="num"/>
+  <attr name="cols" type="num"/>
+  <attr name="width" type="size"/>
+ </element>
+
+ <element name="col" props="doc table col">
+  <usage>Table column properties, and cells if order is col</usage>
+  <attr name="pos" type="nlist" />
+  <attr name="type" type="enum: body head"/>
+  <attr name="width" type="size"/>
+ </element>
+
+ <element name="row" short="r" props="doc row">
+  <usage>Table row properties, and cells if order is row</usage>
+  <attr name="pos" type="nlist" />
+  <attr name="type" type="enum: body head foot"/>
+  <attr name="height" type="size"/>
+ </element>
+
+ <element name="r" full="row" props="doc row short">
+  <usage>Table row properties, and cells if order is row</usage>
+  <attr name="pos" type="nlist" />
+  <attr name="type" type="enum: body head foot"/>
+  <attr name="height" type="size"/>
+ </element>
+
+ <element name="cell" short="c" props="doc cell">
+  <usage>Table cell properties and content</usage>
+  <attr name="colspan" type="num"/>
+  <attr name="rowspan" type="num"/>
+  <attr name="align" type="enum: left center right"/>
+  <attr name="valign" type="enum: top middle bottom"/>
+ </element>
+
+ <element name="c" full="cell" props="doc cell short">
+  <usage>Table cell properties and content</usage>
+  <attr name="colspan" type="num"/>
+  <attr name="rowspan" type="num"/>
+  <attr name="align" type="enum: left center right"/>
+  <attr name="valign" type="enum: top middle bottom"/>
+ </element>
+
+
+ <element name="fig" props="doc fig">
+  <usage>Figure properties and content</usage>
+  <attr name="width" type="size"/>
+  <attr name="height" type="size"/>
+ </element>
+
+ <element name="image" props="doc image">
+  <usage>Block image, used in fig or alone</usage>
+  <attr name="alt" type="text"/>
+  <attr name="width" type="size"/>
+  <attr name="height" type="size"/>
+  <attr name="top" type="size" />
+  <attr name="left" type="size" />
+ </element>
+
+ <element name="imagemap" props="doc fig image ref group">
+  <usage>Image map, has image and areas that provide text and links</usage>
+  <attr name="width" type="size"/>
+  <attr name="height" type="size"/>
+ </element>
+
+ <element name="object" props="doc object">
+  <usage>Displayable or audible object, used in fig</usage>
+  <attr name="width" type="size"/>
+  <attr name="height" type="size"/>
+ </element>
+
+
+ <element name="ul" props="doc list start">
+  <usage>Unordered list of items</usage>
+  <attr name="styletype" type="enum: disc circle square none"/>
+ </element>
+
+ <element name="ol" props="doc list start num">
+  <usage>Ordered list of items</usage>
+  <attr name="styletype" type="enum: decimal upper-alpha
+  lower-alpha upper-roman lower-roman"/>
+ </element>
+
+ <element name="sl" props="doc list start sub">
+  <usage>List of items without bullets or numbers</usage>
+ </element>
+
+ <element name="pl" props="doc list start plist">
+  <usage>List of item pairs each with title(s) and text element(s)</usage>
+ </element>
+
+
+ <element name="li" short="l" props="doc list item">
+  <usage>List items, within list, ul, or ol</usage>
+  <attr name="type" type="enum: body head"/>
+ </element>
+
+ <element name="l" full="li" props="doc list item short">
+  <usage>Short form for List items</usage>
+  <attr name="type" type="enum: body head"/>
+ </element>
+
+
+ <element name="note" props="doc note">
+  <usage>Note with title, paragraphs, and image</usage>
+  <attr name="type" type="enum: note Attention Caution Danger Fastpath
+  Important Remember Restriction Tip Warning Other" default="note"/>
+ </element>
+
+ <element name="comment" props="comment">
+  <usage>Reviewer's comments or draft content</usage>
+ </element>
+
+ <element name="doctext" props="doc map para">
+  <usage>Transitional text in a map used in the preceding topic</usage>
+  <attr name="type" type="enum: end start before after replace"/>
+ </element>
+
+
+<!-- Text elements: -->
+
+ <element name="p" short="(pl/li) d" props="text para">
+  <usage>Normal paragraph</usage>
+ </element>
+
+ <element name="pre" props="text para pre">
+  <usage>Preformatted paragraph, preserves spaces and line ends</usage>
+ </element>
+
+ <element name="title" short="(pl/li table) t" props="text para title">
+  <usage>Title paragraph, used in xrefs to its parent</usage>
+  <attr name="type" type="enum: main nav search xref rel special"/>
+ </element>
+
+ <element name="subtitle" props="text para title sub">
+  <usage>Subtitle paragraph, usually follows a title</usage>
+ </element>
+
+ <element name="t" full="title" props="text para title short">
+  <usage>Title paragraph, short tag</usage>
+ </element>
+
+ <element name="d" full="p" props="text para short">
+  <usage>Normal paragraph in list, short tag</usage>
+ </element>
+
+ <element name="usage" props="text para usage">
+  <usage>Short paragraph describing usage of its parent</usage>
+ </element>
+
+ <element name="quote" props="text para quote">
+  <usage>Full paragraph quotation, language-specific</usage>
+ </element>
+
+ <element name="cite" props="text para quote sub">
+  <usage>Citation for quotation or comment</usage>
+ </element>
+
+ <element name="desc" props="text para desc">
+  <usage>Paragraph description for an object, image, table (for mouseover)</usage>
+ </element>
+
+ <element name="alt" props="text image alt">
+  <usage>Alternate text for an image</usage>
+ </element>
+
+ <element name="area" props="text image ref">
+  <usage>Clickable area within an image map</usage>
+  <attr name="shape" type="enum: rect poly circle" default="rect"/>
+  <attr name="coords" type="nlist"/>
+ </element>
+
+
+<!-- Inline elements, all names 1-4 chars: -->
+
+ <element name="ph" props="inline text">
+  <usage>Phrase, used for spans in text usually with a @class</usage>
+ </element>
+
+ <element name="term" props="inline text gloss">
+  <usage>Term that links to a glossary entry</usage>
+ </element>
+
+ <element name="abbr" props="inline text abbr">
+  <usage>Term processed as an abbreviation</usage>
+ </element>
+
+ <element name="tm" props="inline text tmark">
+  <usage>Term processed as a trademark or service mark</usage>
+  <attr name="type" type="enum: trade service other" default="trade"/>
+ </element>
+
+ <element name="xref" props="inline text ref">
+  <usage>Cross reference or link, optional text content</usage>
+  <attr name="type" type="enum: title number"/>
+ </element>
+
+ <element name="seq" props="inline text seq">
+  <usage>Sequence of keys, menu items, etc.</usage>
+  <attr name="type" type="enum: keys menu action"/>
+ </element>
+
+ <element name="mark" props="inline data marker">
+  <usage>Identifies a point in the text, any content not rendered</usage>
+  <attr name="value" type="text" />
+ </element>
+
+ <element name="idx" props="inline data text index">
+  <usage>Index entry, may have range start/end, see, seealso</usage>
+  <attr name="start" type="name"/>
+  <attr name="end" type="name"/>
+  <attr name="see" type="name"/>
+  <attr name="seealso" type="name"/>
+ </element>
+
+ <element name="var" props="inline text var">
+  <usage>Reference to a variable def, fallback text content</usage>
+ </element>
+
+ <element name="img" props="inline doc image">
+  <usage>Inline image, used in text for symbol or icon</usage>
+  <attr name="width" type="size"/>
+  <attr name="height" type="size"/>
+  <attr name="top" type="size" />
+  <attr name="left" type="size" />
+  <attr name="alt" type="text"/>
+ </element>
+
+ <element name="fn" props="inline text fnote">
+  <usage>Footnote or endnote</usage>
+  <attr name="type" type="enum: foot table end" default="foot"/>
+ </element>
+
+ <element name="br" props="inline break">
+  <usage>Break</usage>
+  <attr name="type" type="enum: line column page" default="line"/>
+ </element>
+
+ <element name="t1" props="inline tab">
+  <usage>Tab</usage>
+ </element>
+
+ <element name="t2" props="inline tab">
+  <usage>Tab</usage>
+ </element>
+
+ <element name="t3" props="inline tab">
+  <usage>Tab</usage>
+ </element>
+
+ <element name="t4" props="inline tab">
+  <usage>Tab</usage>
+ </element>
+
+ <element name="t5" props="inline tab">
+  <usage>Tab</usage>
+ </element>
+
+ <element name="t6" props="inline tab">
+  <usage>Tab</usage>
+ </element>
+
+ <element name="t7" props="inline tab">
+  <usage>Tab</usage>
+ </element>
+
+ <element name="t8" props="inline tab">
+  <usage>Tab</usage>
+ </element>
+
+ <element name="t9" props="inline tab">
+  <usage>Tab</usage>
+ </element>
+
+ <element name="t10" props="inline tab">
+  <usage>Tab</usage>
+ </element>
+
+ <element name="t11" props="inline tab">
+  <usage>Tab</usage>
+ </element>
+
+ <element name="t12" props="inline tab">
+  <usage>Tab</usage>
+ </element>
+
+ <element name="t13" props="inline tab">
+  <usage>Tab</usage>
+ </element>
+
+ <element name="t14" props="inline tab">
+  <usage>Tab</usage>
+ </element>
+
+ <element name="t15" props="inline tab">
+  <usage>Tab</usage>
+ </element>
+
+ <element name="t16" props="inline tab">
+  <usage>Tab</usage>
+ </element>
+
+ <element name="t17" props="inline tab">
+  <usage>Tab</usage>
+ </element>
+
+ <element name="t18" props="inline tab">
+  <usage>Tab</usage>
+ </element>
+
+ <element name="t19" props="inline tab">
+  <usage>Tab</usage>
+ </element>
+
+ <element name="t20" props="inline tab">
+  <usage>Tab</usage>
+ </element>
+
+
+<!-- Typographic elements: -->
+
+ <element name="b" wiki="*" props="inline text typo">
+  <usage>Bold</usage>
+  <code language="css">font-weight: bold;</code>
+ </element>
+
+ <element name="i" wiki="_" props="inline text typo">
+  <usage>Italic</usage>
+  <code language="css">font-style: italic;</code>
+ </element>
+
+ <element name="u" props="inline text typo">
+  <usage>Underline</usage>
+  <code language="css">text-decoration: underline;</code>
+ </element>
+
+ <element name="du" props="inline text typo">
+  <usage>Double Underline</usage>
+  <code language="rtf">uldb</code>
+ </element>
+
+ <element name="o" props="inline text typo">
+  <usage>Overline</usage>
+  <code language="css">text-decoration: overline;</code>
+ </element>
+
+ <element name="s" props="inline text typo">
+  <usage>Strikethrough</usage>
+  <code language="css">text-decoration: line-through;</code>
+ </element>
+
+ <element name="sup" props="inline text typo">
+  <usage>Up, superscript</usage>
+  <code language="css">vertical-align: super;</code>
+ </element>
+
+ <element name="sub" props="inline text typo">
+  <usage>Down, subscript</usage>
+  <code language="css">vertical-align: sub;</code>
+ </element>
+
+ <element name="tt" wiki="`" props="inline text typo">
+  <usage>TeleType, monospaced</usage>
+  <code language="css">font-family: monospace;</code>
+  <code language="html">tt</code>
+ </element>
+
+ <element name="q" wiki="&#x22;" props="inline text typo">
+  <usage>Inline Quote, language-dependent</usage>
+  <code language="html">q</code>
+ </element>
+
+
+<!-- Wiki shorthand inline elements -->
+
+ <wiki symbol="*" full="b" props="inline text typo"
+  tag="b" code="no" />
+
+ <wiki symbol="_" full="i" props="inline text typo"
+  tag="i" code="no" />
+
+ <wiki symbol="&#x22;" full="q" props="inline text typo"
+  tag="q" code="no" />
+
+ <wiki symbol="`" full="tt" props="inline text typo"
+  tag="tt" space="no" code="set" />
+
+ <wiki symbol="^" full="tt &lt; &gt;" props="inline text typo"
+  tag="tt" sch="&lt;" ech="&gt;" space="no" code="set" />
+
+
+<!-- Data elements: -->
+
+ <element name="data" props="data">
+  <usage>Data, not rendered</usage>
+ </element>
+
+ <element name="start" props="data elem start">
+  <usage>Start of overlapping element (empty)</usage>
+ </element>
+
+ <element name="end" props="data elem">
+  <usage>End of overlapping element (empty)</usage>
+ </element>
+
+ <element name="author" props="data var">
+  <usage>Author name, metadata</usage>
+ </element>
+
+ <element name="copyright" props="data var">
+  <usage>Copyright info, metadata</usage>
+ </element>
+
+ <element name="publisher" props="data var">
+  <usage>Publisher info, metadata</usage>
+ </element>
+
+ <element name="date" props="data date">
+  <usage>Date info, metadata</usage>
+ </element>
+
+ <element name="alias" props="data csh">
+  <usage>Context-Sensitive Help anchor</usage>
+ </element>
+
+ <element name="code" props="data code">
+  <usage>Code to use for parent, usually a def</usage>
+  <attr name="language" type="name"/>
+ </element>
+
+
+<!-- Reference elements: -->
+
+ <element name="ref" props="ref">
+  <usage>Reference, general purpose</usage>
+ </element>
+
+ <element name="textref" props="ref elem nolevel">
+  <usage>Text reference, for transclusion (conref)</usage>
+ </element>
+
+ <element name="coderef" props="ref pre">
+  <usage>Code reference, for transclusion (codeblock)</usage>
+ </element>
+
+ <element name="relref" props="ref file rel">
+  <usage>Reference related docs by group membership</usage>
+  <attr name="groups" type="elist"/>
+  <attr name="subjects" type="elist"/>
+  <attr name="weight" type="num"/>
+ </element>
+
+ <element name="dirref" props="ref dir nolevel">
+  <usage>Directory query reference</usage>
+  <attr name="query" type="query" />
+  <attr name="results" type="epath"/>
+ </element>
+
+ <element name="dbref" props="ref db nolevel">
+  <usage>Database query reference</usage>
+  <attr name="query" type="query" />
+  <attr name="results" type="epath"/>
+ </element>
+
+ <element name="webref" props="ref web nolevel">
+  <usage>Search-engine query reference</usage>
+  <attr name="query" type="query" />
+  <attr name="results" type="epath"/>
+ </element>
+
+
+<!-- Reference elements used in maps: -->
+
+ <element name="docref" props="ref map doc file">
+  <usage>Doc reference</usage>
+  <attr name="start" type="enum: none page file" default="none"/>
+ </element>
+
+ <element name="codedocref" props="ref map doc file pre">
+  <usage>Doc reference</usage>
+  <attr name="start" type="enum: none page file" default="none"/>
+ </element>
+
+ <element name="preface" props="ref map doc file">
+  <usage>Doc reference to a preface</usage>
+  <attr name="start" type="enum: none page file" default="none"/>
+ </element>
+
+ <element name="chapter" props="ref map doc file">
+  <usage>Doc reference to a chapter</usage>
+  <attr name="start" type="enum: none page file" default="none"/>
+ </element>
+
+ <element name="appendix" props="ref map doc file">
+  <usage>Doc reference to an appendix</usage>
+  <attr name="start" type="enum: none page file" default="none"/>
+ </element>
+
+ <element name="mapref" props="ref map file nolevel">
+  <usage>Map reference</usage>
+ </element>
+
+ <element name="fileref" props="ref map file ext">
+  <usage>Preprocessed file reference</usage>
+ </element>
+
+ <element name="defref" props="ref def">
+  <usage>Apply a definition or set of definitions</usage>
+ </element>
+
+ <element name="elemref" props="ref def elem">
+  <usage>Add new element definitions</usage>
+ </element>
+
+ <element name="keyref" props="ref key">
+  <usage>Specify a set of key definitions to use</usage>
+ </element>
+
+ <element name="condref" props="ref cond">
+  <usage>Apply a condition or set of conditions</usage>
+ </element>
+
+ <element name="varref" props="ref var">
+  <usage>Specify a library for variable definitions</usage>
+ </element>
+ 
+ <element name="glossref" props="ref gloss">
+  <usage>Specify a library for glossary definition entries</usage>
+ </element>
+ 
+ <element name="abbrref" props="ref abbr">
+  <usage>Specify a library for abbreviation definition entries</usage>
+ </element>
+ 
+ <element name="tmarkref" props="ref tmark">
+  <usage>Specify a library for trademark definition entries</usage>
+ </element>
+
+
+<!-- Generated list reference elements: -->
+
+ <element name="doclist" props="ref def list">
+  <usage>Reference a generated list to use in a map</usage>
+  <attr name="start" type="enum: none page file" default="none"/>
+ </element>
+
+ <element name="contents" props="ref def list doc">
+  <usage>Reference to a generated table of contents</usage>
+  <attr name="start" type="enum: none page file" default="none"/>
+  <attr name="idref" type="name" default="toclist"/>
+ </element>
+
+ <element name="figures" props="ref def list fig">
+  <usage>Reference to a generated list of figures</usage>
+  <attr name="start" type="enum: none page file" default="file"/>
+  <attr name="idref" type="name" default="loflist"/>
+ </element>
+
+ <element name="tables" props="ref def list table">
+  <usage>Reference to a generated list of tables</usage>
+  <attr name="start" type="enum: none page file" default="file"/>
+  <attr name="idref" type="name" default="lotlist"/>
+ </element>
+
+ <element name="index" props="ref def list index">
+  <usage>Reference to a generated index list</usage>
+  <attr name="start" type="enum: none page file" default="file"/>
+  <attr name="idref" type="name" default="subjectindex"/>
+ </element>
+
+ <element name="glossary" props="ref def list gloss">
+  <usage>Reference to a generated glossary list</usage>
+  <attr name="start" type="enum: none page file" default="file"/>
+  <attr name="idref" type="name" default="glosslist"/>
+ </element>
+
+ <element name="abbreviations" props="ref def list abbr">
+  <usage>Reference to a generated abbreviation list</usage>
+  <attr name="start" type="enum: none page file" default="file"/>
+  <attr name="idref" type="name" default="abbrlist"/>
+ </element>
+
+ <element name="trademarks" props="ref def list tmark">
+  <usage>Reference to a generated trademark list</usage>
+  <attr name="start" type="enum: none page file" default="file"/>
+  <attr name="idref" type="name" default="tmarklist"/>
+ </element>
+
+
+<!-- Definition elements: -->
+
+ <element name="def" props="def">
+  <usage>Definition, general purpose</usage>
+ </element>
+
+ <element name="output" props="def output">
+  <usage>Define a project output type, contains refs to its related defs</usage>
+  <attr name="type" type="bool"/>
+ </element>
+
+ <element name="conditions" props="def cond group">
+  <usage>Define a set of conditions, contains cond elements</usage>
+ </element>
+
+ <element name="cond" props="def cond">
+  <usage>Define a condition in a conditions element</usage>
+  <attr name="attr" type="name"/>
+  <attr name="include" type="bool"/>
+  <attr name="exclude" type="bool"/>
+  <attr name="flag" type="bool"/>
+ </element>
+
+ <element name="element" props="def elem">
+  <usage>Define an element to use in the current scope</usage>
+  <attr name="props" type="elist"/>
+  <attr name="short" type="name"/>
+  <attr name="full" type="name"/>
+  <attr name="wiki" type="text"/>
+ </element>
+
+ <element name="attr" props="def elem attr">
+  <usage>Specifies attributes in an element definition</usage>
+  <attr name="default" type="text"/>
+ </element>
+
+ <element name="syn" props="def syn">
+  <usage>Specifies a synonym for the current definition</usage>
+  <attr name="lang" type="lang"/>
+ </element>
+ 
+ <element name="wiki" props="def elem">
+  <usage>Define a symbol to use in wiki shorthand</usage>
+  <attr name="props" type="elist"/>
+  <attr name="symbol" type="text"/>
+  <attr name="tag" type="name"/>
+  <attr name="space" type="enum: yes no"/>
+  <attr name="code" type="enum: no yes set"/>
+  <attr name="sch" type="text"/>
+  <attr name="ech" type="text"/>
+ </element>
+
+ <element name="variable" props="def var">
+  <usage>Defines a variable with text content</usage>
+ </element>
+
+ <element name="key" props="def doc key ref">
+  <usage>Defines a key, possibly as a key in another project</usage>
+  <attr name="keys" type="elist"/>
+ </element>
+
+ <element name="genlist" props="def list">
+  <usage>Defines a generated list to use in a map</usage>
+  <attr name="sort" type="enum: doc alpha numeric" default="doc"/>
+ </element>
+
+ <element name="item" props="def list item">
+  <usage>Specifies an item in a generated list definition</usage>
+  <attr name="level" type="num" default="1"/>
+  <attr name="elpath" type="epath"/>
+  <attr name="itemclass" type="name"/>
+ </element>
+ 
+ <element name="glossdef" props="def gloss">
+  <usage>Defines a glossary definition entry</usage>
+ </element>
+ 
+ <element name="abbrdef" props="def abbr">
+  <usage>Defines an abbreviation entry</usage>
+ </element>
+ 
+ <element name="tmarkdef" props="def tmark">
+  <usage>Defines a trademark entry</usage>
+ </element>
+
+ <element name="tset" props="def tab">
+  <usage>Tab</usage>
+  <attr name="t1" type="tval"/>
+  <attr name="t2" type="tval"/>
+  <attr name="t3" type="tval"/>
+  <attr name="t4" type="tval"/>
+  <attr name="t5" type="tval"/>
+  <attr name="t6" type="tval"/>
+  <attr name="t7" type="tval"/>
+  <attr name="t8" type="tval"/>
+  <attr name="t9" type="tval"/>
+  <attr name="t0" type="tval"/>
+  <attr name="t11" type="tval"/>
+  <attr name="t12" type="tval"/>
+  <attr name="t13" type="tval"/>
+  <attr name="t14" type="tval"/>
+  <attr name="t15" type="tval"/>
+  <attr name="t16" type="tval"/>
+  <attr name="t17" type="tval"/>
+  <attr name="t18" type="tval"/>
+  <attr name="t19" type="tval"/>
+  <attr name="t20" type="tval"/>
+ </element>
+
+</lib>
+
+<!-- end of stdelems.xml -->

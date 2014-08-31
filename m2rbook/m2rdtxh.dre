@@ -1,0 +1,282 @@
+<DialogFile 5.5>
+<LongChar No>
+<Font 2 1 12>
+<DialogBox
+ <MBRect -1 -1 359 301>
+ <WBRect -1 -1 332 171>
+ <XBRect -1 -1 367 388>
+ <Platforms MWX>
+ <CurrentFocus 3>
+ <FirstFocus 3>
+ <OKButton 8>
+ <CancelButton -1>
+ <DefaultButton 8>
+ <HelpButton -1>
+ <TitleLabel 0>
+>
+<Label
+ <MCorner 470 956>
+ <WCorner 138 0>
+ <XCorner 18 26>
+ <Label Conversion Designer>
+> # 0
+<Label
+ <MCorner 7 12>
+ <WCorner 7 12>
+ <XCorner 7 12>
+ <Label Project:  Name of project, followed by a very long path name to the .ini file>
+> # 1
+<Label
+ <MCorner 7 26>
+ <WCorner 7 26>
+ <XCorner 7 26>
+ <Label Paragraph Tag:>
+> # 2
+<EditBox
+ <MBaseLine 7 38 63>
+ <WBaseLine 7 38 63>
+ <XBaseLine 7 38 63>
+ <Label For all styles>
+ <StuffObject 4>
+> # 3
+<ImagePopUp
+ <MBRect 75 28 6 9>
+ <WBRect 75 28 6 9>
+ <XBRect 75 28 6 9>
+ <Label tallarrowdn>
+ <StuffObject 3>
+> # 4
+<Label
+ <MCorner 7 54>
+ <WCorner 7 54>
+ <XCorner 7 54>
+ <Label Properties:>
+> # 5
+<PopUpMenu
+ <MBaseLine 7 67 80>
+ <WBaseLine 7 67 80>
+ <XBaseLine 7 67 80>
+ <StuffObject -1>
+> # 6
+<Rule
+ <MBRect 5 72 86 1>
+ <WBRect 5 72 86 1>
+ <XBRect 5 72 86 1>
+> # 7
+<Button
+ <MBaseLine 13 87 67>
+ <WBaseLine 13 87 67>
+ <XBaseLine 13 87 67>
+ <Label Apply>
+ <ShortcutPosition 0>
+ <Active No>
+> # 8
+<Label
+ <MCorner 21 101>
+ <WCorner 7 101>
+ <XCorner 21 101>
+ <Label To All Selected Styles>
+> # 9
+<Rule
+ <MBRect 5 103 86 1>
+ <WBRect 5 103 86 1>
+ <XBRect 5 103 86 1>
+> # 10
+<Button
+ <MBaseLine 13 119 67>
+ <WBaseLine 13 119 67>
+ <XBaseLine 13 119 67>
+ <Label Update All>
+ <ShortcutPosition 0>
+ <Active No>
+> # 11
+<Label
+ <MCorner 7 134>
+ <WCorner 7 134>
+ <XCorner 7 134>
+ <Label Properties in .ini ...>
+> # 12
+<Rule
+ <MBRect 5 147 86 1>
+ <WBRect 5 147 86 1>
+ <XBRect 5 147 86 1>
+> # 13
+<Label
+ <MCorner 7 161>
+ <WCorner 7 161>
+ <XCorner 7 161>
+ <Label Commands:>
+> # 14
+<ImagePopUp
+ <MBRect 73 150 6 9>
+ <WBRect 73 150 6 9>
+ <XBRect 73 150 6 9>
+ <Label tallarrowdn>
+ <StuffObject -1>
+> # 15
+<Rule
+ <MBRect 95 18 1 150>
+ <WBRect 95 18 1 150>
+ <XBRect 95 18 1 150>
+> # 16
+<Rule
+ <MBRect 102 14 224 1>
+ <WBRect 102 14 224 1>
+ <XBRect 102 14 224 1>
+> # 17
+<CheckBox
+ <MCorner 101 27>
+ <WCorner 101 27>
+ <XCorner 101 27>
+ <Label Nonscrolling titles>
+ <Active No>
+ <StuffObject -1>
+> # 18
+<CheckBox
+ <MCorner 199 27>
+ <WCorner 199 27>
+ <XCorner 199 27>
+ <Label Extended nonscroll areas>
+ <Active No>
+ <StuffObject -1>
+> # 19
+<CheckBox
+ <MCorner 101 41>
+ <WCorner 101 44>
+ <XCorner 101 41>
+ <Label No indents for title>
+ <Active No>
+ <StuffObject -1>
+> # 20
+<CheckBox
+ <MCorner 199 41>
+ <WCorner 199 44>
+ <XCorner 199 41>
+ <Label No space above/below title>
+ <Active No>
+ <StuffObject -1>
+> # 21
+<CheckBox
+ <MCorner 101 54>
+ <WCorner 101 60>
+ <XCorner 101 54>
+ <Label Treat the first hard return as the end of the topic title>
+ <Active No>
+ <StuffObject -1>
+> # 22
+<Rule
+ <MBRect 99 57 228 1>
+ <WBRect 99 66 228 1>
+ <XBRect 99 57 228 1>
+> # 23
+<Label
+ <MCorner 102 74>
+ <WCorner 102 83>
+ <XCorner 102 74>
+ <Label Browse sequence digits:>
+> # 24
+<EditBox
+ <MBaseLine 206 73 20>
+ <WBaseLine 206 83 20>
+ <XBaseLine 206 73 20>
+ <Label N>
+ <StuffObject -1>
+> # 25
+<Label
+ <MCorner 235 74>
+ <WCorner 235 83>
+ <XCorner 235 74>
+ <Label In increments of:>
+> # 26
+<EditBox
+ <MBaseLine 306 73 20>
+ <WBaseLine 306 83 20>
+ <XBaseLine 306 73 20>
+ <Label N>
+ <StuffObject -1>
+> # 27
+<Label
+ <MCorner 102 93>
+ <WCorner 102 102>
+ <XCorner 102 93>
+ <Label Default browse start:>
+> # 28
+<EditBox
+ <MBaseLine 196 93 30>
+ <WBaseLine 196 101 30>
+ <XBaseLine 196 93 30>
+ <Label NNN>
+ <StuffObject -1>
+> # 29
+<Label
+ <MCorner 235 93>
+ <WCorner 235 102>
+ <XCorner 235 93>
+ <Label Default prefix:>
+> # 30
+<EditBox
+ <MBaseLine 296 93 30>
+ <WBaseLine 296 101 30>
+ <XBaseLine 296 93 30>
+ <Label AAA>
+ <StuffObject -1>
+> # 31
+<Rule
+ <MBRect 99 99 228 1>
+ <WBRect 99 109 228 1>
+ <XBRect 99 99 228 1>
+> # 32
+<CheckBox
+ <MCorner 101 113>
+ <WCorner 101 125>
+ <XCorner 101 113>
+ <Label Use bitmap file for bullets, named:>
+ <Active No>
+ <StuffObject -1>
+> # 33
+<EditBox
+ <MBaseLine 263 114 63>
+ <WBaseLine 263 126 63>
+ <XBaseLine 263 114 63>
+ <Label bullet.bmp>
+ <StuffObject -1>
+> # 34
+<CheckBox
+ <MCorner 101 128>
+ <WCorner 101 140>
+ <XCorner 101 128>
+ <Label Use bullet bitmap file for all chars in dingbat fonts.>
+ <Active No>
+ <StuffObject -1>
+> # 35
+<Label
+ <MCorner 102 143>
+ <WCorner 102 163>
+ <XCorner 102 143>
+ <Label Max chars in keywords:>
+> # 36
+<EditBox
+ <MBaseLine 202 142 24>
+ <WBaseLine 202 162 24>
+ <XBaseLine 202 142 24>
+ <Label 64>
+ <StuffObject -1>
+> # 37
+<Label
+ <MCorner 232 143>
+ <WCorner 232 163>
+ <XCorner 232 143>
+ <Label Max tabs in line:>
+> # 38
+<EditBox
+ <MBaseLine 302 142 24>
+ <WBaseLine 302 162 24>
+ <XBaseLine 302 142 24>
+ <Label 32>
+ <StuffObject -1>
+> # 39
+<Rule
+ <MBRect 99 146 228 1>
+ <WBRect 99 146 228 1>
+ <XBRect 99 146 228 1>
+> # 40

@@ -1,0 +1,56 @@
+<doc id="ud_intro">
+<title>Why Use uDoc?</title>
+
+<p>Many writers have found great benefit in using a building-block model for their documents.  It simplifies division of labor, re-use, and review processes, for starters.  It's been in use since at least the '60s, initially as <xref src="http://en.wikipedia.org/wiki/Information_mapping">"Information mapping"</xref>.
+
+One of the main current exemplars of this approach is <term idref="dita"/>, with topics of numerous types organized by maps.  So quite a few writers have been converting from legacy formats, like those used by FrameMaker, into DITA.  But they are discovering some serious issues, usually well after committing to the process.
+
+A major issue is complexity.  <term idref="xml"/> started out as a simpler way of doing <term idref="sgml"/>, but has steadily grown until design of XML docs has become a job for experts.  This is an entirely natural trend, seen in many areas.  As the simple design is applied to more and more use cases, it grows to fit them.  Recently James Clark and John Cowan, two of the pioneers of XML, have seen the need to step back and try again, with a simpler format they call <term idref="mxml"/>.  There's a <xref src="https://dvcs.w3.org/hg/microxml/raw-file/tip/spec/microxml.html">W3C Community Group</xref> for it now.
+
+An interesting overview of XML development and alternatives, including <term idref="mxml"/>, can be found in the article <q>Quo vadis XML?</q> in the <xref src="http://archive.xmlprague.cz/2013/files/xmlprague-2013-proceedings.pdf"> proceedings of the last XML Prague conference</xref> in 2013.  
+
+Yet another profound paper in a similar vein was presented at Balisage 2013 by Simon St. Laurent, <q><xref src="http://www.balisage.net/Proceedings/vol10/html/StLaurent01/BalisageVol10-StLaurent01.html">The Allure of Gothic Markup</xref></q>, well worth reading.  He quotes John Ruskin, who in 1853 (!) wrote:</p>
+
+<quote>...go forth again to gaze upon the old cathedral front, where you have smiled so often at the fantastic ignorance of the old sculptors: examine once more those ugly goblins, and formless monsters, and stern statues, anatomiless and rigid; but do not mock at them, for they are signs of the life and liberty of every workman who struck the stone; a freedom of thought, and rank in scale of being, such as no laws, no charters, no charities can secure; but which it must be the first aim of all Europe at this day to regain for her children.
+
+For since the architect, whom we will suppose capable of doing all in perfection, cannot execute the whole with his own hands, he must either make slaves of his workmen in the old Greek, and present English fashion, and level his work to a slave's capacities, which is to degrade it; or else he must take his workmen as he finds them, and let them show their weaknesses together with their strength, which will involve the Gothic imperfection, but render the whole work as noble as the intellect of the age can make it.</quote>
+
+<p>To which William Morris added, in 1892:</p>
+
+<quote>For the lesson which Ruskin here teaches us is that art is the expression of man's pleasure in labour; that it is possible for man to rejoice in his work, for, strange as it may seem to us to-day, there have been times when he did rejoice in it; and lastly, that unless man's work once again becomes a pleasure to him, the token of which change will be that beauty is once again a natural and necessary accompaniment of productive labour, all but the worthless must toil in pain, and therefore live in pain.</quote>
+
+<p>And in 2012, Christopher Alexander (of "A Pattern Language" fame) bitterly observed:</p>
+
+<quote>System-A is a system of production in which local adaptation is primary. Its processes are governed by methods that make each building, and each part of each building, unique and uniquely crafted to its context.
+
+System-B is, on the contrary, dedicated to an overwhelmingly machinelike philosophy. The components and products are without individual identity and most often alienating in their psychological effect.
+
+The pressure to use such a system comes mainly from the desire to make a profit, and from the desire to do it at the highest possible speed.</quote>
+
+<p>In the spirit of "System-A", <term idref="udoc"/> is a <term idref="mxml"/> application that aims to give tech writers a simpler way to build block-oriented documents, one they can use and understand, and even process, without expert aid.  Compared to DITA, <term idref="udoc"/> is very permissive; it's descriptive, rather than prescriptive.  So it doesn't need hundreds of spec pages to define it; like MicroXML, a few dozen pages are more than enough. <var idref="ud"/> helps you to explain; it doesn't constrain how you do it.</p>
+
+<p>Simon St. Laurent, another XML luminary, suggests that "developers may want to reconsider their style of communications to embrace a wider set of possibilities rather than rushing to restrain them."  And in <xref src="http://monasticxml.org/local.html">"Monastic XML"</xref> (written in 2002), he proposes this as a general approach to XML markup:</p>
+
+<quote>Relying exclusively on the markup contained in a document to interpret its structures (rather than calling out to schemas for additional information) makes documents more portable, reducing the processing mismatches that are easily created with the many layers of XML specifications. Using markup to identify rather than constrain makes it simpler for recipients to interpret the information in a document as they need, in a context which reflects their needs and the relationship between the recipient and the document (and the document's sender) rather than simple obeisance to a fixed and often brittle set of rules.</quote>
+
+<p>In a recent thread Simon started on [xml-dev], on <xref src="http://lists.xml.org/archives/xml-dev/201308/msg00129.html">"The Allure of Gothic Markup"</xref>, Michael Kay wrote:</p>
+
+<quote>Which is probably more like the bazaar than the cathedral.</quote>
+
+<p>To which Gareth Oakes <xref src="http://lists.xml.org/archives/xml-dev/201308/msg00145.html">replied</xref>:</p>
+
+<quote>This is a good observation, and on that topic, another takeaway for me (which probably reinforces my existing opinions) is that the development of markup standards and systems should not be about an architect imposing a top-down decree on how things should be. Instead, it is about setting up an environment which allows people to work together more effectively.</quote>
+
+<p>Simon <xref src="http://lists.xml.org/archives/xml-dev/201308/msg00194.html">added</xref>:</p>
+
+<quote>The "essence of the creativity", however, is about working with a minimal set of standards and tools to include as much creativity from as many different people as possible by valuing context over standardization.
+
+That's not at all about breaking standards.  It's about working with the smallest set of standards that will support the conversation (with the people actually having the conversation in their live contexts) and building appropriately from there.
+
+Markup syntax is a convenient minimal standard for supporting electronic communication.  There are useful tools for manipulating it.  Standardize and improve the tools for manipulating markup, rather than trying to lock down what is said with markup.</quote>
+
+<p>Amen.</p>
+
+<relref subjects="basics comparison" />
+
+</doc>

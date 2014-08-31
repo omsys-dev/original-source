@@ -1,0 +1,23 @@
+<doc id="ud_hierarchies">
+<title>uDoc Hierarchies</title>
+
+<p>We're all used to hierarchical organization for documents.  The Table of Contents displays the *single document hierarchy*, and we select from it the topic we want to read.  But that's not how everyone gets into a book.  Some will go to the Index first, looking for info specific to their current needs.  Some will use on-line search tools when available.  Some will use a link someone else sent them to get to a specific point in the doc.
+
+Some documents can logically have *multiple hierarchies*.  Consider a manual for installation, operation, and maintenance of three related products.  Do you organize it into Installation, Operation, and Mainerance chapters, with each containing info for all three products?  Or do you organize it by Product A, Product B, and Product C, with each containing all the info for its single product?  Some users will want it one way, some the other.  One of the great benefits of topic orientation is that you can present the same info both ways, without duplicating the source topics.
+
+uDoc provides a few different approaches for multiple hierarchies.  If the hierarchies are best represented by different elements applied to the same content, and the elements would naturally overlap elements in other hierarchies, you can use the ^start^ and ^end^ tags to create <xref src="ud_events.mxd">virtual overlapping elements</xref> that are still valid MicroXML.
+
+If overlap is not an issue, you can simply use the same doc elements multiple times in the map, under different headings.  Each will become a distinct instance and can preferentially <xref src="ud_branch.mxd">link to others in its own group</xref>.  No need to use hacks like DITA's `@copy-to` to handle this common use case.
+
+When the information is in a specifically on-line form, there may be *no hierarchy* at all.  Mark Baker focusses on this case, with his <xref src="http://everypageispageone.com">"EPPO" ("Every Page is Page One")</xref> concept.  Yes, there are still times when sequence matters, as in a step-by-step procedure, but there are plenty of times when it doesn't.
+
+uDoc supports that design with its <xref src="udreferences.mxd">"query" elements</xref>, which can select a set of docs from a directory or database.
+
+A hierarchy is only one way of <xref src="ud_groups.mxd">grouping</xref>.  Topics may link to each other explicitly, with cross-references, or implicitly, with <xref src="ud_related.mxd">shared subject tags</xref>, like the #hashtags used by Twitter and other on-line social media.  uDoc supports both.
+
+Mallard has <xref src="http://projectmallard.org/1.1/mal_links">"Ubiquitous Linking"</xref>, where the map-like "guide" pages can show references to topics even if the topics were added to the project after the guide page was finished.  If a topic has a link to a guide page, the guide page automatically links back.  That works because the new topics are put into a directory that is used just for project files, where during builds all topics in the directory are inspected for links to other topics used in the project.</p>
+
+<relref subjects="links basics metadata groups"/>
+
+</doc>
+

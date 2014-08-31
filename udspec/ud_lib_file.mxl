@@ -1,0 +1,61 @@
+<lib id="ud_lib_file">
+ <title>Library for uDoc spec</title>
+ <title>Last updated July 12, 2013</title>
+
+ <note><p>Before making changes to this library, always check with the <br/>Publications
+ person in charge of it: <xref src="mailto:marci@example.com">Marcia Hamilton</xref></p></note>
+
+ <!-- the library contains the project's definitions;
+  the ones to use are those referenced from the map
+ -->
+
+ <!-- define keys with the file and optionally element referenced -->
+ <div id="projectkeys">
+  <key keys="onekey" src="filename.xml" idref="elemid" />
+  <!-- if keys are in another project, redirect to it with optional key rename -->
+  <key keys="foreignkey" key="keyinproj" project="projmap.mxm" />
+ </div>
+
+ <!-- define sets of conditions based on attributes and boolean values -->
+ <conditions id="udoc_experts">
+  <cond attr="audience" include="((expert or admin) and not novice)"/>
+  <cond attr="product" exclude="(d2g or m2g) and not udoc"/>
+ </conditions>
+
+ <conditions id="udoc_novices">
+  <cond attr="audience" exclude="((expert or admin) and not novice)"/>
+  <cond attr="product" exclude="(d2g or m2g) and not udoc"/>
+ </conditions>
+
+ <conditions id="unconditional"/>
+
+ <div id="condproc_ending">
+   <p>The next two subtopics are an example of conditional exclusion and inclusion.
+   They are both the same source file, `ud_condtest.mxd`:</p>
+   <coderef src="ud_condtest.mxd" />
+   <p>The first instance uses these conditions:</p>
+   <coderef src="ud_lib_file.mxl#line=25,27" />
+   <p>and the second instance uses these:</p>
+   <coderef src="ud_lib_file.mxl#line=20,22" />
+</div>
+
+ <!-- define variables for use in this project -->
+ <div id="projectvars">
+  <variable id="company">Omni Systems</variable>
+  <variable id="ud"><b>uDoc</b></variable>
+  <variable id="fm">FrameMaker</variable>
+  <variable id="mxl"><b>MicroXML</b></variable>
+  <variable id="date" idref="$date" type="%B %#d, %Y" />
+  <variable id="author" idref="$$author" />
+ </div>
+
+ <!-- define a new element -->
+ <div id="newelements">
+  <element name="keyword" props="text inline gloss" >
+   <usage>Use this element to identify a term in a specific glossary</usage>
+   <attr name="glossary" type="file" />
+  </element>
+ </div>
+
+</lib>
+

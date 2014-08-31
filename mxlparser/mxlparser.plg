@@ -1,0 +1,53 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: mxlparser - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\jeremy\AppData\Local\Temp\RSPBA60.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "MXLPARSER_EXPORTS" /FR"MxlRelease/" /Fp"MxlRelease/mxlparser.pch" /YX"stdafx.h" /Fo"MxlRelease/" /Fd"MxlRelease/" /FD /c 
+"C:\cvs\mxlparser\mxlparser.cpp"
+]
+Creating command line "cl.exe @C:\Users\jeremy\AppData\Local\Temp\RSPBA60.tmp" 
+Creating temporary file "C:\Users\jeremy\AppData\Local\Temp\RSPBA71.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "MXLPARSER_EXPORTS" /FR"MxlRelease/" /Fp"MxlRelease/mxlparser.pch" /Yc"stdafx.h" /Fo"MxlRelease/" /Fd"MxlRelease/" /FD /c 
+"C:\cvs\mxlparser\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\jeremy\AppData\Local\Temp\RSPBA71.tmp" 
+Creating temporary file "C:\Users\jeremy\AppData\Local\Temp\RSPBA72.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"MxlRelease/mxlparser.pdb" /machine:I386 /out:"MxlRelease/mxlparser.dll" /implib:"MxlRelease/mxlparser.lib" 
+.\MxlRelease\mxlparser.obj
+.\MxlRelease\StdAfx.obj
+]
+Creating command line "link.exe @C:\Users\jeremy\AppData\Local\Temp\RSPBA72.tmp"
+Creating temporary file "C:\Users\jeremy\AppData\Local\Temp\RSPBA73.bat" with contents
+[
+@echo off
+copy .\MxlRelease\mxlparser.dll %omsyshome%\common\bin
+]
+Creating command line "C:\Users\jeremy\AppData\Local\Temp\RSPBA73.bat"
+Compiling...
+StdAfx.cpp
+Compiling...
+mxlparser.cpp
+Linking...
+   Creating library MxlRelease/mxlparser.lib and object MxlRelease/mxlparser.exp
+<h3>Output Window</h3>
+Copying to omsyshome directory...
+        1 file(s) copied.
+Creating command line "bscmake.exe /nologo /o"MxlRelease/mxlparser.bsc"  .\MxlRelease\StdAfx.sbr .\MxlRelease\mxlparser.sbr"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+mxlparser.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

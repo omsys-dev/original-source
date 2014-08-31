@@ -1,0 +1,57 @@
+
+Conditonal text, "infotype", display issues in Frame and HTML
+-------------------------------------------------------------
+
+Conditions:
+P1  Product1
+P2  Product2
+L1  French
+L2  English
+
+Info:
+A  <P1><P2>all products</P2>
+B  product 1, common to both langs 
+C  <L1>en francais
+D  <L2> and </L1>
+E  in English</L2></P1>
+F  <P2>product 2, common to both langs 
+G  <L1>en francais
+H  <L2> and </L1>
+I  in English</L2></P2>
+
+You want to show P1 and L1, but not P2 or L2.
+
+In Frame, "show" is OR'd, so you get A, B, C (all fine)
+and D, G, and H (since L1 is included).
+
+In HTML, "hide" is OR'd, so you get B and C (as you want),
+but not A (since P2 is excluded).
+
+Note that D and H, marked for both L1 and L2, are only wanted when
+both are selected, but that A is wanted when either P1 or P2 is shown.
+These requirements are contradictory.  In this example, you could avoid
+the problem with A in HTML by making it unconditional, but that fails
+as soon as you have to add Product3 which doesn't want it...
+
+One way of solving this is to ban overlapping conditions, and create
+new conditions for each combination of basic conditions.  That's fine
+here, and is the usual Frame workaround, but it fails when many more
+basic conditions are added because of the resulting combinatorial
+explosion.  My previous concept for a condition manager plugin was
+to take this approach, but provide GUI tools that allowed the user
+to work solely with the basic conditions.  The marker text would be
+a base64 (or maybe just base16, hex) number where each bit indicated 
+an applied condition.  The plugin would tell Frame which to show and 
+hide.
+
+On the UI side, the problem is how to express the specific combo
+of conditions wanted.  You can have a list to Show (like Frame)
+and a list to Hide (like HTML), but what do you do when an item
+has conditions that appear on both lists (A, D, G, and H above)?
+How do you specify what you want for that case?  Allow creation
+of Boolean expressions to put on the list, like putting "P1&P2"
+in the list to Show, and "L1&L2" in the list to Hide?
+
+And do you let the user choose between "show all not hidden" (HTML) 
+and "hide all not shown" (Frame)?
+

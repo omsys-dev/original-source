@@ -1,0 +1,323 @@
+<DialogFile 5.5>
+<LongChar No>
+<Font 2 1 12>
+<DialogBox
+ <MBRect -1 -1 359 301>
+ <WBRect -1 -1 332 171>
+ <XBRect -1 -1 367 388>
+ <Platforms MWX>
+ <CurrentFocus 3>
+ <FirstFocus 3>
+ <OKButton 8>
+ <CancelButton -1>
+ <DefaultButton 8>
+ <HelpButton -1>
+ <TitleLabel 0>
+>
+<Label
+ <MCorner 470 956>
+ <WCorner 139 0>
+ <XCorner 18 26>
+ <Label Conversion Designer>
+> # 0
+<Label
+ <MCorner 7 12>
+ <WCorner 7 12>
+ <XCorner 7 12>
+ <Label Project:  Name of project, followed by a very long path name to the .ini file>
+> # 1
+<Label
+ <MCorner 7 26>
+ <WCorner 7 26>
+ <XCorner 7 26>
+ <Label Paragraph Tag:>
+> # 2
+<EditBox
+ <MBaseLine 7 38 63>
+ <WBaseLine 7 38 63>
+ <XBaseLine 7 38 63>
+ <Label >
+ <StuffObject 4>
+> # 3
+<ImagePopUp
+ <MBRect 75 28 6 9>
+ <WBRect 75 28 6 9>
+ <XBRect 75 28 6 9>
+ <Label tallarrowdn>
+ <StuffObject 3>
+> # 4
+<Label
+ <MCorner 7 54>
+ <WCorner 7 54>
+ <XCorner 7 54>
+ <Label Properties:>
+> # 5
+<PopUpMenu
+ <MBaseLine 7 67 80>
+ <WBaseLine 7 67 80>
+ <XBaseLine 7 67 80>
+ <StuffObject -1>
+> # 6
+<Rule
+ <MBRect 5 72 86 1>
+ <WBRect 5 72 86 1>
+ <XBRect 5 72 86 1>
+> # 7
+<Button
+ <MBaseLine 13 87 67>
+ <WBaseLine 13 87 67>
+ <XBaseLine 13 87 67>
+ <Label Apply>
+ <ShortcutPosition 0>
+ <Active No>
+> # 8
+<Label
+ <MCorner 21 101>
+ <WCorner 7 101>
+ <XCorner 21 101>
+ <Label To All Selected Styles>
+> # 9
+<Rule
+ <MBRect 5 103 86 1>
+ <WBRect 5 103 86 1>
+ <XBRect 5 103 86 1>
+> # 10
+<Button
+ <MBaseLine 13 119 67>
+ <WBaseLine 13 119 67>
+ <XBaseLine 13 119 67>
+ <Label Update All>
+ <ShortcutPosition 0>
+ <Active No>
+> # 11
+<Label
+ <MCorner 7 134>
+ <WCorner 7 134>
+ <XCorner 7 134>
+ <Label Properties in .ini ...>
+> # 12
+<Rule
+ <MBRect 5 147 86 1>
+ <WBRect 5 147 86 1>
+ <XBRect 5 147 86 1>
+> # 13
+<Label
+ <MCorner 7 161>
+ <WCorner 7 161>
+ <XCorner 7 161>
+ <Label Commands:>
+> # 14
+<ImagePopUp
+ <MBRect 73 150 6 9>
+ <WBRect 73 150 6 9>
+ <XBRect 73 150 6 9>
+ <Label tallarrowdn>
+ <StuffObject -1>
+> # 15
+<Rule
+ <MBRect 95 18 1 150>
+ <WBRect 95 18 1 150>
+ <XBRect 95 18 1 150>
+> # 16
+<Rule
+ <MBRect 102 14 224 1>
+ <WBRect 102 14 224 1>
+ <XBRect 102 14 224 1>
+> # 17
+<RadioButton
+ <MCorner 111 12>
+ <WCorner 111 29>
+ <XCorner 111 12>
+ <Label Normal topic>
+ <Active Yes>
+ <Group 1>
+ <StuffObject -1>
+> # 18
+<RadioButton
+ <MCorner 184 12>
+ <WCorner 184 29>
+ <XCorner 184 12>
+ <Label Sliding topic>
+ <Active No>
+ <Group 1>
+ <StuffObject -1>
+> # 19
+<RadioButton
+ <MCorner 256 12>
+ <WCorner 256 29>
+ <XCorner 256 12>
+ <Label Resume only>
+ <Active No>
+ <Group 1>
+ <StuffObject -1>
+> # 20
+<Rule
+ <MBRect 99 18 228 1>
+ <WBRect 99 35 228 1>
+ <XBRect 99 18 228 1>
+> # 21
+<CheckBox
+ <MCorner 112 32>
+ <WCorner 112 49>
+ <XCorner 112 32>
+ <Label Browse>
+ <Active Yes>
+ <StuffObject -1>
+> # 22
+<Label
+ <MCorner 196 35>
+ <WCorner 196 52>
+ <XCorner 196 35>
+ <Label Optional Prefix:>
+> # 23
+<EditBox
+ <MBaseLine 270 34 47>
+ <WBaseLine 270 51 47>
+ <XBaseLine 270 34 47>
+ <Label Pfx>
+ <StuffObject -1>
+> # 24
+<CheckBox
+ <MCorner 112 54>
+ <WCorner 112 69>
+ <XCorner 112 54>
+ <Label Contents:>
+ <Active Yes>
+ <StuffObject -1>
+> # 25
+<Rule
+ <MBRect 195 44 94 35>
+ <WBRect 195 59 94 32>
+ <XBRect 195 44 94 35>
+> # 26
+<RadioButton
+ <MCorner 201 57>
+ <WCorner 201 71>
+ <XCorner 201 57>
+ <Label Auto>
+ <Active Yes>
+ <Group 2>
+ <StuffObject -1>
+> # 27
+<RadioButton
+ <MCorner 201 71>
+ <WCorner 201 86>
+ <XCorner 201 71>
+ <Label Book>
+ <Active No>
+ <Group 2>
+ <StuffObject -1>
+> # 28
+<RadioButton
+ <MCorner 247 56>
+ <WCorner 247 71>
+ <XCorner 247 56>
+ <Label Page>
+ <Active No>
+ <Group 2>
+ <StuffObject -1>
+> # 29
+<RadioButton
+ <MCorner 248 70>
+ <WCorner 247 86>
+ <XCorner 248 70>
+ <Label Both>
+ <Active No>
+ <Group 2>
+ <StuffObject -1>
+> # 30
+<Label
+ <MCorner 294 55>
+ <WCorner 294 70>
+ <XCorner 294 55>
+ <Label Level:>
+> # 31
+<EditBox
+ <MBaseLine 297 72 20>
+ <WBaseLine 297 82 20>
+ <XBaseLine 297 72 20>
+ <Label 9>
+ <StuffObject -1>
+> # 32
+<CheckBox
+ <MCorner 112 92>
+ <WCorner 112 102>
+ <XCorner 112 92>
+ <Label Window:>
+ <Active No>
+ <StuffObject -1>
+> # 33
+<EditBox
+ <MBaseLine 195 95 122>
+ <WBaseLine 195 105 122>
+ <XBaseLine 195 95 122>
+ <Label window  name>
+ <StuffObject -1>
+> # 34
+<CheckBox
+ <MCorner 112 115>
+ <WCorner 112 122>
+ <XCorner 112 115>
+ <Label No Title>
+ <Active No>
+ <StuffObject -1>
+> # 35
+<CheckBox
+ <MCorner 194 123>
+ <WCorner 194 123>
+ <XCorner 194 123>
+ <Label Title Suffix:>
+ <Active No>
+ <StuffObject -1>
+> # 36
+<EditBox
+ <MBaseLine 270 124 47>
+ <WBaseLine 270 124 47>
+ <XBaseLine 270 124 47>
+ <Label Sfx>
+ <StuffObject -1>
+> # 37
+<CheckBox
+ <MCorner 112 136>
+ <WCorner 112 142>
+ <XCorner 112 136>
+ <Label Name Refer>
+ <Active No>
+ <StuffObject -1>
+> # 38
+<Label
+ <MCorner 195 138>
+ <WCorner 195 144>
+ <XCorner 195 138>
+ <Label Optional Suffix:>
+> # 39
+<EditBox
+ <MBaseLine 270 137 47>
+ <WBaseLine 270 143 47>
+ <XBaseLine 270 137 47>
+ <Label Sfx>
+ <StuffObject -1>
+> # 40
+<Rule
+ <MBRect 101 146 228 1>
+ <WBRect 101 150 228 1>
+ <XBRect 101 146 228 1>
+> # 41
+<CheckBox
+ <MCorner 112 160>
+ <WCorner 112 164>
+ <XCorner 112 160>
+ <Label NonScroll Title>
+ <State 1>
+ <Active Yes>
+ <StuffObject -1>
+> # 42
+<CheckBox
+ <MCorner 195 160>
+ <WCorner 195 164>
+ <XCorner 195 160>
+ <Label Extend NonScroll Region>
+ <State 1>
+ <Active Yes>
+ <StuffObject -1>
+> # 43

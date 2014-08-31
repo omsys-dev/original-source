@@ -1,0 +1,192 @@
+<doc id="ud_elements">
+<title>uDoc Element Types
+<idx>element types</idx>
+</title>
+
+<p>uDoc provides three major kinds of elements, all easily modified:  block, text, and inline.</p>
+
+<ul>
+ <l/>*Block* elements provide structure.  They can contain other block elements and text elements without restriction, but cannot contain text itself or inline elements.
+ <l/>*Text* elements provide content.  They can contain plain text and inline elements, but not block elements or other text elements.
+ <l/>*Inline* elements provide fine-grain control of text content.  They can contain only plain text and other inline elements.
+</ul>
+
+<p>These simple rules solve a problem that dates back to SGML, which Norman Walsh, the creator of DocBook, calls <idx>pernicious mixed content</idx>"pernicious mixed content", where an element contains both block elements and text. The issue is with <idx>whitespace</idx>whitespace (spaces, tabs, and returns).  Block elements are often surrounded by whitespace, to prevent overlong lines and to show nesting level with indentation.  So if they are mixed with text, is the whitespace preserved in outputs, as is needed for text, or not?  There is no clear answer.  Ensuring that text and block elements are never mixed in the same wrapper element solves it cleanly.</p>
+
+<note>Authors are not required to use text elements explicitly if the processor can determine where they should start and end from the content.  So processors should surround "pernicious" text in block elements with ^p^...^/p^ tags, so that the block element contains a text element, not text directly.  This makes what <xref src="ud_recover.mxd">processors should do</xref> with whitespace simple: start the ^p^ after any leading whitespace, and end it before any trailing whitespace.</note>
+
+<p id="blockelems">Block elements are one of six subtypes:  root, group, structure, data, reference, and definition.
+<idx>element types:block</idx>
+<idx>block element types</idx>
+</p>
+
+<p>*Root* elements determine the kind of document they contain, doc, map, or lib:
+<idx>root elements</idx>
+<idx>block element types:root</idx>
+</p>
+
+<ul>
+ <l/>^doc^ is a unit of content like a DITA topic, the basic building block, and is not nestable
+ <l/>^map^ organizes a set of docs into a project, containing refs to docs and other maps, and project metadata
+ <l/>^lib^ is a library, a place to store text content and defs for re-use in docs and maps
+</ul>
+
+<p>*Group* elements include ^div^, ^branch^, ^sect^, ^comment^, and ^doctext^:
+<idx>group elements</idx>
+<idx>block element types:group</idx>
+</p>
+
+<ul>
+ <l/>^div^ groups but does not contribute to the content hierarchy, so it can be used to wrap sibling elements as well as children
+ <l/>^branch^ is used in maps to identify a part of the map (contained elements and their children) that is to be processed as a self-contained entity to the degree possible
+ <l/>^sect^ is a nestable section containing text elements (but not text directly)
+ <l/>^comment^ is for reviewers, containing ^author^, ^date^, and text elements.
+     <p>It is not rendered by default, so it also allows "commenting out" draft content that is not ready for publication, without actually deleting it.</p>
+ <l/>^doctext^ in maps hss content to be appended to the previous topic, for transitions
+ <l/>^udx^ groups without affecting the hierarchy, to specify <xref src="ud_udxtag.mxd">exceptions for `udx` processing</xref>
+</ul>
+
+<p>*Structure* elements include ^table^, ^fig^, lists, and ^note^:
+<idx>structure elements</idx>
+<idx>block element types:structure</idx>
+</p>
+
+<ul>
+ <l/>^table^ contains col, row, and cell
+ <l/>^fig^ contains image, imagemap, object, and param
+ <l/>list: ^ul^ (unordered), ^ol^ (ordered), ^sl^ (simple), or ^pl^ (pairs), contains ^li^ items
+ <l/>^note^ has a ^title^, one or more paragraphs, and can have an image, for warnings and the like
+</ul>
+
+<p>*Data* elements contain <xref src="ud_metadata.mxd">metadata</xref>, not intended for display as is, such as publication information like ISBN and milestone dates for a project.  A processor should make the data element info available for use in assembled content such as a title page.  The data elements include ^data^, ^author^, ^copyright^, ^publisher^, ^date^, ^alias^, ^code^, ^start^, and ^end^:
+<idx>data elements</idx>
+<idx>block element types:data</idx>
+</p>
+
+<ul>
+ <l/>^data^ contains info that is not to be rendered
+ <l/>^author^ has names and other related info
+ <l/>^copyright^ (or copyleft) identifies restrictions on distribution
+ <l/>^publisher^ has name and contact info
+ <l/>^date^ info is in yyyy-mm-dd format
+ <l/>^alias^ is used for CSH (Context-Sensitive Help) addressing
+ <l/>^code^ suggests code to use for its parent, usually a def
+ <l/>^start^ and ^end^ define a range that can cross element boundaries, effectively providing overlapping virtual elements
+</ul>
+
+<p>*Reference* elements point to <xref src="ud_references.mxd">content defined elsewhere</xref> that is to be incorporated.  They nest and do thereby contribute to the content hierarchy in maps.  They include ^textref^, ^coderef^, ^docref^, ^mapref^, ^defref^, ^elemref^, ^condref^, ^varref^, ^keyref^, ^relref^, and ^doclist^:
+<idx>reference elements</idx>
+<idx>block element types:reference</idx>
+</p>
+
+<ul>
+ <l/>^defref^ applies a def or set of defs to the current doc or project
+ <l/>^dirref^ brings in files matching @query in the directory named in @src or @key
+ <l/>^dbref^ applies @query to the contents of the database named in @src or @key
+ <l/>^webref^ sends @query to the search engine named in @src or @key
+ <l/>These are used in docs:
+  <ul>
+   <l/>^textref^ provides block text transclusion (like DITA conrefs)
+   <l/>^coderef^ handles preformed code transclusion (supports <xref src="http://tools.ietf.org/html/rfc5147">RFC 5147</xref>)
+   <l/>^relref^ identifies the subject groups the doc belongs to
+  </ul>
+ <l/>These are used only in maps:
+  <ul>
+   <l/>^docref^ brings in a ^doc^ file, either via `@src` or `@key`.  Predefined docrefs include ^preface^, ^chapter^, ^appendix^, ^part^, and ^appendices^.
+   <l/>^mapref^ brings in another ^map^ file, either via `@src` or `@key` 
+   <l/>^fileref^ brings in a file in final format, either via `@src` or `@key` 
+   <l/>^codedocref^ brings in a file as plain text, with the file name as the ^title^
+   <l/>^elemref^ adds new ^element^ defs to the current project
+   <l/>^condref^ applies a set of ^conditions^, like DITA ditavals
+   <l/>^varref^ specifies a library to check for ^variable^ definitions
+   <l/>^keyref^ specifies a library to check for ^key^ definitions
+   <l/>^glossref^ specifies a library to check for ^glossary^ definitions
+   <l/>^doclist^ identifies a generated list to use.  Predefined doclists include ^contents^, ^figures^, ^tables^, ^index^, and ^glossary^.
+  </ul>
+</ul>
+
+<p>*Definition* elements define reusable content such as external resources.  They include ^def^, ^cond^, ^element^, ^variable^, ^key^, ^output^, ^genlist^, ^glossdef^, and ^tset^:<idx>definition elements</idx>
+<idx>block element types:definition</idx>
+</p>
+
+<ul>
+ <l/>^def^ is for general-purpose use
+ <l/>^key^ has `@keys` and `@src`, and can also specify another `@key`, possibly in a different `@project` 
+ <l/>^tset^ defines tab stops for use within the contained text elements
+ <l/>These are used only in maps:
+  <ul>
+   <l/>^conditions^ defines a set of conditions for the current scope, such as ^map^ or ^branch^ 
+   <l/>^output^ contains definitions (or references to them) specific to an output type
+  </ul>
+ <l/>These are used only in libraries:
+  <ul>
+   <l/>^element^ has `@name` and `@props`, and contains ^usage^ and ^attr^s
+   <l/>^variable^ has `@id` and one or more text elements
+   <l/>^genlist^ defines the `@sort` and items for a generated list such as an LOF or LOT
+   <l/>^glossdef^ defines a ^glossary^ item, used when generating a ^glossary^
+  </ul>
+</ul>
+
+<p id="textstart">*Text* elements can be in a block element, and are one of several types:  ^p^, ^pre^, ^title^, ^usage^, ^quote^, ^cite^, ^desc^, ^alt^, and ^area^.  They can contain text and inline elements, but not block or other text elements:
+<idx>element types:text</idx>
+<idx>text element types</idx>
+</p>
+
+<ul>
+ <l/>^p^ is a paragraph, the primary text component.
+     <p>Whitespace within it is normalized to a single space in text, retaining a single space if present before and after any inline elements that provide text; leading and trailing space is trimmed off</p>
+ <l/>^pre^ is also a paragraph, but it retains all whitespace.
+     <p>It is for preformatted text such as code samples.  If there is whitespace before the pre tag itself, that sets the left margin for the following text, so that the ^pre^ element can be indented to show nesting like any other block or text element</p>
+ <l/>^title^ is a paragraph used to provide the content for refs to its containing block
+ <l/>^usage^ is a short paragraph used in defs for a readable description of purpose
+ <l/>^quote^ is a paragraph used to represent one or more full paragraphs of quoted content
+ <l/>^cite^ identifies the source of a ^quote^ or ^comment^
+ <l/>^desc^ is a paragraph description for an ^object^, ^image^, or ^table^ (for mouseover)
+ <l/>^alt^ contains text to show in place of an ^image^ that is not available
+ <l/>^area^ contains text for mouseover display, and links, in an ^imagemap^
+</ul>
+
+<p id="textend">*Inline* elements can be used only within text elements or within each other:
+<idx>element types:inline</idx>
+<idx>inline element types</idx>
+</p>
+
+<ul>
+ <l/>^ph^ is a phrase, like an HTML ^span^.
+     <p>It is used to permit tagging for any purpose needed, such as assigning a character format (via the `@class` attribute) or applying a condition.</p>
+ <l/>^term^ is a keyword that links to a ^glossary^ entry
+ <l/>^abbr^ provides acronym processing and links to the ^glossary^
+ <l/>^tm^ provides trademark and service mark processing
+ <l/>^xref^ is like ^textref^, but inline, and provides a link to the referenced text
+ <l/>^mark^ is inline data; it contains any metadata needed to identify a point in the text
+ <l/>^idx^ is an index entry, with multiple levels, sort strings, and see/also references
+ <l/>^var^ is an inline reference to a ^variable^ definition
+ <l/>^img^ is like ^image^, but inline
+ <l/>^seq^ idetifies a sequence of keystrokes, menu items, or actions
+ <l/>^fn^ is a footnote or endnote, with `@type` and `@id` for added refs to it
+ <l/>^br^ is a break, usually a forced line break that does not start a new paragraph
+ <l/>^tN^ is a tab; the number specifies which definition in the current ^tset^ to use
+</ul>
+
+<p>*Typographic* elements are inline elements that modify the presentation of the contained text.  They should be used sparingly; a ^ph^ with `@class`, or perhaps a <xref src="ud_develop.mxd">new semantic element</xref>, is preferred:
+<idx>typographic elements</idx>
+<idx>elements:typographic</idx>
+</p>
+
+<ul>
+ <l/>^b^ is Bold
+ <l/>^i^ is Italic
+ <l/>^u^ is Underline
+ <l/>^du^ is Double Underline
+ <l/>^o^ is Overline
+ <l/>^s^ is Strikeout
+ <l/>^sup^ is SUPerscript
+ <l/>^sub^ is SUBscript
+ <l/>^tt^ is TeleType, rendered in a monospaced font like Courier
+ <l/>^q^ is Quote, rendered with language-specific quotation marks
+</ul>
+
+
+<relref subjects="elements attributes" />
+
+</doc>

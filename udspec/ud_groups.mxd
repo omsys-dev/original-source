@@ -1,0 +1,25 @@
+<doc id="ud_groups">
+<title>Grouping Elements
+<idx>elements:grouping</idx>
+</title>
+
+<p>uDoc provides several elements that provide grouping for different purposes, with somewhat different functionality.  The file root elements, ^doc^, ^map^, and ^lib^, provide the outer wrappers for uDoc content.  While they do not restrict the sort of content they can hold, many elements are more suited for use in ^map^s, or in ^lib^s, than for use in ^doc^s.  And vice-versa.  In uDoc, you decide which to use where; the choice is not imposed on you.</p>
+
+<p>Among the grouping elements, some are simple wrappers that do not affect the hierarchical level of the elements they contain.  That means you can use them to wrap sibling elements, not just child elements.  The ^map^ element is a good example; if you reference a ^map^ with a ^mapref^, the top-level elements in the ^map^ come in at the same level as the ^mapref^, not the level below it.  This is the same rule used in DITA, for the same reason; it's more capable.  If you want the referenced elements to come into the parent ^map^ a level lower, simply make the ^mapref* a child of the parent element you want for them.  In ^map^s, <xref src="ud_branch.mxd">^branch^</xref> is also non-hierarchical.
+<idx>elements:grouping:wrappers</idx>
+<idx>wrapper elements</idx></p>
+
+<p>Another non-hierarchical grouping element is ^div^, which helps you to reuse arbitrary chunks of content anywhere you want.  When referenced by a ^textref^, a ^div^ brings in its content at the same level as the ^textref^ itself.  If you want it to be a subsection, simply wrap the ^textref^ in a ^sect^ element.
+<idx>elements:grouping:for re-use</idx></p>
+
+<p>The last non-hierarchical grouping element is ^udx^, which is used when processing with <xref src="ud_xform.mxd">the `udx` utility</xref>.  It allows you to control which actions `udx` performs on specific parts of a ^doc^.</p>
+
+<p>The remaining grouping element, ^sect^, *is* hierarchical; its content is a level below the ^sect^ element itself.  Within a ^doc^, the ^sect^ element wraps a subsection, and can be nested to any level wanted.
+<idx>elements:grouping:hierarchical</idx><idx>elements:grouping:nested</idx></p>
+
+<p>In addition to the actual grouping elements, most other elements provide grouping in the sense that elements contained within them are a level lower.  For example, in ^map^s, the ^docref^ element works this way.  The ^doc^s referenced in the ^docref^s contained in the element are subordinate to the ^doc^ referenced in the enclosing ^docref^.  This too is the same as what DITA does with ^topicrefs^.</p>
+
+
+<relref subjects="groups" />
+
+</doc>

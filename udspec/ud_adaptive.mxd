@@ -1,0 +1,18 @@
+<doc id="ud_adaptive">
+<title>Adaptive Content</title>
+
+<p>How can you design your content so that it adapts to the needs of the person using it, dynamically?</p>
+
+<ul>
+<l/><p>Dynamically <xref src="ud_dyncond.mxd">change conditions</xref> such as audience at runtime.<p/>
+
+<l/>User annotation, comments, collaboration.
+
+<l/>Text pushed to user, such as runtime query results.
+
+<l/>Links related to previous choices, weighted list.
+
+</ul>
+
+</doc>
+

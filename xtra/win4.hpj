@@ -1,0 +1,18 @@
+[OPTIONS]
+HCW=0
+COMPRESS=12 Hall Zeck
+LCID=0x409 0x0 0x0 ;U.S. English
+REPORT=Yes
+CONTENTS=fname
+TITLE=Win95/NT Sample by MIF2RTF
+COPYRIGHT=Sample file from Omni Systems, Inc. %date
+HLP=.\fname.hlp
+
+[FILES]
+.\fname.rtf
+
+[WINDOWS]
+main="Sample by Omni's MIF2RTF",(18,10,600,435),60672,(r14876671),(r12632256),f6
+
+[CONFIG]
+BrowseButtons()

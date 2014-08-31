@@ -1,0 +1,341 @@
+<DialogFile 5.5>
+<LongChar No>
+<Font 2 1 12>
+<DialogBox
+ <MBRect -1 -1 359 301>
+ <WBRect -1 -1 332 171>
+ <XBRect -1 -1 367 388>
+ <Platforms MWX>
+ <CurrentFocus 3>
+ <FirstFocus 3>
+ <OKButton 8>
+ <CancelButton -1>
+ <DefaultButton 8>
+ <HelpButton -1>
+ <TitleLabel 0>
+>
+<Label
+ <MCorner 470 956>
+ <WCorner 138 0>
+ <XCorner 18 26>
+ <Label Conversion Designer>
+> # 0
+<Label
+ <MCorner 7 12>
+ <WCorner 7 12>
+ <XCorner 7 12>
+ <Label Project:  Name of project, followed by a very long path name to the .ini file>
+> # 1
+<Label
+ <MCorner 7 26>
+ <WCorner 7 26>
+ <XCorner 7 26>
+ <Label Graphic Format:>
+> # 2
+<EditBox
+ <MBaseLine 7 38 63>
+ <WBaseLine 7 38 63>
+ <XBaseLine 7 38 63>
+ <Label BMP>
+ <StuffObject 4>
+> # 3
+<ImagePopUp
+ <MBRect 75 28 6 9>
+ <WBRect 75 28 6 9>
+ <XBRect 75 28 6 9>
+ <Label tallarrowdn>
+ <StuffObject 3>
+> # 4
+<Label
+ <MCorner 7 54>
+ <WCorner 7 54>
+ <XCorner 7 54>
+ <Label Properties:>
+> # 5
+<PopUpMenu
+ <MBaseLine 7 67 80>
+ <WBaseLine 7 67 80>
+ <XBaseLine 7 67 80>
+ <StuffObject -1>
+> # 6
+<Rule
+ <MBRect 5 72 86 1>
+ <WBRect 5 72 86 1>
+ <XBRect 5 72 86 1>
+> # 7
+<Button
+ <MBaseLine 13 87 67>
+ <WBaseLine 13 87 67>
+ <XBaseLine 13 87 67>
+ <Label Apply>
+ <ShortcutPosition 0>
+ <Active No>
+> # 8
+<Label
+ <MCorner 21 101>
+ <WCorner 7 101>
+ <XCorner 21 101>
+ <Label To All Selected Styles>
+> # 9
+<Rule
+ <MBRect 5 103 86 1>
+ <WBRect 5 103 86 1>
+ <XBRect 5 103 86 1>
+> # 10
+<Button
+ <MBaseLine 13 119 67>
+ <WBaseLine 13 119 67>
+ <XBaseLine 13 119 67>
+ <Label Update All>
+ <ShortcutPosition 0>
+ <Active No>
+> # 11
+<Label
+ <MCorner 7 134>
+ <WCorner 7 134>
+ <XCorner 7 134>
+ <Label Properties in .ini ...>
+> # 12
+<Rule
+ <MBRect 5 147 86 1>
+ <WBRect 5 147 86 1>
+ <XBRect 5 147 86 1>
+> # 13
+<Label
+ <MCorner 7 161>
+ <WCorner 7 161>
+ <XCorner 7 161>
+ <Label Commands:>
+> # 14
+<ImagePopUp
+ <MBRect 73 150 6 9>
+ <WBRect 73 150 6 9>
+ <XBRect 73 150 6 9>
+ <Label tallarrowdn>
+ <StuffObject -1>
+> # 15
+<Rule
+ <MBRect 95 18 1 150>
+ <WBRect 95 86 1 82>
+ <XBRect 95 18 1 150>
+> # 16
+<Rule
+ <MBRect 102 14 224 1>
+ <WBRect 102 14 224 1>
+ <XBRect 102 14 224 1>
+> # 17
+<Label
+ <MCorner 102 28>
+ <WCorner 102 28>
+ <XCorner 102 28>
+ <Label Copied graphics: >
+> # 18
+<RadioButton
+ <MCorner 177 27>
+ <WCorner 177 27>
+ <XCorner 177 27>
+ <Label Export as file>
+ <Active Yes>
+ <Group 1>
+ <StuffObject -1>
+> # 19
+<RadioButton
+ <MCorner 252 27>
+ <WCorner 252 27>
+ <XCorner 252 27>
+ <Label Retain in DCL>
+ <Active No>
+ <Group 1>
+ <StuffObject -1>
+> # 20
+<Label
+ <MCorner 103 43>
+ <WCorner 103 43>
+ <XCorner 103 43>
+ <Label Name exported files with:>
+> # 21
+<EditBox
+ <MBaseLine 208 41 18>
+ <WBaseLine 208 41 18>
+ <XBaseLine 208 41 18>
+ <Label N>
+ <StuffObject -1>
+> # 22
+<Label
+ <MCorner 229 43>
+ <WCorner 229 43>
+ <XCorner 229 43>
+ <Label chars and:>
+> # 23
+<EditBox
+ <MBaseLine 279 41 18>
+ <WBaseLine 279 41 18>
+ <XBaseLine 279 41 18>
+ <Label N>
+ <StuffObject -1>
+> # 24
+<Label
+ <MCorner 300 43>
+ <WCorner 300 43>
+ <XCorner 300 43>
+ <Label digits.>
+> # 25
+<Rule
+ <MBRect 100 115 228 1>
+ <WBRect 100 48 228 1>
+ <XBRect 100 115 228 1>
+> # 26
+<Label
+ <MCorner 101 66>
+ <WCorner 101 60>
+ <XCorner 101 66>
+ <Label Referenced graphics: >
+> # 27
+<CheckBox
+ <MCorner 199 65>
+ <WCorner 199 59>
+ <XCorner 199 65>
+ <Label No paths>
+ <Active No>
+ <StuffObject -1>
+> # 28
+<CheckBox
+ <MCorner 262 65>
+ <WCorner 262 59>
+ <XCorner 262 65>
+ <Label Map names>
+ <Active No>
+ <StuffObject -1>
+> # 29
+<CheckBox
+ <MCorner 101 82>
+ <WCorner 101 76>
+ <XCorner 101 82>
+ <Label Map all graphics in selected format to:>
+ <Active No>
+ <StuffObject -1>
+> # 30
+<PopUpMenu
+ <MBaseLine 279 82 46>
+ <WBaseLine 279 76 46>
+ <XBaseLine 279 82 46>
+ <StuffObject -1>
+> # 31
+<Rule
+ <MBRect 100 83 228 1>
+ <WBRect 100 83 228 1>
+ <XBRect 100 83 228 1>
+> # 32
+<Label
+ <MCorner 104 99>
+ <WCorner 104 99>
+ <XCorner 104 99>
+ <Label Map individual graphics (Apply after each change):>
+> # 33
+<EditBox
+ <MBaseLine 103 114 80>
+ <WBaseLine 103 114 80>
+ <XBaseLine 103 114 80>
+ <Label oldname.gif>
+ <StuffObject -1>
+> # 34
+<ImagePopUp
+ <MBRect 188 102 6 9>
+ <WBRect 188 102 6 9>
+ <XBRect 188 102 6 9>
+ <Label tallarrowdn>
+ <StuffObject -1>
+> # 35
+<Label
+ <MCorner 209 115>
+ <WCorner 209 115>
+ <XCorner 209 115>
+ <Label to:>
+> # 36
+<EditBox
+ <MBaseLine 227 114 80>
+ <WBaseLine 227 114 80>
+ <XBaseLine 227 114 80>
+ <Label newname.bmp>
+ <StuffObject -1>
+> # 37
+<ImagePopUp
+ <MBRect 312 102 6 9>
+ <WBRect 312 102 6 9>
+ <XBRect 312 102 6 9>
+ <Label tallarrowdn>
+ <StuffObject -1>
+> # 38
+<Rule
+ <MBRect 100 89 228 1>
+ <WBRect 100 124 228 1>
+ <XBRect 100 89 228 1>
+> # 39
+<Label
+ <MCorner 102 106>
+ <WCorner 102 142>
+ <XCorner 102 106>
+ <Label Wrap in WMFs:>
+> # 40
+<CheckBox
+ <MCorner 170 104>
+ <WCorner 170 140>
+ <XCorner 170 104>
+ <Label BMPs>
+ <Active No>
+ <StuffObject -1>
+> # 41
+<CheckBox
+ <MCorner 219 104>
+ <WCorner 219 140>
+ <XCorner 219 104>
+ <Label WMFs>
+ <Active No>
+ <StuffObject -1>
+> # 42
+<CheckBox
+ <MCorner 269 104>
+ <WCorner 269 140>
+ <XCorner 269 104>
+ <Label Equations>
+ <Active No>
+ <StuffObject -1>
+> # 43
+<Rule
+ <MBRect 100 147 228 1>
+ <WBRect 100 147 228 1>
+ <XBRect 100 147 228 1>
+> # 44
+<Label
+ <MCorner 102 139>
+ <WCorner 103 163>
+ <XCorner 102 139>
+ <Label EPSI usage: >
+> # 45
+<RadioButton
+ <MCorner 160 137>
+ <WCorner 161 163>
+ <XCorner 160 137>
+ <Label Preview only>
+ <Active Yes>
+ <Group 2>
+ <StuffObject -1>
+> # 46
+<RadioButton
+ <MCorner 234 137>
+ <WCorner 234 163>
+ <XCorner 234 137>
+ <Label EPS only>
+ <Active No>
+ <Group 2>
+ <StuffObject -1>
+> # 47
+<RadioButton
+ <MCorner 291 137>
+ <WCorner 292 163>
+ <XCorner 291 137>
+ <Label Both>
+ <Active No>
+ <Group 2>
+ <StuffObject -1>
+> # 48

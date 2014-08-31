@@ -1,0 +1,50 @@
+/* idx.css is used for the generated HTML index file */
+
+ul.indexlev, ul.indexref {
+ list-style-type: none;
+ padding: 0;
+ margin-left: 12pt;
+}
+
+/*
+.indexlev1 {
+	margin-left: 0pt;
+} 
+
+.indexref2 {
+	margin-left: 12pt;
+} 
+
+.indexlev2 {
+	margin-left: 12pt;
+} 
+
+.indexref3 {
+	margin-left: 24pt;
+} 
+
+.indexlev3 {
+	margin-left: 24pt;
+} 
+
+.indexref4 {
+	margin-left: 36pt;
+} 
+
+.indexlev4 {
+	margin-left: 36pt;
+} 
+
+.indexref5 {
+	margin-left: 48pt;
+} 
+
+.indexlev5 {
+	margin-left: 48pt;
+} 
+
+.indexref6 {
+	margin-left: 60pt;
+} 
+
+*/

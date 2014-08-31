@@ -1,0 +1,41 @@
+<doc id="ud_output">
+<title>Output-Dependent Processing
+<idx>processing, output-dependent</idx>
+<idx>output-dependent processing</idx>
+<idx>output format, specifying</idx>
+</title>
+
+<p>When generating output from a project, you may need to reference several kinds of definitions that are specific to the particular output type.  You do that with an ^output^ element in the project root ^map^ that specifies the output type and contains refs to the output-specific definitions needed.  The `@type` can be a single term, or a boolean expression (as in the <xref src="ud_condproc.mxd">condition rules</xref>) containing:</p>
+
+<ul>
+ <l/>Web output: HTML or XHTML
+ <l/>Word output (for PDF): RTF
+ <l/>Help output: HTMLHelp, Eclipse, JavaHelp, OracleHelp, or OmniHelp
+ <l/>Other XML formats: DITA or DocBook
+</ul>
+
+<p>These output formats are supported by <tm idref="u2g"/>; you can readily add more by overriding the ^element^ definition for ^output^ in `stdelems.mxl` with one of your own:</p>
+
+<pre>^element name="output" props="def output"^
+ ^usage^Define a project output type, contains refs to its related defs^/usage^
+ ^attr name="type" type="bool"/^
+^/element^
+</pre>
+
+<p>The content of the ^output^ element may reference any definitions needed, such as:
+<idx>references:to output definitions</idx>
+</p>
+
+<ul>
+<l/>^keyref^s, to permit <xref key="projaddr">other projects to point to output files</xref> for the project (where the ^key^s give the as-built file locations).
+<l/>^condref^s, to specify <xref src="ud_condproc.mxd">^conditions^</xref> that apply just to this output (used in addition to ^conditions^ specified elsewhere in the maps).
+<l/>^varref^s, to specify a set of <xref src="ud_references.mxd">^variable^</xref> definitions specific to this output (used when a var has no `@src`)
+<l/>Other elements as needed; for example, if you want different attributes for an element depending on output format, you can use ^output^ like a condition to select the version wanted.
+</ul>
+
+<p>A project root ^map^ can contain as many ^output^ definitions as necessary.  An editor does not use them unless it is providing a preview of an output; a processor always uses the ones for the output it is creating, or for the one specified in the ^xref^ (or ^key^) itself if that is present.</p>
+
+
+<relref subjects="links keys conditions" />
+
+</doc>

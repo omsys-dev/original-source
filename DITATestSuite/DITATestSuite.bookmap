@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA 1.2 BookMap//EN"
+  "bookmap.dtd">
+<bookmap xml:lang="en-us" id="DITATestSuiteBook" chunk="by-topic">
+<booktitle><mainbooktitle>DITA Test Suite</mainbooktitle>
+</booktitle>
+<bookmeta><author type="creator" format="html"
+ href="https://sourceforge.net/projects/ditatestsuite/">DITA
+Test Suite Project, Sourceforge</author></bookmeta>
+
+<frontmatter><booklists>
+<toc id="toc" navtitle="Contents"/>
+<figurelist id="lof" navtitle="Figures"/>
+<tablelist id="lot" navtitle="Tables"/>
+</booklists></frontmatter>
+
+<chapter id="overview"
+navtitle="Overview"><topicmeta><keywords>
+<indexterm start="overviewsection">Overview</indexterm>
+</keywords></topicmeta>
+<topicref href="DITATestConcept.dita" type="concept"
+navtitle="Concept Navigation Title">
+<topicmeta><searchtitle>Concept Search Title</searchtitle>
+<shortdesc>The Concept topic contains an overview of the Test
+Suite.</shortdesc><keywords>
+<indexterm>Test Suite<indexterm>overview</indexterm></indexterm>
+</keywords></topicmeta>
+</topicref>
+<topicref href="DITATestTask.dita" type="task" 
+navtitle="Task Navigation Title">
+<topicmeta><shortdesc>The Task topic has the steps for running the 
+Test Suite.</shortdesc><keywords>
+<indexterm>Operation</indexterm>
+<indexterm>Test Suite<indexterm>operation</indexterm></indexterm>
+</keywords></topicmeta>
+</topicref>
+<topicref href="DITATestReference.dita" type="reference"
+navtitle="Reference Navigation Title">
+<topicmeta><shortdesc>The Reference topic lists the DITA features
+covered by the Test Suite.</shortdesc><keywords>
+<indexterm>Coverage</indexterm>
+<indexterm>Test Suite<indexterm>coverage</indexterm></indexterm>
+</keywords></topicmeta>
+</topicref>
+<topicref href="DITATestTopic.dita" type="topic" 
+navtitle="Topic Navigation Title">
+<topicmeta><shortdesc>The generic Topic contains the credits to
+contributors to the Test Suite.</shortdesc><keywords>
+<indexterm>Contributors</indexterm>
+<indexterm>Test Suite<indexterm>contributors</indexterm></indexterm>
+<indexterm end="overviewsection"/></keywords></topicmeta>
+</topicref>
+</chapter>
+
+<chapter id="textcontent"
+navtitle="Text Content"><topicmeta><keywords>
+<indexterm start="textsection">Text content</indexterm>
+<indexterm>Links<indexterm>to URLs</indexterm></indexterm>
+</keywords></topicmeta>
+<topicref href="DITANotes.dita" type="concept" 
+navtitle="DITA Notes" ><topicmeta><keywords>
+<indexterm>Notes</indexterm>
+<indexterm>Caution<index-see>Notes</index-see></indexterm>
+<indexterm>Warning<index-see>Notes</index-see></indexterm>
+<indexterm>Attributes<indexterm>type<indexterm>for notes</indexterm></indexterm></indexterm>
+</keywords></topicmeta>
+</topicref>
+<topicref href="DITAImportance.dita" type="concept" 
+navtitle="DITA Importance" ><topicmeta><keywords>
+<indexterm>Importance</indexterm>
+<indexterm>Attributes<indexterm>importance</indexterm></indexterm>
+</keywords></topicmeta>
+</topicref>
+<topicref href="DITAFootnotes.dita" type="concept" 
+navtitle="DITA Footnotes" ><topicmeta><keywords>
+<indexterm>Footnotes</indexterm>
+<indexterm>Tables<indexterm>footnotes</indexterm></indexterm>
+<indexterm end="textsection"/></keywords></topicmeta>
+</topicref>
+</chapter>
+
+<chapter id="refslinks"
+navtitle="Xrefs, Links, and Conrefs">
+<topicmeta><keywords><indexterm start="refsection">References</indexterm>
+</keywords></topicmeta>
+<topicref href="DITAXrefs.dita" type="topic" 
+navtitle="Xrefs" ><topicmeta><keywords>
+<indexterm>Xrefs</indexterm>
+<indexterm>References<indexterm>xrefs</indexterm></indexterm>
+<indexterm>Cross-references<index-see>Xrefs</index-see></indexterm>
+</keywords></topicmeta>
+</topicref>
+<topicref href="DITALinks.dita" type="topic" 
+navtitle="Links" ><topicmeta><keywords>
+<indexterm>Links<indexterm>to topics</indexterm></indexterm>
+<indexterm>Links<indexterm>to URLs</indexterm></indexterm>
+<indexterm>References<indexterm>links</indexterm></indexterm>
+</keywords></topicmeta>
+</topicref>
+<topicref conref="DITATestSupplement.ditamap#conrefs" type="concept"
+navtitle="Conrefs" />
+<topicref keyref="keyref" type="concept" format="dita"
+navtitle="Keyrefs" ><topicmeta><keywords>
+<indexterm>Keyrefs<indexterm>to topics</indexterm></indexterm>
+<indexterm>Keyrefs<indexterm>to URLs</indexterm></indexterm>
+<indexterm>References<indexterm>using keyrefs</indexterm></indexterm>
+</keywords></topicmeta>
+</topicref>
+</chapter>
+
+<chapter href="DITAGraphics.dita" type="concept"
+navtitle="Graphics">
+<topicmeta><shortdesc>The Graphics topic includes DITA graphics,
+figures, imagemaps, and objects such as Flash animations.</shortdesc>
+<keywords>
+<indexterm>Graphics<indexterm>inline</indexterm></indexterm>
+<indexterm>Graphics<indexterm>block</indexterm></indexterm>
+<indexterm>Graphics<indexterm>objects</indexterm></indexterm>
+<indexterm>Figures</indexterm>
+<indexterm>Figures<indexterm>containing tables</indexterm></indexterm>
+<indexterm>Tables<indexterm>in figures</indexterm></indexterm>
+</keywords></topicmeta>
+</chapter>
+
+<?dtrtf break="column" ?>
+<chapter id="lists"
+navtitle="Lists">
+<topicmeta><shortdesc>The Lists topics include DITA simple lists,
+ordered (numbered) lists, unordered (bulleted) lists, definition
+lists, and parameter lists.</shortdesc>
+<keywords><indexterm start="listsection">Lists</indexterm>
+</keywords>
+</topicmeta>
+<topicref href="DITALists.dita" type="concept"
+navtitle="Simple Lists" ><topicmeta><keywords>
+<indexterm>Lists<indexterm>simple</indexterm></indexterm>
+<indexterm>Lists<indexterm>ordered</indexterm></indexterm>
+<indexterm>Lists<indexterm>unordered</indexterm></indexterm>
+<indexterm>Lists<indexterm>numbered</indexterm></indexterm>
+<indexterm>Lists<indexterm>bulleted</indexterm></indexterm>
+</keywords></topicmeta>
+</topicref>
+<topicref href="DITAComplexLists.dita" type="concept"
+navtitle="Complex Lists" ><topicmeta><keywords>
+<indexterm>Lists<indexterm>complex</indexterm></indexterm>
+<indexterm>Lists<indexterm>parameter</indexterm></indexterm>
+<indexterm>Lists<indexterm>definition</indexterm></indexterm>
+</keywords></topicmeta>
+</topicref>
+</chapter>
+
+<chapter id="tables"
+navtitle="Tables">
+<topicmeta><shortdesc>The Tables topics include DITA simple and
+complex tables, choice tables, and properties tables.</shortdesc>
+<keywords><indexterm start="tablesection">Tables</indexterm>
+</keywords></topicmeta>
+<topicref conkeyref="supplement/tables" format="ditamap" />
+</chapter>
+
+<chapter id="ditaval1"
+navtitle="Ditaval Selection and Flagging">
+<topicmeta><shortdesc>The Props topics include examples of
+exclusion, attribute passthrough, and flagging using settings
+in a ditaval file for Windows.</shortdesc>
+<keywords><indexterm>Ditaval<indexterm start="ditavalsection">usage</indexterm></indexterm></keywords>
+</topicmeta>
+<?dtall branch="Original" ditaval="WindowsProps.ditaval" ?>
+<topicref href="DITAProps.ditamap" format="ditamap" />
+</chapter>
+
+<?dtrtf break="column" ?>
+<chapter id="ditaval2"
+navtitle="Ditaval Selection and Flagging Revisited">
+<topicmeta><shortdesc>The Props topics include examples of
+exclusion, attribute passthrough, and flagging using settings
+in a second ditaval file for Linux.</shortdesc>
+<keywords><indexterm>Ditaval<indexterm start="ditavalsection">usage</indexterm></indexterm></keywords>
+</topicmeta>
+<?dtall branch="Revisited" ditaval="LinuxProps.ditaval" ?>
+<topicref href="DITAProps.ditamap" format="ditamap" />
+</chapter>
+
+<backmatter><booklists>
+<glossarylist id="gls" navtitle="Glossary"/>
+<indexlist id="idx" navtitle="Index"/>
+</booklists></backmatter>
+
+<keydef keys="keyref" href="DITAKeyrefs.dita" format="dita" />
+<keydef keys="xref" href="DITAXrefs.dita" format="dita" />
+<keydef keys="flagging" href="DITAFlagging.dita" format="dita" />
+<keydef keys="supplement" conref="DITATestSupplement.ditamap" format="ditamap" />
+<keydef keys="sourceforge" href="https://sourceforge.net/projects/ditatestsuite/" >
+<topicmeta>
+	<linktext>SourceForge</linktext>
+</topicmeta></keydef>
+<keydef keys="dts" ><topicmeta>
+  <linktext><i>DITA Test Suite</i></linktext>
+</topicmeta></keydef>
+<keydef keys="projmanager">
+<topicmeta><keywords>
+ <keyword><tm tmtype="reg">CORP</tm> <tm tmtype="tm">Project Manager</tm></keyword>
+</keywords></topicmeta></keydef>
+
+<reltable>
+<relheader>
+<relcolspec type="concept" collection-type="family" />
+<relcolspec type="task" collection-type="sequence" />
+<relcolspec type="reference" />
+</relheader>
+
+<relrow>
+<relcell><topicref
+ href="DITATestConcept.dita" type="concept" />
+</relcell>
+<relcell><topicref
+ href="DITATestTask.dita" type="task" />
+</relcell>
+<relcell></relcell>
+</relrow>
+
+<relrow>
+<relcell></relcell>
+<relcell><topicref
+ href="DITATestTask.dita" type="task" />
+</relcell>
+<relcell><topicref
+ href="DITATestReference.dita" type="reference" linking="targetonly" />
+</relcell>
+</relrow>
+
+<relrow>
+<relcell><topicref
+ href="DITATestTopic.dita" type="topic" />
+</relcell>
+<relcell></relcell>
+<relcell><topicref
+ href="DITATestReference.dita" type="reference" linking="targetonly" />
+</relcell>
+</relrow>
+
+</reltable>
+</bookmap>

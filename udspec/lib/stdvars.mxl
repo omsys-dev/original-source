@@ -1,0 +1,25 @@
+<lib id="stdvars">
+
+<!-- stdvars.mxl describes the standard uDoc variables -->
+<!-- Version 0.1, June 24, 2013 -->
+
+<!-- variable definitions look like this:  
+<variable id="name">inline text content</variable>
+ when they are referenced, like this:
+ <var idref="name"/>
+ or with fallback content:
+ <var idref="name">default text</var>
+ the content is used, but the variable wrapper is not
+ -->
+
+<variable id="company">Omni Systems</variable>
+<variable id="ud"><b>uDoc</b></variable>
+<variable id="fm">FrameMaker</variable>
+
+<variable id="date" idref="$date" type="%B %#d, %Y" />
+<variable id="author" idref="$$author[1]" />
+
+
+</lib>
+
+<!-- end of stdvars.mxl -->

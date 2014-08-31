@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA 1.1 Map//EN"
+  "http://docs.oasis-open.org/dita/v1.1/OS/dtd/map.dtd">
+<map xml:lang="en-us" id="DITATestSuite">
+<title>DITA Test Suite</title>
+
+<topicref id="overview"
+navtitle="Test Suite Overview">
+<topicref href="DITATestConcept.dita" type="concept"
+navtitle="Concept Navigation Title">
+<topicmeta><searchtitle>Concept Search Title</searchtitle>
+<shortdesc>The Concept topic contains an overview of the Test
+Suite.</shortdesc></topicmeta>
+</topicref>
+<topicref href="DITATestTask.dita" type="task" 
+navtitle="Task Navigation Title">
+<topicmeta><shortdesc>The Task topic has the steps for running the 
+Test Suite.</shortdesc></topicmeta>
+</topicref>
+<topicref href="DITATestReference.dita" type="reference"
+navtitle="Reference Navigation Title">
+<topicmeta><shortdesc>The Reference topic lists the DITA features
+covered by the Test Suite.</shortdesc></topicmeta>
+</topicref>
+<topicref href="DITATestTopic.dita" type="topic" 
+navtitle="Topic Navigation Title">
+<topicmeta><shortdesc>The generic Topic contains the credits to
+contributors to the Test Suite.</shortdesc></topicmeta>
+</topicref>
+</topicref>
+
+<topicref id="textcontent"
+navtitle="Text Content">
+<topicref href="DITANotes.dita" type="concept" 
+navtitle="Notes" />
+<topicref href="DITAImportance.dita" type="concept" 
+navtitle="Importance" />
+</topicref>
+
+<topicref id="refslinks"
+navtitle="Xrefs, Links, and Conrefs">
+<topicref href="DITAXrefs.dita" type="topic" 
+navtitle="Xrefs" />
+<topicref href="DITALinks.dita" type="topic" 
+navtitle="Links" />
+<topicref conref="DITATestSupplement.ditamap#conrefs" type="concept"
+navtitle="Conrefs" />
+</topicref>
+
+<topicref href="DITAGraphics.dita" type="concept"
+navtitle="Graphics">
+<topicmeta><shortdesc>The Graphics topic includes DITA graphics,
+figures, imagemaps, and objects such as Flash animations.</shortdesc>
+</topicmeta>
+</topicref>
+
+<topicref id="lists"
+navtitle="Lists">
+<topicmeta><shortdesc>The Lists topic include DITA simple lists,
+ordered (numbered) lists, unordered (bulleted) lists, definition
+lists, and parameter lists.</shortdesc>
+</topicmeta>
+<topicref href="DITALists.dita" type="concept"
+navtitle="Simple Lists" />
+<topicref href="DITAComplexLists.dita" type="concept"
+navtitle="Complex Lists" />
+</topicref>
+
+<topicref id="tables"
+navtitle="Tables">
+<topicmeta><shortdesc>The Tables topics include DITA simple and
+complex tables, choice tables, and properties tables.</shortdesc>
+</topicmeta>
+<topicref conref="DITATestSupplement.ditamap#tables" format="ditamap" />
+</topicref>
+
+<topicref id="ditaval"
+navtitle="Ditaval Selection and Flagging">
+<topicmeta><shortdesc>The Props topics include examples of
+exclusion, attribute passthrough, and flagging using settings
+in a ditaval file.</shortdesc>
+</topicmeta>
+<topicref href="DITAProps.ditamap" format="ditamap" />
+</topicref>
+
+<reltable>
+<relheader>
+<relcolspec type="concept" collection-type="family" />
+<relcolspec type="task" collection-type="sequence" />
+<relcolspec type="reference" />
+</relheader>
+
+<relrow>
+<relcell><topicref
+ href="DITATestConcept.dita" type="concept" />
+</relcell>
+<relcell><topicref
+ href="DITATestTask.dita" type="task" />
+</relcell>
+<relcell></relcell>
+</relrow>
+
+<relrow>
+<relcell></relcell>
+<relcell><topicref
+ href="DITATestTask.dita" type="task" />
+</relcell>
+<relcell><topicref
+ href="DITATestReference.dita" type="reference" linking="targetonly" />
+</relcell>
+</relrow>
+
+<relrow>
+<relcell><topicref
+ href="DITATestTopic.dita" type="topic" />
+</relcell>
+<relcell></relcell>
+<relcell><topicref
+ href="DITATestReference.dita" type="reference" linking="targetonly" />
+</relcell>
+</relrow>
+
+</reltable>
+</map>

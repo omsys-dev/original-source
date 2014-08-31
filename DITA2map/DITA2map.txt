@@ -1,0 +1,80 @@
+; DITA2map.txt is the initialization file document for DITA2map.exe
+
+
+[Options]
+; The next three items control how names are matched to ini-file settings
+; CaselessMatch = Yes (default, ignore uppper/lower differences) or No
+CaselessMatch=Yes
+; SpacelessMatch = Yes (default, ignore embedded spaces) or No
+SpacelessMatch=Yes
+; WildcardMatch = Yes (default, allow ? and * in settings) or No
+WildcardMatch=Yes
+;
+; These two are used for diagnosis of possible memory-management problems.
+; Try changing them to "Yes", one at a time, if you get a crash at the very 
+; end of processing, after the output files have been writtten correctly.
+NoNameDel=No
+NoMemDel=No
+
+
+[Setup]
+; ConfigTemplate = path to .ini file to be used when mif2htm.ini and any
+; specific filename.ini do not contain the setting being checked.  The
+; referenced file can also contain [FDK]ConfigTemplate, so the chain of
+; templates searched can be any length.  However, all files in the chain
+; must have distinct names; the chain stops if it finds a repeat.
+ConfigTemplate=D:\path\to\template.ini
+;
+; DTDPath = path to location of DITA DTDs, default none
+; Overridden by the -d switch on the command line.
+DTDPath=D:\path\to\DTDs
+
+
+[Logging]
+; Log entries are appended to the log file, and consist of:
+;  timestamp (if different from last one), on its own line
+;  type (E, W, Q, I, D)
+;  severity level (1-9)
+;  description with identifying details
+; Example:
+;  W1: Error from parser, XML_STATUS_ERROR
+;
+; UseLog = Yes (default, log as specified in this section) or No
+UseLog=Yes
+; LogFileName = name with path, absolute or relative to output dir
+LogFileName=DITA2map_log.txt
+; These take severity values, 1 (worst) to 9, or 0 to prevent logging
+; LogErrors = 1 (default, log events that terminate process)
+LogErrors=1
+; LogWarnings = 1 (default, log problems with workarounds that may
+; result in undesired output)
+LogWarnings=1
+; LogQuerys = 1 (default, log possible ambiguities)
+LogQuerys=1
+; LogInfo = 1 (default, log process information)
+LogInfo=1
+; LogDebug = 0 (default, don't log possible programming issues)
+LogDebug=0
+
+
+[MapGeneration]
+; MapTitle = title element content for map, default is no title
+; Overridden by the -t switch on the command line.
+MapTitle=
+; UseTopicShortdesc = Yes (default, include shortdescs from topic file)
+; or No (exclude text in the topics from the map).
+UseTopicShortdesc=Yes
+;
+; MapRootElem = root element to use for map, default "map"
+MapRootElem=map
+; MapTitleElem = title element to use for map, default "title"
+MapTitleElem=title
+; MapLanguage = value of xml:lang on map root element, default en-us
+MapLanguage=en-us
+; PublicID = PUBLIC ID to use for map DOCTYPE, default as below
+PublicID = "-//OASIS//DTD DITA 1.1 Map//EN"
+; SystemID = SYSTEM ID to use for map DOCTYPE, default as below
+SystemID =  "http://docs.oasis-open.org/dita/v1.1/OS/dtd/map.dtd"
+
+
+[End]

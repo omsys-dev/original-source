@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA 1.1 Concept//EN"
+  "http://docs.oasis-open.org/dita/v1.1/OS/dtd/concept.dtd">
+<concept xml:lang="en-us" id="complexlists">
+<title>DITA Complex Lists</title>
+<shortdesc>This topic descrobes definition lists and parameter lists.</shortdesc>
+<prolog><keywords><indexterm end="listsection"/></keywords></prolog>
+<conbody>
+<p>The two complex list types can be rendered as tables or as lists.
+Here the definition list is rendered as a table, and the parameter
+list as a list.</p>
+<section>
+<title>Definition Lists</title>
+<p>Definition lists consist of a series of terms and their
+descriptions. Each item may have one or more terms, followed 
+by one or more descriptions. The list has an optional head.</p>
+<?dtrtf SimpleTableWidth="4in" ?>
+<?dtrtf SimpleTableRelCol="2* 3*" ?>
+<dl>
+<dlhead>
+<dthd>Term</dthd>
+<ddhd>Definition of term</ddhd>
+</dlhead>
+<dlentry>
+<dt>The first term</dt>
+<dd>Definition one.</dd>
+<dd>Definition two.</dd>
+</dlentry>
+<dlentry>
+<dt>A second term</dt>
+<dt>A synonym for it</dt>
+<dd>The common definition.</dd>
+</dlentry>
+</dl>
+</section>
+<section>
+<title>Parameter Lists</title>
+<p>Parameter lists are similar to definition lists, and are in
+fact derived from them. However, they cannot have headings.</p>
+<?dtrtf SimpleTableWidth="4.5in" ?>
+<?dtrtf SimpleTableRelCol="2* 4*" ?>
+<parml>
+<plentry>
+<pt>[DITATags]</pt>
+<pd>Mapping from Frame format to DITA element.</pd>
+</plentry>
+<plentry>
+<pt>[DITALevels]</pt>
+<pd>Specifies level in DITA doc for Frame styles.</pd>
+</plentry>
+<plentry>
+<pt>[DITAParents]</pt>
+<pd>Mapping from Frame format to required DITA parent element.</pd>
+</plentry>
+<plentry>
+<pt>[DITATables]</pt>
+<pd>Mapping from Frame table format to Mif2Go table name.</pd>
+</plentry>
+</parml>
+</section>
+</conbody>
+</concept>

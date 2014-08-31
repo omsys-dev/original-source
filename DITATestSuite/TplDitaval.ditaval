@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<val xml:lang="en-us">
+<style-conflict foreground-conflict-color=""
+ background-conflict-color="" />
+<prop att="" val="" action="" color="" backcolor="" style="" >
+<startflag imageref="" ><alt-text></alt-text></startflag>
+<endflag imageref="" ><alt-text></alt-text></endflag>
+</prop>
+<revprop val="" action="" changebar="" color="" backcolor="" style="" >
+<startflag imageref="" ><alt-text></alt-text></startflag>
+<endflag imageref="" ><alt-text></alt-text></endflag>
+</revprop>
+</val>

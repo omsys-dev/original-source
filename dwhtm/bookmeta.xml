@@ -1,0 +1,144 @@
+
+<bookmeta>
+
+<linktext>text description for xrefs</linktext>
+<searchtitle>text description for search</searchtitle>
+<shortdesc>detailed text description</shortdesc>
+
+<author type="creator">name for the first author*</author>
+<author type="contributor">name for additional author*</author>
+OR
+<authorinformation>
+ <personinfo>
+  <namedetails>
+   <personname>
+    <firstname>text</firstname>
+    <middlename>text</middlename>
+    <lastname>text</lastname>
+    <generationidentifier>text</generationidentifier>
+    <otherinfo>text</otherinfo>
+   </personname>
+  </namedetails>
+  <contactnumbers>
+   <contactnumber>text</contactnumber>
+  </contactnumbers>
+  <emailaddresses>
+   <emailaddress>text</emailaddress>
+  </emailaddresses>
+ </personinfo>
+ <organizationinfo>
+  <namedetails>
+   <organizationnamedetails>
+    <organizationname>text</organizationname>
+    <otherinfo>text</otherinfo>
+   </organizationnamedetails>
+  </namedetails>
+  <addressdetails>
+   <thoroughfare>text</thoroughfare>
+   <locality>
+    <localityname>text</localityname>
+    <postalcode>text</postalcode>
+   </locality>
+   <administrativearea>text</administrativearea>
+   <country>text</country>
+  </addressdetails>
+ </organizationinfo>
+</authorinformation>
+
+<source href="URL/of/source">text</source>
+
+<publisherinformation>
+ <person>text</person>
+ <organization>text</organization>
+ <printlocation>text</printlocation>
+ <published>
+  <person>text</person>
+  <organization>text</organization>
+  <publishtype name="" value=""/>
+  <revisionid>text</revisionid>
+  <started><year>text</year><month>text</month><day>text</day></started>
+  <completed><year>text</year><month>text</month><day>text</day></completed>
+  <summary>text</summary>
+ </published>
+</publisherinformation>
+
+<critdates>
+ <created date="2001-06-12"/>
+ <revised modified="2001-08-20"/>
+</critdates>
+
+<permissions view="attributes used for dita filtering"/>
+<audience type="" job="" experiencelevel="" name=""/>
+<category>text*</category>
+
+<keywords>
+<keyword>text</keyword>
+</keywords>
+
+<prodinfo>
+ <prodname>text*</prodname>
+ <vrmlist>
+  <vrm version="" release="" modification=""/>
+ </vrmlist>
+ <brand>text*</brand>
+ <series>text*</series>
+ <platform>text*</platform>
+ <prognum>text*</prognum>
+ <featnum>text*</featnum>
+ <component>text*</component>
+</prodinfo>
+
+<othermeta name="" content=""/>
+<resourceid id="" appname=""/>
+
+<bookid>
+ <bookpartno>text**</bookpartno>
+ <edition>text**</edition>
+ <isbn>text*</isbn>
+ <booknumber>text*</booknumber>
+ <volume>text**</volume>
+ <maintainer>
+  <person>text</person>
+  <organization>text</organization>
+ </maintainer>
+</bookid>
+
+<bookchangehistory>
+ <reviewed>
+  <person>text</person>
+  <organization>text</organization>
+  <publishtype name="" value=""/>
+  <revisionid>text revision number</revisionid>
+  <started><year>text</year><month>text</month><day>text</day></started>
+  <completed><year>text</year><month>text</month><day>text</day></completed>
+  <summary>text</summary>
+ </reviewed>
+ <edited>
+  (same)
+ </edited>
+ <tested>
+  (same)
+ </tested>
+ <approved>
+  (same)
+ </approved>
+ <bookevent>
+  <bookeventtype name="event"/>
+  (same)
+ </bookevent>
+</bookchangehistory>
+
+<bookrights>
+ <copyrfirst><year>text</year></copyrfirst>
+ <copyrlast><year>text</year></copyrlast>
+ <bookowner>
+  <person>text</person>
+  <organization>text</organization>
+ </bookowner>
+ <bookrestriction value=""/>
+ <summary>text</summary>
+</bookrights>
+
+<data name="" value="" href="">text</data>
+
+</bookmeta>

@@ -1,0 +1,274 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+
+  
+    <title>Regression testing in the toolkit | DITA XML.org</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" href="http://dita.xml.org/sites/dita.xml.org/files/focusareas_favicon.ico" type="image/x-icon">
+    <style type="text/css" media="all">@import "/sites/dita.xml.org/files/css/22251ed99924f00286b74d37fd61c096.css";</style>
+        <style type="text/css" media="print">@import "/sites/all/themes/focusareas/print.css";</style>
+      </head><body>
+
+<div id="pagewrapper">
+<div id="maincolumnwrapper">
+
+<div id="topheader">
+    <div id="header-region"></div>
+
+    <div id="navigationprimary">
+    <div class="navigationprimary">
+              <ul class="navigationprimary"><li class="first last menu-1-1-1044"><a href="http://dita.xml.org/about" class="menu-1-1-1044">ABOUT THIS SITE</a></li>
+</ul>      
+    </div>
+    </div>
+
+        <div class="logo"><a href="http://dita.xml.org/" title="DITA XML.org"><img src="regression-testing-in-the-toolkit_files/focusareas_logo.jpg" alt="logo"></a></div>
+    
+    <div id="postheader-region">  <div id="block-oasis_blocks-0" class="block block-oasis_blocks">
+    <h2 class="title"></h2>
+    <div class="content"><div id="loginbox"><a href="http://dita.xml.org/user/register">Register</a> | <a href="http://dita.xml.org/user">Login</a></div></div>
+ </div>
+</div>
+
+    <div id="navigationsecondarywrapper">
+    <div id="navigationsecondary">
+    <div class="navigationsecondary">
+              <ul class="navigationsecondary"><li class="first menu-1-1-1051"><a href="http://dita.xml.org/" class="menu-1-1-1051">HOME</a></li>
+<li class="menu-1-2-1051"><a href="http://dita.xml.org/wiki" title="Collaborative pages on using and understanding DITA" class="menu-1-2-1051">Wiki Knowledgebase</a></li>
+<li class="menu-1-3-1051"><a href="http://dita.xml.org/news" class="menu-1-3-1051">News</a></li>
+<li class="menu-1-4-1051"><a href="http://dita.xml.org/events" title="Calendar Events" class="menu-1-4-1051">Events</a></li>
+<li class="menu-1-5-1051"><a href="http://dita.xml.org/products" title="PRODUCTS" class="menu-1-5-1051">Products</a></li>
+<li class="menu-1-6-1051"><a href="http://dita.xml.org/services" title="SERVICES" class="menu-1-6-1051">Services</a></li>
+<li class="menu-1-7-1051"><a href="http://dita.xml.org/resource-directory" class="menu-1-7-1051">Resources</a></li>
+<li class="menu-1-8-1051"><a href="http://dita.xml.org/forum" class="menu-1-8-1051">Forums</a></li>
+<li class="menu-1-9-1051"><a href="http://dita.xml.org/book/dita-user-groups" class="menu-1-9-1051">User groups</a></li>
+<li class="last menu-1-10-1051"><a href="http://dita.xml.org/blog" class="menu-1-10-1051">Blogs</a></li>
+</ul>      
+    </div>
+    </div>
+    </div>
+
+</div>
+
+<div class="emptybox"></div>
+
+<div id="containerwrapper">
+<div id="container">
+
+  <div id="mainbar">
+    
+  <div id="content">
+            <h2>Regression testing in the toolkit</h2>
+        <div>
+
+    </div>
+
+        <ul class="tabs primary">
+<li class="active"><a href="http://dita.xml.org/wiki/regression-testing-in-the-toolkit" class="active">View</a></li>
+<li><a href="http://dita.xml.org/node/2357/revisions">Revisions</a></li>
+</ul>
+            <!-- start main content -->
+        <div class="node">
+  
+      <div class="submitted">
+      Wiki page: Submitted by <a href="http://dita.xml.org/users/robander" title="View user profile.">robander</a> on Thu, 2008-08-14 15:24. Last updated on Tue, 2008-08-26 12:46.    </div>
+  
+  <div class="nodecontent node-wiki-page"><h1>Regression testing with the toolkit</h1>
+<p>
+<em>Note: This information is primarily of interest to toolkit
+developers and those creating plugins for the toolkit. For information
+on the toolkit itself, see <a href="http://dita.xml.org/freelinking/The%2520DITA%2520Open%2520Toolkit" class="freelinking">The DITA Open Toolkit</a>.</em>
+</p>
+<p>
+The core toolkit development team is working on the release of its
+regression testing package. The package consists of a large number of
+sample DITA maps and topics representing a wide variety of content, as
+well as batch files to run the content through a build. The regression
+test package will be posted to SourceForge, and this page will be
+updated with documentation on how to run the test.
+</p>
+<p>The test is generally used by running all of the builds to generate
+output after making a modification to the code. The output of the test
+is compared to the output with the previous, working set of code to
+determine if any tests fail or if any output changes in a negative way.
+This is most useful when making changes to the base code or when
+testing a plugin that overrides core code (including overrides that <em>should </em>affect only a related specialization).
+</p>
+<p>
+The toolkit development welcomes additions to the regression test
+bucket, as well as suggestions for ways to improve the testing process.
+</p>
+<p>The regression suite package is committed to CVS. Developers can
+access the package by exporting it or checking it out from CVS.
+Exporting action does not need access authority to CVS. Here is the
+information about the CVS repository.
+</p>
+<p>
+Connect protocol: ssh
+</p>
+<p>
+Host: dita-ot.cvs.sourceforge.net
+</p>
+<p>
+Port: Default
+</p>
+<p>
+Repository Path: /cvsroot/dita-ot
+</p>
+<p>
+Module: RegressionSuite
+</p>
+<p>
+The structure of regression suite package is listed as followings:
+</p>
+<p>
+&nbsp; &nbsp; testcase: ant scripts to run corresponding test 
+</p>
+<p>
+&nbsp; &nbsp; testdata: input data that is needed by test
+</p>
+<p>
+&nbsp; &nbsp; *.bat: windows batch file to run the test 
+</p>
+<p>
+&nbsp; &nbsp;&nbsp; testbuild.xml: the stub ant script to start all testing
+</p>
+<p>After regression suite package is downloaded, the content in the
+package (testcase, testdata, *.bat and testbuild.xml) should be
+extracted andcopied to installation directory of DITA OT. Then you need
+to enter the DITA OT installation directory in console and use ant -f
+testbuild.xml to start the regression test.&nbsp; </p>
+<p>
+More information will be coming when the test is available at SourceForge.
+</p>
+
+</div>
+
+      <div class="info">
+      <div class="links"><ul class="links inline"><li class="first comment_forbidden"><span class="comment_forbidden"><a href="http://dita.xml.org/user/login?destination=comment/reply/2357%2523comment-form">Login</a> or <a href="http://dita.xml.org/user/register?destination=comment/reply/2357%2523comment-form">register</a> to post comments</span></li>
+<li class="last statistics_counter"><span class="statistics_counter">1292 reads</span></li>
+</ul>        <br>
+              </div>
+    </div>
+  </div><div id="comments"></div>    <!-- end main content -->
+  </div>
+  </div>
+
+
+  <div class="sidebar">
+    <div id="sidebarleft">  <div id="block-search-0" class="block block-search">
+    <h2 class="title">Search</h2>
+    <div class="content"><form action="/wiki/regression-testing-in-the-toolkit" accept-charset="UTF-8" method="post" id="search-block-form">
+<div><div class="container-inline"><div class="form-item" id="edit-search-block-form-keys-wrapper">
+ <input maxlength="128" name="search_block_form_keys" id="edit-search-block-form-keys" size="15" value="" title="Enter the terms you wish to search for." class="form-text" type="text">
+</div>
+<input name="op" id="edit-submit" value="Search" class="form-submit" type="submit">
+<input name="form_id" id="edit-search-block-form" value="search_block_form" type="hidden">
+</div>
+</div></form>
+</div>
+ </div>
+  <div id="block-menu-1165" class="block block-menu">
+    <h2 class="title">Browse</h2>
+    <div class="content">
+<ul class="menu">
+<li class="leaf"><a href="http://dita.xml.org/categories">Categories</a></li>
+<li class="leaf"><a href="http://dita.xml.org/tracker" title="List of most recently added pages">Recent posts</a></li>
+<li class="leaf"><a href="http://dita.xml.org/recent_changes" title="List of most recently edited pages ">Recent changes</a></li>
+<li class="leaf"><a href="http://dita.xml.org/hof/node" title="Quick links to the most-read pages ">Most popular content</a></li>
+
+</ul>
+</div>
+ </div>
+  <div id="block-recent_blocks-0" class="block block-recent_blocks">
+    <h2 class="title">Recent Content</h2>
+    <div class="content"><div class="item-list"><ul><li><a href="http://dita.xml.org/calendar-event/dita-in-a-day-workshop">DITA-in-a-Day Workshop</a> <br><em>5 hours ago</em></li><li><a href="http://dita.xml.org/node/2482">DITA User Clinic at UCSC - enroll before Jan 26</a> <br><em>1 day ago</em></li><li><a href="http://dita.xml.org/wiki/plans-for-the-dita-open-toolkit-pdf2-plug-in">Plans for the DITA Open Toolkit PDF2 Plug-in</a> <br><em>4 days ago</em><br>2 replies</li><li><a href="http://dita.xml.org/calendar-event/dita-quick-start-workshop-boston">DITA Quick Start Workshop : Boston</a> <br><em>4 days ago</em></li><li><a href="http://dita.xml.org/book/research-triangle-park-rtp-nc-dita-users-group">Research Triangle Park (RTP, NC) DITA users' group</a> <br><em>5 days ago</em></li><li><a href="http://dita.xml.org/book/central-texas-dita-user-group">Central Texas DITA User Group</a> <br><em>6 days ago</em></li></ul></div></div>
+ </div>
+  <div id="block-node-0" class="block block-node">
+    <h2 class="title">Syndicate</h2>
+    <div class="content"><a href="http://dita.xml.org/node/feed" class="feed-icon"><img src="regression-testing-in-the-toolkit_files/feed.png" alt="Syndicate content" title="Syndicate content" width="16" height="16"></a></div>
+ </div>
+  <div id="block-menu-1168" class="block block-menu">
+    <h2 class="title">Site info</h2>
+    <div class="content">
+<ul class="menu">
+<li class="leaf"><a href="http://dita.xml.org/about">About DITA XML.org</a></li>
+<li class="leaf"><a href="http://dita.xml.org/logo" title="Link to the DITA XML.org logo from your site">Link to this site</a></li>
+<li class="leaf"><a href="http://dita.xml.org/contact" title="Form for emailing feedback on DITA XML.org ">Contact us</a></li>
+
+</ul>
+</div>
+ </div>
+  <div id="block-menu-1157" class="block block-menu">
+    <h2 class="title">Who's who</h2>
+    <div class="content">
+<ul class="menu">
+<li class="leaf"><a href="http://dita.xml.org/sponsors" title="Information on companies that support this site">Sponsors</a></li>
+<li class="leaf"><a href="http://dita.xml.org/editorial-board" title="DITA experts who oversee content for this site">Editorial board</a></li>
+<li class="leaf"><a href="http://dita.xml.org/hof/contrib" title="People who frequently add content to this site">Active contributors</a></li>
+<li class="leaf"><a href="http://dita.xml.org/siteblogs" title="People who blog about DITA on this site">Bloggers</a></li>
+
+</ul>
+</div>
+ </div>
+  <div id="block-user-1" class="block block-user">
+    <h2 class="title">Navigation</h2>
+    <div class="content">
+<ul class="menu">
+<li class="leaf"><a href="http://dita.xml.org/archive" title="view historical content">archives</a></li>
+<li class="leaf"><a href="http://dita.xml.org/flags/reported-spam">Reported spam</a></li>
+<li class="leaf"><a href="http://dita.xml.org/sitemap" title="Display a site map with RSS feeds.">Site map</a></li>
+<li class="collapsed"><a href="http://dita.xml.org/aggregator/categories" title="Still need to add Vocabularies (Taxonomies) for organizing content">categories</a></li>
+
+</ul>
+</div>
+ </div>
+  <div id="block-block-9" class="block block-block">
+    <h2 class="title"></h2>
+    <div class="content">Currently online: <em>11 guests</em> and <em>0 users</em>:</div>
+ </div>
+</div>
+  </div>
+
+<div class="emptybox"></div>
+</div>
+</div>
+<div class="emptybox"></div>
+
+  <div id="foonav">
+  <div id="foonavbarwrapper">
+    <div id="foonavbar">
+                  XML.org Focus Areas: <a href="http://bpel.xml.org/">BPEL</a> | <a href="http://dita.xml.org/">DITA</a> | <a href="http://ebxml.xml.org/">ebXML</a> | <a href="http://idtrust.xml.org/">IDtrust</a> | <a href="http://opendocument.xml.org/">OpenDocument</a> | <a href="http://saml.xml.org/">SAML</a> | <a href="http://ubl.xml.org/">UBL</a> | <a href="http://uddi.xml.org/">UDDI</a>
+            <br>
+            OASIS sites: <a href="http://www.oasis-open.org/home/index.php">OASIS</a> | <a href="http://xml.coverpages.org/">Cover Pages | </a><a href="http://www.xml.org/">XML.org</a> | <a href="http://www.cgmopen.org/">CGM Open</a> | <a href="http://www.oasis-cosl.org/">COSL</a> | <a href="http://www.oasis-egov.org/">eGov</a> | <a href="http://www.oasis-emergency.org/"> Emergency</a> | <a href="http://www.oasis-idtrust.org/">IDtrust</a> | <a href="http://www.legalxml.org/">LegalXML</a> | <a href="http://www.oasis-opencsa.org/">Open CSA</a> | <a href="http://www.oasis-telecom.org/">Telecom</a>
+          
+      <div class="emptybox"></div>
+    </div>
+  </div>
+  </div>
+
+<div class="emptybox"></div>
+
+  <div id="footer">
+© 1993-2009 OASIS. All rights reserved. | <a href="http://www.xml.org/terms-of-use">Terms of Use</a> | <a href="http://www.xml.org/code-of-conduct">Code of Conduct</a> | <a href="http://www.xml.org/privacy">Privacy Statement</a>
+  </div>
+
+</div>
+
+<div class="sidebar">
+  <div id="sidebarright">  <div id="block-block-5" class="block block-block">
+    <h2 class="title">Hosted by:</h2>
+    <div class="content"><a class="sponsorimage" href="http://www.oasis-open.org/"><img title="OASIS" alt="OASIS" src="regression-testing-in-the-toolkit_files/oasis_2004logo.gif" border="0"></a></div>
+ </div>
+  <div id="block-block-6" class="block block-block">
+    <h2 class="title">Sponsored by:</h2>
+    <div class="content"><div class="logos" align="center">
+<p><a href="http://www.adobe.com/"><img src="regression-testing-in-the-toolkit_files/logo-adobe-cropped-sized.jpg" alt="Adobe"></a></p>
+<a href="http://www.comtech-serv.com/"><img src="regression-testing-in-the-toolkit_files/commtech-dita.gif" alt="Com Tech" border="0" vspace="10"></a><br><a href="http://na.justsystems.com/"><img src="regression-testing-in-the-toolkit_files/justsystems.gif" alt="" border="0" width="97" height="72"></a><br><a href="http://www.ptc.com/"><img src="regression-testing-in-the-toolkit_files/PTC_notag2.png" alt="PTC" border="0" vspace="8" width="132" height="44"></a><br><br><br><br></div></div>
+ </div>
+</div>
+</div>
+
+</div>
+
+</body></html>

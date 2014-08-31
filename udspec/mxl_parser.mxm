@@ -1,0 +1,18 @@
+<map id="mxl_parser">
+<title>mxl MicroXML Parser</title>
+<author>Omni Systems</author>
+<author>Jeremy H. Griffith</author>
+<subtitle>Version 0.1, <var idref="date"/></subtitle>
+
+<p>This document describes the mxl parser, used to parse MicroXML files.  In addition to producing the content model described in the MicroXML spec, it offers a SAX mode, which can also optionally provide expat-compatible callbacks.  It is FOSS under the Apache 2.0 license.</p>
+
+<contents />
+
+<docref src="ud_mxlparser.mxd" start="file">
+ <docref src="ud_mxloperation.mxd" />
+ <docref src="ud_mxldata.mxd" />
+ <docref src="ud_mxlsax.mxd" />
+ <docref src="ud_mxllicense.mxd" />
+</docref>
+
+</map>

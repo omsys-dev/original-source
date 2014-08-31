@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA 1.1 Concept//EN"
+  "http://docs.oasis-open.org/dita/v1.1/OS/dtd/concept.dtd">
+<concept xml:lang="en-us" id="importance">
+<title>Importance</title>
+<shortdesc>This topic demonstrates use of the importance
+attribute on various elements.</shortdesc>
+<conbody>
+<section>
+<title>Importance in Steps</title>
+<p>For the step element, the importance attribute has a special
+role, and just two allowable values: optional and required.  This
+is demonstrated in the <xref href="DITATestTask.dita"/> topic,
+where step <xref href="DITATestTask.dita#operation/req" type="li"/> is
+required and step <xref href="DITATestTask.dita#operation/opt"
+ type="li"/> is optional.</p>
+</section>
+<section>
+<title>Importance in General</title>
+<p>For elements other than step, the importance attribute can have
+many more values: obsolete, deprecated, optional, default, low,
+normal, high, recommended, required, and urgent  The following
+simplelist elements use each of those, in the above order:</p>
+<sl>
+<sli importance="obsolete">This is obsolete.</sli>
+<sli importance="deprecated">This is deprecated.</sli>
+<sli importance="optional">This is optional.</sli>
+<sli importance="default">This is default.</sli>
+<sli importance="low">This is low.</sli>
+<sli importance="normal">This is normal.</sli>
+<sli importance="high">This is high.</sli>
+<sli importance="recommended">This is recommended.</sli>
+<sli importance="required">This is required.</sli>
+<sli importance="urgent">This is urgent.</sli>
+</sl>
+</section>
+<section>
+<title>Filtering and Flagging</title>
+<p>Importance (other than for step) is in the %select-atts; group,
+some of which can be used for filtering, some for flagging, and
+some for both. The spec is not clear about which groups importance
+is in, merely noting that it <q>provides a range of values for
+applications to use as needed</q>.</p>
+</section>
+</conbody>
+</concept>
+

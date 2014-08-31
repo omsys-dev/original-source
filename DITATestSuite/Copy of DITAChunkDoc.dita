@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA 1.1 Topic//EN"
+  "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd">
+<topic xml:lang="en-us" id="topic1">
+<title>DITA Chunking Test Document</title>
+<shortdesc>A set of nested topics to be processed different
+ways.</shortdesc>
+<body>
+<p>This is the top-level parent topic</p>
+</body>
+<topic id="topic1a">
+<title>DITA Chunking Test Branch A</title>
+<prolog><keywords>
+<indexterm>Branch A<indexterm>topic</indexterm></indexterm>
+</keywords></prolog>
+<body>
+<p>This is a second-level topic</p>
+</body>
+<topic id="topic1a1">
+<title>DITA Chunking Test Sub-branch A1</title>
+<body>
+<p>This is a third-level topic</p>
+</body>
+</topic>
+<topic id="topic1a2">
+<title>DITA Chunking Test Sub-branch A2</title>
+<body>
+<p>This is a third-level topic</p>
+</body>
+</topic>
+</topic>
+<topic id="topic1b">
+<title>DITA Chunking Test Branch B</title>
+<prolog><keywords>
+<indexterm>Branch B<indexterm>topic</indexterm></indexterm>
+</keywords></prolog>
+<body>
+<p>This is a second-level topic</p>
+</body>
+</topic>
+</topic>

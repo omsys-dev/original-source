@@ -1,0 +1,138 @@
+There are no "similar, existing solutions".  I brought this up 
+on the [dita-users] list, and Don Day, the Father of DITA, 
+agreed it was a good idea.  This project will provide a place 
+for cummunity involvement and discussion of issues in the 
+presentation of DITA.  It will use the current SourceForge 
+DITA-OT as the reference implementation for this purpose, but 
+is not a part of the DITA-OT itself.
+
+---------------------------------------------------------------
+Rejected by SF.net On: 2008-12-20 5:09
+Hi Jeremy,
+
+Please provide more specific details about this proposal.
+
+Cheers!,
+
+Daniel Hinojosa - the SourceForge.net support gnome
+--------------------------------------------------------------
+
+Hi, Daniel.  You asked for further details.  What do you want 
+to know???
+
+I can send you a bunch of posts from the list about it; I can 
+answer questions; but I'm at a bit of a loss as to what to say 
+about a test suite... it kinda speaks for itself.  Do you know 
+DITA?  If not, it will be hard to explain.  And if you do, Don 
+Day's approval of the idea should have been sufficient...
+
+The DITA-OT, which is hosted here already, is currently about 
+the only way there is to produce usable outputs from DITA files.  
+Several commercial vendors embed it in their products.  However, 
+it is slow, and if you do not know XSLT, you will not be able 
+to do anything to make even the simplest change, like putting 
+a logo on the cover of your manual.  So several vendors are in 
+process of coming up with alternative processors.  It will be 
+very hard for users to tell who can do what, as compared to the 
+reference implementation, the DITA-OT, unless there is a set of 
+conformance test documents available.  This is intended to be 
+that set.
+
+An additional issue is that there is no vendor-neutral way to 
+specify the result you want from processing your DITA files.  
+So we intend to develop some, much like Norm Walsh has done 
+for DocBook.  These will be PIs (still with me?) to specify 
+things like page breaks that are by design not pert of the 
+DITA spec, but that are essential to get decent output.  We 
+will be using the test suite both to document these and to 
+demonstrate them, as well as show vendor conformance (or not) 
+with them.
+
+If you have more questions, could you please give me an email 
+address I can reply to?  I'm disabled, and typing in this box 
+is painful.  Thanks.
+--------------------------------------------------------------
+Rejected by SF.net On: 2008-12-20 18:10 
+Jeremy,
+
+I'm trying to learn about the open source development that is 
+proposed be done via this proposal.
+
+I asked as this was tagged as "A project developing content 
+(not software)". If this is indeed content, please detail that. 
+We generally do not approve content only projects.
+
+If that is tagged incorrectly, please go back in the process 
+and change that to be reflective of the sort of project this 
+is expected to be.
+
+Thank you,
+
+Daniel Hinojosa - Sr. Manager, SourceForge.net Support
+---------------------------------------------------------------
+Starting over.  Since you have now explained that you never 
+approve "content" projects, I've retagged it as documentation, 
+which is also accurate.  (Why do you offer a choice that you 
+never approve, anyway?  Wastes everyone's time.)
+
+This project is intended to DEVELOP and DOCUMENT a set of 
+Processing Instructions to be used in DITA topic and map 
+files so that users can specify presentational choices in 
+their documents.  These PI's are then used in the DITA-OT, 
+hosted here on SourceForge for many years, to control details 
+of DITA-OT software operation.  We expect that other software 
+that does this job (DITA conversion for output) will also use 
+the same PIs. thereby fostering interoperability across toolsets 
+for DITA users.
+
+Currently, the only way users can alter even simple presentational 
+details, like page breaks, is by editing XSLT or Java code in 
+the DITA-OT, recompiling (for Java), and testing.  That is, all 
+users must become programmers.  As DITA spreads beyond its initial 
+POC stage, this is a barrier to adoption.  So it *will* be solved 
+by tool vendors; the intent of this project is to see it solved 
+in a consistent way that does not lock users in to a particular 
+vendor (because a change of tool would require thousands of 
+changes in their files).
+
+An additional goal is that the files DEVELOPED to DOCUMENT usage 
+of the PIs will also serve as a test suite for the DITA-OT, a 
+SOURCEFORGE PROJECT.  They can be used to help developers of the 
+DITA-OT find their new bugs, and to help users evaluate alternate 
+tools and methods of encoding their preferences for presentation 
+of the DITA data.
+
+Testing is an integral part of the software DEVELOPMENT process.  
+It is a part sometimes neglected in Open Source projects, so we 
+are attempting to remedy that for the DITA-OT and any other 
+DITA-related projects on SourceForge, like the DITA Open Platform 
+and about eight more.  All of them will benefit from using the 
+Test Suite to verify their coverage of the DITA specs.
+
+HTH!
+
+---------------------------------------------------------------
+Rejected by SF.net On: 2008-12-22 17:09
+Jeremy,
+
+It does help. Let me first note that on we do approve some 
+projects that seek to create documentation and/or content on 
+occasion. Such cases are usually ones that include substantial 
+code examples, etc.
+
+In cases like this one, we encourage users to seek out the 
+projects they are looking to help and add that effort to the 
+existing project. This will further help that project by adding 
+more value from which users of that software will benefit. This 
+has the added value of making said project more robust.
+
+If you will be including code, please detail that information 
+so that we can further assess this proposal. However, I recommend 
+that you contact the DITA-OT 
+(https://sourceforge.net/projects/dita-ot/) project and offer 
+your work to their project directly.
+
+Best regards,
+
+Daniel Hinojosa - Sr. Manager, SourceForge.net Support
+---------------------------------------------------------------

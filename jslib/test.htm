@@ -1,0 +1,25 @@
+<html>
+<head><title>Condition Change Test</title>
+<script type="text/JavaScript" src="runcond.js"></script>
+<script language="JavaScript">
+var CondAttrs = [  // set when file is written by code
+	[ "audience", [[ "novice", 0], ["expert", 0], ["admin", 1]]],
+	[ "product", [[ "m2g", 0], ["d2g", 0]]]
+];
+</script>
+</head>
+<body onclick="dialogWin.checkModal()" onfocus="return dialogWin.checkModal()" >
+<h1>Condition Change Test</h1>
+<p><a href="javascript:SetCondAttrs()">Change Conditions</a></p>
+
+<p class="audience_admin" style="display: none;">This para is for admins.</p>
+<p class="audience_expert">This para is for experts.</p>
+<p class="audience_admin audience_expert">This para is for admins and experts.</p>
+<p class="audience_novice">This para is for novices.</p>
+<p class="product_d2g">This para is about d2g.</p>
+<p class="product_m2g">This para is about m2g.</p>
+<p class="product_d2g product_m2g">This para is about d2g and m2g.</p>
+<p class="product_u2g">This para is about u2g.</p>
+
+</body>
+</html>

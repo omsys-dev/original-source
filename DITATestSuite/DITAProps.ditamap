@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA 1.1 Map//EN"
+  "http://docs.oasis-open.org/dita/v1.1/OS/dtd/map.dtd">
+<map xml:lang="en-us" id="DITAprops">
+<topicref href="DITAExclude.dita" type="concept" 
+navtitle="Exclusion Using Ditaval">
+<topicmeta><shortdesc>This demonstrates the effect of @action include
+and exclude.</shortdesc>
+<indexterm>Ditaval<indexterm>exclusion</indexterm></indexterm></topicmeta>
+</topicref>
+<topicref href="DITAPassthrough.dita" type="concept" 
+navtitle="Passthrough per Ditaval" >
+<topicmeta>
+<keywords><indexterm>Ditaval<indexterm>passthrough</indexterm></indexterm>
+</keywords></topicmeta>
+</topicref>
+<topicref href="DITAFlagging.dita" type="concept" 
+navtitle="Flagging via Ditaval" >
+<topicmeta><keywords>
+<indexterm>Ditaval<indexterm>flagging</indexterm></indexterm>
+<indexterm end="ditavalsection"/></keywords></topicmeta>
+</topicref>
+
+</map>

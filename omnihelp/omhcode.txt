@@ -1,0 +1,90 @@
+
+                          OmniHelp Code Samples
+                             March 19, 2002
+
+
+The JavaScript part of OmniHelp consists of code used in the main
+bookname.htm file which creates the framesets, and in the ctrl.htm
+and nav.htm files that are loaded into the top and left panes.  The
+topic files themselves should not contain any OH code, just the code
+they need for their own internal purposes, if any.
+
+
+Frameset
+--------
+
+The Frameset defines the sizes and colors for all three panes,
+and handles initial loading into them.  It accepts a parameter
+of the name of the first Topic file to display, and a switch
+for the initial content of the Nav pane.  In case of noframes,
+it does what it can to add limited navigation facilities.
+
+The syntax for the invocation is:
+
+  oh [-n contents] bookname.htm[#topicfile.htm[#anchorname]]
+
+where []s enclose optional elements as usual.
+
+
+<!DOCTYPE html PUBLIC 
+"-//W3C//DTD HTML 4.01 Frameset//EN"
+  "http://www.w3.org/TR/1999/REC-html401-19991224/frameset.dtd">
+<html lang="en">
+<head>
+<title>Project Name Help</title>
+<script language="JavaScript" type="text/javascript" src="top.js">
+</script>
+<script language="JavaScript">
+<!--
+  // JS content
+// -->
+</script>
+<style> <!--
+  /* CSS content */
+--> </style>
+</head>
+<frameset rows="50, *" border="0" frameborder="no">
+  <frame name="ctrl" src="ctrl.htm" noresize scrolling="no">
+  <frameset cols="100, *">
+<frame name="nav" src="nav.htm">
+<frame name="main" src="initial.htm">
+  </frameset>
+  <noframes>
+    <!-- noframes content -->
+  </noframes>
+ </frameset>
+</html>
+
+
+Control Pane
+------------
+
+The Control pane has, left to right, the following elements:
+
++ Widgets to select the type of navaid to appear in the Nav pane.
+These may be pushbuttons, radio buttons, tabs, or a droplist.
+
++ A pushbotton toggle to show/hide the Nav pane altogether.
+
++ Back and Forward buttons to navigate through the history.
+
++ Prev and Next buttons to navigate through the browse sequence.
+
++ A Print/Send button that brings up a dialog.
+
++ Any other user-defined buttons, which can go anywhere in the
+sequence of widgets after the Nav show/hide button.  An example
+might be an Information Types selector widget.
+
+
+Nav Pane
+--------
+
+The Nav pane initially loads the TOC data.  It loads the IX, Search,
+and Glossary data only when they are requested from the Control pane,
+using the widgets on the left.  The first load of each dataset may
+take several seconds as the source XML is processed, but after that
+any redisplay should be very fast.
+
+
+[End of OmniHelp Code Samples]

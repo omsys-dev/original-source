@@ -1,0 +1,7 @@
+
+   uDoc udx Utility
+   Copyright 2013 Jeremy H. griffith
+
+   This product includes software developed at
+   Omni Systems Cia. Ltda. (http://udoc2go.com/).
+

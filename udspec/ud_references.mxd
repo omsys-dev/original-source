@@ -1,0 +1,29 @@
+<doc id="ud_references">
+<title>References and Variables
+<idx>links:reference</idx>
+<idx id="xr">cross references</idx>
+<idx see="xr">references:cross</idx>
+</title>
+
+<p>Both references and variables are used to bring information from a source outside the current document into that document.  The most general form is the block element ^ref^, and the corresponding inline element ^xref^.  In both, if the element is not empty (contains text elements or text), the contained text is displayed as a link to the referenced item, same as in DITA.  If the element is empty, the content is the first ^title^ element in the referenced item, or the item text if no ^title^, as a link.  For URLs, the displayed content of an empty ^ref^ or ^xref^ is the URL itself.
+<idx>references:text</idx>
+</p>
+
+<p>A variable, referenced by a block ^textref^ or inline ^var^, is slightly different, more similar to a DITA "conref".  If the referencing element is not empty, the content is used only as a backup in case the definition cannot be found.  The reference is normally to a ^variable^ definition element in a uDoc library, rather than to any element or file like the ^ref^ and ^xref^ provide (though the reference can be to any uDoc element anywhere).  There is no automatic link to the definition, although the definition itself can contain a link and pretty much anything else you want to put in it.  If no `@src` is resolved, a converter should check first in any libraries specified in ^varref^s, then in `stdvars.mxl` (kept wherever `stdelems.mxl` is).
+<idx>variables</idx>
+</p>
+
+<p>The third sort of element that is associated with an external reference is the inline ^term^ element.  If it has text content, that content is always displayed, with a link to the referenced item, which is normally a ^glossary^ item definition, a <xref src="ud_glossary.mxd" idref="glossdef">^glossdef^</xref>.  If there is no content, it gets the ^title^ from the referenced definition, and also links to the full definition.
+<idx>references:glossary</idx>
+<idx>glossary:items, referencing</idx>
+</p>
+
+<p>The fourth kind of reference, ^doctext^, is used in a map to insert content into the topic referenced in the previous ^docref^ (parent or sibling).  This is intended for adding <xref src="ud_maps.mxd">transitions</xref>, where the added content is needed for some uses of the topic but not others.  It is similar to the DITA "conref push", but easier to use.  By default, the ^doctext^ content is added to the end of the previous topic, same as when `type="end"`.  If `type="start"`, it goes after the title at the start instead.  If it has an `@idref`, the content goes before (if `type="before"`) or after (if `type="after"`) the referenced element; it can also replace the referenced element (if `type="replace"`).
+
+The ^doctext^ content itself may be within the ^doctext^ explicitly, or may be referenced within the ^doctext^ in a ^textref^.  Multiple sequential ^doctext^ elements all affect the same preceding doc.  If two or more of the elements have the same `@idref` and `@type`, their contents are concatenated.  If an `@idref` is not found, the elements referencing it are ignored.  Note that you can only replace an element if it has an `@id`; if you think you will ever want to replace one, give it an `@id` when you author it.</p>
+
+<p>While content can be extracted from any uDoc file for re-use elsewhere, we *strongly* advise re-using uDoc content *only* from a library.  That cleanly identifies all the re-use cases, which enables more effective updating, correction, and translation.  Note that unlike in DITA, there are no "validity" checks on the content source, so you can readily re-use the same content in entirely different contexts.</p>
+
+<relref subjects="links glossary variables" />
+
+</doc>

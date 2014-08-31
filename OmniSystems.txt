@@ -1,0 +1,32 @@
+base.zip - Source for dcl.exe; last updated January 2014		
+console.zip - Code for driving dcl DLLs in Win32, JHG
+d2gcm.zip - Configuration manager (m2g and d2g)
+d2gpm.zip - Project manager (d2g)
+dcl_man.zip - 1999 DCL manual
+dcl_spec.zip - 1999 DCL specification
+dcx.zip - Provides two-way dcl ascii-binary conversion, JHG
+DITA2map.zip - Derives ditamaps from dita topic files, JHG
+DITATestSuite.zip - Possibly old DITA test suite source
+drmif.zip - Code for dcl FrameMaker MIF reading, JHG
+drxml.zip - Code for dcl XML reading, JHG
+dtd2ini.zip - Converts DTDs to Content-Model .ini files
+dwhtm.zip - Code for dcl HTM writing, JHG
+dwinf.zip - Code for dcl Microsoft INF writing, JHG
+dwrtf.zip - Code for dcl Microsoft RTF writing, JHG
+exwmf.zip - RTF Metafile Extractor used with DCL filters, JHG
+fdk_man.zip - FDK.TXT for DCL MIF2RTF Filter:  Windows 95/NT Version 2.4
+jslib.zip - Run-time conditional text display (unreleased)
+m2gframe.zip - FrameMaker FDK plugin for Mif2Go
+m2r_man.zip - 1998 Mif2Go user manual
+m2rbook.zip - FDK wrapper for Mif2Go FM book export 
+mxl.zip - Runs mxlparser.dll to produce JSON of the dta model on stdout
+mxlparser.zip - DLL for parsing MicroXML files
+omnihelp.zip - 2004 version of OmniHelp ancillary files (?)
+pprtf.zip - Pretty-prints .rtf file as .txt file
+runfm.zip - Runs FM Mif2Go project from external console application
+setini.zip - Sets .ini values from command line
+udspec.zip - uDoc specification
+udx.zip - Converts uDoc files between the full tagged and tag minimized forms
+x2g.zip - uDoc2Go .ini files (unreleased)
+xtra.zip - Odds and ends
+

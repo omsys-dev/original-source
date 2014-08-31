@@ -1,0 +1,51 @@
+<doc id="ud_index">
+<title>Indexing
+<idx>indexes:generating</idx>
+</title>
+
+<p>The inline ^idx^ element can go into the text content at any point where the indexed term is referenced, not just in a metadata section.  There are two kinds of index entry.  The normal one _references the text_ where it is located; its references resolve to point at the smallest containing element that has an ID, which may be the index element itself.  It may contain an attribute to identify the start or end of a range; for the `@start`, the range specifies an id, and for the `@end`, an idref to the same id.  Here are the start and end of a range:</p>
+
+<pre>^idx start="startid"^First level:second level[sort1:sort2]^/idx^</pre>
+<pre>^idx end="startid"/^
+</pre>
+
+<p>The other kind of index entry _references another index entry_, and contains a `@see` or `@seealso` attribute to specify the referenced entry.  For see/seealso, the reference is not used if the referenced index item does not exist; to avoid this, see/seealso entries are typically put in text next to the normal index entry they reference.  The see entry appears as the single reference under its referenced entry; a seealso may either start or end the list of references under its entry.  So the following code:
+<idx>see/see-also index entries</idx>
+<idx>index entries:see/see-also</idx>
+</p>
+
+<pre>^idx id="entryid"^First level:second level[sort1:sort2]^/idx^</pre>
+<pre>^idx see="entryid"^First level of ref:second level of ref^/idx^</pre>
+<pre>^idx seealso="entryid"^Another ref^/idx^
+</pre>
+
+<p>will result in:</p>
+
+<pre>First level
+    second level
+        12, 34, 56
+
+First level of ref
+    second level of ref
+       See First level, second level
+
+Another ref
+    ...
+    See also First level, second level
+</pre>
+
+<p>Within the ^idx^ element, the text content uses familiar FrameMaker syntax for level and sort; levels are separated by a colon, and sort strings follow the entry text in square brackets: "Top level:second level[sort1:sort2]".  To include an actual colon or square bracket, precede it with a backslash; to include an angle bracket, use the regular XML entity for it, &amp;lt; or &amp;gt;, or the corresponding shorthand symbols \^ \^.
+<idx>index entries:levels, specifying</idx>
+</p>
+
+<p>Why not use a separate element for each level and for sort, like DITA?  Two reasons.  First, it's faster to put in a colon than a pair of tags, and indexing is a very labor-intensive task.  Second, software used for translation does not permit the addition of any new elements, so if a language like Japanese requires a sort string that was not needed in the English source language, you're stuck.  This issue came up on [dita-users], and the poster was advised to put ^index-sort-as^ elements that _duplicated the displayed content_ in every English ^indexterm^ (possibly thousands of them) so there would be a place for the translators to put the katakana or hirogana required for sorting in Japanese.  Yikes.
+
+Unlike DITA, uDoc index entry text content can contain any inline element except for another index entry.  So you have no problem with typographic formatting, and can even include inline ^var^s, ^img^s, ^trademark^s, ^abbr^s (which are left abbreviated inside ^idx^, not expanded), ^xref^s, and the like.
+<idx>index entries:typographics in</idx>
+<idx>index entries:formatting</idx>
+</p>
+
+
+<relref subjects="index" />
+
+</doc>

@@ -1,0 +1,150 @@
+
+                      OmniHelp Draft Specification
+                             March 18, 2002
+
+
+OmniHelp is a cross-platform, browser-independent help viewer application.
+
+Most of the primary functionality is implemented using JavaScript and
+CSS along with XHTML.  Some functions (such as CSH and help embedding) 
+may be implemented in Java, C, or C++.  All code is Open Source under 
+the LGPL so it may readily be customized.
+
+The initial targets for OmniHelp are Windows (95/NT+), Linux, and 
+MacOS, with other UNIX flavors to follow as quickly as possible.
+
+
+Windows
+-------
+
+The default OH window is a tri-pane frameset (possibly emulated in a 
+noframes environment) with a control pane at top, a nav pane at left, 
+and the rest used as the topic pane:
+
++ In control pane, usual back/forward, next/prev, show/hide nav buttons,
+easily programmable (in .js file) to add others or remove unwanted ones.
+
++ In nav pane, choice of TOC, IX, Search, and Glossary by default, also
+easily programmable to add/remove more.
+
++ In topic pane, full support of XHTML 1.0 and CSS 1.0, with added CSS 
+2.0 as possible; may use existing Open Source engine such as Gecko.
+
+
+Files
+-----
+
+The project files all have the same basename, with varying extensions.
+The topic files can have any arbitrary names, normally with .htm or 
+.xml as their extensions.  The CSS files use .css as usual, and the
+JavaScript files use .js.  Graphics use their usual extensions.
+
+The project may be used just from the starting .htm/.xml (which
+includes the frameset code), or in compiled form using a .zip
+format (compressed or uncompressed) as packaging.
+
+
+  File Type    Extension  Description
+  ---------    ---------  -----------
+  Contents     .ohc       XHTML of TOC with show/hide CSS.
+  Index        .ohk       XHTML of IX with JS topic-title popups.
+  Search       .ohs       Binary index of terms.
+  Glossary     .ohg       XHTML with <a name=""> identifiers.
+
+  Map          .ohm       XML map for external linkage such as CSH.
+  Project      .ohp       Settings for compilation in .ini form.
+
+  Compiled     .ohz       Single-file zip package of all files.
+
+
+Contents Window
+---------------
+
+In any window that uses multiple lavels, any item that has subitems 
+has a book icon before it, closed when collapsed, open when expanded.  
+For the TOC, whenever a link is used from the IX or GL, or from any 
+topic, the corresponding entry is selected and anything above it is 
+expanded to make the selection visible.  On initial opening, only 
+the topmost level is shown by default.
+
+The expansion is done using CSS { display: block/none } for browsers
+later than ver 4.  No expansion is possible for NS4.
+
+Initially, the contents will be built as a set of XHTML .htm files,
+named C1N0001, C2N0001, C3N0001, C3N0002, etc.  The C1 file contains
+only top-level items.  When you click on the plus to expand one, you
+really get another file, a C2, which starts with the C1 it came from
+(with a clickable minus before it) and contains the heads under it,
+with links to C3s.  Same happens at each level, with the higher heads
+(like in trails) stacked up at the top with minuses, and the current 
+level flush left with plusses, so no indents are needed... allows use
+of a narrow window without horizontal scroll (just wrap).
+
+
+Index Window
+------------
+
+For the IX, the topmost level is the user-defined set of alphabetic,
+numeric, and symbol heads.  Level expansion and collapsing work as in
+the Contents window.  On initial opening, only the topmost level is 
+shown by default.
+
+When multiple topics refer to the same IX entry, the bottom level of 
+links shows the titles of the referencing topics.  This eliminates the 
+need for popups to resolve multiple references (as used in WinHelp).
+
+When the IX entry is double-clicked, the topic pane is positioned
+so that the actual location of the index ref in the text is near
+the top (or center?) of the window, even though it is not visible
+itself in the text.
+
+
+Search Window
+-------------
+
+The Search window looks nearly identical to the IX window, since the
+Search shows the indexed search terms as in WinHelp.  In both, the
+user can type a word to match in an edit box, and have the list
+below sync to the typing at each character, with the first match
+always at the top of the list box.  
+
+However, in the Search window the terms are all at the top level.
+Where terms appear in multiple topics, a Find Next button becomes
+active so that the user can step through all instances (in TOC
+order).  Topics can be excluded from Search by the help author.
+
+For Search, the topic pane shows the page with the word(s) all
+highlighted, and is positioned so that the first instance of the
+word in the selected topic is near the center (or top?).
+
+Possibly the IX and Search functions should be merged, with color 
+distinguishing terms not in the index from those that are.  The 
+trouble with this is that when a term was in both, the Search 
+instances could overwhelm the IX instances...though the IX ones
+could be placed first in the sequence.
+
+
+Glossary Window
+---------------
+
+The Glossary window is again similar to the Search window, with
+all terms at the top level in an autoscrolling list.  When a term
+is double-clicked, the corresponding definition appears in the
+topic pane.  All instances of the glossary term in the regular
+topics are autolinked to the glossary <a name=""> tags during
+compilation.
+
+
+Context-Sensitive Help
+----------------------
+
+Initially, CSH is handled via a window that contains the context
+terms, one per line, in XHTML, each linked to their topic file.
+This CSH file is generated by the authoring system.  It contains
+JS which, when it is loaded, looks at the # value passed to it,
+selects the corresponding term, and brings in the page it links
+to instead of the CSH page itself (which remains hidden).  A meta
+refresh tag handles the case where there is no match.
+
+
+[End of OmniHelp Draft Specification]

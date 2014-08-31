@@ -1,0 +1,115 @@
+<DialogFile 5.5>
+<LongChar No>
+<Font 2 1 12>
+<DialogBox
+ <MBRect -1 -1 359 301>
+ <WBRect -1 -1 332 171>
+ <XBRect -1 -1 367 388>
+ <Platforms MWX>
+ <CurrentFocus 2>
+ <FirstFocus 2>
+ <OKButton 7>
+ <CancelButton -1>
+ <DefaultButton 7>
+ <HelpButton -1>
+ <TitleLabel 0>
+>
+<Label
+ <MCorner 470 956>
+ <WCorner 141 -2>
+ <XCorner 18 26>
+ <Label Conversion Designer>
+> # 0
+<Label
+ <MCorner 217 21>
+ <WCorner 7 26>
+ <XCorner 18 56>
+ <Label Paragraph Tag:>
+> # 1
+<EditBox
+ <MBaseLine 220 44 80>
+ <WBaseLine 7 38 63>
+ <XBaseLine 18 77 80>
+ <Label >
+ <StuffObject 3>
+> # 2
+<ImagePopUp
+ <MBRect 304 29 16 22>
+ <WBRect 75 28 6 9>
+ <XBRect 105 63 14 21>
+ <Label tallarrowdn>
+ <StuffObject 2>
+> # 3
+<Label
+ <MCorner 17 21>
+ <WCorner 7 54>
+ <XCorner 18 101>
+ <Label Properties:>
+> # 4
+<PopUpMenu
+ <MBaseLine 17 41 87>
+ <WBaseLine 7 67 80>
+ <XBaseLine 18 122 87>
+ <StuffObject -1>
+> # 5
+<Rule
+ <MBRect 5 62 86 1>
+ <WBRect 5 72 86 1>
+ <XBRect 5 62 86 1>
+> # 6
+<Button
+ <MBaseLine 68 287 92>
+ <WBaseLine 13 87 67>
+ <XBaseLine 63 368 64>
+ <Label Apply>
+ <ShortcutPosition 0>
+ <Active No>
+> # 7
+<Label
+ <MCorner 21 94>
+ <WCorner 7 101>
+ <XCorner 21 94>
+ <Label To All Selected Styles>
+> # 8
+<Rule
+ <MBRect 5 98 85 1>
+ <WBRect 5 103 86 1>
+ <XBRect 5 98 85 1>
+> # 9
+<Button
+ <MBaseLine 13 112 67>
+ <WBaseLine 13 119 67>
+ <XBaseLine 13 112 67>
+ <Label Update All>
+ <ShortcutPosition 0>
+ <Active No>
+> # 10
+<Label
+ <MCorner 7 127>
+ <WCorner 7 134>
+ <XCorner 7 127>
+ <Label Properties in .ini ...>
+> # 11
+<Rule
+ <MBRect 8 266 343 1>
+ <WBRect 5 147 86 1>
+ <XBRect 18 341 339 1>
+> # 12
+<Label
+ <MCorner 6 161>
+ <WCorner 7 161>
+ <XCorner 6 161>
+ <Label Commands:>
+> # 13
+<ImagePopUp
+ <MBRect 73 150 6 9>
+ <WBRect 73 150 6 9>
+ <XBRect 73 150 6 9>
+ <Label tallarrowdn>
+ <StuffObject -1>
+> # 14
+<Rule
+ <MBRect 95 3 1 165>
+ <WBRect 97 2 1 165>
+ <XBRect 95 3 1 165>
+> # 15

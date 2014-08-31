@@ -1,0 +1,28 @@
+<doc id="ud_metadata">
+<title>uDoc Metadata
+<idx>metadata elements</idx>
+<idx>predefined data elements</idx>
+<idx>data elements:predefined</idx>
+<idx>elements:data, predefined</idx>
+</title>
+
+<p>In uDoc, metadata is whatever you want associated with the doc file, in elements with property <q>data</q>.  The predefined elements include block elements ^data^, ^author^, ^copyright^, and ^publisher^; for the last three, `@props="data var"` so that they are processed as <idx>variables:predefined elements processed as</idx>variables for use in the outputs.  The inline data element for metadata use is ^mark^, with `@props="inline data marker"`.  You can easily <xref src="ud_newelems.mxd">define as many more as you need</xref> to suit your own classification mathods.
+
+As to what to create and how to use them, the creator of SPFE, Mark Baker, recently posted these guidelines on LinkedIn.  We couldn't say it better:</p>
+
+<quote>I make a distinction between intrinsic and extrinsic metadata. Intrinsic metadata describes the properties of the content itself (for instance, its subject matter). Extrinsic metadata describes how the content is used by or relates to other content (for instance, a location in which it is reused). Intrinsic metadata should be stored with/in the content because it is inseparable from it and does not change when external things change. Extrinsic metadata should be stored separately and point to the content, so that the content does not have to be revised when the extrinsic metadata changes. More on this <xref src="http://everypageispageone.com/2011/04/17/topics-should-merit-their-metadata/">here</xref>. 
+
+A file system is not a good place to store metadata, for several reasons, including that it creates an artificial subordination of one metadata field to another, and that is is not portable between storage systems. Content should not become separated from its metadata simply because it is moved to a different location or a different storage architecture.
+
+If you are creating structured content, you are embedding metadata in your content. All structured markup is metadata, down to the smallest element. The metadata created by markup includes metadata about the whole of the document (such as its document type) and metadata about parts of it. To carve off some of the metadata about the whole of the document into a different storage location creates an artificial divide that inhibits effective querying of your content set. (Unless you are using a storage medium that makes it impossible to query XML structures in your content, in which case you are using the wrong storage medium.) More on this <xref src="http://everypageispageone.com/2011/05/20/the-meaning-of-metadata/">here</xref>. 
+
+Metadata is useless unless it accurately describes the content. If your metadata is in any way structured, therefore, it actually forms a specification for the content. That is, you don't simply let the author write anything they want and then hunt around for the closest metadata label that sort of fits. You define the purpose of the topic in terms of the metadata to be applied to it. The metadata defines the purpose, role, and function of the topic, and is therefore the definition of what the writer is supposed to accomplish. The writer should therefore create the metadata first so that they know exactly what content they are supposed to produce. More on that <xref src="http://everypageispageone.com/2011/11/29/metadata-is-not-an-afterthought/">here</xref>. 
+
+The organization of content is based on metadata. When you create small collections, like an individual book or help system, you can rely on implicit metadata that exists in your head as the author of the content. When you contribute content to a larger collection, whether that be the repository of a big reuse system, or whether it be publishing a topic on the Web, the organization is done by someone or something else -- a person or an algorithm. Either of these, but especially the algorithm, require metadata to be made explicit.
+
+When you organize content top-down, as in a book or a typical help system, the organization is itself metadata, though you may not think of it as such. But when your content becomes part of a system that requires bottom-up organization, the bottom-up organization is driven by metadata, which must be explicit to be effective. More on that <xref src="http://everypageispageone.com/2013/03/19/web-organization-is-not-like-book-organization/">here</xref>.
+</quote>
+
+<relref subjects="metadata data" />
+
+</doc>

@@ -1,0 +1,13 @@
+<doc id="ud_libraries">
+<title>Standard uDoc Libraries
+<idx>library files:standard</idx>
+</title>
+
+<p>This Appendix contains all the standard uDoc library files, shown as preformatted code.
+It was produced using the dirref:</p>
+
+<pre> ^dirref src="C:\omsys\x2g\lib" query="*.mxl" results="codedocref" /^
+
+</pre>
+
+</doc>

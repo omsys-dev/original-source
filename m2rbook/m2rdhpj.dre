@@ -1,0 +1,220 @@
+<DialogFile 5.5>
+<LongChar No>
+<Font 2 1 12>
+<DialogBox
+ <MBRect -1 -1 359 301>
+ <WBRect -1 -1 332 171>
+ <XBRect -1 -1 367 388>
+ <Platforms MWX>
+ <CurrentFocus 3>
+ <FirstFocus 3>
+ <OKButton 8>
+ <CancelButton -1>
+ <DefaultButton 8>
+ <HelpButton -1>
+ <TitleLabel 0>
+>
+<Label
+ <MCorner 470 956>
+ <WCorner 138 0>
+ <XCorner 18 26>
+ <Label Conversion Designer>
+> # 0
+<Label
+ <MCorner 7 12>
+ <WCorner 7 12>
+ <XCorner 7 12>
+ <Label Project:  Name of project, followed by a very long path name to the .ini file>
+> # 1
+<Label
+ <MCorner 7 26>
+ <WCorner 7 26>
+ <XCorner 7 26>
+ <Label Paragraph Tag:>
+> # 2
+<EditBox
+ <MBaseLine 7 38 63>
+ <WBaseLine 7 38 63>
+ <XBaseLine 7 38 63>
+ <Label For all styles>
+ <StuffObject 4>
+> # 3
+<ImagePopUp
+ <MBRect 75 28 6 9>
+ <WBRect 75 28 6 9>
+ <XBRect 75 28 6 9>
+ <Label tallarrowdn>
+ <StuffObject 3>
+> # 4
+<Label
+ <MCorner 7 54>
+ <WCorner 7 54>
+ <XCorner 7 54>
+ <Label Properties:>
+> # 5
+<PopUpMenu
+ <MBaseLine 7 67 80>
+ <WBaseLine 7 67 80>
+ <XBaseLine 7 67 80>
+ <StuffObject -1>
+> # 6
+<Rule
+ <MBRect 5 72 86 1>
+ <WBRect 5 72 86 1>
+ <XBRect 5 72 86 1>
+> # 7
+<Button
+ <MBaseLine 13 87 67>
+ <WBaseLine 13 87 67>
+ <XBaseLine 13 87 67>
+ <Label Apply>
+ <ShortcutPosition 0>
+ <Active No>
+> # 8
+<Label
+ <MCorner 21 101>
+ <WCorner 7 101>
+ <XCorner 21 101>
+ <Label To All Selected Styles>
+> # 9
+<Rule
+ <MBRect 5 103 86 1>
+ <WBRect 5 103 86 1>
+ <XBRect 5 103 86 1>
+> # 10
+<Button
+ <MBaseLine 13 119 67>
+ <WBaseLine 13 119 67>
+ <XBaseLine 13 119 67>
+ <Label Update All>
+ <ShortcutPosition 0>
+ <Active No>
+> # 11
+<Label
+ <MCorner 7 134>
+ <WCorner 7 134>
+ <XCorner 7 134>
+ <Label Properties in .ini ...>
+> # 12
+<Rule
+ <MBRect 5 147 86 1>
+ <WBRect 5 147 86 1>
+ <XBRect 5 147 86 1>
+> # 13
+<Label
+ <MCorner 7 161>
+ <WCorner 7 161>
+ <XCorner 7 161>
+ <Label Commands:>
+> # 14
+<ImagePopUp
+ <MBRect 73 150 6 9>
+ <WBRect 73 150 6 9>
+ <XBRect 73 150 6 9>
+ <Label tallarrowdn>
+ <StuffObject -1>
+> # 15
+<Rule
+ <MBRect 95 18 1 150>
+ <WBRect 95 18 1 150>
+ <XBRect 95 18 1 150>
+> # 16
+<Rule
+ <MBRect 102 14 224 1>
+ <WBRect 102 14 224 1>
+ <XBRect 102 14 224 1>
+> # 17
+<CheckBox
+ <MCorner 101 27>
+ <WCorner 101 27>
+ <XCorner 101 27>
+ <Label Always update combined .cnt after conversions>
+ <Active Yes>
+ <StuffObject -1>
+> # 18
+<Rule
+ <MBRect 99 34 228 1>
+ <WBRect 99 34 228 1>
+ <XBRect 99 34 228 1>
+> # 19
+<CheckBox
+ <MCorner 102 49>
+ <WCorner 102 49>
+ <XCorner 102 49>
+ <Label Compile using .hpj file with settings given below:>
+ <Active No>
+ <StuffObject -1>
+> # 20
+<Label
+ <MCorner 102 69>
+ <WCorner 102 71>
+ <XCorner 102 69>
+ <Label Name of .hpj file to use:>
+> # 21
+<EditBox
+ <MBaseLine 211 69 115>
+ <WBaseLine 211 69 115>
+ <XBaseLine 211 69 115>
+ <Label helpfile.hpj>
+ <StuffObject -1>
+> # 22
+<Label
+ <MCorner 102 89>
+ <WCorner 102 90>
+ <XCorner 102 89>
+ <Label Name of target .hlp file:>
+> # 23
+<EditBox
+ <MBaseLine 211 89 115>
+ <WBaseLine 211 89 115>
+ <XBaseLine 211 89 115>
+ <Label helpfile.hlp>
+ <StuffObject -1>
+> # 24
+<Label
+ <MCorner 102 110>
+ <WCorner 102 111>
+ <XCorner 102 110>
+ <Label Title for Help:>
+> # 25
+<EditBox
+ <MBaseLine 177 110 150>
+ <WBaseLine 177 110 150>
+ <XBaseLine 177 110 150>
+ <Label Help Window Title>
+ <StuffObject -1>
+> # 26
+<Label
+ <MCorner 102 131>
+ <WCorner 102 132>
+ <XCorner 102 131>
+ <Label Refer for default topic:>
+> # 27
+<EditBox
+ <MBaseLine 211 130 115>
+ <WBaseLine 211 130 115>
+ <XBaseLine 211 130 115>
+ <Label ContentsTopicString>
+ <StuffObject -1>
+> # 28
+<Label
+ <MCorner 102 151>
+ <WCorner 102 151>
+ <XCorner 102 151>
+ <Label Copyright notice:>
+> # 29
+<EditBox
+ <MBaseLine 196 150 130>
+ <WBaseLine 196 150 130>
+ <XBaseLine 196 150 130>
+ <Label (c) 1998 Omni Systems>
+ <StuffObject -1>
+> # 30
+<CheckBox
+ <MCorner 103 165>
+ <WCorner 103 165>
+ <XCorner 103 165>
+ <Label Use datestamp at the end of the copyright notice>
+ <Active Yes>
+ <StuffObject -1>
+> # 31

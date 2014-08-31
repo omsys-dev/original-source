@@ -1,0 +1,76 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: dtd2ini - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"..\GPL\Release/dtd2ini.res" /d "NDEBUG" "D:\cvs\dtd2ini\dtd2ini.rc"" 
+Creating temporary file "C:\DOCUME~1\JEREMY~1.000\LOCALS~1\Temp\RSP7B.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "NDEBUG" /D "WIN32" /D "_CONSOLE" /D CHAR_SIZE=8 /D "_BUILD_STD" /FR"..\GPL\Release/" /Fp"..\GPL\Release/dtd2ini.pch" /YX /Fo"..\GPL\Release/" /Fd"..\GPL\Release/" /FD /c 
+"D:\cvs\dtd2ini\dtd.c"
+"D:\cvs\dtd2ini\system.c"
+"D:\cvs\dtd2ini\string16.c"
+"D:\cvs\dtd2ini\ctype16.c"
+"D:\cvs\dtd2ini\http.c"
+"D:\cvs\dtd2ini\stdio16.c"
+"D:\cvs\dtd2ini\url.c"
+"D:\cvs\dtd2ini\charset.c"
+"D:\cvs\dtd2ini\namespaces.c"
+"D:\cvs\dtd2ini\dtd2ini.c"
+"D:\cvs\dtd2ini\xmlparser.c"
+"D:\cvs\dtd2ini\hash.c"
+"D:\cvs\dtd2ini\input.c"
+"D:\cvs\dtd2ini\d2ird.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\JEREMY~1.000\LOCALS~1\Temp\RSP7B.tmp" 
+Creating temporary file "C:\DOCUME~1\JEREMY~1.000\LOCALS~1\Temp\RSP7C.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib WSOCK32.LIB /nologo /subsystem:console /incremental:no /pdb:"..\GPL\Release/dtd2ini.pdb" /machine:I386 /out:"..\GPL\Release/dtd2ini.exe" 
+\cvs\GPL\Release\dtd.obj
+\cvs\GPL\Release\system.obj
+\cvs\GPL\Release\string16.obj
+\cvs\GPL\Release\ctype16.obj
+\cvs\GPL\Release\http.obj
+\cvs\GPL\Release\stdio16.obj
+\cvs\GPL\Release\url.obj
+\cvs\GPL\Release\charset.obj
+\cvs\GPL\Release\namespaces.obj
+\cvs\GPL\Release\dtd2ini.obj
+\cvs\GPL\Release\xmlparser.obj
+\cvs\GPL\Release\hash.obj
+\cvs\GPL\Release\input.obj
+\cvs\GPL\Release\d2ird.obj
+\cvs\GPL\Release\dtd2ini.res
+]
+Creating command line "link.exe @C:\DOCUME~1\JEREMY~1.000\LOCALS~1\Temp\RSP7C.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+dtd.c
+system.c
+string16.c
+ctype16.c
+http.c
+stdio16.c
+url.c
+charset.c
+namespaces.c
+dtd2ini.c
+xmlparser.c
+hash.c
+input.c
+D:\cvs\dtd2ini\input.c(430) : warning C4102: 'more_bytes' : unreferenced label
+d2ird.c
+Linking...
+   Creating library ..\GPL\Release/dtd2ini.lib and object ..\GPL\Release/dtd2ini.exp
+
+
+
+<h3>Results</h3>
+dtd2ini.exe - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

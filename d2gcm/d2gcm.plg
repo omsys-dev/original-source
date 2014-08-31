@@ -1,0 +1,124 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: d2gcm - Win32 M2GcmRelease--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"M2GcmRelease/d2gcm.res" /i "C:\wxWin\wxWidgets-2.8.11/include" /i "C:\wxWin\wxWidgets-2.8.11/contrib/include" /i "C:\wxWin\wxWidgets-2.8.11/lib/vc_lib/msw" /i "C:\Program Files (x86)\Microsoft Visual Studio\vc98\include" /d "NOPCH" /d "WIN32" /d "__WXMSW__" /d "_WINDOWS" /d "_M2GCM" "C:\cvs\d2gcm\d2gcm.rc"" 
+Creating temporary file "C:\Users\jeremy\AppData\Local\Temp\RSPE04F.tmp" with contents
+[
+/nologo /MD /W4 /GR /O2 /I "C:\wxWin\wxWidgets-2.8.11/include" /I "C:\wxWin\wxWidgets-2.8.11/contrib/include" /I "C:\wxWin\wxWidgets-2.8.11/lib/vc_lib/msw" /I "C:\cvs\base" /I "C:\Program Files (x86)\Microsoft Visual Studio\vc98\include" /D "NOPCH" /D "WIN32" /D "__WXMSW__" /D "_WINDOWS" /D "_M2GCM" /FR"M2GcmRelease/" /Fo"M2GcmRelease/" /Fd"VCProjectRelease\d2gcm.pdb" /FD /EHsc /c 
+"C:\cvs\d2gcm\cmdcl.cpp"
+"C:\cvs\d2gcm\cmdita.cpp"
+"C:\cvs\d2gcm\configmgr.cpp"
+"C:\cvs\d2gcm\d2gcmapp.cpp"
+"C:\cvs\base\dcbase.cpp"
+"C:\cvs\base\dcfile.cpp"
+"C:\cvs\base\dcfili.cpp"
+"C:\cvs\base\dcfilp.cpp"
+"C:\cvs\base\dcfilr.cpp"
+"C:\cvs\base\dcfilw.cpp"
+"C:\cvs\base\dcfmtr.cpp"
+"C:\cvs\base\dcglob.cpp"
+"C:\cvs\base\dclist.cpp"
+"C:\cvs\base\dclog.cpp"
+"C:\cvs\base\dcmem.cpp"
+"C:\cvs\base\dcnode.cpp"
+"C:\cvs\base\dcnodt.cpp"
+]
+Creating command line "cl.exe @C:\Users\jeremy\AppData\Local\Temp\RSPE04F.tmp" 
+Creating temporary file "C:\Users\jeremy\AppData\Local\Temp\RSPE050.tmp" with contents
+[
+wxmsw28_richtext.lib wxmsw28_aui.lib wxmsw28_html.lib wxmsw28_xrc.lib wxmsw28_core.lib wxbase28.lib wxtiff.lib wxjpeg.lib wxpng.lib wxzlib.lib wxregex.lib wxmsw28_adv.lib wxbase28_net.lib wxbase28_xml.lib wxexpat.lib htmlhelp.lib kernel32.lib user32.lib gdi32.lib comdlg32.lib winspool.lib winmm.lib shell32.lib comctl32.lib ole32.lib oleaut32.lib uuid.lib rpcrt4.lib advapi32.lib wsock32.lib shlwapi.lib /nologo /subsystem:windows /incremental:no /pdb:"M2GcmRelease/m2gcm.pdb" /map:"M2GcmRelease/m2gcm.map" /machine:I386 /out:"M2GcmRelease/m2gcm.exe" /libpath:"C:\wxWin\wxWidgets-2.8.11/lib/vc_lib" /libpath:"C:\Program Files (x86)\Microsoft Visual Studio\vc98\lib" 
+.\M2GcmRelease\cmdcl.obj
+.\M2GcmRelease\cmdita.obj
+.\M2GcmRelease\configmgr.obj
+.\M2GcmRelease\d2gcmapp.obj
+.\M2GcmRelease\dcbase.obj
+.\M2GcmRelease\dcfile.obj
+.\M2GcmRelease\dcfili.obj
+.\M2GcmRelease\dcfilp.obj
+.\M2GcmRelease\dcfilr.obj
+.\M2GcmRelease\dcfilw.obj
+.\M2GcmRelease\dcfmtr.obj
+.\M2GcmRelease\dcglob.obj
+.\M2GcmRelease\dclist.obj
+.\M2GcmRelease\dclog.obj
+.\M2GcmRelease\dcmem.obj
+.\M2GcmRelease\dcnode.obj
+.\M2GcmRelease\dcnodt.obj
+.\M2GcmRelease\d2gcm.res
+]
+Creating command line "link.exe @C:\Users\jeremy\AppData\Local\Temp\RSPE050.tmp"
+Creating temporary file "C:\Users\jeremy\AppData\Local\Temp\RSPE051.bat" with contents
+[
+@echo off
+copy .\M2GcmRelease\m2gcm.exe C:\omsys\common\bin
+]
+Creating command line "C:\Users\jeremy\AppData\Local\Temp\RSPE051.bat"
+Compiling resources...
+Compiling...
+cmdcl.cpp
+cmdita.cpp
+configmgr.cpp
+d2gcmapp.cpp
+dcbase.cpp
+dcfile.cpp
+dcfili.cpp
+dcfilp.cpp
+dcfilr.cpp
+dcfilw.cpp
+dcfmtr.cpp
+dcglob.cpp
+dclist.cpp
+dclog.cpp
+dcmem.cpp
+dcnode.cpp
+dcnodt.cpp
+Generating Code...
+warning C4710: function 'virtual __thiscall DCirfile::~DCirfile(void)' not inlined
+warning C4710: function 'virtual __thiscall DCfrfile::~DCfrfile(void)' not inlined
+warning C4710: function 'virtual __thiscall DCLwfile::~DCLwfile(void)' not inlined
+warning C4710: function 'virtual __thiscall DCrfile::~DCrfile(void)' not inlined
+warning C4710: function 'virtual __thiscall DCrfile::~DCrfile(void)' not inlined
+warning C4710: function 'virtual __thiscall DCpfile::~DCpfile(void)' not inlined
+warning C4710: function 'virtual __thiscall DCrfile::~DCrfile(void)' not inlined
+warning C4710: function 'virtual __thiscall DCirfile::~DCirfile(void)' not inlined
+Linking...
+LINK : warning LNK4089: all references to "OLEAUT32.dll" discarded by /OPT:REF
+<h3>Output Window</h3>
+Copying to omsyshome directory...
+        1 file(s) copied.
+Creating temporary file "C:\Users\jeremy\AppData\Local\Temp\RSP5793.tmp" with contents
+[
+/nologo /o"M2GcmRelease/m2gcm.bsc" 
+.\M2GcmRelease\cmdcl.sbr
+.\M2GcmRelease\cmdita.sbr
+.\M2GcmRelease\configmgr.sbr
+.\M2GcmRelease\d2gcmapp.sbr
+.\M2GcmRelease\dcbase.sbr
+.\M2GcmRelease\dcfile.sbr
+.\M2GcmRelease\dcfili.sbr
+.\M2GcmRelease\dcfilp.sbr
+.\M2GcmRelease\dcfilr.sbr
+.\M2GcmRelease\dcfilw.sbr
+.\M2GcmRelease\dcfmtr.sbr
+.\M2GcmRelease\dcglob.sbr
+.\M2GcmRelease\dclist.sbr
+.\M2GcmRelease\dclog.sbr
+.\M2GcmRelease\dcmem.sbr
+.\M2GcmRelease\dcnode.sbr
+.\M2GcmRelease\dcnodt.sbr]
+Creating command line "bscmake.exe @C:\Users\jeremy\AppData\Local\Temp\RSP5793.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+m2gcm.exe - 0 error(s), 9 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA 1.1 Concept//EN"
+  "http://docs.oasis-open.org/dita/v1.1/OS/dtd/concept.dtd">
+<concept xml:lang="en-us" id="basictables">
+<title>DITA Tables</title>
+<shortdesc>This topic has examples of a simpletable and of a complex
+table.</shortdesc>
+<conbody>
+<section>
+<title>Simple Table</title>
+<p>This table is very simple.</p>
+<?dtrtf SimpleTableWidth="2in" ?>
+<simpletable outputclass="SimpleTable" relcolwidth="1* 1*">
+<sthead>
+<stentry><p outputclass="cellheading">Pet</p></stentry>
+<stentry><p outputclass="cellheading">Name</p></stentry>
+</sthead>
+<strow>
+<stentry><p outputclass="cellbody">Cat</p></stentry>
+<stentry><p outputclass="cellbody">Phantom</p></stentry>
+</strow>
+<strow>
+<stentry><p outputclass="cellbody">Dog</p></stentry>
+<stentry><p outputclass="cellbody">Pumpkin</p></stentry>
+</strow>
+</simpletable>
+</section>
+<section>
+<title>Complex Table</title>
+<p>This table has row and column spans.</p>
+<?dtrtf SimpleTableWidth="5in" ?>
+<table id="complex" outputclass="ComplexTable">
+<title outputclass="tabletitle">DITA List Types</title>
+<tgroup cols="4">
+<colspec colnum="1" colname="col1" colwidth="96*" />
+<colspec colnum="2" colname="col2" colwidth="72*" />
+<colspec colnum="3" colname="col3" colwidth="72*" />
+<colspec colnum="4" colname="col4" colwidth="72*" />
+<thead>
+<row>
+<entry align="center" valign="middle" colname="col1" morerows="1">
+<p outputclass="cellheading">Name</p></entry>
+<entry align="center" valign="middle" namest="col2" nameend="col4">
+<p outputclass="cellheading">Tags</p></entry>
+</row>
+<row>
+<entry align="center" valign="middle" colname="col2"><p
+outputclass="cellheading">List</p></entry>
+<entry align="center" valign="middle" colname="col3"><p
+outputclass="cellheading">Entry</p></entry>
+<entry align="center" valign="middle" colname="col4"><p
+outputclass="cellheading">Parts</p></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="left" valign="top" colname="col1">
+<p outputclass="cellbody">Simple</p></entry>
+<entry align="left" valign="top" colname="col2">
+<p outputclass="cellbody">&lt;sl&gt;</p></entry>
+<entry align="left" valign="top" colname="col3">
+<p outputclass="cellbody">&lt;sli&gt;</p></entry>
+<entry align="left" valign="middle" colname="col4" morerows="2">
+<p outputclass="cellbody">None</p></entry>
+</row>
+<row>
+<entry align="left" valign="top" colname="col1">
+<p outputclass="cellbody">Ordered</p></entry>
+<entry align="left" valign="top" colname="col2">
+<p outputclass="cellbody">&lt;ol&gt;</p></entry>
+<entry align="left" valign="middle" colname="col3" morerows="1">
+<p outputclass="cellbody">&lt;li&gt;</p></entry>
+</row>
+<row>
+<entry align="left" valign="top" colname="col1">
+<p outputclass="cellbody">Unordered</p></entry>
+<entry align="left" valign="top" colname="col2">
+<p outputclass="cellbody">&lt;ul&gt;</p></entry>
+</row>
+<row>
+<entry align="left" valign="top" colname="col1">
+<p outputclass="cellbody">Definition</p></entry>
+<entry align="left" valign="top" colname="col2">
+<p outputclass="cellbody">&lt;dl&gt;</p></entry>
+<entry align="left" valign="top" colname="col3">
+<p outputclass="cellbody">&lt;dlentry&gt;</p></entry>
+<entry align="left" valign="top" colname="col4">
+<p outputclass="cellbody">&lt;dt&gt;, &lt;dd&gt;</p></entry>
+</row>
+<row>
+<entry align="left" valign="top" colname="col1">
+<p outputclass="cellbody">Parameter</p></entry>
+<entry align="left" valign="top" colname="col2">
+<p outputclass="cellbody">&lt;parml&gt;</p></entry>
+<entry align="left" valign="top" colname="col3">
+<p outputclass="cellbody">&lt;plentry&gt;</p></entry>
+<entry align="left" valign="top" colname="col4">
+<p outputclass="cellbody">&lt;pt&gt;, &lt;pd&gt;</p></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</section>
+</conbody>
+<related-links>
+<link href="DITAChoiceTable.dita" role="sibling" format="dita"></link>
+<link href="DITAPropertiesTable.dita" role="sibling" format="dita"></link>
+</related-links>
+</concept>
+

@@ -1,0 +1,18 @@
+<doc id="ud_udxtag">
+<title>The ^udx^ Tag</title>
+
+<p>Sometimes you may want `udx` to process some parts of a file, while skipping over others.  You can specify the areas to be handled differently with the ^udx^ tag in the document.  Use the tag the way you use a ^div^, with the ^udx^ start tag at the beginning of the part, and the ^/udx^ end tag at the end of it.  The ^udx^ tags themselves are retained in the output.
+
+Why would you want to do this?  In this spec, we have some code sections that are specifically meant to show full tagging, and others meant to show minimization.  If those are converted without the ^udx^ tags, both sections would come out the same, and would no longer demonstrate the differences between the two uDoc forms.  It's a fairly unusual case, unless you are writing about uDoc itself, but since we needed it, others might too.
+
+The ^udx^ tag has one attribute, `switch`, with one of the following values:</p>
+
+<ul>
+<l/>`switch="none"`: the default, `udx` skips the section entirely. 
+<l/>`switch="nofull"`: prevents `udx` from making full tags, but allows minimization.
+<l/>`switch="nomin"`:  prevents `udx`  minimization, but allows making full tags.
+</ul>
+
+<relref subjects="udx shorthand"/>
+
+</doc>

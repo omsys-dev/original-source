@@ -1,0 +1,8 @@
+<lib id="ud_keydefs">
+ <!-- Keydefs referencing uDoc source for uDoc spec -->
+ <!-- Last updated July 30, 2013 -->
+
+ <key keys="outputproc" src="ud_output.mxd"/>
+ <key keys="projaddr" src="ud_projaddr.mxd"/>
+
+</lib>

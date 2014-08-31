@@ -1,0 +1,45 @@
+<doc id="ud_contmod">
+<title>Content Models
+<idx>content models</idx>
+</title>
+
+<p>What about the content model?  After all, it's a major part of DITA.  It's also the biggest source of frustration in DITA.  Why can't I put an ^xref^ in the ^title^?  Why do I have to put it inside a ^ph^ in the ^title^?  Because the content model says so.  It seems to us that authors should be able to put whatever they want wherever they please, and the processor should deal with it.  You have two ^titles^ on your section?  Fine, show them both.  Whyever not?  If it's not what you had in mind, you can fix it yourself any time.  We don't think that everything not compulsory should be prohibited, but that's really where you wind up when you specify mandatory content models.
+
+An editor can still suggest the most likely elements you may want to add inside another one, but it shouldn't prevent you from adding whatever you please, even if it doesn't seem to make sense. For example, if you decide to change some content from a list to a table, as soon as you start fixing tags it all becomes invalid until you are done.  An editor shouldn't bother you while you are in this process, or prevent you from saving your "invalid" doc when you go to lunch.</p>
+
+<p id="numberedrows">Here is an example of what you can do when freed from content models:
+<idx>lists:for numbering table rows</idx>
+<idx>tables:numbering rows in</idx>
+</p>
+
+<coderef src="ud_contmod.mxd#line=20,38"/>
+
+<p>Yes, you can use the list to number the rows in the table.  This may seem far-fetched, but it is actually a use case requested recently on LinkedIn.  In this situation, a processor could not use a single ^ol^ in HTML, because that is constrained by the HTML content model, so it would have to render the numbers another way.  In Word output, though, ^li^ items are simply handled as "fields", so the numbers would update themselves if another row were added in Word.
+
+Here is how it comes out:</p>
+<udx switch="nomin">
+ <ol styletype="decimal">
+  <table id="numberedfirstcol">
+   <title>Numbered Rows</title>
+   <col width="2in"/><col width="4in"/>
+   <row>
+    <cell><li><p>First</p></li></cell>
+    <cell><p>Description</p></cell>
+   </row>
+   <row>
+    <cell><li><p>Second</p></li></cell>
+    <cell><p>Another description</p></cell>
+   </row>
+   <row>
+    <cell><li><p>Third</p></li></cell>
+    <cell><p>The last description</p></cell>
+   </row>
+  </table>
+ </ol>
+</udx>
+<p>Another related use case appears on LinkedIn, in the DITA Awareness group: "Can you put steps into a table in DITA? Basically, the thought is that people using the document can initial each step, showing they've completed it."  And no, you can't do it that way in DITA.  The best you could do is add a ton of custom processing for ^steps^, ^step^, and everything else that might be there, like ^note^s.  No special processing is needed with uDoc.</p>
+
+
+<relref subjects="lists elements" />
+
+</doc>

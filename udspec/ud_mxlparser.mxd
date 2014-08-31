@@ -1,0 +1,14 @@
+<doc id="ud_mxlparser">
+<title>MXL MicroXML Parser</title>
+
+<p>MicroXML is a simplified subset of normal XML 1.0 (5th edition) created by James Clark and John Cowan.  The <xref src="https://dvcs.w3.org/hg/microxml/raw-file/tip/spec/microxml.html">MicroXML specification</xref> is currently the subject of a W3C Community Group, but is not a W3C Standard or on the Standards Track.  An informative pair of articles about it by Uche Ogbuji are <xref src="http://www.ibm.com/developerworks/library/x-microxml1/">here</xref> and <xref src="http://www.ibm.com/developerworks/library/x-microxml2/">here</xref>.
+
+The MXL Parser is designed to <xref src="ud_mxloperation.mxd">parse MicroXML</xref> by two different methods.  It produces a <xref src="ud_mxldata.mxd">Data Model</xref> in stricr accordance with the spec, and also provides <xref src="ud_mxlsax.mxd">SAX-type push parsing</xref> at the same time.  Either or both are selectable.
+
+MXL reports as errors everything in the document that is not conformant to the  MicroXML spec.  In its FullXML mode, it does the same, and when in its SAX mode it also reports the content of four constructs excluded from the data model: comments, DOCTYPEs, CDATA sections, and PIs.  They each have their own callback function.  None of the four ever appear in the Data Model itself, and the parser does not read any referenced DTD or schema.  Therefore it will *not* add attributes from a DTD (such as the `@class` used in DITA) to the elements.
+
+MXL is written in C++ and is currently compiled with Visual C++ 6.0.  It references windows.h along with stdio.h and stdlib.h, but does not use Microsoft-specific functions, so it should be readily portable to other platforms.  The Windows version consists of two parts: mxlparser.dll, the parser itself, and mxl.exe, a simple console driver for it.  Downloads are available on the uDoc2Go site for <xref src="http://udoc2go.com/download/mxl.zip">the Windows executables</xref> and for <xref src="http://udoc2go.com/download/mxlparsersrc.zip">the C++ source</xref>.  The parser is also hosted on <xref src="https://github.com/jeremygriffith/mxl-MicroXML-parser">GitHub</xref>.</p>
+
+The MXL parser is FOSS, released under the <xref src="ud_mxllicense.mxd">Apache license</xref> to permit commercial use.
+
+</doc>

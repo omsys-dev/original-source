@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA 1.1 Concept//EN"
+  "http://docs.oasis-open.org/dita/v1.1/OS/dtd/concept.dtd">
+<concept xml:lang="en-us" id="txtnotes">
+<title>Notes</title>
+<shortdesc>This topic shows different types of note
+elements.</shortdesc>
+<conbody>
+<section>
+<title>Informative Notes</title>
+<p>This section contains plain note, attention, tip, and important
+types.  Most note content is from the DITA 1.1 Language Spec.</p>
+<note type="note">This is just a note.</note>
+<note type="attention">Please pay extra attention to this note.</note>
+<note type="tip">This is a fine little tip.</note>
+<note type="important">This note is important.</note>
+</section>
+<section>
+<title>Cautionary Notes</title>
+<p>This section contains caution, warning, and danger notes.
+The Warning type is an addition in DITA 1.2 required to support
+US standard ANSI Z535 and other international standards.</p>
+<note type="caution">Care is required when proceeding.</note>
+<note type="warning">Watch out for hazards to life and limb.</note>
+<note type="danger">Important! Be aware of this before doing
+anything else.</note>
+</section>
+<section>
+<title>Other Notes</title>
+<p>This section contains fastpath, remember, restriction, and
+the "other" note type.</p>
+<note type="fastpath">This note will speed you on your way.</note>
+<note type="remember">Don&#x2019;t forget to do what this note says.</note>
+<note type="restriction">You can&apos;t do what this note says.</note>
+<note type="other">This is something other than a <q>normal</q> note.</note>
+</section>
+</conbody>
+</concept>
+

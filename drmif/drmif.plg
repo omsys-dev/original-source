@@ -1,0 +1,151 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: drmif - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"..\dll\WinRel/drmif.res" /d "NDEBUG" "C:\cvs\drmif\drmif.rc"" 
+Creating temporary file "C:\Users\jeremy\AppData\Local\Temp\RSPFAEA.tmp" with contents
+[
+/nologo /Zp1 /MD /W3 /GX /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_WIN32" /D "_DLL" /FR"..\dll\WinRel/" /Fp"..\dll\WinRel/drmif.pch" /YX /Fo"..\dll\WinRel/" /Fd"..\dll\WinRel/" /FD /c 
+"C:\cvs\base\dcappl.cpp"
+"C:\cvs\base\dcauto.cpp"
+"C:\cvs\base\dcbase.cpp"
+"C:\cvs\base\dcctlg.cpp"
+"C:\cvs\base\dcfile.cpp"
+"C:\cvs\base\dcfili.cpp"
+"C:\cvs\base\dcfilp.cpp"
+"C:\cvs\base\dcfilr.cpp"
+"C:\cvs\base\dcfilw.cpp"
+"C:\cvs\base\dcglob.cpp"
+"C:\cvs\base\dcini.cpp"
+"C:\cvs\base\dclist.cpp"
+"C:\cvs\base\dclog.cpp"
+"C:\cvs\base\dcmacr.cpp"
+"C:\cvs\base\dcmem.cpp"
+"C:\cvs\base\dcnode.cpp"
+"C:\cvs\base\dcnodt.cpp"
+"C:\cvs\base\dcport.cpp"
+"C:\cvs\drmif\drmif.cpp"
+"C:\cvs\drmif\drmifan.cpp"
+"C:\cvs\drmif\drmiffl.cpp"
+"C:\cvs\drmif\drmifgr.cpp"
+"C:\cvs\drmif\drmifin.cpp"
+"C:\cvs\drmif\drmifsm.cpp"
+"C:\cvs\drmif\drmiftb.cpp"
+"C:\cvs\drmif\drmiftx.cpp"
+]
+Creating command line "cl.exe @C:\Users\jeremy\AppData\Local\Temp\RSPFAEA.tmp" 
+Creating temporary file "C:\Users\jeremy\AppData\Local\Temp\RSPFAEB.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib shlwapi.lib /nologo /base:"0x67000000" /version:2.1 /subsystem:windows /dll /incremental:no /pdb:"..\dll\WinRel/drmif.pdb" /machine:I386 /out:"..\dll\WinRel/drmif.dll" /implib:"..\dll\WinRel/drmif.lib" 
+\cvs\dll\WinRel\dcappl.obj
+\cvs\dll\WinRel\dcauto.obj
+\cvs\dll\WinRel\dcbase.obj
+\cvs\dll\WinRel\dcctlg.obj
+\cvs\dll\WinRel\dcfile.obj
+\cvs\dll\WinRel\dcfili.obj
+\cvs\dll\WinRel\dcfilp.obj
+\cvs\dll\WinRel\dcfilr.obj
+\cvs\dll\WinRel\dcfilw.obj
+\cvs\dll\WinRel\dcglob.obj
+\cvs\dll\WinRel\dcini.obj
+\cvs\dll\WinRel\dclist.obj
+\cvs\dll\WinRel\dclog.obj
+\cvs\dll\WinRel\dcmacr.obj
+\cvs\dll\WinRel\dcmem.obj
+\cvs\dll\WinRel\dcnode.obj
+\cvs\dll\WinRel\dcnodt.obj
+\cvs\dll\WinRel\dcport.obj
+\cvs\dll\WinRel\drmif.obj
+\cvs\dll\WinRel\drmifan.obj
+\cvs\dll\WinRel\drmiffl.obj
+\cvs\dll\WinRel\drmifgr.obj
+\cvs\dll\WinRel\drmifin.obj
+\cvs\dll\WinRel\drmifsm.obj
+\cvs\dll\WinRel\drmiftb.obj
+\cvs\dll\WinRel\drmiftx.obj
+\cvs\dll\WinRel\drmif.res
+]
+Creating command line "link.exe @C:\Users\jeremy\AppData\Local\Temp\RSPFAEB.tmp"
+Creating temporary file "C:\Users\jeremy\AppData\Local\Temp\RSPFAEC.bat" with contents
+[
+@echo off
+copy \cvs\dll\WinRel\drmif.dll %omsyshome%\common\bin
+]
+Creating command line "C:\Users\jeremy\AppData\Local\Temp\RSPFAEC.bat"
+Compiling resources...
+Compiling...
+dcappl.cpp
+dcauto.cpp
+dcbase.cpp
+dcctlg.cpp
+dcfile.cpp
+dcfili.cpp
+dcfilp.cpp
+dcfilr.cpp
+dcfilw.cpp
+dcglob.cpp
+dcini.cpp
+dclist.cpp
+dclog.cpp
+dcmacr.cpp
+dcmem.cpp
+dcnode.cpp
+dcnodt.cpp
+dcport.cpp
+drmif.cpp
+drmifan.cpp
+drmiffl.cpp
+drmifgr.cpp
+drmifin.cpp
+drmifsm.cpp
+drmiftb.cpp
+drmiftx.cpp
+Linking...
+   Creating library ..\dll\WinRel/drmif.lib and object ..\dll\WinRel/drmif.exp
+<h3>Output Window</h3>
+Copying to omnihome directory...
+        1 file(s) copied.
+Creating temporary file "C:\Users\jeremy\AppData\Local\Temp\RSPD06.tmp" with contents
+[
+/nologo /o"..\dll\WinRel/drmif.bsc" 
+\cvs\dll\WinRel\dcappl.sbr
+\cvs\dll\WinRel\dcauto.sbr
+\cvs\dll\WinRel\dcbase.sbr
+\cvs\dll\WinRel\dcctlg.sbr
+\cvs\dll\WinRel\dcfile.sbr
+\cvs\dll\WinRel\dcfili.sbr
+\cvs\dll\WinRel\dcfilp.sbr
+\cvs\dll\WinRel\dcfilr.sbr
+\cvs\dll\WinRel\dcfilw.sbr
+\cvs\dll\WinRel\dcglob.sbr
+\cvs\dll\WinRel\dcini.sbr
+\cvs\dll\WinRel\dclist.sbr
+\cvs\dll\WinRel\dclog.sbr
+\cvs\dll\WinRel\dcmacr.sbr
+\cvs\dll\WinRel\dcmem.sbr
+\cvs\dll\WinRel\dcnode.sbr
+\cvs\dll\WinRel\dcnodt.sbr
+\cvs\dll\WinRel\dcport.sbr
+\cvs\dll\WinRel\drmif.sbr
+\cvs\dll\WinRel\drmifan.sbr
+\cvs\dll\WinRel\drmiffl.sbr
+\cvs\dll\WinRel\drmifgr.sbr
+\cvs\dll\WinRel\drmifin.sbr
+\cvs\dll\WinRel\drmifsm.sbr
+\cvs\dll\WinRel\drmiftb.sbr
+\cvs\dll\WinRel\drmiftx.sbr]
+Creating command line "bscmake.exe @C:\Users\jeremy\AppData\Local\Temp\RSPD06.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+drmif.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

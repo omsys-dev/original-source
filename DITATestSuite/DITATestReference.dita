@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA 1.1 Reference//EN"
+  "http://docs.oasis-open.org/dita/v1.1/OS/dtd/reference.dtd">
+<reference xml:lang="en-us" id="coverage">
+<title>Test Suite Coverage</title>
+<shortdesc>This Reference topic lists the DITA features
+covered by the Test Suite.</shortdesc>
+<refbody>
+<properties>
+<prophead>
+<proptypehd><p>Feature</p></proptypehd>
+<propvaluehd><p>Elements</p></propvaluehd>
+<propdeschd><p>Coverage</p></propdeschd>
+</prophead>
+
+<property>
+<proptype>
+</proptype>
+<propvalue>
+</propvalue>
+<propdesc><p></p>
+</propdesc>
+</property>
+
+<property>
+<proptype>
+</proptype>
+<propvalue>
+</propvalue>
+<propdesc><p></p>
+</propdesc>
+</property>
+
+<property>
+<proptype>
+</proptype>
+<propvalue>
+</propvalue>
+<propdesc><p></p>
+</propdesc>
+</property>
+
+<property>
+<proptype>
+</proptype>
+<propvalue>
+</propvalue>
+<propdesc><p></p>
+</propdesc>
+</property>
+</properties>
+
+</refbody>
+</reference>

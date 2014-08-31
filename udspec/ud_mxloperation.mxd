@@ -1,0 +1,45 @@
+<doc id="ud_mxloperation">
+<title>MXL Operation</title>
+
+<p>In a Windows command prompt window, the MXL parser is
+invoked by:</p>
+
+<pre> Usage: mxl [sourcefile  (default is stdin)] [options]
+ Options:
+  -o outputfile  Default is stdout
+  -e errorfile   Default is stderr
+  -n No content model, otherwise sent as JSON to outputfile
+  -s Send SAX messages (as diagnostics) to errorfile
+  -f FullXML report DOCTYPE, CDATA, and PIs as SAX messages
+     to errorfile instead of reporting them as errors
+  -x Expat callbacks for start and end tags, text, and PIs
+  -a Provide brief help on the mxlparser.dll API
+  -h or -?, Provide help (this message)
+</pre>
+
+<p>The API help mentioned there is:</p>
+
+<pre> API for mxlparser.dll:
+ First create an MxlParser with:
+  MxlParser *Parser = new MxlParser();
+ Optionally, set up options and SAX callbacks:
+  Parser-&gt;SetOptions(UseSAX, UseModel, FullXML); (all bools)
+  Parser-&gt;SetCallbacks(ErrFileName, ReportErrorFunc,
+    StartTagFunc, EndTagFunc, TextContentFunc, ReportCDataFunc, 
+    ReportPIFunc, ReportDoctypeFunc, ReportCommentFunc);
+ For expat-compatible callbacks, use SetExpatCallbacks instead,
+  which has a longer list of callbacks.
+ Finally, parse the file:
+  element *DataModel = Parser-&gt;ParseFile(SourceFileName);
+
+ Error messages and comments are sent to ErrFileName (default
+  stderr) unless the Report*Func says otherwise.
+ If UseSax, the Tag and Text callbacks are used; the stub functions
+  for them report the UTF-32 strings in JSON to ErrFileName.
+ If UseModel, the data model is returned at the end as a struct
+  with all strings in UTF-32 encoding, zero terminated.
+ If FullXML, the DOCTYPE, CDATA, and PIs are reported as SAX messages
+  instead of errors; they are never in the data model.
+</pre>
+
+</doc>

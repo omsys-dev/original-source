@@ -1,0 +1,20 @@
+<doc id="ud_basics">
+<title>uDoc Basics</title>
+
+<key keys="blocks" src="ud_elements.mxd"/>
+
+<textref src="ud_intro.mxd"/>
+
+<sect>
+<title>Block Elements</title>
+<textref key="blocks" idref="blockelems"/>
+</sect>
+
+<sect>
+<title>Text and Inline Elements</title>
+<textref src="ud_elements.mxd" idrefs="textstart textend"/>
+</sect>
+
+<textref src="ud_files.mxd"/>
+
+</doc>

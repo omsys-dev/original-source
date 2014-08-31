@@ -1,0 +1,10 @@
+<doc id="ud_condtest">
+<title>Test of Conditions: 
+<ph audience="expert">Experts</ph>
+<ph audience="novice">Novices</ph>
+</title>
+<p audience="expert">This para is for experts.</p>
+<p audience="novice">This para is for novices.</p>
+<p product="d2g">This para is not about uDoc at all.</p>
+<relref subjects="conditions" />
+</doc>

@@ -1,0 +1,367 @@
+<DialogFile 5.5>
+<LongChar No>
+<Font 2 1 12>
+<DialogBox
+ <MBRect -1 -1 354 341>
+ <WBRect -1 -1 342 268>
+ <XBRect -1 -1 367 388>
+ <Platforms MWX>
+ <CurrentFocus 2>
+ <FirstFocus 2>
+ <OKButton 46>
+ <CancelButton 47>
+ <DefaultButton 46>
+ <HelpButton -1>
+ <TitleLabel 0>
+>
+<Label
+ <MCorner 470 996>
+ <WCorner 135 0>
+ <XCorner 18 26>
+ <Label Set Up DITA Project>
+> # 0
+<Label
+ <MCorner 12 231>
+ <WCorner 14 14>
+ <XCorner 12 231>
+ <Label Project Name that can go on and on at C:\\\\project\\\\verylong\\\\pathname\\\\>
+> # 1
+<CheckBox
+ <MCorner 14 31>
+ <WCorner 14 31>
+ <XCorner 14 31>
+ <Label Use Cascading Style Sheets:>
+ <ShortcutPosition 4>
+ <Active No>
+ <StuffObject -1>
+> # 2
+<EditBox
+ <MBaseLine 14 53 120>
+ <WBaseLine 14 51 120>
+ <XBaseLine 14 53 120>
+ <Label local.css>
+ <StuffObject -1>
+> # 3
+<Button
+ <MBaseLine 140 53 24>
+ <WBaseLine 140 51 24>
+ <XBaseLine 140 53 24>
+ <Label ...>
+ <ShortcutPosition 0>
+ <Active No>
+> # 4
+<CheckBox
+ <MCorner 14 75>
+ <WCorner 14 71>
+ <XCorner 14 75>
+ <Label Create CSS from FM styles>
+ <Active No>
+ <StuffObject -1>
+> # 5
+<Rule
+ <MBRect 6 105 131 1>
+ <WBRect 11 79 150 1>
+ <XBRect 18 137 129 1>
+> # 6
+<CheckBox
+ <MCorner 13 65>
+ <WCorner 14 97>
+ <XCorner 13 65>
+ <Label Use FM TOC>
+ <Active No>
+ <StuffObject -1>
+> # 7
+<CheckBox
+ <MCorner 93 65>
+ <WCorner 94 97>
+ <XCorner 93 65>
+ <Label Use FM IX>
+ <Active No>
+ <StuffObject -1>
+> # 8
+<CheckBox
+ <MCorner 14 116>
+ <WCorner 14 116>
+ <XCorner 14 116>
+ <Label Use other FM generated files>
+ <Active No>
+ <StuffObject -1>
+> # 9
+<Rule
+ <MBRect 11 116 150 1>
+ <WBRect 11 126 150 1>
+ <XBRect 11 116 150 1>
+> # 10
+<Label
+ <MCorner 14 141>
+ <WCorner 14 141>
+ <XCorner 14 141>
+ <Label Defaults for:>
+> # 11
+<Label
+ <MCorner 14 193>
+ <WCorner 18 159>
+ <XCorner 14 193>
+ <Label Topic type:>
+> # 12
+<EditBox
+ <MBaseLine 120 193 27>
+ <WBaseLine 103 159 53>
+ <XBaseLine 120 193 27>
+ <Label concept>
+ <StuffObject -1>
+> # 13
+<Label
+ <MCorner 14 214>
+ <WCorner 18 178>
+ <XCorner 14 214>
+ <Label Paragraph Element:>
+> # 14
+<EditBox
+ <MBaseLine 120 214 27>
+ <WBaseLine 103 178 52>
+ <XBaseLine 120 214 27>
+ <Label p>
+ <StuffObject -1>
+> # 15
+<Label
+ <MCorner 14 233>
+ <WCorner 18 197>
+ <XCorner 14 233>
+ <Label Character Element:>
+> # 16
+<EditBox
+ <MBaseLine 120 233 27>
+ <WBaseLine 103 197 52>
+ <XBaseLine 120 233 27>
+ <Label ph>
+ <StuffObject -1>
+> # 17
+<Label
+ <MCorner 18 216>
+ <WCorner 18 222>
+ <XCorner 18 216>
+ <Label DITA Version:>
+> # 18
+<RadioButton
+ <MCorner 92 221>
+ <WCorner 92 221>
+ <XCorner 92 221>
+ <Label 1.0>
+ <Active No>
+ <Group 1>
+ <StuffObject -1>
+> # 19
+<RadioButton
+ <MCorner 128 221>
+ <WCorner 128 221>
+ <XCorner 128 221>
+ <Label 1.1>
+ <Active Yes>
+ <Group 1>
+ <StuffObject -1>
+> # 20
+<Rule
+ <MBRect 151 4 1 300>
+ <WBRect 171 18 1 222>
+ <XBRect 154 13 1 325>
+> # 21
+<CheckBox
+ <MCorner 175 23>
+ <WCorner 183 31>
+ <XCorner 175 23>
+ <Label Import FM HTML Template:>
+ <ShortcutPosition 0>
+ <Active No>
+ <StuffObject -1>
+> # 22
+<EditBox
+ <MBaseLine 234 50 102>
+ <WBaseLine 183 51 120>
+ <XBaseLine 241 85 102>
+ <Label template.fm>
+ <StuffObject -1>
+> # 23
+<Button
+ <MBaseLine 6 128 99>
+ <WBaseLine 309 51 24>
+ <XBaseLine 18 161 99>
+ <Label ...>
+ <ShortcutPosition 0>
+ <Active No>
+> # 24
+<Label
+ <MCorner 184 74>
+ <WCorner 184 72>
+ <XCorner 184 74>
+ <Label Select properties to update:>
+ <ShortcutPosition 0>
+> # 25
+<CheckBox
+ <MCorner 183 90>
+ <WCorner 183 84>
+ <XCorner 183 90>
+ <Label Para Styles>
+ <Active No>
+ <StuffObject -1>
+> # 26
+<CheckBox
+ <MCorner 183 111>
+ <WCorner 183 98>
+ <XCorner 183 111>
+ <Label Char Styles>
+ <Active No>
+ <StuffObject -1>
+> # 27
+<CheckBox
+ <MCorner 183 132>
+ <WCorner 183 112>
+ <XCorner 183 132>
+ <Label Table Styles>
+ <Active No>
+ <StuffObject -1>
+> # 28
+<CheckBox
+ <MCorner 183 153>
+ <WCorner 183 126>
+ <XCorner 183 153>
+ <Label Xref Formats>
+ <Active No>
+ <StuffObject -1>
+> # 29
+<CheckBox
+ <MCorner 183 174>
+ <WCorner 183 140>
+ <XCorner 183 174>
+ <Label Conditionals>
+ <Active No>
+ <StuffObject -1>
+> # 30
+<CheckBox
+ <MCorner 183 195>
+ <WCorner 183 154>
+ <XCorner 183 195>
+ <Label Comb Fonts>
+ <Active No>
+ <StuffObject -1>
+> # 31
+<CheckBox
+ <MCorner 270 90>
+ <WCorner 270 84>
+ <XCorner 270 90>
+ <Label Master Pp>
+ <Active No>
+ <StuffObject -1>
+> # 32
+<CheckBox
+ <MCorner 270 111>
+ <WCorner 270 98>
+ <XCorner 270 111>
+ <Label Ref Pp>
+ <Active No>
+ <StuffObject -1>
+> # 33
+<CheckBox
+ <MCorner 270 132>
+ <WCorner 270 112>
+ <XCorner 270 132>
+ <Label Variables>
+ <Active No>
+ <StuffObject -1>
+> # 34
+<CheckBox
+ <MCorner 270 153>
+ <WCorner 270 126>
+ <XCorner 270 153>
+ <Label Colors>
+ <Active No>
+ <StuffObject -1>
+> # 35
+<CheckBox
+ <MCorner 270 174>
+ <WCorner 270 140>
+ <XCorner 270 174>
+ <Label Equ Props>
+ <Active No>
+ <StuffObject -1>
+> # 36
+<CheckBox
+ <MCorner 270 195>
+ <WCorner 270 154>
+ <XCorner 270 195>
+ <Label Doc Props>
+ <Active No>
+ <StuffObject -1>
+> # 37
+<Label
+ <MCorner 184 218>
+ <WCorner 184 173>
+ <XCorner 184 218>
+ <Label Select properties to remove:>
+ <ShortcutPosition 21>
+> # 38
+<CheckBox
+ <MCorner 183 233>
+ <WCorner 183 184>
+ <XCorner 183 233>
+ <Label Overrides>
+ <Active No>
+ <StuffObject -1>
+> # 39
+<CheckBox
+ <MCorner 270 233>
+ <WCorner 270 184>
+ <XCorner 270 233>
+ <Label Page Brks>
+ <Active No>
+ <StuffObject -1>
+> # 40
+<Rule
+ <MBRect 181 196 150 1>
+ <WBRect 181 196 150 1>
+ <XBRect 181 196 150 1>
+> # 41
+<CheckBox
+ <MCorner 183 215>
+ <WCorner 183 215>
+ <XCorner 183 215>
+ <Label Convert variables to text>
+ <ShortcutPosition 0>
+ <Active No>
+ <StuffObject -1>
+> # 42
+<CheckBox
+ <MCorner 183 233>
+ <WCorner 183 233>
+ <XCorner 183 233>
+ <Label Generate/Update after import>
+ <ShortcutPosition 0>
+ <Active No>
+ <StuffObject -1>
+> # 43
+<Rule
+ <MBRect 6 306 338 1>
+ <WBRect 8 242 322 1>
+ <XBRect 18 341 339 1>
+> # 44
+<Button
+ <MBaseLine 11 260 53>
+ <WBaseLine 11 260 53>
+ <XBaseLine 11 260 53>
+ <Label Huh?>
+ <Active No>
+> # 45
+<Button
+ <MBaseLine 10 327 92>
+ <WBaseLine 206 260 53>
+ <XBaseLine 63 368 64>
+ <Label OK>
+ <Active No>
+> # 46
+<Button
+ <MBaseLine 133 327 92>
+ <WBaseLine 274 260 53>
+ <XBaseLine 154 368 64>
+ <Label Cancel>
+ <Active No>
+> # 47

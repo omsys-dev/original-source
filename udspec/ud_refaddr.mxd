@@ -1,0 +1,32 @@
+<doc id="ud_refaddr">
+<title>Addressing in References
+<idx>references:addressing in</idx>
+<idx>addressing:in references</idx>
+</title>
+
+<p>In uDoc, references to external objects stay simple and clean.  When referencing a file, local or remote, you always use a standard URL, in a `@src` attribute.  For local files, if you are not sure exactly how to form the URL, simply drag the file into a browser, and look at the location bar; it will contain the correct URL.  For example, if you want to refer to `C:\omsys\x2g\lib\stdelems.mxl`, Firefox will tell you to use `file:///C:/omsys/x2g/lib/stdelems.mxl`.  A relative reference might look like this: `../ud_map_file.txt`, similar to what you see in Windows but with forward slashes.
+
+What if you want to access a specific element in a uDoc file?  Rather than mung up the URL with added bits meaningful only to uDoc, like DITA does, you use a second attribute to specify the element's ID, `@idref`.  This is standard XML; the `@idref` must match the `@id` of the element you want exactly, and the `@id` itself must be unique in its file (but not necessarily unique in your project).
+
+There is a second standard attribute for referencing, and that's `@idrefs`, which can contain one or more IDs delimited with spaces.  An `@idrefs` with two IDs separated by a minus specifies a range, starting with the element with the first ID and ending with the element with the second ID.  So it is very simple, for example, to include several steps in the middle of a procedure from a library with a single ^textref^:</p>
+
+<pre>^ol^
+ ^li^The first step is ... ^/li^
+ ^textref src="locallib.mxl" idrefs="proc15step2-proc15step6"/^
+ ^li^The last step is ... ^/li^
+^/ol^
+</pre>
+
+<p>The `@idrefs` can contain more than two IDs.  It can have a space-delimited list of elements and ranges, which may be anywhere in the referenced file, not necessarily in the order listed.  So you can assemble a whole page of "boilerplate" with one reference to the library with all the boilerplate text.
+
+Note that uDoc (and MicroXML) relax the requirement in the XML spec that IDREFS *must* match an ID in the current document.  Instead, uDoc allows IDREFS that are intended to match an ID in some document, somewhere.  If they do not match any ID in the project, uDoc simply ignores them.
+
+The ^coderef^ element, for preformed code transclusion, is a special case; it supports the syntax of <xref src="http://tools.ietf.org/html/rfc5147">RFC 5147</xref> so you can specify the places to start and end in the referenced file.
+<idx>transclusion, code</idx>
+<idx>code transclusion</idx>
+</p>
+
+
+<relref subjects="links" />
+
+</doc>

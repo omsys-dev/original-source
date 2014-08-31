@@ -1,0 +1,42 @@
+<doc id="ud_xform">
+<title>The `udx` Utility</title>
+
+<p>Not all processors will support uDoc <xref src="ud_minimize.mxd">tag minimization</xref> features. So along with the `mxlparser`, we provide a utility, `udx`, to transform uDoc files containing short tags and wiki symbol markup into files with full MicroXML tags.  For ease of authoring and editing, the same utility can convert the other way, replacing full tag markup with minimizations wherever possible.  Either way, the conversion is lossless.
+
+The rules `udx` uses are simple, and are controlled by a number of <xref src="ud_udxini.mxd">settings in `udx.ini`</xref>.  The defaults are built iinto the software, and can be overridden by <xref src="ud_udxswitch.mxd">command-line switches</xref> and by modifying the corresponding `udx.ini` settings.  The element properties in [CodeElements] and [ElementTypes] are used for the wiki symbol processing and for adding ^p^ tags within block elements that wrap text.  If you create new elements meant to contain code, or create new text or inline elements, add those new elements to `udx.ini`.
+
+Sometimes you may want `udx` to skip some parts of a file, while processing others. <xref src="ud_udxtag.mxd">The ^udx^ tag</xref> provides this functionality within a document.
+
+Full-tag creation from short tags and from wiki symbols is the default operation, and can also be specified with the "`-f`" switch on the command line.  It does four things:</p>
+
+<ul>
+<l/>Full tags from short tags: the short tag is replaced by the full start tag (including any attributes) after any leading returns, and the full end tag is inserted at the end of the short-tag scope, before any trailing returns.
+
+<l/>Full tags from wiki symbols: the symbols are processed as toggles, where the first becomes the start tag and the second becomes the end tag, alternating to the end of the paragraph.  Symbols within code that do not start code themselves are kept literally.
+
+<l/>Replacement of two or more returns within a ^p^ element with the sequence ^/p^\n\n^p^, where the original returns are retained so that line numbers do not change.
+
+<l/>Insertion of ^p^ and ^/p^ tags within block elements (such as ^li^ and ^cell^) as required to wrap contained text.  The ^p^ immediately follows the block start element with no whitespace in between; the ^/p^ goes at the end of the block element scope, before any trailing returns.
+</ul>
+
+<p>Tag minimization is specified with the "`-m`" switch on the command line.  There are four actions it performs:</p>
+
+<ul>
+<l/>Short tag minimization: the full start tag is replaced with an empty short tag, and the full end tag is discarded.
+
+<l/>Wiki symbol minimization: both the start tag and the end tag are replaced by the symbol.
+
+<l/>Removal of ^/p^\n\n^p^ sequences between normal ^p^ paragraphs that do not have attributes.  The two (or more) returns are retained, so line numbers do not change.
+
+<l/>Removal of ^p^ and ^/p^ tags within block elements such as ^li^ and ^cell^.  The
+ones removed are those with no attributes and no white space before the ^p^ start tag.
+</ul>
+
+<comment>
+<p>The `udx` utility is released as FOSS under the Apache license to permit commercial use.  It uses and includes <xref src="ud_mxlparser.mxd">the MXL parser</xref>.  Downloads are available for <xref src="http://udoc2go.com/download/udxexe.zip">the Windows executable</xref> and <xref src="http://udoc2go.com/download/udxsrc.zip">the C++ source</xref>.</p>
+</comment>
+
+<relref subjects="udx shorthand"/>
+
+
+</doc>

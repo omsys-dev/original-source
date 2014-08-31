@@ -1,0 +1,441 @@
+<DialogFile 5.5>
+<LongChar No>
+<Font 2 1 12>
+<DialogBox
+ <MBRect -1 -1 354 341>
+ <WBRect -1 -1 342 268>
+ <XBRect -1 -1 367 388>
+ <Platforms MWX>
+ <CurrentFocus 2>
+ <FirstFocus 2>
+ <OKButton 55>
+ <CancelButton 56>
+ <DefaultButton 55>
+ <HelpButton -1>
+ <TitleLabel 0>
+>
+<Label
+ <MCorner 470 996>
+ <WCorner 123 0>
+ <XCorner 18 26>
+ <Label Set Up ASCII DCL Project>
+> # 0
+<Label
+ <MCorner 12 231>
+ <WCorner 13 14>
+ <XCorner 12 231>
+ <Label Project Name that can go on and on at C:\\\\project\\\\verylong\\\\pathname\\\\>
+> # 1
+<CheckBox
+ <MCorner 13 65>
+ <WCorner 13 31>
+ <XCorner 13 65>
+ <Label Use FM TOC>
+ <ShortcutPosition 0>
+ <Active Yes>
+ <StuffObject -1>
+> # 2
+<CheckBox
+ <MCorner 93 65>
+ <WCorner 94 31>
+ <XCorner 93 65>
+ <Label Use FM IX>
+ <Active No>
+ <StuffObject -1>
+> # 3
+<CheckBox
+ <MCorner 13 51>
+ <WCorner 13 51>
+ <XCorner 13 51>
+ <Label Use other FM generated files>
+ <Active Yes>
+ <StuffObject -1>
+> # 4
+<Rule
+ <MBRect 11 116 150 1>
+ <WBRect 11 59 150 1>
+ <XBRect 11 116 150 1>
+> # 5
+<Label
+ <MCorner 13 60>
+ <WCorner 13 74>
+ <XCorner 13 60>
+ <Label Select embedded graphics to export:>
+ <ShortcutPosition 7>
+> # 6
+<RadioButton
+ <MCorner 14 74>
+ <WCorner 14 88>
+ <XCorner 14 74>
+ <Label Normal>
+ <Active Yes>
+ <Group 1>
+ <StuffObject -1>
+> # 7
+<RadioButton
+ <MCorner 67 74>
+ <WCorner 67 88>
+ <XCorner 67 74>
+ <Label Retain>
+ <Active No>
+ <Group 1>
+ <StuffObject -1>
+> # 8
+<RadioButton
+ <MCorner 118 74>
+ <WCorner 118 88>
+ <XCorner 118 74>
+ <Label Export>
+ <Active No>
+ <Group 1>
+ <StuffObject -1>
+> # 9
+<Rule
+ <MBRect 36 84 100 1>
+ <WBRect 36 98 100 1>
+ <XBRect 36 84 100 1>
+> # 10
+<CheckBox
+ <MCorner 12 80>
+ <WCorner 13 116>
+ <XCorner 12 80>
+ <Label bmp>
+ <Active No>
+ <StuffObject -1>
+> # 11
+<CheckBox
+ <MCorner 12 101>
+ <WCorner 13 130>
+ <XCorner 12 101>
+ <Label cdr>
+ <Active Yes>
+ <StuffObject -1>
+> # 12
+<CheckBox
+ <MCorner 12 123>
+ <WCorner 13 144>
+ <XCorner 12 123>
+ <Label eps>
+ <Active Yes>
+ <StuffObject -1>
+> # 13
+<CheckBox
+ <MCorner 12 145>
+ <WCorner 13 158>
+ <XCorner 12 145>
+ <Label gif>
+ <Active Yes>
+ <StuffObject -1>
+> # 14
+<CheckBox
+ <MCorner 12 168>
+ <WCorner 13 172>
+ <XCorner 12 168>
+ <Label jpg>
+ <Active Yes>
+ <StuffObject -1>
+> # 15
+<CheckBox
+ <MCorner 12 190>
+ <WCorner 13 186>
+ <XCorner 12 190>
+ <Label ole>
+ <Active No>
+ <StuffObject -1>
+> # 16
+<CheckBox
+ <MCorner 84 80>
+ <WCorner 84 116>
+ <XCorner 84 80>
+ <Label pct (Mac PICT)>
+ <Active Yes>
+ <StuffObject -1>
+> # 17
+<CheckBox
+ <MCorner 84 101>
+ <WCorner 84 130>
+ <XCorner 84 101>
+ <Label pcx>
+ <Active Yes>
+ <StuffObject -1>
+> # 18
+<CheckBox
+ <MCorner 84 123>
+ <WCorner 84 158>
+ <XCorner 84 123>
+ <Label rf (FrameImage)>
+ <Active No>
+ <StuffObject -1>
+> # 19
+<CheckBox
+ <MCorner 84 145>
+ <WCorner 84 144>
+ <XCorner 84 145>
+ <Label tif>
+ <Active Yes>
+ <StuffObject -1>
+> # 20
+<CheckBox
+ <MCorner 84 168>
+ <WCorner 84 172>
+ <XCorner 84 168>
+ <Label wmf>
+ <Active No>
+ <StuffObject -1>
+> # 21
+<CheckBox
+ <MCorner 84 190>
+ <WCorner 84 186>
+ <XCorner 84 190>
+ <Label wpg>
+ <Active Yes>
+ <StuffObject -1>
+> # 22
+<Rule
+ <MBRect 11 200 150 1>
+ <WBRect 11 197 150 1>
+ <XBRect 11 200 150 1>
+> # 23
+<Label
+ <MCorner 13 219>
+ <WCorner 13 219>
+ <XCorner 13 219>
+ <Label Name exported files with:>
+ <ShortcutPosition 0>
+> # 24
+<EditBox
+ <MBaseLine 118 217 18>
+ <WBaseLine 118 217 18>
+ <XBaseLine 118 217 18>
+ <Label N>
+ <StuffObject -1>
+> # 25
+<Label
+ <MCorner 139 219>
+ <WCorner 139 219>
+ <XCorner 139 219>
+ <Label chars>
+> # 26
+<Label
+ <MCorner 94 237>
+ <WCorner 94 237>
+ <XCorner 94 237>
+ <Label and:>
+> # 27
+<EditBox
+ <MBaseLine 117 235 18>
+ <WBaseLine 117 235 18>
+ <XBaseLine 117 235 18>
+ <Label N>
+ <StuffObject -1>
+> # 28
+<Label
+ <MCorner 138 237>
+ <WCorner 138 237>
+ <XCorner 138 237>
+ <Label digits.>
+> # 29
+<Rule
+ <MBRect 151 4 1 300>
+ <WBRect 171 18 1 222>
+ <XBRect 154 13 1 325>
+> # 30
+<CheckBox
+ <MCorner 175 23>
+ <WCorner 183 31>
+ <XCorner 175 23>
+ <Label Import FM Template:>
+ <ShortcutPosition 0>
+ <Active No>
+ <StuffObject -1>
+> # 31
+<EditBox
+ <MBaseLine 234 50 102>
+ <WBaseLine 183 53 120>
+ <XBaseLine 241 85 102>
+ <Label template.fm>
+ <StuffObject -1>
+> # 32
+<Button
+ <MBaseLine 6 128 99>
+ <WBaseLine 309 53 24>
+ <XBaseLine 18 161 99>
+ <Label ...>
+ <ShortcutPosition 0>
+ <Active No>
+> # 33
+<Label
+ <MCorner 184 74>
+ <WCorner 184 73>
+ <XCorner 184 74>
+ <Label Select properties to update:>
+ <ShortcutPosition 0>
+> # 34
+<CheckBox
+ <MCorner 183 90>
+ <WCorner 183 86>
+ <XCorner 183 90>
+ <Label Para Styles>
+ <Active No>
+ <StuffObject -1>
+> # 35
+<CheckBox
+ <MCorner 183 111>
+ <WCorner 183 100>
+ <XCorner 183 111>
+ <Label Char Styles>
+ <Active No>
+ <StuffObject -1>
+> # 36
+<CheckBox
+ <MCorner 183 132>
+ <WCorner 183 114>
+ <XCorner 183 132>
+ <Label Table Styles>
+ <Active No>
+ <StuffObject -1>
+> # 37
+<CheckBox
+ <MCorner 183 153>
+ <WCorner 183 128>
+ <XCorner 183 153>
+ <Label Xref Formats>
+ <Active No>
+ <StuffObject -1>
+> # 38
+<CheckBox
+ <MCorner 183 174>
+ <WCorner 183 142>
+ <XCorner 183 174>
+ <Label Conditionals>
+ <Active No>
+ <StuffObject -1>
+> # 39
+<CheckBox
+ <MCorner 183 195>
+ <WCorner 183 156>
+ <XCorner 183 195>
+ <Label Comb Fonts>
+ <Active No>
+ <StuffObject -1>
+> # 40
+<CheckBox
+ <MCorner 270 90>
+ <WCorner 270 86>
+ <XCorner 270 90>
+ <Label Master Pp>
+ <Active No>
+ <StuffObject -1>
+> # 41
+<CheckBox
+ <MCorner 270 111>
+ <WCorner 270 100>
+ <XCorner 270 111>
+ <Label Ref Pp>
+ <Active No>
+ <StuffObject -1>
+> # 42
+<CheckBox
+ <MCorner 270 132>
+ <WCorner 270 114>
+ <XCorner 270 132>
+ <Label Variables>
+ <Active No>
+ <StuffObject -1>
+> # 43
+<CheckBox
+ <MCorner 270 153>
+ <WCorner 270 128>
+ <XCorner 270 153>
+ <Label Colors>
+ <Active No>
+ <StuffObject -1>
+> # 44
+<CheckBox
+ <MCorner 270 174>
+ <WCorner 270 142>
+ <XCorner 270 174>
+ <Label Equ Props>
+ <Active No>
+ <StuffObject -1>
+> # 45
+<CheckBox
+ <MCorner 270 195>
+ <WCorner 270 156>
+ <XCorner 270 195>
+ <Label Doc Props>
+ <Active No>
+ <StuffObject -1>
+> # 46
+<Label
+ <MCorner 184 218>
+ <WCorner 184 174>
+ <XCorner 184 218>
+ <Label Select properties to remove:>
+ <ShortcutPosition 21>
+> # 47
+<CheckBox
+ <MCorner 183 233>
+ <WCorner 183 186>
+ <XCorner 183 233>
+ <Label Overrides>
+ <Active No>
+ <StuffObject -1>
+> # 48
+<CheckBox
+ <MCorner 270 233>
+ <WCorner 270 186>
+ <XCorner 270 233>
+ <Label Page Brks>
+ <Active No>
+ <StuffObject -1>
+> # 49
+<Rule
+ <MBRect 181 198 150 1>
+ <WBRect 181 198 150 1>
+ <XBRect 181 198 150 1>
+> # 50
+<CheckBox
+ <MCorner 183 217>
+ <WCorner 183 217>
+ <XCorner 183 217>
+ <Label Convert variables to text>
+ <ShortcutPosition 0>
+ <Active No>
+ <StuffObject -1>
+> # 51
+<CheckBox
+ <MCorner 183 235>
+ <WCorner 183 235>
+ <XCorner 183 235>
+ <Label Generate/Update after import>
+ <ShortcutPosition 0>
+ <Active No>
+ <StuffObject -1>
+> # 52
+<Rule
+ <MBRect 6 306 338 1>
+ <WBRect 8 242 322 1>
+ <XBRect 18 341 339 1>
+> # 53
+<Button
+ <MBaseLine 11 260 53>
+ <WBaseLine 11 260 53>
+ <XBaseLine 11 260 53>
+ <Label Huh?>
+ <Active No>
+> # 54
+<Button
+ <MBaseLine 10 327 92>
+ <WBaseLine 206 260 53>
+ <XBaseLine 63 368 64>
+ <Label OK>
+ <Active No>
+> # 55
+<Button
+ <MBaseLine 133 327 92>
+ <WBaseLine 274 260 53>
+ <XBaseLine 154 368 64>
+ <Label Cancel>
+ <Active No>
+> # 56

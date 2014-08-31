@@ -1,0 +1,360 @@
+<DialogFile 5.5>
+<LongChar No>
+<Font 2 1 12>
+<DialogBox
+ <MBRect -1 -1 359 301>
+ <WBRect -1 -1 332 171>
+ <XBRect -1 -1 367 388>
+ <Platforms MWX>
+ <CurrentFocus 3>
+ <FirstFocus 3>
+ <OKButton 8>
+ <CancelButton -1>
+ <DefaultButton 8>
+ <HelpButton -1>
+ <TitleLabel 0>
+>
+<Label
+ <MCorner 470 956>
+ <WCorner 138 0>
+ <XCorner 18 26>
+ <Label Conversion Designer>
+> # 0
+<Label
+ <MCorner 7 12>
+ <WCorner 7 12>
+ <XCorner 7 12>
+ <Label Project:  Name of project, followed by a very long path name to the .ini file>
+> # 1
+<Label
+ <MCorner 7 26>
+ <WCorner 7 26>
+ <XCorner 7 26>
+ <Label Paragraph Tag:>
+> # 2
+<EditBox
+ <MBaseLine 7 38 63>
+ <WBaseLine 7 38 63>
+ <XBaseLine 7 38 63>
+ <Label For all styles>
+ <StuffObject 4>
+> # 3
+<ImagePopUp
+ <MBRect 75 28 6 9>
+ <WBRect 75 28 6 9>
+ <XBRect 75 28 6 9>
+ <Label tallarrowdn>
+ <StuffObject 3>
+> # 4
+<Label
+ <MCorner 7 54>
+ <WCorner 7 54>
+ <XCorner 7 54>
+ <Label Properties:>
+> # 5
+<PopUpMenu
+ <MBaseLine 7 67 80>
+ <WBaseLine 7 67 80>
+ <XBaseLine 7 67 80>
+ <StuffObject -1>
+> # 6
+<Rule
+ <MBRect 5 72 86 1>
+ <WBRect 5 72 86 1>
+ <XBRect 5 72 86 1>
+> # 7
+<Button
+ <MBaseLine 13 87 67>
+ <WBaseLine 13 87 67>
+ <XBaseLine 13 87 67>
+ <Label Apply>
+ <ShortcutPosition 0>
+ <Active No>
+> # 8
+<Label
+ <MCorner 21 101>
+ <WCorner 7 101>
+ <XCorner 21 101>
+ <Label To All Selected Styles>
+> # 9
+<Rule
+ <MBRect 5 103 86 1>
+ <WBRect 5 103 86 1>
+ <XBRect 5 103 86 1>
+> # 10
+<Button
+ <MBaseLine 13 119 67>
+ <WBaseLine 13 119 67>
+ <XBaseLine 13 119 67>
+ <Label Update All>
+ <ShortcutPosition 0>
+ <Active No>
+> # 11
+<Label
+ <MCorner 7 134>
+ <WCorner 7 134>
+ <XCorner 7 134>
+ <Label Properties in .ini ...>
+> # 12
+<Rule
+ <MBRect 5 147 86 1>
+ <WBRect 5 147 86 1>
+ <XBRect 5 147 86 1>
+> # 13
+<Label
+ <MCorner 7 161>
+ <WCorner 7 161>
+ <XCorner 7 161>
+ <Label Commands:>
+> # 14
+<ImagePopUp
+ <MBRect 73 150 6 9>
+ <WBRect 73 150 6 9>
+ <XBRect 73 150 6 9>
+ <Label tallarrowdn>
+ <StuffObject -1>
+> # 15
+<Rule
+ <MBRect 95 18 1 150>
+ <WBRect 95 18 1 150>
+ <XBRect 95 18 1 150>
+> # 16
+<Rule
+ <MBRect 102 14 224 1>
+ <WBRect 102 14 224 1>
+ <XBRect 102 14 224 1>
+> # 17
+<CheckBox
+ <MCorner 193 162>
+ <WCorner 101 27>
+ <XCorner 193 162>
+ <Label Hide white text>
+ <Active No>
+ <StuffObject -1>
+> # 18
+<CheckBox
+ <MCorner 107 46>
+ <WCorner 101 41>
+ <XCorner 107 46>
+ <Label Retain text colors>
+ <Active No>
+ <StuffObject -1>
+> # 19
+<CheckBox
+ <MCorner 110 162>
+ <WCorner 101 55>
+ <XCorner 110 162>
+ <Label Use color for hyper>
+ <Active No>
+ <StuffObject -1>
+> # 20
+<CheckBox
+ <MCorner 107 69>
+ <WCorner 101 69>
+ <XCorner 107 69>
+ <Label Keep anchor paras>
+ <Active No>
+ <StuffObject -1>
+> # 21
+<Rule
+ <MBRect 213 21 1 42>
+ <WBRect 213 19 1 53>
+ <XBRect 213 21 1 42>
+> # 22
+<CheckBox
+ <MCorner 221 32>
+ <WCorner 221 27>
+ <XCorner 221 32>
+ <Label Use char style names>
+ <Active No>
+ <StuffObject -1>
+> # 23
+<CheckBox
+ <MCorner 221 46>
+ <WCorner 221 41>
+ <XCorner 221 46>
+ <Label Use exact line space>
+ <Active No>
+ <StuffObject -1>
+> # 24
+<CheckBox
+ <MCorner 221 60>
+ <WCorner 221 55>
+ <XCorner 221 60>
+ <Label Use small caps>
+ <Active No>
+ <StuffObject -1>
+> # 25
+<CheckBox
+ <MCorner 221 69>
+ <WCorner 221 69>
+ <XCorner 221 69>
+ <Label Run In run-in heads>
+ <Active No>
+ <StuffObject -1>
+> # 26
+<Rule
+ <MBRect 99 147 228 1>
+ <WBRect 100 75 228 1>
+ <XBRect 99 147 228 1>
+> # 27
+<Label
+ <MCorner 106 79>
+ <WCorner 101 88>
+ <XCorner 106 79>
+ <Label Tabs set at right margin:>
+> # 28
+<CheckBox
+ <MCorner 107 91>
+ <WCorner 101 99>
+ <XCorner 107 91>
+ <Label Make left tab return>
+ <Active No>
+ <StuffObject -1>
+> # 29
+<CheckBox
+ <MCorner 221 91>
+ <WCorner 221 99>
+ <XCorner 221 91>
+ <Label Keep right tab in col>
+ <Active No>
+ <StuffObject -1>
+> # 30
+<Rule
+ <MBRect 100 97 228 1>
+ <WBRect 100 105 228 1>
+ <XBRect 100 97 228 1>
+> # 31
+<Label
+ <MCorner 106 113>
+ <WCorner 101 120>
+ <XCorner 106 113>
+ <Label Sideheads: >
+> # 32
+<RadioButton
+ <MCorner 237 127>
+ <WCorner 151 118>
+ <XCorner 237 127>
+ <Label Left>
+ <Active No>
+ <Group 1>
+ <StuffObject -1>
+> # 33
+<RadioButton
+ <MCorner 171 127>
+ <WCorner 189 118>
+ <XCorner 171 127>
+ <Label Indent>
+ <Active No>
+ <Group 1>
+ <StuffObject -1>
+> # 34
+<RadioButton
+ <MCorner 108 127>
+ <WCorner 236 118>
+ <XCorner 108 127>
+ <Label Frame>
+ <Active Yes>
+ <Group 1>
+ <StuffObject -1>
+> # 35
+<RadioButton
+ <MCorner 214 132>
+ <WCorner 284 118>
+ <XCorner 214 132>
+ <Label Normal>
+ <Active No>
+ <Group 1>
+ <StuffObject -1>
+> # 36
+<CheckBox
+ <MCorner 101 134>
+ <WCorner 101 134>
+ <XCorner 101 134>
+ <Label Anchor spanning sideheads>
+ <Active No>
+ <StuffObject -1>
+> # 37
+<Rule
+ <MBRect 238 123 1 16>
+ <WBRect 238 123 1 16>
+ <XBRect 238 123 1 16>
+> # 38
+<Label
+ <MCorner 280 113>
+ <WCorner 244 135>
+ <XCorner 280 113>
+ <Label Vert Adjust:>
+> # 39
+<EditBox
+ <MBaseLine 292 126 33>
+ <WBaseLine 294 134 33>
+ <XBaseLine 292 126 33>
+ <Label twips>
+ <StuffObject -1>
+> # 40
+<Rule
+ <MBRect 100 135 228 1>
+ <WBRect 100 140 228 1>
+ <XBRect 100 135 228 1>
+> # 41
+<Label
+ <MCorner 106 149>
+ <WCorner 101 155>
+ <XCorner 106 149>
+ <Label Footnotes:>
+> # 42
+<RadioButton
+ <MCorner 108 161>
+ <WCorner 150 154>
+ <XCorner 108 161>
+ <Label Standard>
+ <Active Yes>
+ <Group 2>
+ <StuffObject -1>
+> # 43
+<RadioButton
+ <MCorner 171 161>
+ <WCorner 214 154>
+ <XCorner 171 161>
+ <Label Embed>
+ <Active No>
+ <Group 2>
+ <StuffObject -1>
+> # 44
+<RadioButton
+ <MCorner 237 161>
+ <WCorner 271 154>
+ <XCorner 237 161>
+ <Label None>
+ <Active No>
+ <Group 2>
+ <StuffObject -1>
+> # 45
+<RadioButton
+ <MCorner 157 167>
+ <WCorner 150 167>
+ <XCorner 157 167>
+ <Label Jump>
+ <Active No>
+ <Group 2>
+ <StuffObject -1>
+> # 46
+<RadioButton
+ <MCorner 214 167>
+ <WCorner 214 167>
+ <XCorner 214 167>
+ <Label Popup>
+ <Active No>
+ <Group 2>
+ <StuffObject -1>
+> # 47
+<RadioButton
+ <MCorner 271 167>
+ <WCorner 271 167>
+ <XCorner 271 167>
+ <Label Variable>
+ <Active No>
+ <Group 2>
+ <StuffObject -1>
+> # 48

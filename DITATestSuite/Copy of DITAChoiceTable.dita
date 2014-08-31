@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA 1.1 Task//EN"
+  "http://docs.oasis-open.org/dita/v1.1/OS/dtd/task.dtd">
+<task xml:lang="en-us" id="choicetable">
+<title>DITA Choice Table</title>
+<shortdesc>This task topic shows a choicetable.</shortdesc>
+<taskbody>
+<steps>
+<step><cmd>This step contains the table.</cmd>
+<?dtrtf SimpleTableWidth="4in" ?>
+<choicetable id="aa999281" outputclass="choices" relcolwidth="2* 3*">
+<chhead>
+<choptionhd><p outputclass="cellheading">If you want to...</p></choptionhd>
+<chdeschd><p outputclass="cellheading">Do this:</p></chdeschd>
+</chhead>
+<chrow>
+<choption><p outputclass="cellbody">Drink coffee</p></choption>
+<chdesc><p outputclass="cellbody">Get a cup and fill it.</p></chdesc>
+</chrow>
+<chrow>
+<choption><p outputclass="cellbody">Mail a letter</p></choption>
+<chdesc><p outputclass="cellbody">Buy a stamp and apply it.</p></chdesc>
+</chrow>
+</choicetable>
+</step>
+</steps>
+</taskbody>
+<related-links>
+<link href="DITATables.dita" role="sibling" format="dita"></link>
+<link href="DITAPropertiesTable.dita" role="sibling" format="dita"></link>
+</related-links>
+</task>

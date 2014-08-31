@@ -1,0 +1,53 @@
+<doc id="ud_lists">
+<title>Lists
+<idx>list elements</idx>
+<idx>elements:list</idx>
+<idx>list elements:ordered and unordered</idx>
+</title>
+
+<p>uDoc provides the two familiar list types used in HTML and DITA, ^ol^ for ordered lists, and ^ul^ for unordered.  For both, list items are ^li^.  Unlike HTML (and DITA), the ^li^ element should not directly contain text; it should contain text elements like ^p^ (or other block elements).  Then the text element contains the text itself.  That way, there is no ambiguity when you need to have two paragraphs in a list item; they are both wrapped the same way.
+
+If you fail to include the ^p^ tags inside the ^li^ tags, to minimize clutter, that's OK too.  The processor <xref src="ud_recover.mxd">silently adds them</xref> for you, removing leading and trailing space as needed when it does so.
+
+uDoc does not require the ^li^ elements to be direct children of the ^ol^ or ^ul^.  Other elements can come between, as long as the result is still <q>well-formed</q> XML (no overlapping tags).  An extreme but useful example of that is <xref src="ud_contmod.mxd" idref="numberedrows">using a list to number rows</xref> in a table.
+
+In addition, uDoc has two more kinds of list: a simple list ^sl^ and a pairs list ^pl^.  The simple list has no bullets or numbering; unlike the DITA ^sl^, it can be nested, so it can be used to show hierarchical relationships like those in a directory tree.
+<idx>list elements:simple</idx>
+
+In the pairs list, each list item has one or more ^title^ elements, followed by any other text elements like ^p^.  This is similar to the DITA definition list and parameter list.
+<idx>list elements:pairs</idx>
+
+In any of the list types, an ^li^ element can have a `@type`, either `body` (default) or `head`.  This is generally best used in the simple list or pairs list, for the first list item in them, but can be used for any ^li^.
+
+For example, this markup for a pairs list:</p>
+
+<coderef src="ud_lists.mxd#line=27,34"/>
+
+<p>produces this result:</p>
+<udx switch="nomin">
+<pl>
+  <li type="head"><title>uDoc List Type</title><p>Corresponding DITA Type</p></li>
+  <li><title>Unordered, <tt>&lt;ul&gt;</tt></title><p><tt>&lt;ul&gt;</tt></p></li>
+  <li><title>Ordered, <tt>&lt;ol&gt;</tt></title><p><tt>&lt;ol&gt;</tt></p></li>
+  <li><title>Simple, <tt>&lt;sl&gt;</tt></title><p><tt>&lt;sl&gt;</tt></p></li>
+  <li><title>Pairs, <tt>&lt;pl&gt;</tt></title><p><tt>&lt;dl&gt;</tt>, <tt>&lt;parml&gt;</tt></p></li>
+</pl>
+</udx>
+<p>You can also <xref src="ud_minimize.mxd">minimize the markup</xref> used for lists with short tags. Here is the code for the same list as above, with minimal tagging:
+<idx>tags:minimizing:for lists</idx></p>
+
+<coderef src="ud_lists.mxd#line=42,49"/>
+
+<p>The coding is a lot shorter and faster to type. Here is the result, exactly the same as for the more cluttered full form:</p>
+<udx switch="nofull">
+<pl>
+  <l type="head"/><t/>uDoc List Type<d/>Corresponding DITA Type
+  <l/><t/>Unordered, ^ul^<d/>^ul^
+  <l/><t/>Ordered, ^ol^<d/>^ol^
+  <l/><t/>Simple, ^sl^<d/>^sl^
+  <l/><t/>Pairs, ^pl^<d/>^dl^, ^parml^
+</pl>
+</udx>
+<relref subjects="lists" />
+
+</doc>

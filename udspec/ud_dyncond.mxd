@@ -1,0 +1,33 @@
+<doc id="ud_dyncond">
+<title>Dynamic Show and Hide</title>
+
+<p>You can design your uDoc content so that it adapts to the needs of the person using it, dynamically.  One method is to dynamically change conditions such as audience at runtime.  We start by representing conditional attributes and their values with a single term in `@class`, "name_value":</p>
+
+<pre>[FilterAttributes]
+; attr name = values, prefix with - to hide by default
+audience= novice expert -admin
+</pre>
+
+<p>The method provided by uDoc2Go for selection and for showing the current state is a mini toolbar that can be placed anywhere desired on the page, with a Show All item, and items to Hide each name_value; the clickable item, normally blue, turns red to show when its target is hidden.
+
+Then we can hide or show elements based on a specific name_value. If an element has classes for the same attribute that are not hidden, it should not be hidden.  And if all values for one attribute are hidden, it doesn't matter if other attributes show it.  This cannot be done with global CSS, but requires iterating through all elements on the displayed page, checking className against attribute values, determining if shown or hidden, and adding or removing a style rule as required to hide or show: </p>
+
+<pre>var array = document.getElementsByTagName("*");
+var i = 0;
+while (i &lt; array.length) {
+  var elem = array[i];
+  var class = elem.getAttribute("class");
+  if (CheckElemClass(class))  // true to hide
+    HideElem(elem);
+  else
+    ShowElem(elem);
+  i++;
+}
+</pre>
+
+<p>The code used to implement this in uDoc2Go is available on <xref src="https://github.com/jeremygriffith/Dynamic-Conditional-Display-in-HTML">GitHub</xref>, under the Apache 2 license.</p>
+
+<relref subjects="conditions" />
+
+</doc>
+

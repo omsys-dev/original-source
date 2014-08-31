@@ -1,0 +1,45 @@
+<doc id="ud_mxlsax">
+<title>SAX Callbacks</title>
+
+<p>When SAX mode is enabled, the parser calls back to these functions, which are sent character data in UTF-32:</p>
+<pre>  void StartTag(unl *name, long namecnt, pair **attrs, long attrcnt);
+  void EndTag(unl *name, long namecnt);
+  void TextContent(unl *text, long textcnt);
+</pre>
+
+<p>In FullXML SAX mode, it also uses these, which are sent character data in UTF-8:</p>
+<pre>  void ReportComment(char *comment);
+  void ReportPI(char *pi);
+  void ReportDoctype(char *doctype);
+  void ReportCData(char *cdata);
+</pre>
+
+<p>Whether in SAX mode or not, it always reports errors via this function, which is sent character data in UTF-8:</p>
+<pre>  void ReportError(long line, char *warning, char *cpt, bool fatal);
+</pre>
+
+<p>Hardly any errors are considered fatal; for most, some form of recovery is at least attempted.  For example, the parser tries to match an end tag that doesn't match the current start tag to the parents of the current element.  It reports any such issues and fixes as errors.
+
+The stub functions provided for the callbacks all report the name of the callback and the text sent to it in JSON format to stderr (or to the errorfile set by the user).  Hence callbacks and errors precede the output of the Data Model when SAX is specified but no callbacks are set in mxlparser.dll by the using program.</p>
+
+<sect>
+<title>expat-compatible Callbacks</title>
+
+<p>When callbacks are set with SetExpatCallbacks, these are used:</p>
+<pre>  void StartTag(void *userdata, char *name, long namecnt, char **attrs);
+  void EndTag(void *userdata, char *name, long namecnt);
+  void TextContent(void *userdata, char *text, long textcnt);
+  void StartCdataSection(void *userdata);
+  void EndCdataSection(void *userdata);
+  void ReportPI(void *userdata, char *target, char *data);
+  void XMLDecl(void *userdata, char *version, char *encoding,
+    int standalone);  [standalone = -1]
+  void StartDoctypeDecl(void *userdata, char *name, char *sys,
+	char *pub, int internalsubset); [internalsubset = 0]
+  void EndDoctypeDecl(void *userdata);
+  void ReportComment(void *userdata, char *comment);
+</pre>
+
+<p>The stub functions add "Ex" to the start of the reports, as in "ExPI:".  All names and content are in UTF-8.</p>
+</sect>
+</doc>

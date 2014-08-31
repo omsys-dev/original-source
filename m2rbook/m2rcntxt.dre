@@ -1,0 +1,169 @@
+<DialogFile 5.5>
+<LongChar No>
+<Font 2 1 12>
+<DialogBox
+ <MBRect -1 -1 359 301>
+ <WBRect -1 -1 392 230>
+ <XBRect -1 -1 367 388>
+ <Platforms MWX>
+ <CurrentFocus 2>
+ <FirstFocus 2>
+ <OKButton -1>
+ <CancelButton -1>
+ <DefaultButton 15>
+ <HelpButton -1>
+ <TitleLabel 0>
+>
+<Label
+ <MCorner 470 956>
+ <WCorner 157 0>
+ <XCorner 18 26>
+ <Label Mif2Go Conversion>
+> # 0
+<Label
+ <MCorner 26 15>
+ <WCorner 26 15>
+ <XCorner 26 15>
+ <Label Property set:>
+> # 1
+<RadioButton
+ <MCorner 7 26>
+ <WCorner 7 26>
+ <XCorner 7 26>
+ <Label >
+ <Active Yes>
+ <Group 2>
+ <StuffObject -1>
+> # 2
+<PopUpMenu
+ <MBaseLine 26 28 80>
+ <WBaseLine 26 28 80>
+ <XBaseLine 26 28 80>
+ <StuffObject -1>
+> # 3
+<Label
+ <MCorner 17 21>
+ <WCorner 26 46>
+ <XCorner 18 101>
+ <Label Properties:>
+> # 4
+<RadioButton
+ <MCorner 7 56>
+ <WCorner 7 56>
+ <XCorner 7 56>
+ <Label >
+ <Active No>
+ <Group 2>
+ <StuffObject -1>
+> # 5
+<PopUpMenu
+ <MBaseLine 17 41 87>
+ <WBaseLine 26 59 80>
+ <XBaseLine 18 122 87>
+ <StuffObject -1>
+> # 6
+<Rule
+ <MBRect 5 98 85 1>
+ <WBRect 21 67 86 1>
+ <XBRect 5 98 85 1>
+> # 7
+<Label
+ <MCorner 25 79>
+ <WCorner 25 79>
+ <XCorner 25 79>
+ <Label Item type:>
+> # 8
+<RadioButton
+ <MCorner 7 90>
+ <WCorner 7 90>
+ <XCorner 7 90>
+ <Label >
+ <Active No>
+ <Group 2>
+ <StuffObject -1>
+> # 9
+<PopUpMenu
+ <MBaseLine 25 92 80>
+ <WBaseLine 25 92 80>
+ <XBaseLine 25 92 80>
+ <StuffObject -1>
+> # 10
+<Label
+ <MCorner 25 110>
+ <WCorner 25 110>
+ <XCorner 25 110>
+ <Label Item name:>
+> # 11
+<RadioButton
+ <MCorner 7 120>
+ <WCorner 7 120>
+ <XCorner 7 120>
+ <Label >
+ <Active No>
+ <Group 2>
+ <StuffObject -1>
+> # 12
+<PopUpMenu
+ <MBaseLine 25 123 80>
+ <WBaseLine 25 123 80>
+ <XBaseLine 25 123 80>
+ <StuffObject -1>
+> # 13
+<Button
+ <MBaseLine 44 149 18>
+ <WBaseLine 44 149 18>
+ <XBaseLine 44 149 18>
+ <Label ^>
+ <Active No>
+> # 14
+<Button
+ <MBaseLine 44 168 18>
+ <WBaseLine 44 168 18>
+ <XBaseLine 44 168 18>
+ <Label \xe1>
+ <Active No>
+> # 15
+<Button
+ <MBaseLine 44 187 18>
+ <WBaseLine 44 187 18>
+ <XBaseLine 44 187 18>
+ <Label v>
+ <Active No>
+> # 16
+<Button
+ <MBaseLine 21 168 18>
+ <WBaseLine 21 168 18>
+ <XBaseLine 21 168 18>
+ <Label <>
+ <Active No>
+> # 17
+<Button
+ <MBaseLine 67 168 18>
+ <WBaseLine 67 168 18>
+ <XBaseLine 67 168 18>
+ <Label \>>
+ <Active No>
+> # 18
+<Rule
+ <MBRect 8 266 343 1>
+ <WBRect 5 206 101 1>
+ <XBRect 18 341 339 1>
+> # 19
+<Label
+ <MCorner 6 161>
+ <WCorner 16 220>
+ <XCorner 6 161>
+ <Label Commands:>
+> # 20
+<ImagePopUp
+ <MBRect 73 150 6 9>
+ <WBRect 82 209 11 11>
+ <XBRect 73 150 6 9>
+ <Label tallarrowdn>
+ <StuffObject -1>
+> # 21
+<Rule
+ <MBRect 95 3 1 165>
+ <WBRect 110 2 1 225>
+ <XBRect 95 3 1 165>
+> # 22

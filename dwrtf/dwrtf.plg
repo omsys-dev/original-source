@@ -1,0 +1,117 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: dwrtf - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\jeremy\AppData\Local\Temp\RSPA0FD.tmp" with contents
+[
+/nologo /Zp1 /MD /W3 /GX /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_WIN32" /D "_DLL" /FR"..\dll\WinRel/" /Fp"..\dll\WinRel/dwrtf.pch" /YX /Fo"..\dll\WinRel/" /Fd"..\dll\WinRel/" /FD /c 
+"C:\cvs\dwrtf\dwrtftx.cpp"
+]
+Creating command line "cl.exe @C:\Users\jeremy\AppData\Local\Temp\RSPA0FD.tmp" 
+Creating temporary file "C:\Users\jeremy\AppData\Local\Temp\RSPA0FE.tmp" with contents
+[
+icuuc.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib Shlwapi.lib /nologo /base:"0x67e00000" /version:2.1 /subsystem:windows /dll /incremental:no /pdb:"..\dll\WinRel/dwrtf.pdb" /map:"..\dll\WinRel/dwrtf.map" /machine:I386 /out:"..\dll\WinRel/dwrtf.dll" /implib:"..\dll\WinRel/dwrtf.lib" 
+\cvs\dll\WinRel\dcappl.obj
+\cvs\dll\WinRel\dcauto.obj
+\cvs\dll\WinRel\dcbase.obj
+\cvs\dll\WinRel\dcctlg.obj
+\cvs\dll\WinRel\dcfile.obj
+\cvs\dll\WinRel\dcfili.obj
+\cvs\dll\WinRel\dcfilp.obj
+\cvs\dll\WinRel\dcfilr.obj
+\cvs\dll\WinRel\dcfilw.obj
+\cvs\dll\WinRel\dcfmtr.obj
+\cvs\dll\WinRel\dcglob.obj
+\cvs\dll\WinRel\dcicu.obj
+\cvs\dll\WinRel\dcini.obj
+\cvs\dll\WinRel\dclist.obj
+\cvs\dll\WinRel\dclog.obj
+\cvs\dll\WinRel\dcmacr.obj
+\cvs\dll\WinRel\dcmem.obj
+\cvs\dll\WinRel\dcmxl.obj
+\cvs\dll\WinRel\dcnode.obj
+\cvs\dll\WinRel\dcnodt.obj
+\cvs\dll\WinRel\dcport.obj
+\cvs\dll\WinRel\dctxfx.obj
+\cvs\dll\WinRel\dwrtf.obj
+\cvs\dll\WinRel\dwrtfan.obj
+\cvs\dll\WinRel\dwrtfcn.obj
+\cvs\dll\WinRel\dwrtffl.obj
+\cvs\dll\WinRel\dwrtffm.obj
+\cvs\dll\WinRel\dwrtfgr.obj
+\cvs\dll\WinRel\dwrtfgt.obj
+\cvs\dll\WinRel\dwrtfin.obj
+\cvs\dll\WinRel\dwrtfmc.obj
+\cvs\dll\WinRel\dwrtfpp.obj
+\cvs\dll\WinRel\dwrtfrf.obj
+\cvs\dll\WinRel\dwrtftb.obj
+\cvs\dll\WinRel\dwrtftx.obj
+\cvs\dll\WinRel\dwrtf.res
+]
+Creating command line "link.exe @C:\Users\jeremy\AppData\Local\Temp\RSPA0FE.tmp"
+Creating temporary file "C:\Users\jeremy\AppData\Local\Temp\RSPA0FF.bat" with contents
+[
+@echo off
+copy \cvs\dll\WinRel\dwrtf.dll %omsyshome%\common\bin
+]
+Creating command line "C:\Users\jeremy\AppData\Local\Temp\RSPA0FF.bat"
+Compiling...
+dwrtftx.cpp
+Linking...
+   Creating library ..\dll\WinRel/dwrtf.lib and object ..\dll\WinRel/dwrtf.exp
+<h3>Output Window</h3>
+Copying to omsyshome directory...
+        1 file(s) copied.
+Creating temporary file "C:\Users\jeremy\AppData\Local\Temp\RSPA66C.tmp" with contents
+[
+/nologo /o"..\dll\WinRel/dwrtf.bsc" 
+\cvs\dll\WinRel\dcappl.sbr
+\cvs\dll\WinRel\dcauto.sbr
+\cvs\dll\WinRel\dcbase.sbr
+\cvs\dll\WinRel\dcctlg.sbr
+\cvs\dll\WinRel\dcfile.sbr
+\cvs\dll\WinRel\dcfili.sbr
+\cvs\dll\WinRel\dcfilp.sbr
+\cvs\dll\WinRel\dcfilr.sbr
+\cvs\dll\WinRel\dcfilw.sbr
+\cvs\dll\WinRel\dcfmtr.sbr
+\cvs\dll\WinRel\dcglob.sbr
+\cvs\dll\WinRel\dcicu.sbr
+\cvs\dll\WinRel\dcini.sbr
+\cvs\dll\WinRel\dclist.sbr
+\cvs\dll\WinRel\dclog.sbr
+\cvs\dll\WinRel\dcmacr.sbr
+\cvs\dll\WinRel\dcmem.sbr
+\cvs\dll\WinRel\dcmxl.sbr
+\cvs\dll\WinRel\dcnode.sbr
+\cvs\dll\WinRel\dcnodt.sbr
+\cvs\dll\WinRel\dcport.sbr
+\cvs\dll\WinRel\dctxfx.sbr
+\cvs\dll\WinRel\dwrtf.sbr
+\cvs\dll\WinRel\dwrtfan.sbr
+\cvs\dll\WinRel\dwrtfcn.sbr
+\cvs\dll\WinRel\dwrtffl.sbr
+\cvs\dll\WinRel\dwrtffm.sbr
+\cvs\dll\WinRel\dwrtfgr.sbr
+\cvs\dll\WinRel\dwrtfgt.sbr
+\cvs\dll\WinRel\dwrtfin.sbr
+\cvs\dll\WinRel\dwrtfmc.sbr
+\cvs\dll\WinRel\dwrtfpp.sbr
+\cvs\dll\WinRel\dwrtfrf.sbr
+\cvs\dll\WinRel\dwrtftb.sbr
+\cvs\dll\WinRel\dwrtftx.sbr]
+Creating command line "bscmake.exe @C:\Users\jeremy\AppData\Local\Temp\RSPA66C.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+dwrtf.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

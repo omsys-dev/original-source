@@ -1,0 +1,25 @@
+//-------------------------------------------------------------------
+// Source filename:      T:\stallard\vars\m2rvar.dre
+// Date generated:       Mon May 26 11:23:40 2003
+//-------------------------------------------------------------------
+
+#include "windows.h"
+
+m2rvar DIALOG LOADONCALL MOVEABLE DISCARDABLE 0, 0, 199, 107
+CAPTION "Edit User Variable"
+STYLE WS_CLIPSIBLINGS | DS_MODALFRAME | WS_CAPTION
+FONT 8 "Tahoma"
+BEGIN
+	CONTROL "/path/to/filename.ext", 106, "EDIT", WS_BORDER | ES_AUTOHSCROLL | ES_LEFT | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 14, 53, 171, 12
+	CONTROL "For paths, use forward slashes ""/"", not backslashes.", 107, "STATIC", SS_LEFTNOWORDWRAP | WS_VISIBLE | WS_GROUP, 14, 66, 167, 8
+	CONTROL "Huh?", 108, "BUTTON", BS_PUSHBUTTON | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 14, 88, 40, 12
+	CONTROL "STOP!", 109, "BUTTON", BS_PUSHBUTTON | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 59, 88, 40, 12
+	DEFPUSHBUTTON "OK", 110, 102, 88, 40, 12, WS_VISIBLE | WS_GROUP | WS_TABSTOP
+	CONTROL "Revert", 111, "BUTTON", BS_PUSHBUTTON | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 146, 88, 40, 12
+	CONTROL "", 100, "STATIC", SS_LEFTNOWORDWRAP | WS_DISABLED | WS_GROUP, 0, 0, 0, 0
+	CONTROL "User variable: ", 101, "STATIC", SS_LEFTNOWORDWRAP | WS_VISIBLE | WS_GROUP, 14, 17, 46, 8
+	CONTROL "", 102, "STATIC", SS_ETCHEDFRAME | WS_VISIBLE | WS_GROUP, 59, 15, 77, 14
+	CONTROL "variable name               ", 103, "STATIC", SS_LEFTNOWORDWRAP | WS_VISIBLE | WS_GROUP, 63, 17, 72, 8
+	CONTROL "Prev", 104, "BUTTON", BS_PUSHBUTTON | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 146, 16, 40, 12
+	CONTROL "Edit content of variable, or supply new content:                          ", 105, "STATIC", SS_LEFTNOWORDWRAP | WS_VISIBLE | WS_GROUP, 14, 39, 196, 8
+END

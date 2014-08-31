@@ -1,0 +1,43 @@
+<doc id="ud_udxswitch">
+<title>The `udx` Switches</title>
+
+<p>Many `udx` options are controlled by command-line switches.  The pair that control overall processing are:</p>
+
+<ul>
+<l/>`-f`, convert to full tags, the default, for the benefit of regular XML tools.
+<l/>`-m`, minimize tags, to provide easier authoring and editing.
+</ul>
+
+<p>By default, the converted file replaces the original file at the end of the process.  If you want it to go to a different file, use:</p>
+
+<ul>
+<l/>`-o filename.mxd` to write to a new name in the same (or a different) directory.
+<l/>`-o path\to\dest` to write to the same name in a different directory.  The path can be relative or absolute; the original name is appended to it.  We normally use `-o ..\full` or `-o ..\min` during testing.
+</ul>
+
+<p>To log error reports to a file, instead of sending them to stderr on the console, use `-e logfile.txt`, which can have an absolute or relative path.</p>
+
+<p>After choosing the processing, these switches override `Options` settings in `udx.ini`:</p>
+
+<ul>
+<l/>`-s` specifies whether to convert short tags (either way):
+  <ul>
+  <l/>`-sa` applies to all short tags.
+  <l/>`-st` applies to short tags in tables.
+  <l/>`-sp` applies to short tags in pair lists, ^pl^.
+  <l/>`-sl` applies to short tags in other lists: ^ul^, ^ol^, and ^sl^.
+  </ul>
+<l/>`-w` specifies whether to convert to or from wiki symbols.
+<l/>`-b` specifies conversion to or from blank lines in ^p^ elements.
+<l/>`-p` specifies wrapping or unwrapping text in block elements in ^p^ elements.
+</ul>
+
+<p>Switches have a cumulative effect, and apply to the following source filename(s).  For example, `-o ..\full myminsrc.mxd -m -o ..\min myfullsrc.mxd` creates a full-tagged version of the first file in `..\full\myminsrc.mxd` and a minimized version fo the second in `..\min\myfullsrc.mxd`.  If you need to change any of the `-s` switches in between, `-n` reverses the effect of the previous matching `-s`; for example, `-nst` reverses a preceding `-st`.</p>
+
+<p>If the source file name contains a wildcard, that is typically expanded by the shell into a series of matching names.  Each is then processed using the same preceding switches.  Make sure that you use the `-o path` switch so that the results are written to different files.</p>
+
+<p>Finally, the `-h` and `-?` switches both do the same thing: provide help for the switches in the console window.</p>
+
+<relref subjects="udx shorthand"/>
+
+</doc>

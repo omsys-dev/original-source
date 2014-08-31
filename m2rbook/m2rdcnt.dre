@@ -1,0 +1,284 @@
+<DialogFile 5.5>
+<LongChar No>
+<Font 2 1 12>
+<DialogBox
+ <MBRect -1 -1 359 301>
+ <WBRect -1 -1 332 171>
+ <XBRect -1 -1 367 388>
+ <Platforms MWX>
+ <CurrentFocus 3>
+ <FirstFocus 3>
+ <OKButton 8>
+ <CancelButton -1>
+ <DefaultButton 8>
+ <HelpButton -1>
+ <TitleLabel 0>
+>
+<Label
+ <MCorner 470 956>
+ <WCorner 138 0>
+ <XCorner 18 26>
+ <Label Conversion Designer>
+> # 0
+<Label
+ <MCorner 7 12>
+ <WCorner 7 12>
+ <XCorner 7 12>
+ <Label Project:  Name of project, followed by a very long path name to the .ini file>
+> # 1
+<Label
+ <MCorner 7 26>
+ <WCorner 7 26>
+ <XCorner 7 26>
+ <Label Base File Name:>
+> # 2
+<EditBox
+ <MBaseLine 7 38 63>
+ <WBaseLine 7 38 63>
+ <XBaseLine 7 38 63>
+ <Label All>
+ <StuffObject 4>
+> # 3
+<ImagePopUp
+ <MBRect 75 28 6 9>
+ <WBRect 75 28 6 9>
+ <XBRect 75 28 6 9>
+ <Label tallarrowdn>
+ <StuffObject 3>
+> # 4
+<Label
+ <MCorner 7 54>
+ <WCorner 7 54>
+ <XCorner 7 54>
+ <Label Properties:>
+> # 5
+<PopUpMenu
+ <MBaseLine 7 67 80>
+ <WBaseLine 7 67 80>
+ <XBaseLine 7 67 80>
+ <StuffObject -1>
+> # 6
+<Rule
+ <MBRect 5 72 86 1>
+ <WBRect 5 72 86 1>
+ <XBRect 5 72 86 1>
+> # 7
+<Button
+ <MBaseLine 13 87 67>
+ <WBaseLine 13 87 67>
+ <XBaseLine 13 87 67>
+ <Label Apply>
+ <ShortcutPosition 0>
+ <Active No>
+> # 8
+<Label
+ <MCorner 21 101>
+ <WCorner 7 101>
+ <XCorner 21 101>
+ <Label To All Selected Styles>
+> # 9
+<Rule
+ <MBRect 5 103 86 1>
+ <WBRect 5 103 86 1>
+ <XBRect 5 103 86 1>
+> # 10
+<Button
+ <MBaseLine 13 119 67>
+ <WBaseLine 13 119 67>
+ <XBaseLine 13 119 67>
+ <Label Update All>
+ <ShortcutPosition 0>
+ <Active No>
+> # 11
+<Label
+ <MCorner 7 134>
+ <WCorner 7 134>
+ <XCorner 7 134>
+ <Label Properties in .ini ...>
+> # 12
+<Rule
+ <MBRect 5 147 86 1>
+ <WBRect 5 147 86 1>
+ <XBRect 5 147 86 1>
+> # 13
+<Label
+ <MCorner 7 161>
+ <WCorner 7 161>
+ <XCorner 7 161>
+ <Label Commands:>
+> # 14
+<ImagePopUp
+ <MBRect 73 150 6 9>
+ <WBRect 73 150 6 9>
+ <XBRect 73 150 6 9>
+ <Label tallarrowdn>
+ <StuffObject -1>
+> # 15
+<Rule
+ <MBRect 95 18 1 150>
+ <WBRect 95 19 1 149>
+ <XBRect 95 18 1 150>
+> # 16
+<Rule
+ <MBRect 102 14 224 1>
+ <WBRect 102 14 224 1>
+ <XBRect 102 14 224 1>
+> # 17
+<Label
+ <MCorner 100 28>
+ <WCorner 100 28>
+ <XCorner 100 28>
+ <Label Type of .cnt:>
+> # 18
+<RadioButton
+ <MCorner 157 26>
+ <WCorner 157 26>
+ <XCorner 157 26>
+ <Label Full>
+ <Active Yes>
+ <Group 2>
+ <StuffObject -1>
+> # 19
+<RadioButton
+ <MCorner 193 26>
+ <WCorner 193 26>
+ <XCorner 193 26>
+ <Label Body (for multi-file)>
+ <Active No>
+ <Group 2>
+ <StuffObject -1>
+> # 20
+<RadioButton
+ <MCorner 287 26>
+ <WCorner 287 26>
+ <XCorner 287 26>
+ <Label None>
+ <Active No>
+ <Group 2>
+ <StuffObject -1>
+> # 21
+<CheckBox
+ <MCorner 101 42>
+ <WCorner 101 42>
+ <XCorner 101 42>
+ <Label Name of .cnt file to generate:>
+ <Active No>
+ <StuffObject -1>
+> # 22
+<EditBox
+ <MBaseLine 265 43 60>
+ <WBaseLine 265 43 60>
+ <XBaseLine 265 43 60>
+ <Label helpfile.cnt>
+ <StuffObject -1>
+> # 23
+<CheckBox
+ <MCorner 101 59>
+ <WCorner 101 59>
+ <XCorner 101 59>
+ <Label Name of .hlp file for .cnt :BASE:>
+ <Active No>
+ <StuffObject -1>
+> # 24
+<EditBox
+ <MBaseLine 265 60 60>
+ <WBaseLine 265 60 60>
+ <XBaseLine 265 60 60>
+ <Label helpfile.hlp>
+ <StuffObject -1>
+> # 25
+<CheckBox
+ <MCorner 101 77>
+ <WCorner 101 77>
+ <XCorner 101 77>
+ <Label :TITLE for .cnt file:>
+ <Active No>
+ <StuffObject -1>
+> # 26
+<EditBox
+ <MBaseLine 205 78 120>
+ <WBaseLine 205 78 120>
+ <XBaseLine 205 78 120>
+ <Label Help File Title>
+ <StuffObject -1>
+> # 27
+<CheckBox
+ <MCorner 101 95>
+ <WCorner 101 96>
+ <XCorner 101 95>
+ <Label Start file (for :TITLE, :BASE, etc.):>
+ <Active No>
+ <StuffObject -1>
+> # 28
+<EditBox
+ <MBaseLine 265 96 60>
+ <WBaseLine 265 96 60>
+ <XBaseLine 265 96 60>
+ <Label start.bct>
+ <StuffObject -1>
+> # 29
+<CheckBox
+ <MCorner 101 113>
+ <WCorner 101 114>
+ <XCorner 101 113>
+ <Label First head for .cnt:>
+ <Active No>
+ <StuffObject -1>
+> # 30
+<EditBox
+ <MBaseLine 205 114 120>
+ <WBaseLine 205 114 120>
+ <XBaseLine 205 114 120>
+ <Label 1 CNT First Heading>
+ <StuffObject -1>
+> # 31
+<CheckBox
+ <MCorner 101 131>
+ <WCorner 101 131>
+ <XCorner 101 131>
+ <Label Text for B-style topic titles:>
+ <Active No>
+ <StuffObject -1>
+> # 32
+<EditBox
+ <MBaseLine 234 132 90>
+ <WBaseLine 234 132 90>
+ <XBaseLine 234 132 90>
+ <Label Overview>
+ <StuffObject -1>
+> # 33
+<Label
+ <MCorner 100 149>
+ <WCorner 100 150>
+ <XCorner 100 149>
+ <Label Include in .cnt references: >
+> # 34
+<CheckBox
+ <MCorner 210 148>
+ <WCorner 210 149>
+ <XCorner 210 148>
+ <Label Help files>
+ <Active No>
+ <StuffObject -1>
+> # 35
+<CheckBox
+ <MCorner 269 148>
+ <WCorner 269 149>
+ <XCorner 269 148>
+ <Label Windows>
+ <Active No>
+ <StuffObject -1>
+> # 36
+<Label
+ <MCorner 122 165>
+ <WCorner 122 166>
+ <XCorner 122 165>
+ <Label Name for primary window  in .cnt: >
+> # 37
+<EditBox
+ <MBaseLine 264 165 60>
+ <WBaseLine 264 165 60>
+ <XBaseLine 264 165 60>
+ <Label main>
+ <StuffObject -1>
+> # 38

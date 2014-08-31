@@ -1,0 +1,24 @@
+<map id="udx_utility">
+<title>The UDX Utility</title>
+<author>Omni Systems</author>
+<author>Jeremy H. Griffith</author>
+<subtitle>Version 0.1, <var idref="date"/></subtitle>
+
+<p>This document describes the udx utility program, used to convert uDoc MicroXML files between the minimized form and the fully-tagged form losslessly.  It is written in C++, and is FOSS under the Apache 2.0 license.</p>
+
+<contents />
+
+<docref src="ud_xform.mxd" start="file" />
+  <doctext>
+<p>The `udx` utility is released as FOSS under the Apache 2.0 license to permit commercial use.  It uses and includes <xref src="htpps://github.com/jeremygriffith/mxl-MicroXML-parser">the MXL parser</xref>.  Downloads are available on <xref src="htpps://github.com/jeremygriffith/uDoc-UDX-Utility">GitHub</xref> for the Windows executable and the C++ source.</p>
+  </doctext>
+
+<docref src="ud_minimize.mxd" />
+<docref src="ud_events.mxd" />
+<docref src="ud_range.mxd" />
+<docref src="ud_newshort.mxd" />
+<docref src="ud_udxswitch.mxd" />
+<docref src="ud_udxini.mxd" />
+<docref src="ud_udxtag.mxd" />
+
+</map>

@@ -1,0 +1,324 @@
+<DialogFile 5.5>
+<LongChar No>
+<Font 2 1 12>
+<DialogBox
+ <MBRect -1 -1 359 301>
+ <WBRect -1 -1 332 171>
+ <XBRect -1 -1 367 388>
+ <Platforms MWX>
+ <CurrentFocus 3>
+ <FirstFocus 3>
+ <OKButton 8>
+ <CancelButton -1>
+ <DefaultButton 8>
+ <HelpButton -1>
+ <TitleLabel 0>
+>
+<Label
+ <MCorner 470 956>
+ <WCorner 138 0>
+ <XCorner 18 26>
+ <Label Conversion Designer>
+> # 0
+<Label
+ <MCorner 7 12>
+ <WCorner 7 12>
+ <XCorner 7 12>
+ <Label Project:  Name of project, followed by a very long path name to the .ini file>
+> # 1
+<Label
+ <MCorner 7 26>
+ <WCorner 7 26>
+ <XCorner 7 26>
+ <Label Base File Name:>
+> # 2
+<EditBox
+ <MBaseLine 7 38 63>
+ <WBaseLine 7 38 63>
+ <XBaseLine 7 38 63>
+ <Label BMP>
+ <StuffObject 4>
+> # 3
+<ImagePopUp
+ <MBRect 75 28 6 9>
+ <WBRect 75 28 6 9>
+ <XBRect 75 28 6 9>
+ <Label tallarrowdn>
+ <StuffObject 3>
+> # 4
+<Label
+ <MCorner 7 54>
+ <WCorner 7 54>
+ <XCorner 7 54>
+ <Label Properties:>
+> # 5
+<PopUpMenu
+ <MBaseLine 7 67 80>
+ <WBaseLine 7 67 80>
+ <XBaseLine 7 67 80>
+ <StuffObject -1>
+> # 6
+<Rule
+ <MBRect 5 72 86 1>
+ <WBRect 5 72 86 1>
+ <XBRect 5 72 86 1>
+> # 7
+<Button
+ <MBaseLine 13 87 67>
+ <WBaseLine 13 87 67>
+ <XBaseLine 13 87 67>
+ <Label Apply>
+ <ShortcutPosition 0>
+ <Active No>
+> # 8
+<Label
+ <MCorner 21 101>
+ <WCorner 7 101>
+ <XCorner 21 101>
+ <Label To All Selected Styles>
+> # 9
+<Rule
+ <MBRect 5 103 86 1>
+ <WBRect 5 103 86 1>
+ <XBRect 5 103 86 1>
+> # 10
+<Button
+ <MBaseLine 13 119 67>
+ <WBaseLine 13 119 67>
+ <XBaseLine 13 119 67>
+ <Label Update All>
+ <ShortcutPosition 0>
+ <Active No>
+> # 11
+<Label
+ <MCorner 7 134>
+ <WCorner 7 134>
+ <XCorner 7 134>
+ <Label Properties in .ini ...>
+> # 12
+<Rule
+ <MBRect 5 147 86 1>
+ <WBRect 5 147 86 1>
+ <XBRect 5 147 86 1>
+> # 13
+<Label
+ <MCorner 7 161>
+ <WCorner 7 161>
+ <XCorner 7 161>
+ <Label Commands:>
+> # 14
+<ImagePopUp
+ <MBRect 73 150 6 9>
+ <WBRect 73 150 6 9>
+ <XBRect 73 150 6 9>
+ <Label tallarrowdn>
+ <StuffObject -1>
+> # 15
+<Rule
+ <MBRect 95 18 1 150>
+ <WBRect 95 73 1 95>
+ <XBRect 95 18 1 150>
+> # 16
+<Rule
+ <MBRect 102 14 224 1>
+ <WBRect 102 14 224 1>
+ <XBRect 102 14 224 1>
+> # 17
+<CheckBox
+ <MCorner 101 28>
+ <WCorner 101 28>
+ <XCorner 101 28>
+ <Label Use unique File ID (alphanum, 3 char max):>
+ <Active No>
+ <StuffObject -1>
+> # 18
+<EditBox
+ <MBaseLine 295 29 30>
+ <WBaseLine 295 29 30>
+ <XBaseLine 295 29 30>
+ <Label AAN>
+ <StuffObject -1>
+> # 19
+<CheckBox
+ <MCorner 101 46>
+ <WCorner 101 46>
+ <XCorner 101 46>
+ <Label Convert <$paranumonly\> for Sections to:>
+ <Active No>
+ <StuffObject -1>
+> # 20
+<EditBox
+ <MBaseLine 295 47 30>
+ <WBaseLine 295 46 30>
+ <XBaseLine 295 47 30>
+ <Label NNN>
+ <StuffObject -1>
+> # 21
+<CheckBox
+ <MCorner 101 64>
+ <WCorner 101 64>
+ <XCorner 101 64>
+ <Label Browse Start:>
+ <Active No>
+ <StuffObject -1>
+> # 22
+<EditBox
+ <MBaseLine 179 65 36>
+ <WBaseLine 179 65 36>
+ <XBaseLine 179 65 36>
+ <Label 1200>
+ <StuffObject -1>
+> # 23
+<CheckBox
+ <MCorner 228 64>
+ <WCorner 228 64>
+ <XCorner 228 64>
+ <Label Prefix:>
+ <Active No>
+ <StuffObject -1>
+> # 24
+<EditBox
+ <MBaseLine 277 65 48>
+ <WBaseLine 277 65 48>
+ <XBaseLine 277 65 48>
+ <Label seq3>
+ <StuffObject -1>
+> # 25
+<CheckBox
+ <MCorner 101 82>
+ <WCorner 101 82>
+ <XCorner 101 82>
+ <Label Destination .hlp file for this file:>
+ <Active No>
+ <StuffObject -1>
+> # 26
+<EditBox
+ <MBaseLine 265 83 60>
+ <WBaseLine 265 83 60>
+ <XBaseLine 265 83 60>
+ <Label helpfile>
+ <StuffObject -1>
+> # 27
+<CheckBox
+ <MCorner 101 100>
+ <WCorner 101 100>
+ <XCorner 101 100>
+ <Label Start .bct file with:>
+ <Active No>
+ <StuffObject -1>
+> # 28
+<EditBox
+ <MBaseLine 205 101 120>
+ <WBaseLine 205 101 120>
+ <XBaseLine 205 101 120>
+ <Label 1 BCT First Heading>
+ <StuffObject -1>
+> # 29
+<Rule
+ <MBRect 100 107 228 1>
+ <WBRect 100 107 228 1>
+ <XBRect 100 107 228 1>
+> # 30
+<Label
+ <MCorner 99 121>
+ <WCorner 99 121>
+ <XCorner 99 121>
+ <Label Use FileIDs for:>
+> # 31
+<CheckBox
+ <MCorner 166 120>
+ <WCorner 166 120>
+ <XCorner 166 120>
+ <Label Links and xrefs>
+ <Active No>
+ <StuffObject -1>
+> # 32
+<CheckBox
+ <MCorner 255 120>
+ <WCorner 255 120>
+ <XCorner 255 120>
+ <Label FDK graphics>
+ <Active No>
+ <StuffObject -1>
+> # 33
+<Label
+ <MCorner 99 137>
+ <WCorner 99 137>
+ <XCorner 99 137>
+ <Label Use FM-generated:>
+> # 34
+<CheckBox
+ <MCorner 184 136>
+ <WCorner 184 136>
+ <XCorner 184 136>
+ <Label Table Of Contents>
+ <Active No>
+ <StuffObject -1>
+> # 35
+<CheckBox
+ <MCorner 285 136>
+ <WCorner 285 136>
+ <XCorner 285 136>
+ <Label IndeX>
+ <Active No>
+ <StuffObject -1>
+> # 36
+<Label
+ <MCorner 99 152>
+ <WCorner 99 152>
+ <XCorner 99 152>
+ <Label Keep FM Object IDs: >
+> # 37
+<RadioButton
+ <MCorner 189 150>
+ <WCorner 189 150>
+ <XCorner 189 150>
+ <Label None>
+ <Active Yes>
+ <Group 2>
+ <StuffObject -1>
+> # 38
+<RadioButton
+ <MCorner 230 150>
+ <WCorner 230 150>
+ <XCorner 230 150>
+ <Label Referenced>
+ <Active No>
+ <Group 2>
+ <StuffObject -1>
+> # 39
+<RadioButton
+ <MCorner 298 150>
+ <WCorner 298 150>
+ <XCorner 298 150>
+ <Label All>
+ <Active No>
+ <Group 2>
+ <StuffObject -1>
+> # 40
+<Label
+ <MCorner 99 168>
+ <WCorner 99 168>
+ <XCorner 99 168>
+ <Label Default .hlp file base: >
+> # 41
+<EditBox
+ <MBaseLine 196 167 60>
+ <WBaseLine 196 167 60>
+ <XBaseLine 196 167 60>
+ <Label helpfile>
+ <StuffObject -1>
+> # 42
+<Label
+ <MCorner 263 168>
+ <WCorner 263 168>
+ <XCorner 263 168>
+ <Label Suffix: >
+> # 43
+<EditBox
+ <MBaseLine 295 167 30>
+ <WBaseLine 295 167 30>
+ <XBaseLine 295 167 30>
+ <Label hlp>
+ <StuffObject -1>
+> # 44

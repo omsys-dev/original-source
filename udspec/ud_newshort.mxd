@@ -1,0 +1,77 @@
+<doc id="ud_newshort">
+<title>Creating New Shorthand Symbols
+<idx>symbols, shorthand for tags</idx>
+<idx>shorthand symbols for tags</idx>
+<idx>tags:shorthand symbols for</idx>
+</title>
+
+<p>With the uDoc <xref src="ud_minimize.mxd">tag minimization</xref> facility, you are not restricted to the shorthand symbols that are defined by default.  You can add new ones, or change existing ones, at any time.
+
+The default shorthand symbols are defined along with the regular uDoc elements, in stdelems.mxl.  Their definitions are based on:</p>
+
+<pre> ^element name="wiki" props="def elem"^
+  ^usage^Define a symbol to use in wiki shorthand^/usage^
+  ^attr name="symbol" type="text"/^
+  ^attr name="props" type="elist"/^
+  ^attr name="tag" type="name"/^
+  ^attr name="sch" type="text"/^
+  ^attr name="ech" type="text"/^
+  ^attr name="space" type="enum: yes no"/^
+  ^attr name="code" type="enum: no yes set"/^
+ ^/element^
+</pre>
+
+<p>For example, the shorthand symbol for bold, italic, and inline quotes are:</p>
+
+<pre> ^wiki symbol="*" props="inline text typo"
+  tag="b" space="yes" code="no" /^
+
+ ^wiki symbol="_" props="inline text typo"
+  tag="i" space="yes" code="no" /^
+
+ ^wiki symbol="&amp;#x22;" props="inline text typo"
+  tag="q" space="yes" code="no" /^
+</pre>
+
+<p>The ^wiki^ elements are processed along with ^element^ elements, and are also referenced by ^elemref^s.  They follow the same rules for scope, creation, and redefinition.  They are always used as start/end pairs, not singly.
+
+Any `@symbol` can be escaped with a "\\".  If a "\\" precedes anything else, the "\\" is itself retained as text.
+
+`@props` are the same as those of the correspondingly-tagged element, pretty much always `"inline text typo"`.
+
+`@space="yes"` means the symbol is taken literally, and not interpreted, if it is not preceded or followed by whitespace or punctuation, or another symbol or tag.
+
+`@code="no"` means the symbol is not interpreted when it is in code, either in a ^pre^ or in code set by another symbol, such as \` or \^. The symbols that set code are defined as:</p>
+
+<pre> ^wiki symbol="\`" props="inline text typo"
+  tag="tt" space="no" code="set" /^
+
+ ^wiki symbol="\^" props="inline text typo"
+  tag="tt" sch="&amp;lt;" ech="&amp;gt;" space="no" code="set" /^
+</pre>
+
+<p>`@space="no"` means the symbol is always interpreted regardless of what precedes or follows it (except if "\\" precedes it).
+
+`@code="set"` means if the symbol is in code, the tag is not used, otherwise use the tag, normally ^tt^, to set code.  
+
+`@sch` and `@ech` are always used as starting and ending characters if present, including in code.  They can be entities as here, or Unicode characters in UTF-8 encoding if necessary.
+
+This scheme makes explicit the functionality of the shorthand symbol markup, and permits users to redefine symbols, and add more, at will.  For example, if someone used a lot of underlining,
+they could set:</p>
+
+<pre> ^wiki symbol="_" props="inline text typo"
+  tag="u" code="no" /^
+</pre>
+
+<p>and use single quotes instead for italics:</p>
+
+<pre> ^wiki symbol="&amp;#x27;" props="inline text typo"
+  tag="i" code="no" /^
+</pre>
+
+<p>The processor then has what it needs to know to convert the two symbols internally into normal XML tags for processing, which is what uDoc2Go does logically.  In addition, <xref src="ud_xform.mxd">the `udx` utility</xref> contains matching information in <xref src="ud_udxini.mxd">its `udx.ini` file</xref> for use during conversion between minimized and fully-tagged forms.</p>
+
+
+<relref subjects="shorthand" />
+
+</doc>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA 1.1 Concept//EN"
+  "http://docs.oasis-open.org/dita/v1.1/OS/dtd/concept.dtd">
+<concept xml:lang="en-us" id="conrefsrc">
+<title>Source Content for Conrefs</title>
+<shortdesc>This topic contains the sources for text referenced by 
+DITAConrefs.dita</shortdesc>
+<conbody>
+<section>
+<title>Sources for Phrases</title>
+<p>This is the <ph outputclass="RevisedConref" id="revph">revised phrase</ph>.</p>
+</section>
+<section>
+<title>Sources for Lists</title>
+<ol>
+<li>First.</li>
+<li id="revli">Revised second.</li>
+<li>Third.</li>
+</ol>
+</section>
+<section id="revsec">
+<title>Sources for Sections</title>
+<p>This text should be included in the conref.</p>
+</section>
+</conbody>
+</concept>
+

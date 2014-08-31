@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<val xml:lang="en-us">
+<style-conflict foreground-conflict-color="maroon"
+ background-conflict-color="white" />
+<prop att="platform" val="linux" action="exclude" />
+<prop att="audience" val="expert" action="exclude" />
+
+<prop att="product" val="A" action="flag" color="blue" />
+<prop att="product" val="B" action="flag" color="red" />
+
+<prop att="product" val="C" action="flag" style="bold" />
+<prop att="product" val="D" action="flag" style="italics" />
+
+<prop att="product" val="E" action="flag" >
+<startflag imageref="startflage.gif" ><alt-text>Start E:</alt-text></startflag>
+<endflag imageref="endflage.gif" ><alt-text>End E:</alt-text></endflag>
+</prop>
+<prop att="product" val="F" action="flag" >
+<startflag imageref="startflagf.gif" ><alt-text>Start F:</alt-text></startflag>
+<endflag imageref="endflagf.gif" ><alt-text>End F:</alt-text></endflag>
+</prop>
+
+<revprop val="1" action="flag" style="underline" />
+<revprop val="2" action="flag" style="double-underline" />
+<revprop val="3" action="flag" style="overline" />
+
+</val>

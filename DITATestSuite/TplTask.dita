@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA 1.1 Task//EN"
+  "http://docs.oasis-open.org/dita/v1.1/OS/dtd/task.dtd">
+<task xml:lang="en-us" id="id">
+<title></title>
+<shortdesc></shortdesc>
+<taskbody>
+<context></context>
+<steps>
+<step><cmd></cmd>
+<info></info>
+</step>
+<step><cmd></cmd>
+<info></info>
+</step>
+<step><cmd></cmd>
+<info></info>
+</step>
+<step><cmd></cmd>
+<info></info>
+</step>
+</steps>
+<result></result>
+</taskbody>
+</task>

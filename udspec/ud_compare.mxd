@@ -1,0 +1,89 @@
+<doc id="ud_compare">
+<title>Comparison of Markup Formats
+<idx>DITA 1.2 and uDoc, compared</idx>
+</title>
+
+<p>This compares <term idref="udoc">uDoc 1.0</term> and <term idref="dita">DITA 1.2</term> for publications markup:</p>
+
+<p><br/><br/></p>
+
+<table id="cmptable" cols="3">
+<col width="50*"/>
+<col width="100*"/>
+<col width="100*"/>
+<row type="head">
+ <cell><p>Feature</p></cell>
+ <cell><p>uDoc 1.0</p></cell>
+ <cell><p>DITA 1.2</p></cell>
+</row>
+<row>
+ <cell type="head"><p>Language</p></cell>
+ <cell><p><term idref="mxml">MicroXML</term></p></cell>
+ <cell><p><term idref="xml">XML 1.0</term></p></cell>
+</row>
+<row>
+ <cell type="head"><p>Content Models</p></cell>
+ <cell><p>None. uDoc suggests what is appropriate, but you are <xref src="ud_contmod.mxd">free to do what you want</xref>.  So you can create your own schemas without having to fit them into a <q>standard</q> mold.</p></cell>
+ <cell><p>DTDs and XSD schemas, very restrictive.  Added restrictions that are unenforceable by machine validation (and often surprising) are given in the spec.</p></cell>
+</row>
+<row>
+ <cell type="head"><p>Maps</p></cell>
+ <cell><p>Maps <xref src="ud_maps.mxd">describe the overall content</xref> and specify added resources for the project.</p></cell>
+ <cell><p>Maps work much as in uDoc, but do not permit some content that uDoc allows, such as project-specific <xref src="ud_maps.mxd">transitional text</xref> in ^doctext^.</p></cell>
+</row>
+<row>
+ <cell type="head"><p>Topics</p></cell>
+ <cell><p>Topics can have <xref src="ud_docs.mxd">whatever is best</xref> for your own use case.  You can <xref src="ud_groups.mxd">create new topic types at will</xref> to capture whatever semantics you need.</p></cell>
+ <cell><p>Topics are categorized based on Information Mapping principles.  The general <q>topic</q> type is discouraged in favor of specialized and restricted types like <q>concept</q>, <q>task</q>, and <q>reference</q>.</p></cell>
+</row>
+<row>
+ <cell type="head"><p>Libraries</p></cell>
+ <cell><p>The third kind of uDoc file, which <xref src="ud_libs.mxd">can contain anything</xref> intended for referencing from multiple docs or maps.  No restrictions on content or organization.</p></cell>
+ <cell><p>No equivalent.</p></cell>
+</row>
+<row>
+ <cell type="head"><p>Transclusion</p></cell>
+ <cell><p>Content can be <xref src="ud_references.mxd">added at any point</xref> in the map or doc.  uDoc content to be re-used can be stored in libraries without restriction.</p></cell>
+ <cell><p>Conrefs can only reference elements matching the content model of the referencing element, imposing a great deal of overhead to ensure that referenced elements match referencing ones.</p></cell>
+</row>
+<row>
+ <cell type="head"><p>Conditions</p></cell>
+ <cell><p><xref src="ud_condproc.mxd">Conditions (in libraries)</xref> can be used based on the output type being produced and on any attribute of any element.  Multiple sets can apply to different branches of the same project.</p></cell>
+ <cell><p>Conditions (in <q>ditaval</q> files) are based on a small set of attributes that are not allowed on many elements.  Only one condition set can be used per project.</p></cell>
+</row>
+<row>
+ <cell type="head"><p>Scoping</p></cell>
+ <cell><p>You can define scopes for key resolution, xrefs, transclusion, and conditions within the map using <xref src="ud_branch.mxd">named branches</xref>. This makes it very easy to use the same topic in more than one place in the project, and have each instance treated as distinct, automatically directing references between them to the correct targets.</p></cell>
+ <cell><p>All keys, xrefs, conrefs, and conditions are at full project scope.  This makes re-use of a topic in the same project difficult, requiring a renaming hack (<q>copy-to</q>) and manual fixup of all references to the topic.</p></cell>
+</row>
+<row>
+ <cell type="head"><p>Interproject Links</p></cell>
+ <cell><p>References can be directed to <xref src="ud_projaddr.mxd">keys defined in other projects</xref>, and automatically provide the right target for each output type.</p></cell>
+ <cell><p>Projects can use only keys defined within their own maps.  Interproject links can only be made manually.</p></cell>
+</row>
+<row>
+ <cell type="head"><p>Related Topics</p></cell>
+ <cell><p>Related topics are <xref src="ud_related.mxd">automatically identified</xref> based on the subjects (like ALinks or #hashtags) assigned in the map or doc, so broken links are impossible.  Different subjects can have different weights, supporting a ranked listing.</p></cell>
+ <cell><p>Related topics must be specified explicitly in ^related-links^ or in a ^reltable^.  If a topic not in the current project is listed, a broken link to it is the result.  No weighting method is provided.</p></cell>
+</row>
+<row>
+ <cell type="head"><p>New Rlements</p></cell>
+ <cell><p>New elements can be <xref src="ud_newelems.mxd">created by simple copy/paste</xref> at will, with any attributes needed, and used anywhere immediately. Same for redefining and renaming existing elements.</p></cell>
+ <cell><p>New elements can only be "specialized" from existing ones, by an expert at DTDs/XSDs, and can be used only where their base element could be used.  Even adding an attribute is hard.</p></cell>
+</row>
+<row>
+ <cell type="head"><p>Tag Minimization</p></cell>
+ <cell><p>uDoc supports several forms of <xref src="ud_minimize.mxd">tag minimization</xref> which reduce on-screen clutter and make authoring and editing much easier, even if you just have Notepad. It includes a <xref src="ud_xform.mxd">conversion utility, `udx`,</xref> to go between minimized and full-tag forms (best if using XSLT for processing) at will, losslessly.</p></cell>
+ <cell><p>No equivalent.</p></cell>
+</row>
+
+<row>
+ <cell type="head"><p></p></cell>
+ <cell><p></p></cell>
+ <cell><p></p></cell>
+</row>
+</table>
+
+<relref subjects="basics comparison" />
+
+</doc>

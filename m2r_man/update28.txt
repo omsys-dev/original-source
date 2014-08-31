@@ -1,0 +1,223 @@
+UPDATE.txt for DCL MIF2RTF Filter:
+   Windows NT/95 Version 2.4, Update 28, November 28, 1998 
+
+Note:  Since we include incremental improvements in the currently-
+shipping version of mif2rtf, you may already have some of these
+enhancements in the version you initially received.
+
+
+New Feature: FDK User Interface
+-------------------------------
+
+Our focus in this upgrade has been on improving the filter's usability.
+It already does the best job of producing RTF for WinHelp and Word that
+we know of.  While we certainly intend to continue making more technical 
+improvements, and adding the features that our users tell us they want,
+we think it all needs to be a bit *easier* to use.  With this release,
+we have taken a major step in that direction.
+
+Now you can use mif2rtf without leaving FrameMaker.  Whenever you want
+to run the filter, go to the File menu and pick "Save Using mif2rtf...".
+In a few seconds, the filter will be converting your files, keeping you
+posted with progress messages on the status bar of your document window.
+No more DOS prompt!
+
+It gets better.  The natural way to organize a group of FrameMaker files
+for a WinHelp project is in a FrameMaker book.  Now you can convert the
+whole book in one shot; we even construct the .cnt and run the MS WinHelp
+compiler!  (This works for print RTF too, for those not building Help.)
+
+And better yet.  The mif2rtf.ini file lets you fine-tune your project by
+setting hundreds of options.  Too many options, many users think; what if
+you just want to build a simple, vanilla, WinHelp file?  Sure; use the
+"Set Up mif2rtf Export..." pick on the File menu, and let the filter make
+its own .ini file, containing just the entries you need!  It will look at
+your book (or single file) and fill in all required info; it even picks
+out the headings to use for topic starts!  You'll be able to make a Help
+file right away; then you can improve on it as you see the need.
+
+The full installation and usage directions are in the file read_FDK.txt.
+Enjoy!
+
+=========================================================================
+
+
+Changed mif2rtf.ini settings:
+-----------------------------
+
+We now include two versions of the .ini file.  The mif2rtf.ini is shorter
+than the previous version, about 50%, and rearranged to make the more used 
+items more easily accessible.  We suggest that if you want to edit the .ini
+yourself, rather than have the FDK write you one to start out with, you use 
+this version.  The m2r_full.ini contains all the settings that can be made;
+refer to it as needed, and copy/paste from it into your working .ini.
+
+
+[Options]
+; MathType = 0 (none), 1 (MathFullForm), 2 (use HTML), or 3 (use FDK)
+MathType=3
+
+Remember the agonizing procedure we had to give you for including
+FrameMath equations in your files?  Say goodbye to it.  We now use
+the FDK to generate .bmp graphics for FrameMath and other images.
+You no longer need to do *anything* to your equations, and don't
+have to run the FrameMaker HTML conversion first.  Just run from
+the new FDK interface, and you'll get equations big enough to read!
+
+; EmbedEqsInWMFs = No (default), or Yes (scale to size using WMFs)
+EmbedEqsInWMF=No
+
+The way we make the equations readable is by scaling them up a bit
+when we make the .bmps.  Since wrapping in .wmfs would scale them
+back down, this is rarely desirable now.
+
+; UseGraphicPreviews = No (default) or Yes (use preview bitmaps for frames)
+UseGraphicPreviews=No
+
+Although the FDK-produced .bmp graphics are essential only for Math,
+they are helpful in many other areas.  For example, if you have OLE
+or EPS graphics, and no good converter handy, they can save the day.
+This setting makes the filter use them, if available, in preference
+to its own generated graphics.  That means that a lot of [Graphics]
+settings cease to be effective; you'll get what you see in FrameMaker,
+no more, no less.  When you tell the FDK to generate all graphics,
+this setting gets turned on for you.  Note that if the FrameMaker
+.bmp export filter fails to produce a .bmp, mif2rtf will do what it
+can to make a .wmf for you to replace it, automatically.
+
+; HideWhiteText removes any white text (standard FrameMaker behavior)
+HideWhiteText=No
+
+While many use white text for material intended never to be seen,
+a lot more use it in reversed headings, especially in table heads.
+You can still turn it off, but now you won't wonder where your text
+went...
+
+
+[FDK]
+
+There are many new settings in this new section; see read_FDK.txt for
+a complete description of them.
+
+
+[WordOptions]
+; KeepSectBreaks = Yes (retain, Word default) or No (remove)
+KeepSectBreaks=Yes
+
+When the Frame master page changes (other than the usual Left/Right 
+alternation), the filter puts a section break into the Word file.
+
+; WrapAroundTextFrames = Yes (default, leave room around) or No
+WrapAroundTextFrames=Yes
+
+The filter tries to emulate FrameMaker's multiple text rect layouts
+using Word frames, with varying degrees of success.  Some work best
+with wrap on, some with it off.  YMMV.
+
+; HFGap = twips to space around header/footer frames, default none
+HFGap=0
+
+More fine tuning, to get complicated headers and footers right.
+
+; PageColumns = 0 (default, set per Right master) or number to use
+PageColumns=0
+
+If you set this to a non-zero number, your Word (or WordPerfect)
+document will be set to use that number of columns, regardless of
+the number of columns in FrameMaker.  If you leave it at 0, the
+filter will use the number of columns specified for the main body
+text rect on the Right master page (regardless of actual master-page
+usage in the document).
+
+; SHSpannerAnchors = Yes (default, anchor paras after framed spanners)
+SHSpannerAnchors=Yes
+
+This adds tiny anchor paragraphs after each spanning head when using
+Sideheads=Frame, which help prevent Word frame train wrecks.  Or not.
+
+
+[HelpOptions]
+; DisambiguateIndex = Yes (default) or No (delete repeated 1st-level keys)
+DisambiguateIndex=Yes
+
+One of our favorite customers pointed out that in our zeal to minimize
+file sizes, we had ensured that the first-level keys of two-level heads
+appeared only once in the document, at the first point of use.  That
+meant that if you clicked on the first-level head in the Index, you
+went directly to one of the subheads... pretty much at random.  Now you
+get a nice little dialog instead so you can choose your destination from
+all of the second-level heads present for it.
+
+; ObjectIDs = None (default), Referenced (used by TOC or IX), or All 
+ObjectIDs=Referenced
+
+We used to have an all or nothing choice for retaining FrameMaker ObjectIDs
+as # footnotes in the WinHelp file.  If you left them out, your links from
+any FrameMaker-generated file, like TOC and IX, were broken.  If you kept
+them, you had thousands of footnotes that nobody used in there.  We now use
+another rule for deciding which to keep; if you pick Referenced, we keep the
+ones in index markers (for the IX) and in topic starts and other heads that
+appear in the WinHelp .cnt (for the TOC), and discard the rest.
+
+
+[HelpContents]
+; CntBStyleText = text to use for topics created as "B" HelpCntStyles
+CntBStyleText=Overview
+
+This avoids having the heading text repeated immediately below it in the
+first topic; instead, the second round becomes "Overview" in the language
+of your choice.
+
+; AddCntFileName = No (default) or Yes (add name to topic ref strings)
+AddCntFileName=No
+; AddCntWindowName = No (default) or Yes (add def >main to ref strings)
+AddCntWindowName=No
+; CntMainWindow = name for primary window in .cnt if not "main"
+;CntMainWindow=main
+
+These are needed to support .cnts for multiple .hlp files, and for files
+that use more than one window type.  They make the .cnt entries longer,
+using up precious characters (WinHelp only allows 96), but prevent the
+nastiness that happens when you select a topic in the .cnt with no file
+or window reference, when the previous topic was from another file, or is
+in a secondary window.  The previous file/window settings are then used,
+incorrectly, for the new topic.
+
+
+Documentation Change:
+---------------------
+
+Unfortunately, the documentation is once again running behind the filter.
+We hope that it will catch up again soon, and will send it on to you when
+it does.  In the meantime, we'll repeat the caveat below from the last 
+update:
+
+When setting the filter to create WinHelp files, the styles used for topic 
+starts should only be paragraph styles.  We have had to eliminate the use 
+of character styles as indicators to prevent character styles within the 
+topic start from terminating the topic title prematurely. You can still
+use character styles for all other [HelpStyles] purposes, such as keywords.
+
+
+Bug Fixes:
+----------
+
+The specific bug-fix listing has the same problem as the User Guide; we've
+had a staffing change in the tech writing area, and the little piles of
+notes have not turned into nice clear words as they should have...  All we
+can say is that we've made many, many incremental improvements, in graphics,
+in the .cnt, in Word RTF coding methods (especially for frames), and added
+limited multicolumn support (Word RTF only).
+
+
+******************************************************************
+NOTE:  When you install the upgraded DLLs, make sure you put them
+into the **same** directory as the previous versions, usually your
+\Windows\System32 or \Windows\System directory.  Otherwise the
+earlier versions will remain in effect, which can be confusing.
+For Windows 95, be sure to put DCL.EXE in \Windows itself, not in
+the System subdirectory; otherwise it will not be found and used.
+******************************************************************
+
+
+Omni Systems, Inc.      http://www.omsys.com/     info@omsys.com

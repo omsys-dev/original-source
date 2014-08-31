@@ -1,0 +1,309 @@
+<DialogFile 5.5>
+<LongChar No>
+<Font 2 1 12>
+<DialogBox
+ <MBRect -1 -1 359 301>
+ <WBRect -1 -1 332 171>
+ <XBRect -1 -1 367 388>
+ <Platforms MWX>
+ <CurrentFocus 3>
+ <FirstFocus 3>
+ <OKButton 8>
+ <CancelButton -1>
+ <DefaultButton 8>
+ <HelpButton -1>
+ <TitleLabel 0>
+>
+<Label
+ <MCorner 470 956>
+ <WCorner 138 0>
+ <XCorner 18 26>
+ <Label Conversion Designer>
+> # 0
+<Label
+ <MCorner 7 12>
+ <WCorner 7 12>
+ <XCorner 7 12>
+ <Label Project:  Name of project, followed by a very long path name to the .ini file>
+> # 1
+<Label
+ <MCorner 7 26>
+ <WCorner 7 26>
+ <XCorner 7 26>
+ <Label Ref Frame Format:>
+> # 2
+<EditBox
+ <MBaseLine 7 38 63>
+ <WBaseLine 7 38 63>
+ <XBaseLine 7 38 63>
+ <Label All>
+ <StuffObject 4>
+> # 3
+<ImagePopUp
+ <MBRect 75 28 6 9>
+ <WBRect 75 28 6 9>
+ <XBRect 75 28 6 9>
+ <Label tallarrowdn>
+ <StuffObject 3>
+> # 4
+<Label
+ <MCorner 7 54>
+ <WCorner 7 54>
+ <XCorner 7 54>
+ <Label Properties:>
+> # 5
+<PopUpMenu
+ <MBaseLine 7 67 80>
+ <WBaseLine 7 67 80>
+ <XBaseLine 7 67 80>
+ <StuffObject -1>
+> # 6
+<Rule
+ <MBRect 5 72 86 1>
+ <WBRect 5 72 86 1>
+ <XBRect 5 72 86 1>
+> # 7
+<Button
+ <MBaseLine 13 87 67>
+ <WBaseLine 13 87 67>
+ <XBaseLine 13 87 67>
+ <Label Apply>
+ <ShortcutPosition 0>
+ <Active No>
+> # 8
+<Label
+ <MCorner 21 101>
+ <WCorner 7 101>
+ <XCorner 21 101>
+ <Label To All Selected Styles>
+> # 9
+<Rule
+ <MBRect 5 103 86 1>
+ <WBRect 5 103 86 1>
+ <XBRect 5 103 86 1>
+> # 10
+<Button
+ <MBaseLine 13 119 67>
+ <WBaseLine 13 119 67>
+ <XBaseLine 13 119 67>
+ <Label Update All>
+ <ShortcutPosition 0>
+ <Active No>
+> # 11
+<Label
+ <MCorner 7 134>
+ <WCorner 7 134>
+ <XCorner 7 134>
+ <Label Properties in .ini ...>
+> # 12
+<Rule
+ <MBRect 5 147 86 1>
+ <WBRect 5 147 86 1>
+ <XBRect 5 147 86 1>
+> # 13
+<Label
+ <MCorner 7 161>
+ <WCorner 7 161>
+ <XCorner 7 161>
+ <Label Commands:>
+> # 14
+<ImagePopUp
+ <MBRect 73 150 6 9>
+ <WBRect 73 150 6 9>
+ <XBRect 73 150 6 9>
+ <Label tallarrowdn>
+ <StuffObject -1>
+> # 15
+<Rule
+ <MBRect 95 18 1 150>
+ <WBRect 95 62 1 106>
+ <XBRect 95 18 1 150>
+> # 16
+<Rule
+ <MBRect 102 14 224 1>
+ <WBRect 102 14 224 1>
+ <XBRect 102 14 224 1>
+> # 17
+<RadioButton
+ <MCorner 101 29>
+ <WCorner 101 29>
+ <XCorner 101 29>
+ <Label Remove this type>
+ <Active Yes>
+ <Group 1>
+ <StuffObject -1>
+> # 18
+<RadioButton
+ <MCorner 193 29>
+ <WCorner 193 29>
+ <XCorner 193 29>
+ <Label Graphic, as-is>
+ <Active No>
+ <Group 1>
+ <StuffObject -1>
+> # 19
+<RadioButton
+ <MCorner 269 29>
+ <WCorner 269 29>
+ <XCorner 269 29>
+ <Label Name only>
+ <Active No>
+ <Group 1>
+ <StuffObject -1>
+> # 20
+<Label
+ <MCorner 101 49>
+ <WCorner 101 49>
+ <XCorner 101 49>
+ <Label Style to use for Name-only frames:>
+> # 21
+<PopUpMenu
+ <MBaseLine 248 49 80>
+ <WBaseLine 248 49 80>
+ <XBaseLine 248 49 80>
+ <StuffObject -1>
+> # 22
+<Rule
+ <MBRect 101 56 228 1>
+ <WBRect 101 56 228 1>
+ <XBRect 101 56 228 1>
+> # 23
+<Label
+ <MCorner 101 70>
+ <WCorner 101 70>
+ <XCorner 101 70>
+ <Label Ref page frames:>
+> # 24
+<RadioButton
+ <MCorner 165 69>
+ <WCorner 175 69>
+ <XCorner 165 69>
+ <Label None>
+ <Active Yes>
+ <Group 2>
+ <StuffObject -1>
+> # 25
+<RadioButton
+ <MCorner 218 69>
+ <WCorner 218 69>
+ <XCorner 218 69>
+ <Label Graphic>
+ <Active No>
+ <Group 2>
+ <StuffObject -1>
+> # 26
+<RadioButton
+ <MCorner 269 69>
+ <WCorner 269 69>
+ <XCorner 269 69>
+ <Label Name only>
+ <Active No>
+ <Group 2>
+ <StuffObject -1>
+> # 27
+<Label
+ <MCorner 100 90>
+ <WCorner 100 90>
+ <XCorner 100 90>
+ <Label Default style for Name-only frames:>
+> # 28
+<PopUpMenu
+ <MBaseLine 248 89 80>
+ <WBaseLine 248 89 80>
+ <XBaseLine 248 89 80>
+ <StuffObject -1>
+> # 29
+<Rule
+ <MBRect 101 97 228 1>
+ <WBRect 101 97 228 1>
+ <XBRect 101 97 228 1>
+> # 30
+<CheckBox
+ <MCorner 101 116>
+ <WCorner 101 116>
+ <XCorner 101 116>
+ <Label Use para style for all frames:>
+ <Active No>
+ <StuffObject -1>
+> # 31
+<PopUpMenu
+ <MBaseLine 241 117 80>
+ <WBaseLine 241 117 80>
+ <XBaseLine 241 117 80>
+ <StuffObject -1>
+> # 32
+<Label
+ <MCorner 101 140>
+ <WCorner 101 140>
+ <XCorner 101 140>
+ <Label Empty frames: >
+> # 33
+<RadioButton
+ <MCorner 164 139>
+ <WCorner 164 139>
+ <XCorner 164 139>
+ <Label Keep>
+ <Active Yes>
+ <Group 3>
+ <StuffObject -1>
+> # 34
+<RadioButton
+ <MCorner 207 139>
+ <WCorner 207 139>
+ <XCorner 207 139>
+ <Label Remove>
+ <Active No>
+ <Group 3>
+ <StuffObject -1>
+> # 35
+<RadioButton
+ <MCorner 263 139>
+ <WCorner 263 139>
+ <XCorner 263 139>
+ <Label Identify file>
+ <Active No>
+ <Group 3>
+ <StuffObject -1>
+> # 36
+<Label
+ <MCorner 101 160>
+ <WCorner 101 160>
+ <XCorner 101 160>
+ <Label Borders: >
+> # 37
+<RadioButton
+ <MCorner 141 159>
+ <WCorner 141 159>
+ <XCorner 141 159>
+ <Label None>
+ <Active Yes>
+ <Group 4>
+ <StuffObject -1>
+> # 38
+<RadioButton
+ <MCorner 187 159>
+ <WCorner 187 159>
+ <XCorner 187 159>
+ <Label Inside>
+ <Active No>
+ <Group 4>
+ <StuffObject -1>
+> # 39
+<RadioButton
+ <MCorner 233 159>
+ <WCorner 233 159>
+ <XCorner 233 159>
+ <Label Outside>
+ <Active No>
+ <Group 4>
+ <StuffObject -1>
+> # 40
+<RadioButton
+ <MCorner 285 159>
+ <WCorner 285 159>
+ <XCorner 285 159>
+ <Label Frame>
+ <Active No>
+ <Group 4>
+ <StuffObject -1>
+> # 41

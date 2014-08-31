@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA 1.1 Concept//EN"
+  "http://docs.oasis-open.org/dita/v1.1/OS/dtd/concept.dtd">
+<concept xml:lang="en-us" id="flagging">
+<title>Ditaval Flagging</title>
+<shortdesc>This shows ditaval flagging for several element types,
+using color, styles, and start/end images.</shortdesc>
+<conbody>
+<section>
+<title>Color Flagging</title>
+<p platform="windows">Blue, red, then conflict.</p>
+<p platform="linux">Purple, green, then conflict.</p>
+<p product="A">Product A info.</p>
+<p product="B">Product B info.</p>
+<p product="A B">Info for both product A and B.</p>
+</section>
+<section>
+<title>Style Flagging</title>
+<p platform="windows">Bold, italic, then both.</p>
+<p platform="linux">Italic, bold, then both.</p>
+<p product="C">Product C info, bold.</p>
+<p product="D">Product D info, italic.</p>
+<p product="C D">Info for both product C and D.</p>
+</section>
+<section>
+<title>Image Flagging</title>
+<p>Same for both platforms.</p>
+<p product="E">Product E info.</p>
+<p product="F">Product F info.</p>
+<p product="E F">Info for both product E and F.</p>
+</section>
+<section>
+<title>Revision Flagging</title>
+<p platform="windows">Underline, double underline, overline, then
+combination of last two.</p>
+<p platform="linux">Overline, double underline, underline,  then
+combination of last two.</p>
+<p rev="1">Revision 1.</p>
+<p rev="2">Revision 2.</p>
+<p rev="3">Revision 3.</p>
+<p rev="2 3">Revision 2 and 3.</p>
+</section>
+</conbody>
+</concept>
+

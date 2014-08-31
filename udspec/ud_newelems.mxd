@@ -1,0 +1,48 @@
+<doc id="ud_newelems">
+<title>Creating New Elements
+<idx>elements:new, defining</idx>
+<idx>elements:predefined, library of</idx>
+</title>
+
+<p>All predefined uDoc elements are in the library `stdelems.mxl`.  Processors and editors should recognize all of those, in any context.  However, some use cases may require additional elements.  In that case, the new elements should be in a separate library such as `localelems.mxl`, and not in `stdelems.mxl`, so that their definitions can accompany them when <xref src="ud_develop.mxd">their projects are used elsewhere</xref>.  Likewise, redefined elements should be kept in such a separate library.  If the new elements or redefinitions apply only to selected projects, they can be included in a project library, and referenced by an ^elementref^ in their projects' root maps.
+
+The same applies to <xref src="ud_elemattrs.mxd">common attributes</xref>, in `stdattrs.mxl` and `localattrs.mxl`.  Both contain a ^div^ with `id="CommonAttrs"`, which has the set of attributes available for all elements.  Any other ^attr^s defined in them are for documentation only, as the working definitions are in their ^element^s.
+
+One of DITA's major strengths is the ability to specialize new elements to fit your use case better.  The downside is that it's a complicated process, and can only limit, not expand, the capabilities of the existing element for the new one.  That is necessary to ensure that when a processor encounters an element it doesn't recognize, it can "generalize" it by processing it as though it were an instance of the standard element it was specialized from.
+
+In uDoc, we take a different approach.  You create a new element, very simply, from scratch.  You can set the number and kinds of attributes, with the names, types, and defaults you need, and set just the processing properties you want for your new element.  You don't have to base it on an existing element.
+
+Think about it.  An element has a name, attributes, and processing properties.  In use, it also has content.  That's it.  So what does "inheritance" mean?  Not the name, that's new.  Not the content.  Just the attributes and processing properties; that's all the new element inherits.  If the properties are named, like the attributes, the process becomes very simple: list the properties and attributes you want.  That's what you do in uDoc.
+
+You create a new element with a definition, in a new `.mxl` library file so it is usable wherever its definition is referenced.  Here is an example, defining an equivalent to the DITA ^codeph^ element:</p>
+
+<pre id="codeph"> ^element name="codeph" props="inline text code"^
+  ^usage^Marks inline text to be displayed as code^/usage^
+  ^attr name="language" type="name" /^
+ ^/element^
+</pre>
+
+<p>If you *do* want to base your new element on an existing one, you just copy the definition of the existing element, paste it into your own element library, and edit it as you wish.  You don't have to edit a DTD or XSD; there are no DTDs or XSDs in uDoc.
+
+When a processor such as <tm idref="u2g" /> sees the element, it first looks it up wherever the current ^elemrefs^ say elements are defined.  If it's not there, it checks the default element set, in `stdelems.mxl`.  The `@props` are from a list of predefined <xref src="ud_elemprops.mxd">element properties</xref>, which the processor needs to support in any combination.  That is not as hard as it may seem; it's exactly how DITA2Go processes DITA content, with the lookup based on the DITA `@class` attribute.
+
+For the element's attributes, the processor knows that the predefined `CommonAttrs` are all available, including `@class`.  In addition, the definition above identifies another, `@language`, that can be used to specify the code language, as needed for highlighting.  The available <xref src="ud_elemattrs.mxd">^attr^ types</xref> include `name`, `text`, `bool` (yes or no), `file`, `enum` (with the choices in a space-delimited list), and many more; the ^attr^ element can also specify a `@default` as needed.  The processor now knows all it needs to process the new element, caches the info, and proceeds.</p>
+
+<comment>
+
+<p>What if you want to *overlap* elements?  In XML, you can't, and MicroXML does not change that rule.  However, uDoc defines two data elements that effectively permit overlapping:
+<idx>elements:virtual</idx>
+<idx>virtual elements</idx>
+</p>
+
+<pl>
+<l/><t/>^start^<d/>The start of a virtual element, with `@name` and (optional) `@id`, and any other common attributes wanted, such as `@src`.  It may be empty, as in ^start name="John"/^, or contain content itself, whatever is needed.
+<l/><t/>^end^<d/>The end of a virtual element, with `@name` and, if the start had an `@id`, an `@idref` to it.
+</pl>
+
+<p>This is another way in which uDoc adapts the tool to you, instead of requiring that you adapt to the tool.</p>
+</comment>
+
+<relref subjects="elements" />
+
+</doc>

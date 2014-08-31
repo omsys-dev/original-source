@@ -1,0 +1,57 @@
+//-------------------------------------------------------------------
+// Source filename:      E:\cvs\m2rbook\m2rxtpl.dre
+// Date generated:       Sat Jul 26 12:11:36 2003
+//-------------------------------------------------------------------
+
+m2rxtpl 500 // DB_DBRE_INFO resource
+BEGIN
+	/* okbutton      */ 29,
+	/* cancelbutton  */ 30,
+	/* defaultbutton */ 29,
+	/* num           */ 33,
+	/* firstfocus    */ 2,
+	/* filenum       */ -1,
+	/* filetbx       */ -1,
+	/* filesbx       */ -1,
+	/* filelabel     */ -1,
+	/* helpbutton    */ 31,
+	/* titlelabel    */ 0,
+	/* hypertextHelp */ "clnthelp:dbre template\0",
+
+	//       id      type    active     stuff    hypertextHelp
+	// --------  --------  --------  --------  ---------------
+	        100,        4,        0,        0, "-1\0",
+	        101,        4,        0,        0, "-1\0",
+	        102,        9,        0,        3, "clnthelp:edit box\0",
+	        103,        3,        0,        2, "clnthelp:image popup\0",
+	        104,        4,        0,        0, "-1\0",
+	        105,        6,        0,       -1, "clnthelp:popup\0",
+	        106,        1,        0,        0, "-1\0",
+	        107,        2,        0,        0, "clnthelp:button\0",
+	        108,        4,        0,        0, "-1\0",
+	        109,        8,        0,       -1, "clnthelp:button\0",
+	        110,        4,        0,        0, "-1\0",
+	        111,        9,        0,       -1, "clnthelp:multi text\0",
+	        112,        1,        0,        0, "-1\0",
+	        113,        4,        0,        0, "-1\0",
+	        114,        1,        0,        0, "-1\0",
+	        115,       10,        1,       16, "clnthelp:radio\0",
+	        116,        9,        0,       15, "clnthelp:edit box\0",
+	        117,       10,        0,       -1, "clnthelp:radio\0",
+	        118,        3,        0,       17, "clnthelp:image popup\0",
+	        119,        4,        0,        0, "-1\0",
+	        120,        4,        0,        0, "-1\0",
+	        121,        9,        0,       -1, "clnthelp:edit box\0",
+	        122,       13,        0,       -1, "clnthelp:button\0",
+	        123,       13,        0,       -1, "clnthelp:button\0",
+	        124,        5,        0,       -1, "clnthelp:checkbox2\0",
+	        125,        5,        1,       -1, "clnthelp:checkbox3\0",
+	        126,        3,        0,       -1, "clnthelp:image popup\0",
+	        127,        4,        0,        0, "-1\0",
+	        128,        1,        0,        0, "-1\0",
+	        129,        2,        0,        0, "-1\0",
+	        130,        2,        0,        0, "clnthelp:button\0",
+	        131,        2,        0,        0, "-1\0",
+	        132,        2,        0,        0, "-1\0"
+END
+

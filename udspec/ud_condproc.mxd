@@ -1,0 +1,50 @@
+<doc id="ud_condproc">
+<title>Conditional Processing
+<idx>conditions</idx>
+</title>
+
+<p>Conditional processing is set with the ^condref^ reference element, which is usually in a ^map^ but may appear anywhere in the project, and is effective in its current scope (defined by its enclosing element, typically a ^docref^ or ^map^) until a different ^condref^ occurs.  The ^condref^ points to a ^conditions^ definition element, which is usually kept in a library.  The ^conditions^ element has an `@id` which is used in the ^condref^ `@idref`, and contains a set of ^cond^ elements that specify the conditions to be applied.  An empty ^conditions^ element removes all conditions.</p>
+
+<pre> ^conditions id="udoc_experts"^
+  ^cond attr="audience" include="((expert or admin) and not novice)"/^
+  ^cond attr="product" exclude="(d2g or m2g) and not udoc"/^
+ ^/conditions^
+</pre>
+
+<p>Within the ^conditions^ set, ^cond^ can be used with any attribute, and any number of ^cond^s can be applied to the same content as long as they each use a different attribute.  The process is similar but not identical to that used in DITA.
+
+This checks the content of the `@audience`; if the attribute is not present, it does nothing.  Otherwise, it evaluates the boolean expression, replacing any value present with "true" and any value missing with "false".  If the expression is true, it _includes_ the element and its children:</p>
+
+<pre> ^cond attr="audience" include="((expert or admin) and not novice)"/^</pre>
+
+<p>Note that if none of the values above are present, as in `audience="student"`, the result will be exclusion; this is equivalent to using the DITA default of exclude.
+
+This also checks the content of the `@audience`, evaluates the boolean expression, but _excludes_ the element and its children if the expression is true:</p>
+
+<pre> ^cond attr="audience" exclude="(novice and not (expert or admin))"/^</pre>
+
+<p>In this case, if none of the values are present, the result will be inclusion.  Using both include and exclude for the same attribute is unlikely to work as one might want, so a ^cond^ that has both should be ignored entirely.
+
+If an element has more than one attribute to which ^cond^s apply, if any cause exclusion, the result is to exclude, even if others call for inclusion.  This is the same rule DITA uses.</p>
+
+<p>^cond^ can do flagging as well as include and exclude; `@flag` specifies a boolean, and `@class` tells the editor or processor what properties to add to the element content (such as color or underscore, or preceding and following images):
+<idx>conditions:for flagging</idx>
+<idx>flagging with conditions</idx>
+</p>
+
+<pre> ^cond attr="audience" flag="novice" class="highlight"/^</pre>
+
+<p>if you want to flag an element that has a ^cond^ with `@include` or `@exclude`, add a `@class` to the cond, and the included elements with that attribute will be flagged:</p>
+
+<pre> ^cond attr="audience" include="expert or admin" class="confidential"/^</pre>
+
+<p>For <xref src="ud_tables.mxd">tables</xref>, conditions can be applied to both ^row^s and columns. ^cell^s that span ^row^s or columns are retained if any of their ^row^s or columns are retained. ^cell^s themselves should not be conditional; make the ^cell^ contents conditional instead.
+<idx>conditions:in tables</idx>
+</p>
+
+<p id="condproc_lastp">Conditions in the rendered output are normally *static*; hidden elements are simply removed.  For some outputs, like HTML (but not Word) rendering can also be *dynamic*, where the hidden elements are present, but have a @style rule that prevents them from displaying. That allows for <xref src="ud_dyncond.mxd">user selection of what to hide and show</xref> at runtime.</p>
+
+
+<relref subjects="conditions" />
+
+</doc>

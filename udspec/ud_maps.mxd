@@ -1,0 +1,25 @@
+<doc id="ud_maps">
+<title>uDoc Maps
+<idx>^map^ files</idx>
+<idx>files:^map^, for structure</idx>
+<idx>transitional text in maps</idx>
+<idx>maps:transitional text in</idx>
+</title>
+
+<p>This is what a <xref src="ud_map_file.mxd">uDoc ^map^ file</xref> looks like.
+
+In uDoc, ^map^s are used to organize ^doc^ files, which typically cover a single topic, into a coherent structure.  This is not a mechanical process.  Stringing topics that were created with no context into a sequence is how you make <xref src="http://everypageispageone.com/2012/02/24/frankenbooks-must-die-a-rant/">Frankenbooks</xref>, which readers hate.  Mapmaking takes more thought, and more work, than that.
+
+The missing parts in Frankenbooks are introductions and transitions.  *Introducing* a set of topics takes more than plunking a title above them.  That's why uDoc doesn't have the DITA ^topichead^, which does just that; it's a bad idea.  Even brief explanatory text, in an introductory topic, is better than none.
+
+*Transitions* are harder to manage in topic-oriented writing.  You don't want the transitional text in the topic itself, because that would impede reusability.  And you don't really want to add a transitional topic, because in DITA that would have to have a ^title^, and the whole point is to transition smoothly _before_ the next ^title^, or in the topic text after the ^title^.  What do you do?
+
+In uDoc, you have three choices for transitions.  If the transition is specific to one ^map^, and unlikely to be re-used, just put it in the ^map^ itself as <xref src="ud_references.mxd">a ^doctext^ element</xref>; it is then added as a paragraph (or more) to the preceding topic.  You can add ^doctext^ at the start (after the ^title^), end, or brfore, after, or instead of any element with an `@id`, in as many places as you want.
+
+If instead the transition is likely to be needed often, but not always, you *can* make the transition text a topic itself; in uDoc, a ^title^ is not required.  In that case, set `@toc="no"` in the ^docref^ to the topic in the ^map^.  
+
+The third choice, if you will always want a transition but it will vary by use case, is to put a ^textref^ for it at the end of the topic itself (or in a following ^doctext^ element).  The <xref src="ud_references.mxd">^textref^</xref> `@src` references a local project-specific library, and the `@idref` can be derived from the topic's `@id`, for example as `idref="my_topic.ending"`.  Then the ^textref^ brings in the transition that is specific to the topic.  If the transition is missing from the library, you get a warning, but the build proceeds.</p>
+
+<relref subjects="files maps" />
+
+</doc>

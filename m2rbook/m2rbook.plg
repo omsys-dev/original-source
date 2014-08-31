@@ -1,0 +1,90 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: m2rbook - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"..\fdk\Release/m2rbook.res" /d "NDEBUG" "C:\cvs\m2rbook\m2rbook.rc"" 
+Creating temporary file "C:\Users\jeremy\AppData\Local\Temp\RSPD228.tmp" with contents
+[
+Shlwapi.lib fdk.lib api.lib fmdbms32.lib htmlhelp.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib shlwapi.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"..\fdk\Release/m2rbook.pdb" /machine:I386 /nodefaultlib:"libc.lib" /nodefaultlib:"msvcrt.lib" /out:"..\fdk\Release/m2rbook.dll" /implib:"..\fdk\Release/m2rbook.lib" /libpath:"D:\FDK6\lib" /section:.rsrc,w 
+\cvs\fdk\Release\m2rbook.obj
+\cvs\fdk\Release\m2rdcnt.obj
+\cvs\fdk\Release\m2rdes.obj
+\cvs\fdk\Release\m2rdfnt.obj
+\cvs\fdk\Release\m2rdgi.obj
+\cvs\fdk\Release\m2rdgr.obj
+\cvs\fdk\Release\m2rdgra.obj
+\cvs\fdk\Release\m2rdgrb.obj
+\cvs\fdk\Release\m2rdgt.obj
+\cvs\fdk\Release\m2rdhmk.obj
+\cvs\fdk\Release\m2rdhpj.obj
+\cvs\fdk\Release\m2rdlg.obj
+\cvs\fdk\Release\m2rdmf.obj
+\cvs\fdk\Release\m2rdshb.obj
+\cvs\fdk\Release\m2rdshh.obj
+\cvs\fdk\Release\m2rdshm.obj
+\cvs\fdk\Release\m2rdshs.obj
+\cvs\fdk\Release\m2rdsht.obj
+\cvs\fdk\Release\m2rdtbl.obj
+\cvs\fdk\Release\m2rdtl.obj
+\cvs\fdk\Release\m2rdtpl.obj
+\cvs\fdk\Release\m2rdtxa.obj
+\cvs\fdk\Release\m2rdtxb.obj
+\cvs\fdk\Release\m2rdtxh.obj
+\cvs\fdk\Release\m2rdver.obj
+\cvs\fdk\Release\m2rgr.obj
+\cvs\fdk\Release\m2rgrx.obj
+\cvs\fdk\Release\m2rini.obj
+\cvs\fdk\Release\m2rinid.obj
+\cvs\fdk\Release\m2rinit.obj
+\cvs\fdk\Release\m2rmenu.obj
+\cvs\fdk\Release\m2rproc.obj
+\cvs\fdk\Release\m2rproj.obj
+\cvs\fdk\Release\m2rset.obj
+\cvs\fdk\Release\m2rseta.obj
+\cvs\fdk\Release\m2rsetb.obj
+\cvs\fdk\Release\m2rsetc.obj
+\cvs\fdk\Release\m2rsetd.obj
+\cvs\fdk\Release\m2rsete.obj
+\cvs\fdk\Release\m2rsetf.obj
+\cvs\fdk\Release\m2rseth.obj
+\cvs\fdk\Release\m2rsetj.obj
+\cvs\fdk\Release\m2rsetm.obj
+\cvs\fdk\Release\m2rsetn.obj
+\cvs\fdk\Release\m2rsetw.obj
+\cvs\fdk\Release\m2rstr.obj
+\cvs\fdk\Release\m2rsty.obj
+\cvs\fdk\Release\m2rtxt.obj
+\cvs\fdk\Release\m2rutil.obj
+\cvs\fdk\Release\m2rvar.obj
+\cvs\fdk\Release\m2rwrt.obj
+\cvs\fdk\Release\m2rbook.res
+]
+Creating command line "link.exe @C:\Users\jeremy\AppData\Local\Temp\RSPD228.tmp"
+Creating temporary file "C:\Users\jeremy\AppData\Local\Temp\RSPD229.bat" with contents
+[
+@echo off
+copy \cvs\fdk\Release\m2rbook.dll C:\FM8\fminit\plugins
+del /q C:\FM8\fminit\plugins\.cache
+copy \cvs\fdk\Release\m2rbook.dll C:\FM9\fminit\plugins
+del /q C:\FM9\fminit\plugins\.cache
+]
+Creating command line "C:\Users\jeremy\AppData\Local\Temp\RSPD229.bat"
+Compiling resources...
+Linking...
+<h3>Output Window</h3>
+Copying to FrameMaker 8 and 9 directories...
+        1 file(s) copied.
+        1 file(s) copied.
+Could Not Find C:\FM9\fminit\plugins\.cache
+
+
+
+<h3>Results</h3>
+m2rbook.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

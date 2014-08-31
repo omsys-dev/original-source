@@ -1,0 +1,19 @@
+<doc id="ud_files">
+<title>uDoc Files</title>
+
+<p>The three types of uDoc files are identified by their block root element, doc, map, or lib. A uDoc project is defined by its root map, which contains refs to docs and to other component maps.  The map and docs can also contain refs to items stored in the libs.  The files can be located anywhere; their relative paths have no effect on the locations of the output files, which are entirely determined by the nesting and content of the refs in the maps.</p>
+
+<ul>
+<li><p><xref src="ud_maps.mxd">Map files</xref> can use extension .mxm (for MicroXml Map)<fn id="suffix">Or use the less specialized .xml extension.</fn>.</p></li>
+
+<li><p><xref src="ud_docs.mxd">Doc files</xref> can use extension .mxd (for MicroXml Doc)<xref idref="suffix"/>.</p></li>
+
+<li><p><xref src="ud_libs.mxd">Library (lib) files</xref> can use extension .mxl (for MicroXml Lib)<xref idref="suffix"/>.</p></li>
+</ul>
+
+<note><p>It's perfectly OK to have text content in a library, not just the definitions it is meant for.  That way your library can be self-documenting.</p></note>
+
+
+<relref subjects="files" />
+
+</doc>

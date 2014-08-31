@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA 1.1 Topic//EN"
+  "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd">
+<topic xml:lang="en-us" id="contribute">
+<title>Contributors</title>
+<shortdesc>This generic Topic contains the credits to
+contributors to the Test Suite.</shortdesc>
+<body>
+<p>The following people and organizations contributed to the 
+creation and maintenance of the DITA Test Suite:</p>
+<sl>
+<sli>Carolyn</sli>
+<sli>Don</sli>
+<sli>Gershon</sli>
+<sli>Jeremy</sli>
+<sli>Julio</sli>
+<sli>Seraphim</sli>
+</sl>
+</body>
+</topic>

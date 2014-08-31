@@ -1,0 +1,6 @@
+<doc id="ud_gen">
+<title>uDoc File Generation</title>
+
+<p>This chapter explains how uDoc produces generated files, including lists, indexes, and glossaries. The simplest form, a <xref src="ud_genlists.mxd">generated list</xref>, lists elements in the project in document order, as in a "List of Figures" or "List of Tables".  An <xref src="ud_index.mxd">index</xref> sorts index entries into a multi-level alphabetical list.  A third type is a dictionary list, such as a <xref src="ud_glossary.mxd">^glossary^</xref> or <xref src="ud_abbrs.mxd">^abbreviations^</xref> list, with terms and definitions drawn from libraries based on their use in the project.</p>
+
+</doc>

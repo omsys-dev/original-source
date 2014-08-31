@@ -1,0 +1,174 @@
+<doc id="ud_elemattrs">
+<title>Element Attributes
+<idx>elements:attributes of, predefined</idx>
+<idx>attributes, predefined, listed</idx>
+</title>
+
+<p>The attributes below are all predefined in `stdattrs.mxl`.  If an ^element^ definition also defines any, the definition in the ^element^ overrides the standard one.
+
+All elements have an implied attribute set in:</p>
+
+<pre>  ^defref src="stdattrs.mxl" idref="CommonAttrs" /^</pre>
+
+<p>Attributes, like elements, have properties.  For the predefined attributes, the property is the same as the attribute name.  For added attributes, the property can be specified in the ^attr^ element `@props`.  As with ^elements^, if an ^attr^ property is redefined in an ^element^ definition, the redefinition prevails.
+
+These `CommonAttrs` are available for any ^element^:</p>
+<tset t1="2" t2="12">
+<pre><t1/> name<t2/>      a name for the item, typically in definitions</pre>
+<pre><t1/> id<t2/>        an id by which the item can be referenced, unique in its file</pre>
+<pre><t1/> type<t2/>      a general-purpose type attribute, often specialized for an element</pre>
+<pre><t1/> sort<t2/>      a sort string for elements such as ^glossdef^ that may need it</pre>
+<pre><t1/> importance<t2/> from DITA, used for elements such as ^note^ as needed</pre>
+<pre><t1/> class<t2/>     a category often mapped to a presentational format by processors</pre>
+<pre><t1/> lang<t2/>      the standard language identifier, like `en-US`
+<br /></pre>
+
+<pre><t1/> cond<t2/>      a general-purpose condition specifier, space-delimited list</pre>
+<pre><t1/> audience<t2/>  the document or element audience</pre>
+<pre><t1/> product<t2/>   the product to which the element applies</pre>
+<pre><t1/> version<t2/>   the version of the product or document
+<br /></pre>
+
+<pre><t1/> src<t2/>       the source for a reference, normally a URL, like HTML `@href`</pre>
+<pre><t1/> idref<t2/>     a specific element id within the source</pre>
+<pre><t1/> idrefs<t2/>    specific element ids within the source; two are a range, more are a list</pre>
+<pre><t1/> key<t2/>       a key defined in a ^key^ element to address the source</pre>
+<pre><t1/> project<t2/>   the root ^map^ of another project from which to get the src</pre>
+<pre><t1/> output<t2/>    the specific output to reference, if not always the current one</pre>
+<pre><t1/> branch<t2/>    the name of the ^branch^ for the source, if not the current one</pre>
+
+<p>These are for ^cond^ elements to define conditions to use:</p>
+<pre><t1/> attr<t2/>      the attribute to check, such as `@audience`</pre>
+<pre><t1/> include<t2/>   a boolean expression of values, true to include</pre>
+<pre><t1/> exclude<t2/>   a boolean expression of values, true to exclude</pre>
+<pre><t1/> flag<t2/>      a boolean expression of values, true to flag</pre>
+
+<p>These are for ^table^:</p>
+<pre><t1/> order<t2/>     cell order, either by rows or by columns, default row</pre>
+<pre><t1/> rows<t2/>      the number of rows (optional)</pre>
+<pre><t1/> cols<t2/>      the number of columns (optional)</pre>
+<pre><t1/> width<t2/>     total width of the table (optional)</pre>
+
+<p>These are for table ^col^s:</p>
+<pre><t1/> pos<t2/>       position, may be list with ranges</pre>
+<pre><t1/> type<t2/>      body or head, default body</pre>
+<pre><t1/> width<t2/>     the column width in CSS units</pre>
+
+<p>These are for table ^row^s:</p>
+<pre><t1/> pos<t2/>       position, may be list with ranges</pre>
+<pre><t1/> type<t2/>      body, head, or foot, default body</pre>
+<pre><t1/> height<t2/>    the row height in CSS units</pre>
+
+<p>These are for table ^cell^s:</p>
+<pre><t1/> colspan<t2/>   the number of columns the cell spans, default 1</pre>
+<pre><t1/> rowspan<t2/>   the number of rows the cell spans, default 1</pre>
+<pre><t1/> align<t2/>     left center right, default left in body, center in head and foot</pre>
+<pre><t1/> valign<t2/>    top middle bottom, default top in body, middle in head and foot</pre>
+
+<p>These are for ^image^ and ^img^:</p>
+<pre><t1/> width<t2/>     the item width in CSS units</pre>
+<pre><t1/> height<t2/>    the item height in CSS units</pre>
+<pre><t1/> depth<t2/>     the item depth in CSS units</pre>
+<pre><t1/> top<t2/>       distance to move down (minus for up) in CSS units</pre>
+<pre><t1/> left<t2/>      distance to move right (minus for left) in CSS units</pre>
+<pre><t1/> alt<t2/>       text to use if image cannot be displayed</pre>
+
+<p>These are for ^fig^, ^imagemap^, and ^object^:</p>
+<pre><t1/> width<t2/>     the item width in CSS units</pre>
+<pre><t1/> height<t2/>    the item height in CSS units</pre>
+
+<p>These are for ^area^ (used in ^imagemap^):</p>
+<pre><t1/> shape<t2/>     the area shape, default rect: rect, circle, or poly</pre>
+<pre><t1/> coords<t2/>    a list of x,y coordinates, comma delimited, as in x1,y1,x2,y2,...</pre>
+
+<p>These are for ^idx^:</p>
+<pre><t1/> start<t2/>     the new id for the range starting here</pre>
+<pre><t1/> end<t2/>       the idref of the range ending here</pre>
+<pre><t1/> see<t2/>       the idref for the entry to put as the see reference</pre>
+<pre><t1/> seealso<t2/>   the idref for the entry to put as the see also reference</pre>
+
+<p>This is for ^code^:</p>
+<pre><t1/> language<t2/>  the programming language or format name, such as CSS or RTF</pre>
+
+<p>This is for ^ul^ lists:</p>
+<pre><t1/> styletype<t2/>  the CSS value, default disc:  disc, circle, square, none</pre>
+
+<p>This is for ^ol^ lists:</p>
+<pre><t1/> styletype<t2/>  the CSS value, default decimal:  decimal, upper-alpha,</pre>
+<pre><t2/>                 lower-alpha, upper-roman, lower-roman</pre>
+
+<p>This is for ^docref^ and ^doclist^:</p>
+<pre><t1/> start<t2/>      what the doc should start, default none: none page file</pre>
+
+<p>These are for ^relref^:</p>
+<pre><t1/> subjects<t2/>  names of the subjects to which the doc applies</pre>
+<pre><t1/> weight<t2/>    importance of the subjects in the doc, default 1</pre>
+
+<p>These are for ^dirref^, ^dbref^, and ^webref^:</p>
+<pre><t1/> query<t2/>      a query to use for a directory, database, or Web reference</pre>
+<pre><t1/> results<t2/>    element path to use for query results, default p/li/sl</pre>
+
+<p>This is for ^element^:</p>
+<pre><t1/> props<t2/>      list of element properties, space-delimited</pre>
+<pre><t1/> short<t2/>      for elements with a short-tag equivalent, the short name</pre>
+<pre><t1/> full<t2/>       for short elements with a full-tag equivalent, the full name</pre>
+<pre><t1/> wiki<t2/>       for elements with a wiki equivalent, the wiki symbol</pre>
+
+<p>This is for ^wiki^:</p>
+<pre><t1/> props<t2/>      list of wiki element properties, space-delimited</pre>
+<pre><t1/> symbol<t2/>     the wiki symbol used</pre>
+<pre><t1/> tag<t2/>        the tag represented by the wiki symbol</pre>
+<pre><t1/> space<t2/>      yes if must be preceded or followed by space or a symbol</pre>
+<pre><t1/> code<t2/>       no if literal in code, set if it sets code itself</pre>
+<pre><t1/> sch<t2/>        starting character to add if any</pre>
+<pre><t1/> ech<t2/>        ending character to add if any</pre>
+
+<p>This is for ^attr^:</p>
+<pre><t1/> default<t2/>    default for attribute type property</pre>
+
+<p>This is for ^key^:</p>
+<pre><t1/> keys<t2/>       list of keys defined here, space-delimited</pre>
+
+<p>This is for ^listdef^:</p>
+<pre><t1/> sort<t2/>       how to sort a generated list, default doc: doc alpha numeric</pre>
+
+<p>These are for ^listdef^ ^item^s:</p>
+<pre><t1/> level<t2/>      level in the list, decimal number, default 1</pre>
+<pre><t1/> elpath<t2/>     element and context to include in list, default none</pre>
+<pre><t1/> itemclass<t2/>  classes of the element to include, default any</pre>
+
+<p>This is for ^tset^ (HTML ^pre^ tab definitions):</p>
+<pre><t1/> tN<t2/>        tab number, 1 to 20, as in t1, t2, etc.</pre>
+
+<p>This is for ^udx^:</p>
+<pre><t1/> switch<t2/>    switch to modify udx proessing for enclosed elements</pre>
+</tset>
+
+<p>In addition, any others may be added for specific elements or groups of elements in the ^element^ definition element.  Processors silently ignore undefined attributes; editors may warn, but should not prohibit them.  The predefined attribute types are:</p>
+
+<tset t1="2" t2="10">
+<pre><t1/>name<t2/>   name per the rules for MicroXML element and attribute names, default ""</pre>
+<pre><t1/>text<t2/>   text content, can include spaces</pre>
+<pre><t1/>bool<t2/>   yes or no, 1 or 0, or equivalent in another language</pre>
+<pre><t1/>elem<t2/>   name of a uDoc element</pre>
+<pre><t1/>elist<t2/>  names such as ids of uDoc elems, one or more, space- or comma-delimited</pre>
+<pre><t1/>epath<t2/>  series of element parent names, bottom up, slash delimited, with wildcards</pre>
+<pre><t1/>file<t2/>   with or without path; may be platform-dependent</pre>
+<pre><t1/>url<t2/>    standard url syntax</pre>
+<pre><t1/>enum<t2/>   defined by a space-delimited list, first item is default</pre>
+<pre><t1/>size<t2/>   number with CSS units, default "0"</pre>
+<pre><t1/>num<t2/>    plain integer, no units, default "1"</pre>
+<pre><t1/>nlist<t2/>  number list, digits separated by spaces or commas, as in ^coords^</pre>
+<pre><t1/>unit<t2/>   unit for tab positions, col or CSS size unit, default "col"</pre>
+<pre><t1/>tval<t2/>   tab definition, L (default), C, R, or an align char, then a char pos, then a leader</pre>
+<pre><t1/>expr<t2/>   expression in C syntax, " and ", " or ", and " not " allowed for "&amp;&amp;", "||", and "!"</pre>
+<pre><t1/>regex<t2/>  regular expression for string matching</pre>
+<pre><t1/>lang<t2/>   standard language identifier, default "en-US"</pre>
+</tset>
+
+<p>Users are free to use their own attribute types, but processors and editors are not required to recognize them.</p>
+
+
+<relref subjects="elements attributes" />
+
+</doc>

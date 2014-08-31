@@ -1,0 +1,62 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: tnode - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\jeremy\AppData\Local\Temp\RSP2DD3.tmp" with contents
+[
+/nologo /Zp1 /MDd /W3 /Gm /GX /ZI /Od /D "_DEBUG" /D "WIN32" /D "_CONSOLE" /D "_WINDOWS" /D "_WIN32" /FR"..\util\Debug/" /Fp"..\util\Debug/tnode.pch" /YX /Fo"..\util\Debug/" /Fd"..\util\Debug/" /FD /c 
+"C:\cvs\base\dcappl.cpp"
+"C:\cvs\base\dcbase.cpp"
+"C:\cvs\base\dcfile.cpp"
+"C:\cvs\base\dcfilr.cpp"
+"C:\cvs\base\dcfilw.cpp"
+"C:\cvs\base\dcglob.cpp"
+"C:\cvs\base\dclist.cpp"
+"C:\cvs\base\dcmem.cpp"
+"C:\cvs\base\dcnode.cpp"
+"C:\cvs\base\dcport.cpp"
+"C:\cvs\tnode\tnode.cpp"
+]
+Creating command line "cl.exe @C:\Users\jeremy\AppData\Local\Temp\RSP2DD3.tmp" 
+Creating temporary file "C:\Users\jeremy\AppData\Local\Temp\RSP2DD4.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /version:1.0 /subsystem:console /incremental:yes /pdb:"..\util\Debug/tnode.pdb" /debug /machine:I386 /out:"..\util\Debug/tnode.exe" 
+\cvs\util\Debug\dcappl.obj
+\cvs\util\Debug\dcbase.obj
+\cvs\util\Debug\dcfile.obj
+\cvs\util\Debug\dcfilr.obj
+\cvs\util\Debug\dcfilw.obj
+\cvs\util\Debug\dcglob.obj
+\cvs\util\Debug\dclist.obj
+\cvs\util\Debug\dcmem.obj
+\cvs\util\Debug\dcnode.obj
+\cvs\util\Debug\dcport.obj
+\cvs\util\Debug\tnode.obj
+]
+Creating command line "link.exe @C:\Users\jeremy\AppData\Local\Temp\RSP2DD4.tmp"
+<h3>Output Window</h3>
+Compiling...
+dcappl.cpp
+dcbase.cpp
+dcfile.cpp
+dcfilr.cpp
+dcfilw.cpp
+dcglob.cpp
+dclist.cpp
+dcmem.cpp
+dcnode.cpp
+dcport.cpp
+tnode.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+tnode.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

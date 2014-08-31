@@ -1,0 +1,263 @@
+<DialogFile 5.5>
+<LongChar No>
+<Font 2 1 12>
+<DialogBox
+ <MBRect -1 -1 359 301>
+ <WBRect -1 -1 332 171>
+ <XBRect -1 -1 367 388>
+ <Platforms MWX>
+ <CurrentFocus 3>
+ <FirstFocus 3>
+ <OKButton 8>
+ <CancelButton -1>
+ <DefaultButton 8>
+ <HelpButton -1>
+ <TitleLabel 0>
+>
+<Label
+ <MCorner 470 956>
+ <WCorner 138 0>
+ <XCorner 18 26>
+ <Label Conversion Designer>
+> # 0
+<Label
+ <MCorner 7 12>
+ <WCorner 7 12>
+ <XCorner 7 12>
+ <Label Project:  Name of project, followed by a very long path name to the .ini file>
+> # 1
+<Label
+ <MCorner 7 26>
+ <WCorner 7 26>
+ <XCorner 7 26>
+ <Label Bitmap Character:>
+> # 2
+<EditBox
+ <MBaseLine 7 38 63>
+ <WBaseLine 7 38 63>
+ <XBaseLine 7 38 63>
+ <Label All>
+ <StuffObject 4>
+> # 3
+<ImagePopUp
+ <MBRect 75 28 6 9>
+ <WBRect 75 28 6 9>
+ <XBRect 75 28 6 9>
+ <Label tallarrowdn>
+ <StuffObject 3>
+> # 4
+<Label
+ <MCorner 7 54>
+ <WCorner 7 54>
+ <XCorner 7 54>
+ <Label Properties:>
+> # 5
+<PopUpMenu
+ <MBaseLine 7 67 80>
+ <WBaseLine 7 67 80>
+ <XBaseLine 7 67 80>
+ <StuffObject -1>
+> # 6
+<Rule
+ <MBRect 5 72 86 1>
+ <WBRect 5 72 86 1>
+ <XBRect 5 72 86 1>
+> # 7
+<Button
+ <MBaseLine 13 87 67>
+ <WBaseLine 13 87 67>
+ <XBaseLine 13 87 67>
+ <Label Apply>
+ <ShortcutPosition 0>
+ <Active No>
+> # 8
+<Label
+ <MCorner 21 101>
+ <WCorner 7 101>
+ <XCorner 21 101>
+ <Label To All Selected Styles>
+> # 9
+<Rule
+ <MBRect 5 103 86 1>
+ <WBRect 5 103 86 1>
+ <XBRect 5 103 86 1>
+> # 10
+<Button
+ <MBaseLine 13 119 67>
+ <WBaseLine 13 119 67>
+ <XBaseLine 13 119 67>
+ <Label Update All>
+ <ShortcutPosition 0>
+ <Active No>
+> # 11
+<Label
+ <MCorner 7 134>
+ <WCorner 7 134>
+ <XCorner 7 134>
+ <Label Properties in .ini ...>
+> # 12
+<Rule
+ <MBRect 5 147 86 1>
+ <WBRect 5 147 86 1>
+ <XBRect 5 147 86 1>
+> # 13
+<Label
+ <MCorner 7 161>
+ <WCorner 7 161>
+ <XCorner 7 161>
+ <Label Commands:>
+> # 14
+<ImagePopUp
+ <MBRect 73 150 6 9>
+ <WBRect 73 150 6 9>
+ <XBRect 73 150 6 9>
+ <Label tallarrowdn>
+ <StuffObject -1>
+> # 15
+<Rule
+ <MBRect 95 18 1 150>
+ <WBRect 95 62 1 106>
+ <XBRect 95 18 1 150>
+> # 16
+<Rule
+ <MBRect 102 14 224 1>
+ <WBRect 102 14 224 1>
+ <XBRect 102 14 224 1>
+> # 17
+<CheckBox
+ <MCorner 100 36>
+ <WCorner 100 36>
+ <XCorner 100 36>
+ <Label Use selected bitmap char for.>
+ <Active No>
+ <StuffObject -1>
+> # 18
+<EditBox
+ <MBaseLine 246 36 63>
+ <WBaseLine 246 36 63>
+ <XBaseLine 246 36 63>
+ <Label prcarrow.bmp>
+ <StuffObject -1>
+> # 19
+<ImagePopUp
+ <MBRect 314 25 6 9>
+ <WBRect 314 25 6 9>
+ <XBRect 314 25 6 9>
+ <Label tallarrowdn>
+ <StuffObject -1>
+> # 20
+<Label
+ <MCorner 101 56>
+ <WCorner 101 56>
+ <XCorner 101 56>
+ <Label Bitmap char representation:>
+> # 21
+<RadioButton
+ <MCorner 220 55>
+ <WCorner 220 55>
+ <XCorner 220 55>
+ <Label Character>
+ <Active Yes>
+ <Group 2>
+ <StuffObject -1>
+> # 22
+<RadioButton
+ <MCorner 279 55>
+ <WCorner 279 55>
+ <XCorner 279 55>
+ <Label Numeric>
+ <Active No>
+ <Group 2>
+ <StuffObject -1>
+> # 23
+<Rule
+ <MBRect 101 61 228 1>
+ <WBRect 101 61 228 1>
+ <XBRect 101 61 228 1>
+> # 24
+<CheckBox
+ <MCorner 101 79>
+ <WCorner 101 79>
+ <XCorner 101 79>
+ <Label Change bitmap scaling, resize using DPI:>
+ <Active No>
+ <StuffObject -1>
+> # 25
+<EditBox
+ <MBaseLine 293 79 30>
+ <WBaseLine 293 79 30>
+ <XBaseLine 293 79 30>
+ <Label NNN>
+ <StuffObject -1>
+> # 26
+<CheckBox
+ <MCorner 101 98>
+ <WCorner 101 98>
+ <XCorner 101 98>
+ <Label Flip bitmaps vertically if format supports inversion>
+ <Active No>
+ <StuffObject -1>
+> # 27
+<CheckBox
+ <MCorner 101 116>
+ <WCorner 101 116>
+ <XCorner 101 116>
+ <Label Make BMPs transparent if 16-color on solid bkgrnd>
+ <Active No>
+ <StuffObject -1>
+> # 28
+<CheckBox
+ <MCorner 101 135>
+ <WCorner 101 135>
+ <XCorner 101 135>
+ <Label Compress 16-color and 256-color BMP bitmaps.>
+ <Active Yes>
+ <StuffObject -1>
+> # 29
+<Rule
+ <MBRect 101 145 228 1>
+ <WBRect 101 145 228 1>
+ <XBRect 101 145 228 1>
+> # 30
+<Label
+ <MCorner 100 162>
+ <WCorner 100 162>
+ <XCorner 100 162>
+ <Label Stretch Mode: >
+> # 31
+<RadioButton
+ <MCorner 162 161>
+ <WCorner 162 161>
+ <XCorner 162 161>
+ <Label Def>
+ <Active Yes>
+ <Group 3>
+ <StuffObject -1>
+> # 32
+<RadioButton
+ <MCorner 200 161>
+ <WCorner 200 161>
+ <XCorner 200 161>
+ <Label Black>
+ <Active No>
+ <Group 3>
+ <StuffObject -1>
+> # 33
+<RadioButton
+ <MCorner 245 161>
+ <WCorner 245 161>
+ <XCorner 245 161>
+ <Label White>
+ <Active No>
+ <Group 3>
+ <StuffObject -1>
+> # 34
+<RadioButton
+ <MCorner 292 161>
+ <WCorner 292 161>
+ <XCorner 292 161>
+ <Label Color>
+ <Active No>
+ <Group 3>
+ <StuffObject -1>
+> # 35

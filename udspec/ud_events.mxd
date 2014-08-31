@@ -1,0 +1,24 @@
+<doc id="ud_events">
+<title>Events and Ranges</title>
+
+<p>LMNL, the <xref src="http://conferences.idealliance.org/extreme/html/2004/Piez01/EML2004Piez01.html">Layered Markup and Annotation Language</xref>, defines (non-XML) tags that mark events, which can then be treated as the starts and ends of ranges.  uDoc implements this concept in XML in two ways.
+
+The "short tags" uDoc uses in <xref src="ud_minimize.mxd">tag minimization</xref> are actually instances of *events* in the content stream.  When `udx` <xref src="ud_xform.mxd">converts them</xref> to full tags, it is <xref src="ud_range.mxd">generating ranges</xref> from them based on the rules in <xref src="ud_udxini.mxd">its `udx.ini` file</xref>.
+
+What if you want to *overlap* elements?  In XML, you can't, and MicroXML does not change that rule.  However, uDoc defines two data elements that effectively permit overlapping by defining *ranges*, which can be considered "virtual elements":
+<idx>elements:virtual</idx>
+<idx>virtual elements</idx>
+</p>
+
+<pl>
+<l/><t/>^start^<d/>The start of a virtual element, with `@name` and (optional) `@id`, and any other common attributes wanted, such as `@src`.  It may be empty, as in ^start name="John"/^, or contain content itself, whatever is needed.
+
+<l/><t/>^end^<d/>The end of a virtual element, with `@name` and, if the start had an `@id`, an `@idref` to it.
+</pl>
+
+<p>This is another way in which uDoc adapts the tool to you, instead of requiring that you adapt to the tool.</p>
+
+
+<relref subjects="elements" />
+
+</doc>

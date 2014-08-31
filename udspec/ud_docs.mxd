@@ -1,0 +1,25 @@
+<doc id="ud_docs">
+<title>uDoc Docs
+<idx>^doc^ files</idx>
+<idx>files:^doc^, for content</idx>
+<idx>tags:minimizing</idx>
+</title>
+
+<p>This is what a <xref src="ud_doc_file.mxd">uDoc ^doc^ file</xref> looks like.
+
+In uDoc, a ^doc^ file contains a single topic, no nesting allowed (or needed).  The idea of a topic is that it is a single, possibly reusable, chunk of information that is complete in itself.  Each page of a wiki is typically a single topic, and so is each HTML file in an on-line help system.  One ideal is that each topic should be able to <xref src="http://everypageispageone.com/2011/06/08/what-is-a-topic-what-does-standalone-mean/"><q>stand alone</q></xref>.
+
+What a writer really needs to do is use <xref src="http://everypageispageone.com/2012/08/27/we-must-develop-topic-based-information-design/">topic-based information design</xref>, not just topic-based writing.  That means usability testing, finding out what your specific audience expects and needs from the documentation.  It does *not* mean slavishly complying with a fixed schema in the vain hope that one size will indeed fit all.
+
+Therefore uDoc has no schemas.  You can certainly create your own, perhaps in Relax NG, if you want one.  A cookie cutter can speed up the work if you need to crank out four dozen cookies for the Girl Scout bake sale.  But if you want to wow your guests at a special party, you will wind up forming each cookie individually, with style and whimsy.  So uDoc encourages you to create topics that fit *your* use case, not IBM's use cases from many years ago.  uDoc does not provide preformed topic types such as <xref src="http://everypageispageone.com/2012/07/28/the-tyranny-of-the-terrible-troika-rethinking-concept-task-and-reference/">concept, task, and reference</xref> like DITA because those limitations will only distort your work.
+
+If you look at a DITA topic in a text editor, you will see lots of tags.  This puts off many writers, so they use an editor that hides the tags in an "author" view.  But this just adds new problems, when you wipe out existing tags by accident while deleting, or fail to add needed ones.  Ignorance is not always bliss.
+
+uDoc handles this by <xref src="ud_minimize.mxd">minimizing the use of tags</xref>.  For regular text, you only need to use ^p^ and ^/p^ when changing to or from another element at the same level, like ^title^, ^pre^, or ^quote^. Otherwise, the uDoc editor or converter considers them to be present virtually whenever you type text that is not just whitespace, and removes any leading or trailing whitespace automatically.  If you want a new paragraph, hit Enter twice and proceed; the right thing will happen.
+
+In this topic, the only tags are the root ^doc^ tag, a ^title^ tag, five ^xref^ tags, one ^p^ tag around all the text, three ^idx^s for index entries, plus one ^relref^ tag for category metadata, each with its closing tag.  That's it, twelve tags in the whole thing, in obvious places.  The rest is all plain text; the quotes in the text become ^q^, the \*s become ^b^, and the \^s become &lt; &gt;.  So you don't need a special editor.  You can even use Word, without styles, saving as plain text.  uDoc doesn't force you to alter your working process.</p>
+
+
+<relref subjects="files topics docs" />
+
+</doc>

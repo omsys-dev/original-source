@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA 1.1 Concept//EN"
+  "http://docs.oasis-open.org/dita/v1.1/OS/dtd/concept.dtd">
+<concept xml:lang="en-us" id="fnotes">
+<title>Footnotes</title>
+<shortdesc>This topic contains footnotes in text and in a
+table.</shortdesc>
+<conbody>
+<section>
+<title>Text Footnotes</title>
+<p>This paragraph has three footnotes.<fn id="reffn1">This is used 
+twice.</fn> The first two are the same footnote<xref type="fn"
+href="#fnotes/reffn1"/>, used in two places<xref href="#fnotes/reffn1"/>.
+The last is single<fn>This is a single instance.</fn> use.</p>
+<p>Note that while the first fn is defined right after the first
+sentence, there should be no trace of it there in the output.</p>
+</section>
+<section>
+<title>Table Footnotes</title>
+<table outputclass="BasicTable">
+<title id="listtypes">List Types</title>
+<tgroup cols="2">
+<colspec colnum="1" colname="col1" colwidth="1.25in" />
+<colspec colnum="2" colname="col2" colwidth="0.75in" />
+<thead>
+<row>
+<entry colname="col1"><p>Name</p></entry>
+<entry colname="col2"><p>Tag</p></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="col1"><p>Simple<fn>This has no prefix.</fn> list</p></entry>
+<entry colname="col2"><p>&lt;sl&gt;</p></entry>
+</row>
+<row>
+<entry colname="col1"><p>Ordered<xref href="#fnotes/tblfn2"/> list</p></entry>
+<entry colname="col2"><p>&lt;ol&gt;</p></entry>
+</row>
+<row>
+<entry colname="col1"><p>
+Unordered<xref type="fn" href="#fnotes/tblfn2"/> list
+<fn id="tblfn2">This type is prefixed.</fn></p></entry>
+<entry colname="col2"><p>&lt;ul&gt;</p></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<p>For the three table footnotes, the first is single and the 
+other two reference the same footnote, which is in the last row.
+Some tools may allow placement of these under the table, like 
+Frame, rather than at the end of the page.</p>
+</section>
+<section>
+<title>Similar Text Markings</title>
+<p>A few other text annotations are similar to footnotes.  These
+include trademarks, set in the &lt;tm&gt; element.  This is a
+normal <tm tmtype="tm">trademark</tm>, a <tm tmtype="reg">registered 
+trademark</tm>, and a <tm tmtype="service">service mark</tm>.</p>
+<p>This uses a keyref to get the name and trademarks:
+<keyword keyref="projmanager" />.</p>
+
+</section>
+</conbody>
+</concept>
+

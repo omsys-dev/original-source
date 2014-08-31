@@ -1,0 +1,60 @@
+<doc id="ud_graphics">
+<title>Graphics
+<idx>elements:for graphics</idx>
+</title>
+
+<sect>
+<title>Inline and Block Graphics
+<idx id="graphics">graphics, inline and block</idx>
+<idx see="graphics">images, including</idx>
+</title>
+
+<p>Body paragraphs can contain inline figures: <img alt="Einstein's most famous equation."  src="emc2.jpg" top="5" width="50" height="20" />, using the ^img^ tag. The ^image^ below is instead in a block of its own.</p>
+
+<image src="angel.jpg" width="64" height="64">
+<alt>Rainbow Angel</alt>
+<desc>A rainbow that turned into an angel...</desc>
+</image>
+
+<p>In either case, the `alt` text to be used if the image cannot be displayed may either be in an `@alt` attribute, or in an ^alt^ element contained in the ^image^ or ^img^ element.  The ^image^ can also include a ^desc^ element for mouseover text display.</p>
+</sect>
+
+<sect>
+<title>Figures
+<idx see="graphics">figures</idx>
+</title>
+
+<p>Figures can include block images, like the one above.  Here it is again, as a ^fig^ with a title this time:</p>
+
+<fig id="angel">
+<title>Angel</title>
+<image src="angel.jpg" width="64" height="64">
+<alt>Rainbow Angel</alt>
+</image>
+</fig>
+</sect>
+
+<sect>
+<title>Image Maps
+<idx>image maps</idx>
+</title>
+
+<p>This image map links to other places in the spec, and to a Web site. The paw on the left has a `rect` that links to the References topic.  The paw on the right has a `poly` that links to the New Elements topic. The nose has a `circle` that links to a Web site.</p>
+
+<imagemap id="panda">
+<title>Tai Shan</title>
+<image src="Tai_Shan.jpg" width="300" height="196"/>
+<area shape="rect" coords="14,140,110,236"><xref
+src="ud_references.htm">References</xref></area>
+<area shape="circle" coords="200,184,48"><xref
+src="http://www.udoc2go.com">Web Site</xref></area>
+<area shape="poly" coords="280,193,295,156,291,129,289,85,
+330,108,362,141,377,170, 387,208,386,249,337,253,293,240,279,200"><xref
+src="ud_newelems.htm">New Elements</xref></area>
+</imagemap>
+</sect>
+
+
+<relref subjects="figures" />
+
+</doc>

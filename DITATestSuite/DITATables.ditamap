@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA 1.1 Map//EN"
+  "http://docs.oasis-open.org/dita/v1.1/OS/dtd/map.dtd">
+<map xml:lang="en-us" id="DITATables">
+<topicref href="DITATables.dita" type="concept" 
+navtitle="Simple and Complex Tables">
+<topicmeta><shortdesc>The Tables concept topic contains a simpletable
+and complex tables with row and column spans.</shortdesc>
+<keywords><indexterm>Tables<indexterm>simple</indexterm></indexterm>
+<indexterm>Tables<indexterm>complex</indexterm></indexterm></keywords>
+</topicmeta>
+</topicref>
+<topicref href="DITAChoiceTable.dita" type="task" 
+navtitle="Task Choice Tables" >
+<topicmeta>
+<keywords><indexterm>Tables<indexterm>choice</indexterm></indexterm>
+</keywords></topicmeta>
+</topicref>
+<topicref href="DITAPropertiesTable.dita" type="reference" 
+navtitle="Reference Properties Tables" >
+<topicmeta>
+<keywords><indexterm>Tables<indexterm>properties</indexterm></indexterm>
+</keywords></topicmeta>
+</topicref>
+</map>

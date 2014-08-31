@@ -1,0 +1,280 @@
+<DialogFile 5.5>
+<LongChar No>
+<Font 2 1 12>
+<DialogBox
+ <MBRect -1 -1 359 301>
+ <WBRect -1 -1 332 171>
+ <XBRect -1 -1 367 388>
+ <Platforms MWX>
+ <CurrentFocus 3>
+ <FirstFocus 3>
+ <OKButton 8>
+ <CancelButton -1>
+ <DefaultButton 8>
+ <HelpButton -1>
+ <TitleLabel 0>
+>
+<Label
+ <MCorner 470 956>
+ <WCorner 138 0>
+ <XCorner 18 26>
+ <Label Conversion Designer>
+> # 0
+<Label
+ <MCorner 7 12>
+ <WCorner 7 12>
+ <XCorner 7 12>
+ <Label Project:  Name of project, followed by a very long path name to the .ini file>
+> # 1
+<Label
+ <MCorner 7 26>
+ <WCorner 7 26>
+ <XCorner 7 26>
+ <Label Paragraph Tag:>
+> # 2
+<EditBox
+ <MBaseLine 7 38 63>
+ <WBaseLine 7 38 63>
+ <XBaseLine 7 38 63>
+ <Label For all styles>
+ <StuffObject 4>
+> # 3
+<ImagePopUp
+ <MBRect 75 28 6 9>
+ <WBRect 75 28 6 9>
+ <XBRect 75 28 6 9>
+ <Label tallarrowdn>
+ <StuffObject 3>
+> # 4
+<Label
+ <MCorner 7 54>
+ <WCorner 7 54>
+ <XCorner 7 54>
+ <Label Properties:>
+> # 5
+<PopUpMenu
+ <MBaseLine 7 67 80>
+ <WBaseLine 7 67 80>
+ <XBaseLine 7 67 80>
+ <StuffObject -1>
+> # 6
+<Rule
+ <MBRect 5 72 86 1>
+ <WBRect 5 72 86 1>
+ <XBRect 5 72 86 1>
+> # 7
+<Button
+ <MBaseLine 13 87 67>
+ <WBaseLine 13 87 67>
+ <XBaseLine 13 87 67>
+ <Label Apply>
+ <ShortcutPosition 0>
+ <Active No>
+> # 8
+<Label
+ <MCorner 21 101>
+ <WCorner 7 101>
+ <XCorner 21 101>
+ <Label To All Selected Styles>
+> # 9
+<Rule
+ <MBRect 5 103 86 1>
+ <WBRect 5 103 86 1>
+ <XBRect 5 103 86 1>
+> # 10
+<Button
+ <MBaseLine 13 119 67>
+ <WBaseLine 13 119 67>
+ <XBaseLine 13 119 67>
+ <Label Update All>
+ <ShortcutPosition 0>
+ <Active No>
+> # 11
+<Label
+ <MCorner 7 134>
+ <WCorner 7 134>
+ <XCorner 7 134>
+ <Label Properties in .ini ...>
+> # 12
+<Rule
+ <MBRect 5 147 86 1>
+ <WBRect 5 147 86 1>
+ <XBRect 5 147 86 1>
+> # 13
+<Label
+ <MCorner 7 161>
+ <WCorner 7 161>
+ <XCorner 7 161>
+ <Label Commands:>
+> # 14
+<ImagePopUp
+ <MBRect 73 150 6 9>
+ <WBRect 73 150 6 9>
+ <XBRect 73 150 6 9>
+ <Label tallarrowdn>
+ <StuffObject -1>
+> # 15
+<Rule
+ <MBRect 95 18 1 150>
+ <WBRect 95 18 1 150>
+ <XBRect 95 18 1 150>
+> # 16
+<Rule
+ <MBRect 102 14 224 1>
+ <WBRect 102 14 224 1>
+ <XBRect 102 14 224 1>
+> # 17
+<Label
+ <MCorner 100 27>
+ <WCorner 100 27>
+ <XCorner 100 27>
+ <Label ALink markers (contents becomes A footnotes):>
+> # 18
+<RadioButton
+ <MCorner 100 41>
+ <WCorner 100 41>
+ <XCorner 100 41>
+ <Label None>
+ <Active Yes>
+ <Group 1>
+ <StuffObject -1>
+> # 19
+<RadioButton
+ <MCorner 140 41>
+ <WCorner 140 41>
+ <XCorner 140 41>
+ <Label Subject (4)>
+ <Active No>
+ <Group 1>
+ <StuffObject -1>
+> # 20
+<RadioButton
+ <MCorner 204 41>
+ <WCorner 204 41>
+ <XCorner 204 41>
+ <Label Author (5)>
+ <Active No>
+ <Group 1>
+ <StuffObject -1>
+> # 21
+<RadioButton
+ <MCorner 263 41>
+ <WCorner 263 41>
+ <XCorner 263 41>
+ <Label Glossary (6)>
+ <Active No>
+ <Group 1>
+ <StuffObject -1>
+> # 22
+<RadioButton
+ <MCorner 117 57>
+ <WCorner 117 57>
+ <XCorner 117 57>
+ <Label Custom, by type value (must be over 10):>
+ <Active No>
+ <Group 1>
+ <StuffObject -1>
+> # 23
+<EditBox
+ <MBaseLine 306 57 20>
+ <WBaseLine 306 57 20>
+ <XBaseLine 306 57 20>
+ <Label 12>
+ <StuffObject -1>
+> # 24
+<Rule
+ <MBRect 99 65 228 1>
+ <WBRect 99 65 228 1>
+ <XBRect 99 65 228 1>
+> # 25
+<Label
+ <MCorner 100 82>
+ <WCorner 100 82>
+ <XCorner 100 82>
+ <Label Type 11 marker usage:>
+> # 26
+<RadioButton
+ <MCorner 100 96>
+ <WCorner 100 96>
+ <XCorner 100 96>
+ <Label None>
+ <Active No>
+ <Group 2>
+ <StuffObject -1>
+> # 27
+<RadioButton
+ <MCorner 142 96>
+ <WCorner 152 96>
+ <XCorner 142 96>
+ <Label Midtopic>
+ <Active Yes>
+ <Group 2>
+ <StuffObject -1>
+> # 28
+<RadioButton
+ <MCorner 215 96>
+ <WCorner 215 96>
+ <XCorner 215 96>
+ <Label Full (same as newlink)>
+ <Active No>
+ <Group 2>
+ <StuffObject -1>
+> # 29
+<Rule
+ <MBRect 99 104 228 1>
+ <WBRect 99 104 228 1>
+ <XBRect 99 104 228 1>
+> # 30
+<Label
+ <MCorner 100 121>
+ <WCorner 100 121>
+ <XCorner 100 121>
+ <Label Marker type to use in document for .ini-file directives:>
+> # 31
+<RadioButton
+ <MCorner 100 134>
+ <WCorner 100 134>
+ <XCorner 100 134>
+ <Label None>
+ <Active No>
+ <Group 3>
+ <StuffObject -1>
+> # 32
+<RadioButton
+ <MCorner 142 134>
+ <WCorner 143 134>
+ <XCorner 142 134>
+ <Label Comment (3)>
+ <Active Yes>
+ <Group 3>
+ <StuffObject -1>
+> # 33
+<RadioButton
+ <MCorner 215 134>
+ <WCorner 215 134>
+ <XCorner 215 134>
+ <Label Custom (over 10):>
+ <Active No>
+ <Group 3>
+ <StuffObject -1>
+> # 34
+<EditBox
+ <MBaseLine 306 134 20>
+ <WBaseLine 306 134 20>
+ <XBaseLine 306 134 20>
+ <Label 13>
+ <StuffObject -1>
+> # 35
+<Rule
+ <MBRect 99 142 228 1>
+ <WBRect 99 142 228 1>
+ <XBRect 99 142 228 1>
+> # 36
+<CheckBox
+ <MCorner 100 160>
+ <WCorner 100 160>
+ <XCorner 100 160>
+ <Label Prevent conversion of xref as popup by underlining.>
+ <Active No>
+ <StuffObject -1>
+> # 37

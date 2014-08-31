@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA 1.1 Map//EN"
+ "http://docs.oasis-open.org/dita/v1.1/OS/dtd/map.dtd">
+<map xml:lang="en-us">
+<title>Chunk2 Test</title>
+<topicref href="DITAChunkDoc.dita#topic1" type="topic"
+navtitle="DITA Chunking Test Document">
+<topicmeta><shortdesc>A set of nested topics to be processed different
+ways.</shortdesc></topicmeta>
+<topicref href="DITAChunkDoc.dita#topic1a" type="topic"
+navtitle="DITA Chunking Test Branch A">
+<topicmeta><keywords>
+<indexterm>Branch A<indexterm>topicref</indexterm></indexterm>
+</keywords></topicmeta>
+<topicref href="DITAChunkDoc.dita#topic1a1" type="topic"
+navtitle="DITA Chunking Test Sub-branch A1" />
+<topicref href="DITAChunkDoc.dita#topic1a2" type="topic"
+navtitle="DITA Chunking Test Sub-branch A2" />
+</topicref>
+<topicref href="DITAChunkDoc.dita#topic1b" type="topic"
+navtitle="DITA Chunking Test Branch B">
+<topicmeta><keywords>
+<indexterm>Branch B<indexterm>topicref</indexterm></indexterm>
+</keywords></topicmeta>
+</topicref>
+</topicref>
+</map>

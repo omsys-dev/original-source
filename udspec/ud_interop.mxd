@@ -1,0 +1,27 @@
+<doc id="ud_interop">
+<title>uDoc Interoperability
+<idx>interoperability</idx>
+</title>
+
+<p>When considering interoperability, the first question is what, in your own specific business case, do you need to be interoperable <b>with</b>?  And for what purposes, exactly?
+
+For example, you as a writer may be getting information on product design and features from SMEs (Subject Matter Experts), and need to send them drafts of what you create for review and comments.  Many SMEs use Word to write up their rough specs and would prefer to review in Word with Track Changes on.  So you conclude you need interoperability with Word.
+
+Does that mean you need to do your own authoring in Word?  No, it doesn't.  To begin with, SMEs are not writers, so the text they provide is rarely usable as-is.  It takes reorganization and a lot of editing.  That means you are unlikely to be able to use <b>any</b> of their original material in Word, so you are just as well off copying and pasting what you can, as plain-text notes, into the tool in which you can work best, such as FrameMaker or an XML editor like oXygen.
+
+What about review?  If you use FrameMaker, <tm idref="m2g"/> produces top-quality Word docs where you can lock Track Changes on, so that reviewers use their tool and you can easily check their comments when the doc comes back.  For DITA, <tm idref="d2g"/> does the same thing, as does <tm idref="u2g"/> for uDoc.  So it turns out that all the Word interoperability you ever need is provided by a single tool; no need to author in Word.
+
+Suppose that some people in your organization use one form of XML markup, like DocBook, and others use a different form, like DITA.  Do you have to use one of those to be interoperable?  Not really.  There is an endless number of markup languages, with many more to come, but no one form fits all use cases.  That is why there are so many of them.  As a result, there are also plenty of interchange tools, like <tm idref="m2g"/>, <tm idref="d2g"/>, and <tm idref="u2g"/> from Omni Systems alone, and many more from other vendors, often free.  That means you can author in a format that is designed for you as a tech writer, like uDoc, and don't have to author in a format <xref src="http://www.xml.com/pub/a/2002/05/29/perry.html">designed for interchange</xref> like DITA.
+
+So uDoc has a much simpler spec than DITA, does not use <xref src="ud_contmod.mxd">content models</xref> (it has flexible <xref src="ud_elemprops.mxd">element properties</xref> instead), and helps (not just <q>allows</q>) you to adjust it to your own authoring use case.  You don't have to wear a straitjacket of someone else's idea of what your docs should look like; you can do what in your own professional judgement is best.
+
+But, you may think, you have to nail down every detail in the spec, or you will lose interoperability.  Well, no.  The thing is, there are (at least) two different kinds of interoperabilty.  One we can call the <q>airplane</q> type.  If you want to replace a part in an airplane, you do have to make sure it is exactly the same, or other parts that depend on it won't work as designed.  That is the approach used by DITA; create more and more specs to fit every use case as exactly as possible.  Trouble is, that's really an infinite number...
+
+The other type of interoperability is <q>horse and buggy</q>.  If you need to replace the horse, the new one doesn't have to be the same breed, size, and color; you have a lot of latitude.  If necessary, you can use an ox, or a team of sled dogs.  You will still get there.  That is the approach used by <var idref="ud"/>: explain, don't constrain.
+
+For example, suppose you have created some <xref src="ud_newelems.mxd">new elements</xref> for your docs.  Now you want to send the docs to an OEM customer who intends to rebrand.  What happens?  If you put the new element definitions in a library of your own, which is referenced in the project root map, you're all set.  Even if they use the same element names for something else in their docs, your definitions will prevail for the ones you send them.  And if you've used a ^variable^ for your own branding information, like product name, all they have to do is edit that variable definition in one place.</p>
+
+
+<relref subjects="basics" />
+
+</doc>

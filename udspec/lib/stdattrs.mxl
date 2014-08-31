@@ -1,0 +1,150 @@
+<lib id="stdattrs">
+
+<!-- stdattrs.mxl describes the standard uDoc element attributes -->
+<!-- Version 0.1, July 2, 2013 -->
+
+<!-- All elements have an implied attribute set in:
+  <defref src="stdattrs.mxl" idref="CommonAttrs" />
+ If an attr there is redefined in the element, the
+ redefinition prevails. -->
+
+<!-- used for all elements -->
+<div type="def" id="CommonAttrs">
+ <!-- identification and categorization -->
+ <attr name="name" type="name" />
+ <attr name="id" type="name" />
+ <attr name="type" type="text" />
+ <attr name="class" type="name" />
+ <attr name="sort" type="name" />
+ <attr name="importance" type="name" />
+ <attr name="lang" type="lang" />
+ <attr name="toc" type="bool" />
+ <attr name="search" type="bool" />
+ <attr name="translate" type="bool" />
+
+ <!-- conditional processing -->
+ <attr name="cond" type="name" />
+ <attr name="audience" type="name" />
+ <attr name="product" type="name" />
+ <attr name="version" type="name" />
+
+ <!-- referencing -->
+ <attr name="src" type="url" />
+ <attr name="idref" type="name" />
+ <attr name="idrefs" type="elist" />
+ <attr name="key" type="name" />
+ <attr name="project" type="url" />
+ <attr name="output" type="enum: RTF WinHelp HTML XHTML XML DITA DocBook Eclipse HTMLHelp JavaHelp OmniHelp OracleHelp DCL MIF PDF Print uDoc" />
+ <attr name="branch" type="name" />
+</div>
+
+<!-- used for cond elements -->
+<attr name="attr" type="name" />
+<attr name="include" type="bool" />
+<attr name="exclude" type="bool" />
+<attr name="flag" type="bool" />
+
+<!-- used for tables -->
+<attr name="order" type="enum: row col" default="row"/>
+<attr name="rows" type="num"/>
+<attr name="cols" type="num"/>
+<attr name="width" type="size"/>
+
+<!-- used for table cols -->
+<attr name="pos" type="nlist" />
+<attr name="type" type="enum: body head"/>
+<attr name="width" type="size" />
+
+<!-- used for table rows -->
+<attr name="pos" type="nlist" />
+<attr name="type" type="enum: body head foot"/>
+<attr name="height" type="size" />
+
+<!-- used for table cells -->
+<attr name="colspan" type="num" />
+<attr name="rowspan" type="num" />
+<attr name="align" type="enum: left center right" default="lefy" />
+<attr name="valign" type="enum: top middle bottom" default="top" />
+
+<!-- used for image and img -->
+<attr name="width" type="size" />
+<attr name="height" type="size" />
+<attr name="depth" type="size" />
+<attr name="top" type="size" />
+<attr name="left" type="size" />
+<attr name="alt" type="text"/>
+
+<!-- used for fig, imagemap, and object -->
+<attr name="width" type="size" />
+<attr name="height" type="size" />
+
+<!-- used for area in imagemap -->
+<attr name="shape" type="enum: rect poly circle" default="rect"/>
+<attr name="coords" type="nlist" default="0,0,0,0"/>
+
+<!-- used for code -->
+<attr name="language" type="name" />
+
+<!-- used for ul lists -->
+<attr name="styletype" type="enum: disc circle square none" default="disc"/>
+
+<!-- used for ol lists -->
+<attr name="styletype" type="enum: decimal upper-alpha lower-alpha
+ upper-roman lower-roman" default="decimal"/>
+
+<!-- used for index -->
+<attr name="start" type="name"/>
+<attr name="end" type="name"/>
+<attr name="see" type="name"/>
+<attr name="seealso" type="name"/>
+
+<!-- used for docref and doclist -->
+<attr name="start" type="enum: none page file" default="none"/>
+
+<!-- used for relref -->
+<attr name="groups" type="elist"/>
+<attr name="subjects" type="elist"/>
+<attr name="weight" type="num"/>
+
+<!-- used for dirref, dbref, and webref -->
+<attr name="query" type="query" />
+<attr name="results" type="epath"/>
+
+<!-- used for element -->
+<attr name="props" type="elist"/>
+<attr name="short" type="name"/>
+<attr name="full" type="name"/>
+<attr name="wiki" type="text"/>
+
+<!-- used for wiki -->
+<attr name="props" type="elist"/>
+<attr name="symbol" type="text"/>
+<attr name="tag" type="name"/>
+<attr name="space" type="enum: yes no"/>
+<attr name="code" type="enum: no yes set"/>
+<attr name="sch" type="text"/>
+<attr name="ech" type="text"/>
+
+<!-- used for attr -->
+<attr name="default" type="text"/>
+
+<!-- used for key -->
+<attr name="keys" type="elist"/>
+
+<!-- used for listdef -->
+<attr name="sort" type="enum: doc alpha numeric" default="doc"/>
+
+<!-- used for listdef items -->
+<attr name="level" type="num" default="1" />
+<attr name="elpath" type="epath" />
+<attr name="itemclass" type="name" default="" />
+
+<!-- used for tset (HTML &lt;pre&gt; tab definitions) -->
+<attr name="t*" type="tval" />
+
+<!-- used for udx -->
+<attr name="switch" type="enum: none nomin nofull normal"/>
+
+</lib>
+
+<!-- end of stdattrs.mxl -->

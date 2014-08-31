@@ -1,0 +1,87 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: dcx - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"..\dll\WinDebug/dcx.res" /d "_DEBUG" "D:\cvs\dcx\dcx.rc"" 
+Creating temporary file "C:\DOCUME~1\JEREMY~1.000\LOCALS~1\Temp\RSP1D4.tmp" with contents
+[
+/nologo /Zp1 /MDd /W3 /Gm /Gi /GX /ZI /Od /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_DCLDLL" /FR"..\dll\WinDebug/" /Fp"..\dll\WinDebug/dcx.pch" /YX /Fo"..\dll\WinDebug/" /Fd"..\dll\WinDebug/" /FD /c 
+"D:\cvs\dcx\dcx.cpp"
+"D:\cvs\base\dcport.cpp"
+"D:\cvs\base\dcnodt.cpp"
+"D:\cvs\base\dcnode.cpp"
+"D:\cvs\base\dcmem.cpp"
+"D:\cvs\base\dclist.cpp"
+"D:\cvs\base\dcglob.cpp"
+"D:\cvs\base\dcfilw.cpp"
+"D:\cvs\base\dcfilr.cpp"
+"D:\cvs\base\dcfile.cpp"
+"D:\cvs\base\dcbase.cpp"
+"D:\cvs\base\dcappl.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\JEREMY~1.000\LOCALS~1\Temp\RSP1D4.tmp" 
+Creating temporary file "C:\DOCUME~1\JEREMY~1.000\LOCALS~1\Temp\RSP1D5.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"..\dll\WinDebug/dcx.pdb" /debug /machine:I386 /out:"..\dll\WinDebug/dcx.dll" /implib:"..\dll\WinDebug/dcx.lib" 
+\cvs\dll\WinDebug\dcx.obj
+\cvs\dll\WinDebug\dcport.obj
+\cvs\dll\WinDebug\dcnodt.obj
+\cvs\dll\WinDebug\dcnode.obj
+\cvs\dll\WinDebug\dcmem.obj
+\cvs\dll\WinDebug\dclist.obj
+\cvs\dll\WinDebug\dcglob.obj
+\cvs\dll\WinDebug\dcfilw.obj
+\cvs\dll\WinDebug\dcfilr.obj
+\cvs\dll\WinDebug\dcfile.obj
+\cvs\dll\WinDebug\dcbase.obj
+\cvs\dll\WinDebug\dcappl.obj
+\cvs\dll\WinDebug\dcx.res
+]
+Creating command line "link.exe @C:\DOCUME~1\JEREMY~1.000\LOCALS~1\Temp\RSP1D5.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+dcx.cpp
+dcport.cpp
+dcnodt.cpp
+dcnode.cpp
+dcmem.cpp
+dclist.cpp
+dcglob.cpp
+dcfilw.cpp
+dcfilr.cpp
+dcfile.cpp
+dcbase.cpp
+dcappl.cpp
+Linking...
+   Creating library ..\dll\WinDebug/dcx.lib and object ..\dll\WinDebug/dcx.exp
+Creating temporary file "C:\DOCUME~1\JEREMY~1.000\LOCALS~1\Temp\RSP1D9.tmp" with contents
+[
+/nologo /o"..\dll\WinDebug/dcx.bsc" 
+\cvs\dll\WinDebug\dcx.sbr
+\cvs\dll\WinDebug\dcport.sbr
+\cvs\dll\WinDebug\dcnodt.sbr
+\cvs\dll\WinDebug\dcnode.sbr
+\cvs\dll\WinDebug\dcmem.sbr
+\cvs\dll\WinDebug\dclist.sbr
+\cvs\dll\WinDebug\dcglob.sbr
+\cvs\dll\WinDebug\dcfilw.sbr
+\cvs\dll\WinDebug\dcfilr.sbr
+\cvs\dll\WinDebug\dcfile.sbr
+\cvs\dll\WinDebug\dcbase.sbr
+\cvs\dll\WinDebug\dcappl.sbr]
+Creating command line "bscmake.exe @C:\DOCUME~1\JEREMY~1.000\LOCALS~1\Temp\RSP1D9.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+dcx.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

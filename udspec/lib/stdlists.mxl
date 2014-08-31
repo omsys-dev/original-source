@@ -1,0 +1,49 @@
+<lib id="stdlists">
+
+<!-- stdlists.mxl describes the standard uDoc doclist element definitions -->
+<!-- Version 0.1, July 3, 2013 -->
+
+<listdef id="toclist" sort="doc" class="tocitem">
+ <usage>Defines a 6-level Table of Contents</usage>
+ <title>Table of Contents</title>
+ <item level="1" elpath="title/doc/docref/root" />
+ <item level="2" elpath="title/doc/docref/ref/root" />
+ <item level="3" elpath="title/doc/docref/ref/ref/root" />
+ <item level="4" elpath="title/doc/docref/ref/ref/ref/root" />
+ <item level="5" elpath="title/doc/docref/ref/ref/ref/ref/root" />
+ <item level="6" elpath="title/doc/docref/ref/ref/ref/ref/ref/root" />
+</listdef>
+
+<listdef id="loflist" sort="doc" class="lofitem">
+ <usage>Defines a single-level List of Figures</usage>
+ <title>List of Figures</title>
+ <item level="1" elpath="title/fig/*" itemclass="figtitle" />
+</listdef>
+
+<listdef id="lotlist" sort="doc" class="lotitem">
+ <usage>Defines a single-level List of Tables</usage>
+ <title>List of Tables</title>
+ <item level="1" elpath="title/table/*" itemclass="tabletitle" />
+</listdef>
+
+<listdef id="subjectindex" sort="alpha" class="idxitem">
+ <usage>Defines a multi-level Subject Index, levels determined by entry content</usage>
+ <title>Subject Index</title>
+ <item level="0" elpath="index/*" />
+</listdef>
+
+<listdef id="termindex" sort="alpha" class="idxitem">
+ <usage>Defines a single-level index of terms</usage>
+ <title>Term Index</title>
+ <item level="1" elpath="term/*" itemclass="idxterm"/>
+</listdef>
+
+<listdef id="glosslist" sort="alpha" class="glossitem">
+ <usage>Defines a single-level glossary</usage>
+ <title>Glossary</title>
+ <item level="1" elpath="term/*" itemclass="glossterm"/>
+</listdef>
+
+</lib>
+
+<!-- end of stdlists.mxl -->

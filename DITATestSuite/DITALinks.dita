@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA 1.1 Topic//EN"
+  "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd">
+<topic xml:lang="en-us" id="links">
+<title>DITA Links</title>
+<shortdesc>This contains links to other topics and to URLs.</shortdesc>
+<body>
+<section>
+<title>Links to Topics</title>
+<p>This links to the
+<xref href="DITAXrefs.dita" type="topic" format="dita">Xref
+topic</xref>.</p>
+<p>This links to the first of the<?dtall xrefbranch="Original" ?>
+<xref href="DITAFlagging.dita" type="topic" format="dita">flagging
+topics</xref>.</p>
+<p>This links to the second of the<?dtall xrefbranch="Revisited" ?>
+<xref href="DITAFlagging.dita" type="topic" format="dita">flagging
+topics</xref>.  Note that both have the same original file name and
+location.  The links are identifiable by the branch they are in.</p>
+</section>
+<section>
+<title>Links to the Web</title>
+<p>This links to the 
+<xref href="https://sourceforge.net/projects/ditatestsuite/"
+scope="external" format="html">Test Suite website</xref>.</p>
+</section>
+</body>
+<related-links>
+<link href="DITAXrefs.dita" role="previous" format="dita"></link>
+</related-links>
+</topic>

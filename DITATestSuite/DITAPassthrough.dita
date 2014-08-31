@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA 1.1 Concept//EN"
+  "http://docs.oasis-open.org/dita/v1.1/OS/dtd/concept.dtd">
+<concept xml:lang="en-us" id="passthrough">
+<title>DITA Passthrough</title>
+<shortdesc>This topic shows the effect of setting passthrough
+in a .ditaval file.</shortdesc>
+<conbody>
+<section>
+<title>Passthrough Attributes</title>
+<p>TBD</p>
+</section>
+</conbody>
+</concept>

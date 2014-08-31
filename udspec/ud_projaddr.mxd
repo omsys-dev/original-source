@@ -1,0 +1,69 @@
+<doc id="ud_projaddr">
+<title>Addressing Other Projects
+<idx>addressing:other projects</idx>
+<idx>keys:for cross-project references</idx>
+<idx>references:to other projects</idx>
+</title>
+
+<p>Suppose you have two different projects, say an operations manual and a maintenance manual, and you want to cross-reference from one to the other.  How do you do that?  You can't just cross-reference directly to a ^doc^ file in another project, because you don't know where that file will wind up or what it will be called after production.  In DITA 1.2, this essentailly prevents any such cross-referencing from taking place.
+
+The <xref src="ud_indiraddr.mxd">indirect-addressing</xref> method of ^key^s provides the start of a solution, but not all of it.  You start by making an xref with a local `@key`:</p>
+
+<pre>Thread the ^xref key="mybobbin"^bobbin^/xref^ with...
+</pre>
+
+<p>Then, in the project root ^map^, define the local ^key^ to specify the `@project` and a remote `@key` in it, where the named project has a definition for that ^key^:</p>
+
+<pre>^key keys="mybobbin" key="bobbins" project="path/to/sewing.mxm"^
+</pre>
+
+<p>Your reference will still work if the referenced project's files are reorganized or renamed, as long as the ^key^ in that project is altered accordingly by its maintainer.  But you still don't know where to point after the other project's output is produced.  What is needed is an additional mechanism that handles that final stage of redirection, mapping a key to the correct output file.  So in the project root ^map^, set:</p>
+
+<pre>^output type="uDoc"^
+ ^keyref src="defkeys.mxl" /^
+^/output^
+</pre>
+
+<p>The referenced library contains all the ^key^ definitions that might be accessed by another project, each with the uDoc source reference in the current project.  This is used by the converter to create the second map, of the output-specific ^key^ definitions as it produces each output:</p>
+
+<pre>^output type="HTMLHelp"^
+ ^keyref src="hhkeys.mxl" /^
+^/output^
+</pre>
+
+<p>The <xref key="outputproc">^output^ element</xref> specifies the `@type` of output, since a project may have several.  The ^keyref^ points to a library file that contains nothing but definitions for the ^key^s that might be used from another project:</p>
+
+<pre>^lib id="hhkeys" src="http://www.example.com/sewing"^
+ ^key keys="key1" src="filename.ext" /^
+ ^key keys="key2" src="part2/file2.ext" /^
+^/lib^
+</pre>
+
+<p>The library root ^lib^ contains the `@src`, which is the path to the directory where the project output will end up, possibly the top of a directory tree.  In each key element `@src` points to the output file, possibly in a subdirectory of the root element's `@src`.  For outputs like RTF, where the result is a single file, the lib `@src` is the full path to the file, ending with a hash, and the key `@src` is the id to use within that file:</p>
+
+<pre>^lib id="rtfkeys" src="C:\example\sewing.doc#"^
+ ^key keys="key1" src="Rfilename" /^
+ ^key keys="key2" src="Rfile2" /^
+^/lib^
+</pre>
+
+<p>Why use a separate file for the output ^key^ definitions?  Because the processor needs to rewrite it, and if there is a problem you don't want your project root ^map^ trashed.  The original author needs to specify the `@keys` for the first library, the one with `type="uDoc"`, but not for the others.  For them, the author provides an empty library with its `@src`, and the processor generates all the key definitions.
+
+Note that this scheme does not support an original file being split into two or more output files.  Since the original doc should always be a single block of re-usable content, it should never be necessary to split it.
+
+When a project is run, the processor should update its own keys for the current output to point to the destination files and IDs within them as built.  It does that for each ^key^ specified in the source output library, the one specified with `@type="udoc"`.
+
+Then when a referencing project is run, the processor for it can identify the destinations by:</p>
+<ol>
+ <l/>starting with the ^xref^, go to the matching local ^key^ in the root ^map^,
+ <l/>going to the referenced project root ^map^ that is specified by `@project` in the ^key^,
+ <l/>finding the ^output^ element for the type specified by `@output` in the ^key^ (or the type currently being produced if none is specified),
+ <l/>getting the ^keyref^ in the ^output^ element,
+ <l/>going to the library referenced in the ^keyref^, and
+ <l/>getting the matching ^key^ definition from that library.
+</ol>
+
+
+<relref subjects="links keys" />
+
+</doc>

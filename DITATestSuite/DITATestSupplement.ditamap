@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA 1.1 Map//EN"
+  "http://docs.oasis-open.org/dita/v1.1/OS/dtd/map.dtd">
+<map xml:lang="en-us" id="DITATestSupplement">
+<topicref id="conrefs" href="DITAConrefs.dita" type="concept" 
+chunk="by-document" navtitle="Previous Conref Title">
+<topicmeta><shortdesc>The Conref concept topic contains conrefs to
+several element types: ph, li, p, and section.</shortdesc>
+<keywords><indexterm start="conrefs">Conrefs</indexterm>
+<indexterm>References<indexterm>conrefs</indexterm></indexterm>
+</keywords></topicmeta>
+<topicref href="DITAConrefSources.dita" type="concept" toc="no"
+navtitle="Conref Source Content"/>
+<topicref href="DITAConrefTopic.dita" type="concept" toc="no"
+navtitle="Conref Topic Content">
+<topicmeta><keywords><indexterm end="conrefs"/>
+<indexterm end="refsection"/></keywords></topicmeta>
+</topicref>
+</topicref>
+<topicref id="tables" href="DITATables.ditamap" format="ditamap"
+chunk="by-topic" />
+</map>

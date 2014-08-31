@@ -1,0 +1,93 @@
+<DialogFile 5.5>
+<LongChar No>
+<Font 2 1 12>
+<DialogBox
+ <MBRect -1 -1 354 341>
+ <WBRect -1 -1 261 131>
+ <XBRect -1 -1 367 388>
+ <Platforms MWX>
+ <CurrentFocus 6>
+ <FirstFocus 6>
+ <OKButton 10>
+ <CancelButton -1>
+ <DefaultButton 10>
+ <HelpButton -1>
+ <TitleLabel 0>
+>
+<Label
+ <MCorner 470 996>
+ <WCorner 101 8>
+ <XCorner 18 26>
+ <Label Edit User Variable>
+> # 0
+<Label
+ <MCorner 6 157>
+ <WCorner 19 31>
+ <XCorner 18 186>
+ <Label User variable: >
+> # 1
+<Rule
+ <MBRect 77 21 101 17>
+ <WBRect 77 18 101 17>
+ <XBRect 77 21 101 17>
+> # 2
+<Label
+ <MCorner 83 31>
+ <WCorner 83 31>
+ <XCorner 83 31>
+ <Label variable name               >
+> # 3
+<Button
+ <MBaseLine 191 118 53>
+ <WBaseLine 191 31 53>
+ <XBaseLine 191 118 53>
+ <Label Prev>
+ <Active No>
+> # 4
+<Label
+ <MCorner 24 57>
+ <WCorner 19 57>
+ <XCorner 24 57>
+ <Label Edit content of variable, or supply new content:                          >
+> # 5
+<EditBox
+ <MBaseLine 234 50 102>
+ <WBaseLine 19 76 225>
+ <XBaseLine 241 85 102>
+ <Label /path/to/filename.ext>
+ <StuffObject -1>
+> # 6
+<Label
+ <MCorner 24 90>
+ <WCorner 19 90>
+ <XCorner 24 90>
+ <Label For paths, use forward slashes "/", not backslashes.>
+> # 7
+<Button
+ <MBaseLine 23 119 53>
+ <WBaseLine 19 118 53>
+ <XBaseLine 23 119 53>
+ <Label Huh?>
+ <Active No>
+> # 8
+<Button
+ <MBaseLine 125 118 53>
+ <WBaseLine 77 118 53>
+ <XBaseLine 125 118 53>
+ <Label STOP!>
+ <Active No>
+> # 9
+<Button
+ <MBaseLine 10 327 92>
+ <WBaseLine 134 118 53>
+ <XBaseLine 63 368 64>
+ <Label OK>
+ <Active No>
+> # 10
+<Button
+ <MBaseLine 133 327 92>
+ <WBaseLine 191 118 53>
+ <XBaseLine 154 368 64>
+ <Label Revert>
+ <Active No>
+> # 11

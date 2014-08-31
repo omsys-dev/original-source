@@ -1,0 +1,14 @@
+<doc id="ud_foreign">
+<title>Foreign Elements
+<idx>elements:foreign, only by reference</idx>
+<idx>foreign elements</idx>
+</title>
+
+<p>If you want to include another XML-based item in your doc, the best way is to reference it with an ^xref^ (inline) or ^reference^ (block) element.  In fact, if the object is not written in MicroXML, as opposed to full XML, that is the *only* way to include it.  So SVG and MathML, for example, must always be included by reference.
+
+As Framemaker users well know, inclusion by *reference* has many advantages over *embedding*.  When you add indirect addressing capability, the choice is really a no-brainer.  So uDoc has no equivalent to the DITA ^foreign^ element; we consider it a Bad Idea.</p>
+
+
+<relref subjects="elements" />
+
+</doc>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA 1.1 Concept//EN"
+  "http://docs.oasis-open.org/dita/v1.1/OS/dtd/concept.dtd">
+<concept xml:lang="en-us" id="design">
+<title>Test Suite Design</title>
+<shortdesc>This Concept topic contains an overview of the Test
+Suite design considerations.</shortdesc>
+<conbody>
+<section>
+<title>Purpose</title>
+<p>The purpose of the <keyword keyref="dts" /> is to provide a common set of
+acceptance tests for tools used to create output from DITA maps and
+topics.</p>
+</section>
+<section>
+<title>Suite Components</title>
+<p>The <keyword keyref="dts" /> consists of two independent DITA projects,
+one based on a bookmap and the other on a ditamap, that are output
+separately. The two projects reference each other via xrefs, related
+topics, and reltables.</p>
+</section>
+<section>
+<title>Expected Results</title>
+<p>The <keyword keyref="dts" /> includes both DITA documents and the expected 
+output from the tested toolsets in several formats, including PDF, 
+HTML and XHTML for the Web, Microsoft HTML Help, and Eclipse Help.</p>
+</section>
+</conbody>
+</concept>
+

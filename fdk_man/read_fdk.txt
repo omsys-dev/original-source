@@ -1,0 +1,310 @@
+
+READ_FDK.TXT for DCL MIF2RTF Filter:  Windows 95/NT Version 2.4
+Release 28, 11/28/1998
+
+
+This describes the installation and usage of the FrameMaker FDK
+interface to the Omni System's MIF2RTF filter.  These are the basic
+instructions for getting started using MIF2RTF from within Frame.
+This information will be added to the next update of the User Manual.
+
+
+INSTALLATION
+
+1.  This version of the FDK supports FrameMaker 5.5 and up; we'd love
+to get an earlier FDK version that lets us support FM 5.0, or even 4.0.
+The filter itself runs on Windows/Intel only, NT 3.51 or Win95 up.
+
+2.  With FrameMaker not running, copy M2R_BOOK.DLL into the directory:
+      \framemaker\fminit\Plugins
+where "framemaker" is the actual FrameMaker install directory on your
+own system.
+
+3.  Delete the file named ".cache" from that directory, if it is 
+present.
+
+4.  Start FrameMaker, and check the File menu.  You should see a new
+item, "Save Using mif2rtf...", directly below the "SaveAs..." item.
+You do *not* need to alter the maker.ini file; don't even try!
+
+
+PROJECT SETUP
+
+1.  The first time you use the FDK interface to convert a particular
+book or document, you should set up the filter for it.  If you already
+have a mif2rtf.ini file you are using for the project, you can go
+direct to RUNNING THE FILTER instead.  If you already have an .ini,
+but want to let the filter create a new one, move your existing .ini
+to another directory; the filter will not write an .ini if one is
+already present.  Do not delete the existing one; you may well need
+to refer to it later.
+
+2.  Select the book or document you want to set up.  If you are
+creating a multi-file WinHelp project, *always* work from a book.
+If necessary, create a new book containing just the files you want
+to include in the WinHelp.  If the only difference from your print
+version is that you are excluding the TOC and/or IX, you can use
+your regular print book file.
+
+3.  If you are producing WinHelp from a book, set up a TOC in Frame,
+even if you don't plan to include it in the help file.  The filter
+uses it to determine which heads start topics, though you can also
+tell it manually if you don't already have a TOC on hand.
+
+4.  It's best to set up each project using a fresh copy of Frame;
+that is, it's not a good idea to set up two in a row without exiting
+and restarting Frame in between.  Sometimes settings used in the
+first setup are remembered in the second, causing unexpected results.
+
+5.  Pick File | Set Up mif2rtf Export...  (Alt-F t).  You will
+get the "Choose Project" dialog.  If this is your first setup for
+this file, the dailog will be filled in with the file name as the
+project name, the existing path, and Word 7 RTF output as defaults.
+
+6.  Edit the project Name to be descriptive of your purpose.
+
+7.  Change the Path if necessary by pressing the button to the
+right of the Path box and selecting the one you want.  You cannot
+edit the name in the Path box directly, because Frame re-interprets 
+characters after backslashes in odd ways; you must use the button.
+You can only choose a path that already exists, so create it first 
+if necessary with Explorer or File Manager.
+
+8.  Select the Format you want for the output from the bottom
+drop-down list.
+
+9.  When you have the Name, Path, and Format as you wish, press
+the Add button.  If you want to set up additional projects, for
+other formats, go back to step 5 and repeat.  Each project must
+have a different Name.
+
+10. If you want to change anything about an existing project, 
+do so as described in steps 5 through 7, then press the Modify
+button.  If you want to remove an existing project, select it
+by name and press the Delete button.  This does *not* affect
+any files created for that project.  For example, if you change
+the Path, the files in the previous directory are not moved to
+the new one; do that using Explorer or File Manager.
+
+11. When you are done setting up project information, click
+on OK.  If you click on Cancel, you will lose all changes you
+just made to all projects; you may want to do this if you
+delete the wrong one, and realize it before you click OK.
+
+12. If you already have a mif2rtf.ini file in the Path that you
+specified for the selected project, it will pop up in Notepad
+so that you can edit it.  It's better to use Notepad than Word,
+because there is no chance of saving in Word format by accident.
+The .ini file must be in *text* format, which is all that you
+can produce in Notepad.
+
+13. If the Path you gave (for the selected project) does not
+contain mif2rtf.ini, and the project is for producing WinHelp,
+you will see the "Set Up Help Project" dialog next. (If you are 
+producing Word or WordPerfect RTF, no dialog is used.) Most of 
+the settings are self-explanatory, such as the .hlp-file name 
+and .cnt-file name at the top left.  See the INI-FILE SETTINGS
+section below for explanations of the other settings.
+
+14. When you click OK, a minimal .ini file (and possibly an .hpj)
+is created containing the settings you specified, plus others
+that the software determined by scanning your document and book.
+
+15. When the .ini file is finished, it will pop up in Notepad so
+you can see if the settings look right.  You may want to add more; 
+refer to the m2r_full.ini file to see all the other options that
+are available.  Or you can just make a test run and see how the
+results look; you may not need to make any other changes.  It's
+handy to leave Notepad up with the .ini while you are trying out
+different options, just using Notepad's File | Save when you make
+changes to it.
+
+16. Look particularly at the [HelpStyles] entries, and make sure
+they all really are appropriate heads to use as topic starts.  If
+you think one isn't, disable it by putting a ";" in front of it,
+as the first character on the line.  Also look at [HelpCntStyles]
+and see if the levels assigned are reasonable; "V2" heads will be
+shown indented under "V1" heads, and so forth, in the .cnt file.
+Make sure you use File | Save after making any changes.
+
+
+RUNNING THE FILTER
+
+1.  Select the book or document you wish to convert.  If you want
+to convert all the documents in a book, select the book itself.
+Even if there are a few that do not need updating, this is usually
+faster than doing the conversion file by file.
+
+2.  Pick File | Save Using mif2rtf  (Alt-F m).  You will get the
+"Choose Project" dialog.  If the one shown is not the one you want,
+use the Name drop-down to select the project you want to build.
+(You can also edit project properties, or add a new one, at this
+point, as described under PROJECT SETUP.)  Click OK.
+
+3.  You will now see the "Omni Systems Export Filter" dialog,
+with the project name and path shown at the top for confirmation.
+You can override the Format you set for the project by picking
+another one from the drop-down list near the top.
+
+4.  If you already have current .mif files for your documents,
+you can save a few seconds by checking "Use existing MIF file".
+If you *only* have a .mif file, and not an .fm file, you should
+always check this box.  If you check it and the filter cannot
+find a .mif file, it will create one for you from the .fm file.
+
+5.  If you are short on disk space, check "Delete MIF when done"
+to minimize disk usage.  When your book is large, with many files,
+this lets the filter create and remove .mif files one at a time,
+so that the absolute minimum of disk space is required.  If you
+*only* have a .mif file, and no .fm file, do *not* check this!
+
+6.  The three radio buttons determine what the FDK does about
+graphics.  If you already have current FDK graphics for your
+file, you can save time with "Do not write graphics files".
+Otherwise, if you have any FrameMaker native math equations in
+your files, choose "Write graphics for equations".  The third
+choice causes the FDK to create a bitmap for every anchored
+frame (including any equations).  This is helpful if your file 
+contains non-.bmp graphics, such as TIFF, and you don't have a 
+graphics conversion program (such as Graphics Workshop) on hand.
+It uses FrameMaker's own .bmp export filter, so the quality of 
+the bitmap graphics may be inferior to that produced by normal 
+mif2rtf methods.  The DPI setting used for the exported graphics
+is that specified in the [FDK] section of the .ini file.
+
+7.  The checkbox right under the radio buttons, "Write graphics
+only, not RTF" is intended for use when you are experimenting 
+with different graphics DPI or format settings.  It saves time by
+suppressing the production of an .rtf (or .mif) file, which you
+presumably made in an earlier round of testing.
+
+8.  The last two boxes are only for WinHelp projects.  Check the
+"Make combined .cnt" box to update the project .cnt when you are
+converting a single file from it; for this to work, the book file
+containing the file you are converting must be open in FrameMaker.
+If you are converting a book, this box is greyed out, as the .cnt
+is always updated.
+
+9.  The "Compile WinHelp" box depends on your having specified an
+.hpj file in the [FDK] section of your .ini.  If you did, and the
+box is checked, the filter will run the MS WinHelp4 compiler when
+the rest of the conversion is complete.  It's best to have Help
+Workshop already open when you do this, as that way you can see
+any error messages from the compilation.  This works best for small
+projects; with larger ones, Windows is very likely to run out of
+memory during compilation.  This may result in your graphics not
+being present in the .hlp (with *no* error message), or may show
+a compiler out-of-memory error.  In that case, compile from Help
+Workshop instead.
+
+10.  When you click OK, the filter converts your file (or all the
+files in your book), showing messages in the status bar at the
+bottom of the book or file window as it goes.  At the end, it
+pops up a confirming dialog to tell you it has completed.
+
+11.  If you do compile WinHelp using graphics from the FDK, the
+help compiler will issue a Note HC2001 for every single graphic,
+telling you it has 256 colors.  Duh.  This is a good example of 
+the intelligence for which Microsoft's engineering staff is so 
+well known...  Just ignore these meaningless notes.
+
+
+INI-FILE SETTINGS FOR THE FDK
+
+The following settings may be made in the new [FDK] section.  The first
+eight determine whether you will get the "Export Filter" dialog (or just
+a confirming popup), and what the defaults on that dialog will be:
+
+; UseInitDialog = Yes (default, display dialog before conversion) or No
+UseInitDialog=Yes
+
+; UseExistingMIF = No (default, save new .mif file) or Yes (use if it exists)
+UseExistingMIF=No
+; DeleteMIF = No (default, keep MIF file when RTF is done) or Yes (delete it)
+DeleteMIF=No
+
+; WriteEquations = No (default) or Yes (write equations as graphics files)
+WriteEquations=Yes
+; WriteAllGraphics = No (default) or Yes (write all anchored frames as files)
+WriteAllGraphics=No
+
+When the FDK generates the .ini, it sets WriteAllGraphics=Yes, to ease
+the process of building that first WinHelp file.
+
+; MakeCombinedCnt = Yes (default, when processing file from open book)
+MakeCombinedCnt=Yes
+; CompileHelp = No (default, run help compiler separately), or Yes
+CompileHelp=No
+; HPJFileName = name of .hpj to use when compiling help
+HPJFileName=yourhelp.hpj
+
+The next group determine how the equation (or all) graphics are written
+by the FDK.  You may need to experiment with different DPI settings to
+get the best graphic quality.  The default of 72, used by the native
+FrameMaker HTML export, is much too small, and produces unreadable text
+for all equation sizes except the largest.  The exact setting to use
+varies; bigger is not always better, but generally the range of 100 to
+150 will contain the best result.  Equations need bigger values than
+other graphics.  The best number will be different for each different 
+format, too.
+
+; UseGraphicFileID = Yes (default) or No (single-file projects only)
+UseGraphicFileID=Yes
+; EquationExportDPI = number (from 50 to 1200, default 140)
+EquationExportDPI=140
+; GraphicExportDPI = number (from 50 to 1200, default 100)
+GraphicExportDPI=100
+; GraphicExportFormat = GIF (default), BMP, TIFF, PNG, JPEG, or WMF
+GraphicExportFormat=BMP
+
+This group of settings lets you specify a FrameMaker file to use as
+a template for changing document properties for the conversion; it
+restores the previous (normally, print) properties after conversion.
+The Flags setting is best made by the filter during the setup stage;
+it specifies just which properties are imported from the template.
+
+; ApplyTemplateFile = No (default) or Yes (save and restore around it)
+ApplyTemplateFile=No
+; TemplateFileName = filename.fm  (FrameMaker template for export)
+TemplateFileName=helpstys.fm
+; AppliedTemplateFlags = 0 (default) or bitfield spec of properties
+AppliedTemplateFlags=0
+
+These two settings are useful when you want to use the same Book file
+for your FrameMaker print documentation as for your RTF and Help.
+They allow you either to include or exclude the Frame-generated TOC
+and IX (index) files from your RTF/Help project.
+
+; UseFrameTOC = Yes (default, include when converting book), or No
+UseFrameTOC=Yes
+; UseFrameIX = No (default, exclude when converting book), or Yes
+UseFrameIX=No
+
+In addition to the [FDK] section settings, two others have been added 
+to the [Options] section.  The default equation handling is now to
+have the FDK produce the equation graphics.  The UseGraphicPreviews
+setting determines whether the FDK graphics produced by using the 
+WriteAllGraphics setting are actually used by the filter in the next 
+stage; if Write All Graphics is set, the filter sets UseGraphicPreviews
+for you.  Otherwise, if Write Equations is set, the filter turns it
+off.  If, however, you choose not to write *any* graphics, the filter
+leaves your setting alone; this lets you reuse the existing graphics 
+set without rewriting it.
+
+[Options]
+; MathType = 0 (none), 1 (MathFullForm), 2 (use HTML), or 3 (use FDK)
+MathType=3
+; UseGraphicPreviews = No (default) or Yes (use preview bitmaps for frames)
+UseGraphicPreviews=No
+
+Finally, when preparing a combined .cnt, you can specify the file to
+be used for the header contents.  This lets you include other .cnt
+settings, such as :INDEX and :INCLUDE, to support more complex systems.
+
+[HelpContents]
+; CntStartFile = helpfile.bct (default is to use CntBase and CntTitle)
+;CntStartFile=myfile.bct
+
+
+Omni Systems, Inc      http://www.omsys.com/     info@omsys.com
+

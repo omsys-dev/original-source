@@ -1,0 +1,46 @@
+<doc id="ud_range">
+<title>Range Generation</title>
+
+<p>Events in he content flow are represented in XML by empty tags, such as ^l/^.
+
+Ranges start at an event and end at another event, or at the end of an eclosing full tag container.  The ranges themselves are represented by full tags at start and end if they do not overlap, or by ^start^ and ^end^ tag pairs if they do.
+
+So for pair lists ^pl^ <xref src="ud_udxini.mxd">in `udx.ini`</xref>, `udx` does full tagging with:</p>
+
+<pre>
+[ShortTagContainers]
+; full tag container = start of ini section names
+pl=pairlist
+
+[PairListShortTagReplacement]
+; identifies Event Range Start
+; event or full tag = ranges it starts
+t=title
+d=p
+l=li
+
+[PairListShortTagEnds]
+; identifies Event Range End
+; event or full tag = ranges it ends
+; all end at the end of the enclosing pair list
+t=t title d p l li
+d=d p l li
+l=l li
+</pre>
+
+<p>When going the other way, udx minimizes by replacing the range with the starting event:</p>
+
+<pre>
+[PairListLongTagReplacement]
+; identifies Range Event Start
+; range = event starting tag
+title=t
+p=d
+li=l
+</pre>
+
+
+<relref subjects="elements" />
+
+</doc>
+

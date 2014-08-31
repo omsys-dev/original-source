@@ -1,0 +1,16 @@
+<lib id="localattrs">
+
+<!-- localattrs.mxl describes local overrides for standard uDoc element attributes -->
+<!-- Version 0.1, December 29, 2013 -->
+
+<!-- All elements have an implied attribute set in:
+  <defref src="stdattrs.mxl" idref="CommonAttrs" />
+ If an attr there is redefined in the element, the
+ redefinition prevails. -->
+
+<div type="def" id="CommonAttrs">
+
+</div>
+
+</lib>
+

@@ -1,0 +1,284 @@
+<DialogFile 5.5>
+<LongChar No>
+<Font 2 1 12>
+<DialogBox
+ <MBRect -1 -1 359 301>
+ <WBRect -1 -1 332 171>
+ <XBRect -1 -1 367 388>
+ <Platforms MWX>
+ <CurrentFocus 3>
+ <FirstFocus 3>
+ <OKButton 8>
+ <CancelButton -1>
+ <DefaultButton 8>
+ <HelpButton -1>
+ <TitleLabel 0>
+>
+<Label
+ <MCorner 470 956>
+ <WCorner 138 0>
+ <XCorner 18 26>
+ <Label Conversion Designer>
+> # 0
+<Label
+ <MCorner 7 12>
+ <WCorner 7 12>
+ <XCorner 7 12>
+ <Label Project:  Name of project, followed by a very long path name to the .ini file>
+> # 1
+<Label
+ <MCorner 7 26>
+ <WCorner 7 26>
+ <XCorner 7 26>
+ <Label Graphic Format:>
+> # 2
+<EditBox
+ <MBaseLine 7 38 63>
+ <WBaseLine 7 38 63>
+ <XBaseLine 7 38 63>
+ <Label All>
+ <StuffObject 4>
+> # 3
+<ImagePopUp
+ <MBRect 75 28 6 9>
+ <WBRect 75 28 6 9>
+ <XBRect 75 28 6 9>
+ <Label tallarrowdn>
+ <StuffObject 3>
+> # 4
+<Label
+ <MCorner 7 54>
+ <WCorner 7 54>
+ <XCorner 7 54>
+ <Label Properties:>
+> # 5
+<PopUpMenu
+ <MBaseLine 7 67 80>
+ <WBaseLine 7 67 80>
+ <XBaseLine 7 67 80>
+ <StuffObject -1>
+> # 6
+<Rule
+ <MBRect 5 72 86 1>
+ <WBRect 5 72 86 1>
+ <XBRect 5 72 86 1>
+> # 7
+<Button
+ <MBaseLine 13 87 67>
+ <WBaseLine 13 87 67>
+ <XBaseLine 13 87 67>
+ <Label Apply>
+ <ShortcutPosition 0>
+ <Active No>
+> # 8
+<Label
+ <MCorner 21 101>
+ <WCorner 7 101>
+ <XCorner 21 101>
+ <Label To All Selected Styles>
+> # 9
+<Rule
+ <MBRect 5 103 86 1>
+ <WBRect 5 103 86 1>
+ <XBRect 5 103 86 1>
+> # 10
+<Button
+ <MBaseLine 13 119 67>
+ <WBaseLine 13 119 67>
+ <XBaseLine 13 119 67>
+ <Label Update All>
+ <ShortcutPosition 0>
+ <Active No>
+> # 11
+<Label
+ <MCorner 7 134>
+ <WCorner 7 134>
+ <XCorner 7 134>
+ <Label Properties in .ini ...>
+> # 12
+<Rule
+ <MBRect 5 147 86 1>
+ <WBRect 5 147 86 1>
+ <XBRect 5 147 86 1>
+> # 13
+<Label
+ <MCorner 7 161>
+ <WCorner 7 161>
+ <XCorner 7 161>
+ <Label Commands:>
+> # 14
+<ImagePopUp
+ <MBRect 73 150 6 9>
+ <WBRect 73 150 6 9>
+ <XBRect 73 150 6 9>
+ <Label tallarrowdn>
+ <StuffObject -1>
+> # 15
+<Rule
+ <MBRect 95 18 1 150>
+ <WBRect 95 19 1 149>
+ <XBRect 95 18 1 150>
+> # 16
+<Rule
+ <MBRect 102 14 224 1>
+ <WBRect 102 14 224 1>
+ <XBRect 102 14 224 1>
+> # 17
+<CheckBox
+ <MCorner 103 52>
+ <WCorner 103 31>
+ <XCorner 103 52>
+ <Label Use FDK previews for all graphics, at DPI:>
+ <Active No>
+ <StuffObject -1>
+> # 18
+<EditBox
+ <MBaseLine 299 54 24>
+ <WBaseLine 300 31 24>
+ <XBaseLine 299 54 24>
+ <Label NNN>
+ <StuffObject -1>
+> # 19
+<CheckBox
+ <MCorner 102 72>
+ <WCorner 102 48>
+ <XCorner 102 72>
+ <Label Use FDK equations, at %:>
+ <Active No>
+ <StuffObject -1>
+> # 20
+<EditBox
+ <MBaseLine 227 48 24>
+ <WBaseLine 227 48 24>
+ <XBaseLine 227 48 24>
+ <Label NNN>
+ <StuffObject -1>
+> # 21
+<Label
+ <MCorner 254 49>
+ <WCorner 254 49>
+ <XCorner 254 49>
+ <Label and DPI:>
+> # 22
+<EditBox
+ <MBaseLine 299 74 24>
+ <WBaseLine 300 48 24>
+ <XBaseLine 299 74 24>
+ <Label NNN>
+ <StuffObject -1>
+> # 23
+<Label
+ <MCorner 277 55>
+ <WCorner 103 67>
+ <XCorner 277 55>
+ <Label Export all FDK-generated graphics as:>
+> # 24
+<PopUpMenu
+ <MBaseLine 227 54 46>
+ <WBaseLine 265 67 60>
+ <XBaseLine 227 54 46>
+ <StuffObject -1>
+> # 25
+<Rule
+ <MBRect 100 115 228 1>
+ <WBRect 100 73 228 1>
+ <XBRect 100 115 228 1>
+> # 26
+<Label
+ <MCorner 102 97>
+ <WCorner 102 91>
+ <XCorner 102 97>
+ <Label Graphic storage: >
+> # 27
+<RadioButton
+ <MCorner 180 96>
+ <WCorner 180 90>
+ <XCorner 180 96>
+ <Label Internal WMF>
+ <Active Yes>
+ <Group 1>
+ <StuffObject -1>
+> # 28
+<RadioButton
+ <MCorner 260 96>
+ <WCorner 260 90>
+ <XCorner 260 96>
+ <Label External file>
+ <Active No>
+ <Group 1>
+ <StuffObject -1>
+> # 29
+<CheckBox
+ <MCorner 102 111>
+ <WCorner 102 105>
+ <XCorner 102 111>
+ <Label Make internal WMF frames exact height (not auto)>
+ <Active No>
+ <StuffObject -1>
+> # 30
+<Label
+ <MCorner 102 131>
+ <WCorner 102 123>
+ <XCorner 102 131>
+ <Label Vert adj for equations:>
+> # 31
+<EditBox
+ <MBaseLine 195 129 32>
+ <WBaseLine 195 122 31>
+ <XBaseLine 195 129 32>
+ <Label pts*2>
+ <StuffObject -1>
+> # 32
+<Label
+ <MCorner 233 131>
+ <WCorner 233 123>
+ <XCorner 233 131>
+ <Label Other frames:>
+> # 33
+<EditBox
+ <MBaseLine 292 129 32>
+ <WBaseLine 292 122 32>
+ <XBaseLine 292 129 32>
+ <Label pts*2>
+ <StuffObject -1>
+> # 34
+<CheckBox
+ <MCorner 102 146>
+ <WCorner 102 143>
+ <XCorner 102 146>
+ <Label Name external WMFs as BMPs (as for HyperHelp)>
+ <Active No>
+ <StuffObject -1>
+> # 35
+<Label
+ <MCorner 102 165>
+ <WCorner 102 162>
+ <XCorner 102 165>
+ <Label Name external files with:>
+> # 36
+<EditBox
+ <MBaseLine 207 163 18>
+ <WBaseLine 207 161 18>
+ <XBaseLine 207 163 18>
+ <Label N>
+ <StuffObject -1>
+> # 37
+<Label
+ <MCorner 229 165>
+ <WCorner 229 162>
+ <XCorner 229 165>
+ <Label chars and:>
+> # 38
+<EditBox
+ <MBaseLine 278 163 18>
+ <WBaseLine 278 161 18>
+ <XBaseLine 278 163 18>
+ <Label N>
+ <StuffObject -1>
+> # 39
+<Label
+ <MCorner 299 165>
+ <WCorner 299 162>
+ <XCorner 299 165>
+ <Label digits.>
+> # 40

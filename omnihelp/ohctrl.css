@@ -1,0 +1,63 @@
+
+/* OmniHelp CSS styles for ctrl elements, OHver 0.1 */
+
+body.ctrl { background: #999999 ; margin: 0 0 0 0 }
+
+body.nav { background: silver }
+
+p.toptitle { font: bold 16pt/18pt sans-serif;
+margin: 0pt 24pt 0 18pt }
+
+p.topsubtitle { font: bold 14pt/18pt sans-serif;
+margin: 4pt 18pt 0 18pt }
+
+p.topbody { font: 12pt/12pt bold sans-serif }
+
+p.body { font: 12pt/14pt bold sans-serif }
+
+p.toc1 { font: 10pt/12pt sans-serif;
+margin: 0 0 0 12pt ; text-indent: -12pt ; background: silver }
+
+p.toc1x { font: 10pt/12pt sans-serif;
+margin: 0 0 0 12pt ; text-indent: -12pt ; background: white }
+
+p.toc2 { font: 10pt/12pt sans-serif;
+margin: 0 0 0 18pt ; text-indent: -12pt ; background: silver }
+
+p.toc2x { font: 10pt/12pt sans-serif;
+margin: 0 0 0 18pt ; text-indent: -12pt ; background: white }
+
+p.toc3 { font: 10pt/12pt sans-serif;
+margin: 0 0 0 24pt ; text-indent: -12pt ; background: silver }
+
+p.toc3x { font: 10pt/12pt sans-serif;
+margin: 0 0 0 24pt ; text-indent: -12pt ; background: white }
+
+p.toc4 { font: 10pt/12pt sans-serif;
+margin: 0 0 0 30pt ; text-indent: -12pt ; background: silver }
+
+p.toc4x { font: 10pt/12pt sans-serif;
+margin: 0 0 0 30pt ; text-indent: -12pt ; background: white }
+
+p.toc5 { font: 10pt/12pt sans-serif;
+margin: 0 0 0 36pt ; text-indent: -12pt ; background: silver }
+
+p.toc5x { font: 10pt/12pt sans-serif;
+margin: 0 0 0 36pt ; text-indent: -12pt ; background: white }
+
+th.nav { font: 9pt/11pt sans-serif;
+margin: 0 2 0 2pt ; background: silver }
+
+th.navx { font: 9pt/11pt sans-serif;
+margin: 0 2 0 2pt ; background: white }
+
+td.navx { font: 10pt/12pt sans-serif;
+margin: 0 2 0 2pt ; background: silver }
+
+td.navxsmall { font: 9pt/14pt sans-serif;
+margin: 0 0 0 0pt  ; background: silver }
+
+td.navxtop { font: 12pt/12pt bold sans-serif;
+margin: 0 0 0 0pt }
+
+span.currix { background: white }

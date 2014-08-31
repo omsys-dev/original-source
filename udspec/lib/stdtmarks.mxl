@@ -1,0 +1,23 @@
+<lib id="stdtmarks">
+
+<!-- stdtmarks.mxl describes the standard uDoc trademarks -->
+<!-- Version 0.1, July 17, 2013 -->
+
+<trademark id="d2g">
+<title>DITA2Go&#x2122;</title>
+<p>DITA2Go&#x2122; is a trademark of Omni Systems.</p>
+</trademark>
+
+<trademark id="m2g">
+<title>Mif2Go&#x2122;</title>
+<p>Mif2Go&#x2122; is a trademark of Omni Systems.</p>
+</trademark>
+
+<trademark id="u2g">
+<title>uDoc2Go&#x2122;</title>
+<p>uDoc2Go&#x2122; is a trademark of Omni Systems.</p>
+</trademark>
+
+</lib>
+
+<!-- end of stdtmarks.mxl -->

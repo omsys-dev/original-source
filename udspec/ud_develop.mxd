@@ -1,0 +1,39 @@
+<doc id="ud_develop">
+<title>uDoc Development</title>
+
+<p>With DITA, your development process starts by getting your content into an existing mold, usually ^concept^, ^task^, or ^reference^.  In that process, you have to give up other possibilities that may fit your use case better.  Once you have a valid DITA starting point, you can consider what additional, and different, semantics your situation may require... but by then, you have already lost whatever you had marked in your original docs that didn't fit the DITA mold.
+
+uDoc works the other way.  Bring in your existing docs with whatever markup works best for you.  If uDoc doesn't have an element that matches one of yours, <xref src="ud_newelems.mxd">add yours as a new uDoc element</xref>, in a minute or two, and keep going.  At any time, add elements, rename them, or eliminate those not needed, very quickly and easily.
+
+uDoc elements are highly amenable to being developed using the evolutionary, incremental, and iterative software development practices in widespread use today, such as "agile" for software development.  Start with just the standard elements, then watch for places where a distinct element will capture *your* semantics better.  Consider user stories for doc usage.  You may want to add a "List of Tasks", for example, which will reference ^task^ elements which you might create from ^sect^ elements.  It's easy.  
+
+Here's the ^task^ element, cloned from ^sect^ in `stdelems.mxl`:</p>
+
+<pre> ^element name="task" props="doc group sect"^
+  ^usage^Wrapper for a task^/usage^
+ ^/element^
+</pre>
+
+<p>Here's the ^tasks^ element for the list, cloned from ^contents^ in `stdelems.mxl`:</p>
+
+<pre> ^element name="tasks" props="ref def list doc"^
+  ^usage^Reference to a generated list of tasks^/usage^
+  ^attr name="start" type="enum: none page file" default="none"/^
+  ^attr name="idref" type="name" default="tasklist"/^
+ ^/element^
+</pre>
+
+<p>Here's the ^tasklist^ element, cloned from ^loflist^ in `stdlists.mxl`:</p>
+
+<pre> ^listdef id="tasklist" sort="doc" class="lofitem"^
+  ^usage^Defines a single-level List of Tasks^/usage^
+  ^title^List of Tasks^/title^
+  ^item level="1" elpath="title/task/*" itemclass="tasktitle" /^
+ ^/listdef^
+</pre>
+
+<p>That's all you need.  Add ^tasks^ to your root map, where you want it to appear (say, after ^contents^), wrap your tasks in ^task^ elements with distinct `@id`s, each followed by a ^title class="tasktitle"^, and you are good to go.</p>
+
+<relref subjects="elements" />
+
+</doc>

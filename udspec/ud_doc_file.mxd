@@ -1,0 +1,110 @@
+<doc id="ud_doc_file">
+<title>uDoc Doc File
+<idx>document file, example of</idx>
+</title>
+
+<p>This is what a uDoc document file might look like:</p>
+<pre>^doc^
+</pre>
+<coderef src="ud_doc_file.mxd#line=10,102"/>
+<comment>
+ <title>Document title</title>
+ <title>Last updated July 12, 2013</title>
+ <desc>This is a description of the document for mouseover use.</desc>
+
+ <!-- data can appear anywhere in the file for non-text data -->
+ <author>Author Name</author>
+
+ <!-- sect begins a section, nesting creates a subsection -->
+ <sect>
+  <!-- div is a grouping element, and is nestable with many types
+   a file can contain any number of divs, nested or not
+  -->
+  <div id="unique_in_file">
+ 
+  <!-- a sect title is optional, and is the content brought in by title xrefs -->
+  <title>Section title</title>
+ 
+  <!-- text elements like p can contain only UTF-8 text and inline elements -->
+  <p>Text contains only <ph class="em">inline</ph> elements.</p>
+ 
+  <ol>  <!-- styletype decimal is the default -->
+   <li>First</li>
+   <li><p>Second</p>
+       <p>An added paragraph</p></li>
+   <li><p>Third</p>
+       <ul> <!-- styletype disc is the default -->
+        <li><p>Subitem a</p></li>
+        <li><p>Subitem b</p></li>
+       </ul>
+       <p>Para after list in same item</p>
+   </li>
+   <li>Fourth</li>
+  </ol>
+
+  </div>
+ 
+  <!-- xrefs provide indirection, bringing in content from elsewhere
+   a reference with an idref selects only the element with that id
+   an unqualified file or url xref selects all elements in the file
+  -->
+  <p>A paragraph after the list and div with a cross-reference, see
+  <xref src="file1.mxl" idref="div_id" class="titlexref">Text
+  for the xref (optional)</xref> for more info. This ends the para.</p>
+
+  <!-- index entries have multiple levels and sort strings in Frame format
+   the colons and brackets can be escaped with a \ if used in content
+   index entries can specify see or seealso attributes in which case
+   they reference another index entry, not the containing paragraph
+  -->
+  <p class="para_format">This contains a full para. White space
+   <idx id="aterm">Top level:secondary level[sort1:sort2]</idx>
+   <idx see="aterm">Synonym</idx>
+  in it is significant and is normalized to single spaces.</p>
+ </sect>
+
+ <sect>
+  <!-- the textref brings in the referenced content here, like a DITA conref -->
+  <textref src="file2.xml" idref="div_id"/>
+
+  <fig class="figure_format">
+   <title>Figure title</title>
+   <desc>This is an example of figure markup.</desc>
+   <!-- in a fig, content can be image or any kind of object
+    here the src is used only if the key is not defined
+   -->
+   <image key="onekey" src="myimage.png">
+    <alt>Text to use when image cannot be shown.</alt>
+   </image>
+  </fig>
+
+  <table class="table_format">
+   <title>Table Title</title>
+   <desc>This is an example of table markup.</desc>
+   <col width="20" />
+   <col width="50" />
+   <row type="head">
+    <cell>First col head</cell>
+    <cell>Second col head</cell>
+   </row>
+   <row type="body">
+    <cell>First col</cell>
+    <cell>Second col</cell>
+   </row>
+   <row type="foot">
+    <cell>First col foot</cell>
+    <cell>Second col foot</cell>
+   </row>
+  </table>
+ </sect>
+
+ <relref subjects="files" />
+
+</comment>
+<pre>^/doc^
+</pre>
+
+<relref subjects="files" />
+
+</doc>
+

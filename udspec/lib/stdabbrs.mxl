@@ -1,0 +1,41 @@
+<lib id="stdabbrs">
+
+<!-- stdabbrs.mxl describes the standard uDoc abbreviations -->
+<!-- Version 0.1, July 17, 2013 -->
+<!-- Template:
+
+<abbreviation id="">
+<title></title>
+<p></p>
+</abbreviation>
+
+-->
+
+<abbreviation id="dita">
+<title>DITA</title>
+<p>Darwin Information Typing Architecture</p>
+</abbreviation>
+
+<abbreviation id="ditaot">
+<title>OT</title>
+<p>DITA Open Toolkit</p>
+</abbreviation>
+
+<abbreviation id="omni">
+<title>Omni</title>
+<p>Omni Systems</p>
+</abbreviation>
+
+<abbreviation id="csh">
+<title>CSH</title>
+<p>Context-Sensitive Help</p>
+</abbreviation>
+
+<abbreviation id="svg">
+<title>SVG</title>
+<p>Scalable Vector Graphics</p>
+</abbreviation>
+
+</lib>
+
+<!-- end of stdabbrs.mxl -->

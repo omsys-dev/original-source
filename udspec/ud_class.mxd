@@ -1,0 +1,25 @@
+<doc id="ud_class">
+<title>Classes and Formats
+<idx>`class` attribute</idx>
+</title>
+
+<p>In uDoc, `@class` is equivalent to the DITA `@outputclass` and the HTML/CSS `@class`, since uDoc doesn't take over `@class` for its own internal purposes like DITA.  So `@class` can specify a *format* you want assigned to the output.  This is where the separation of content and presentation really is appropriate.  The same format name can be interpreted differently for different outputs, and for variations in the same output.  FrameMaker does the same thing; you can change any or all of the format definitions your documents use by importing a different template.
+
+There is another way you can use `@class` that's even better, and that's to specify a *semantic* category.  This is especially the case with inline elements.  For example, if your style guide says menu items are in bold, you might be tempted just to use ^b^...^/b^ around them.  In Frame, that's called an "override", and experienced authors avoid them.  So you might instead use ^ph class="bold"^, to specify a character format.  But that's really no better.  If a new designer revises the style guide, and decrees menu items to be italic and green, you have a big problem.  Even though you can redefine the bold character format that way, it will apply to all elements where you used `@class="bold"`, which is not likely to be what you want.
+
+Instead, you could use ^ph class="menuitem"^.  That doesn't necessarily force you to create a format with that name; processors should always provide a way to _map_ classes to formats.  Then you have real separation between content and presentation, with the processor's mapping providing the bridge.
+
+Why have typographic elements, then?  Because not all use of them is for semantically-definable content.  You may just want to indicate emphasis, for example: "If you ^b^really^/b^; want to do it, here's how."  Substituting ^strong^ for ^b^ and ^em^ for ^i^ doesn't accomplish much.  So if you are using typographics for emphasis, go ahead.  You may also want to use them to format a trademarked name, or a short equation like "e = mc^sup^2^/sup^".
+
+Suppose you have lots of menu items, and would rather not precede each with ^ph class="menuitem"^?  Just <xref src="ud_newelems.mxd">create a new element</xref> for them.  Since you want the same processing, as an inline text element, use the same properties as ^ph^, with a new mnemonic name like ^mi^:</p>
+
+<pre> ^element name="mi" props="inline text"^
+  ^usage^Menu item^/usage^
+ ^/element^
+</pre>
+
+<p>Since the element name is different, you can map it to its own presentational format for your editor and converter.  So you can use "^mi^File^/mi^" in your text.  You now have safe semantic markup in a short, unobtrusive form, the best of both worlds.</p>
+
+<relref subjects="classes" />
+
+</doc>

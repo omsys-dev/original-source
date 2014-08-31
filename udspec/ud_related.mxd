@@ -1,0 +1,29 @@
+<doc id="ud_related">
+<title>Related Links
+<idx>related links</idx>
+<idx>links:related</idx>
+<idx>links:ALinks</idx>
+<idx>ALinks</idx>
+<idx>hashtags</idx>
+</title>
+
+<p>In uDoc, we provide a simple model for related links, the well-established "*ALinks*" used in WinHelp and HTML Help.  In <tm idref="u2g"/>'s OmniHelp, they are used in the navigation pane for Related links; in other HTML formats they may be in ^meta^ tags, and in Word, the links can appear at the bottom of the topic like they do in DITA.
+
+These subject-based links are also called "*#hashtags*".  They are used commonly, and effectively, in Twitter, blogs, and many other places as <xref src="ud_metadata.mxd">metadata</xref> for search.
+
+As with ALinks, you identify the subjects of a doc file by specifying the subject groups it belongs to.  You can have any number of groups, each identified by a name with the usual XML restrictions on names (starts with a letter, no spaces, no punctuation except underscore).  A group can have any number of members, including none if you just want it available for future use.
+
+You specify the groups by listing them in the `@subjects` of a ^relref^ element.  If the file will always be in a particular group, regardless of the project it's used in, put the ^relref^ with that group (or groups) in its `@subjects` in the ^doc^ itself.  Then if you need other groups specific to a project, specify those in the ^map^, in a ^relref^ that is a child of the topic's ^docref^.  If a subject applies to an entire map, set the `@subjects` in a ^relref^ that is a child of the ^map^ element.  For submaps, make the ^relref^ a child of the ^mapref^ that brings in the submap.  All groups set in any of these ways are inherited by the other children of their parent ^docref^, ^mapref^, or ^map^, and therefore apply to all their referenced ^doc^ files.
+
+Note that this method automatically prevents a major problem with DITA related-topic links.  It will never produce a link to a topic that is not in the current project.  So if you filter a topic out, it's out; you don't need to look for every instance of the topic in ^related-links^ and the ^reltable^s and mark those with the same condition.  It Just Works.
+
+Be careful not to over-use a group by having too many topics belong to it; the more-relevant connections may get lost among the less-relevant ones.  So you will hardly ever want to set a group on the root map; if you do, all your topics will appear in the Related list of every topic, which is not very helpful.
+
+One way to handle this is to use `@weight` in ^relref^.  The weight is a number, default "1", applied to all subjects in the ^relref^; if you want different weights for different subjects, use different ^relref^s for them.  When two topics share one or more subjects, their degree of relationship is computed by the processor by multiplying the weights they each applied to the same subjects, then adding up the values for all shared subjects.  For example, if they share subjects A and B, and the weights in one topic are A=1 and B=5, and in the other topic are A=2 and B=10, the total weight is (1 \* 2) + (5 \* 10), total 52.  Then the processor can rank each topic's related topics by their relevance.  Again, this is not possible in DITA.
+<idx>weighting related links</idx><idx>related links:weighting</idx> 
+
+Unfortunately, few common output formats permit such a ranked display.  HTML Help does not, nor does the current version of OmniHelp, though the next release of OmniHelp will.</p>
+
+<relref subjects="links" />
+
+</doc>

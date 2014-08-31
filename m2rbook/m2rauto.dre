@@ -1,0 +1,238 @@
+<DialogFile 5.5>
+<LongChar No>
+<Font 2 1 12>
+<DialogBox
+ <MBRect -1 -1 354 341>
+ <WBRect -1 -1 335 268>
+ <XBRect -1 -1 367 388>
+ <Platforms MWX>
+ <CurrentFocus -1>
+ <FirstFocus -1>
+ <OKButton 32>
+ <CancelButton 33>
+ <DefaultButton 32>
+ <HelpButton -1>
+ <TitleLabel 0>
+>
+<Label
+ <MCorner 470 996>
+ <WCorner 127 0>
+ <XCorner 18 26>
+ <Label Set Up Automation>
+> # 0
+<Label
+ <MCorner 12 231>
+ <WCorner 13 14>
+ <XCorner 12 231>
+ <Label Project Name that can go on and on at C:\\\\project\\\\verylong\\\\pathname\\\\>
+> # 1
+<Label
+ <MCorner 13 33>
+ <WCorner 13 27>
+ <XCorner 13 33>
+ <Label Output type:>
+> # 2
+<Label
+ <MCorner 86 33>
+ <WCorner 86 27>
+ <XCorner 86 33>
+ <Label Sun JavaHelp>
+> # 3
+<Rule
+ <MBRect 14 37 308 1>
+ <WBRect 14 37 308 1>
+ <XBRect 14 37 308 1>
+> # 4
+<Label
+ <MCorner 12 123>
+ <WCorner 12 55>
+ <XCorner 12 123>
+ <Label Copy output files to:>
+> # 5
+<EditBox
+ <MBaseLine 50 123 102>
+ <WBaseLine 114 55 171>
+ <XBaseLine 50 123 102>
+ <Label Wrap\\path>
+ <StuffObject -1>
+> # 6
+<Button
+ <MBaseLine 6 128 99>
+ <WBaseLine 295 55 24>
+ <XBaseLine 18 161 99>
+ <Label ...>
+ <ShortcutPosition 0>
+ <Active No>
+> # 7
+<Label
+ <MCorner 12 76>
+ <WCorner 12 76>
+ <XCorner 12 76>
+ <Label Copy graphics files from:>
+> # 8
+<EditBox
+ <MBaseLine 114 75 171>
+ <WBaseLine 114 75 171>
+ <XBaseLine 114 75 171>
+ <Label Graphics\\src\\path>
+ <StuffObject -1>
+> # 9
+<Button
+ <MBaseLine 295 76 24>
+ <WBaseLine 295 76 24>
+ <XBaseLine 295 76 24>
+ <Label ..>
+ <ShortcutPosition 0>
+ <Active No>
+> # 10
+<Rule
+ <MBRect 11 78 143 1>
+ <WBRect 14 89 308 1>
+ <XBRect 11 78 143 1>
+> # 11
+<CheckBox
+ <MCorner 13 207>
+ <WCorner 15 107>
+ <XCorner 13 207>
+ <Label Compile after copying (for WinHelp and MS HTML Help only)>
+ <Active No>
+ <StuffObject -1>
+> # 12
+<Rule
+ <MBRect 14 121 308 1>
+ <WBRect 14 121 308 1>
+ <XBRect 14 121 308 1>
+> # 13
+<Label
+ <MCorner 12 134>
+ <WCorner 12 141>
+ <XCorner 12 134>
+ <Label Archive with program:>
+> # 14
+<EditBox
+ <MBaseLine 50 134 102>
+ <WBaseLine 114 141 170>
+ <XBaseLine 50 134 102>
+ <Label Path\\for\\archive\\command>
+ <StuffObject -1>
+> # 15
+<Button
+ <MBaseLine 295 141 24>
+ <WBaseLine 295 141 24>
+ <XBaseLine 295 141 24>
+ <Label ...>
+ <ShortcutPosition 0>
+ <Active No>
+> # 16
+<Label
+ <MCorner 12 162>
+ <WCorner 12 162>
+ <XCorner 12 162>
+ <Label Archive starting params:>
+> # 17
+<EditBox
+ <MBaseLine 114 162 204>
+ <WBaseLine 114 162 204>
+ <XBaseLine 114 162 204>
+ <Label -archive start>
+ <StuffObject -1>
+> # 18
+<Label
+ <MCorner 12 185>
+ <WCorner 12 185>
+ <XCorner 12 185>
+ <Label Archive name:>
+> # 19
+<EditBox
+ <MBaseLine 75 184 91>
+ <WBaseLine 75 184 91>
+ <XBaseLine 75 184 91>
+ <Label ArchiveName>
+ <StuffObject -1>
+> # 20
+<Label
+ <MCorner 170 185>
+ <WCorner 170 185>
+ <XCorner 170 185>
+ <Label Version:>
+> # 21
+<EditBox
+ <MBaseLine 209 184 32>
+ <WBaseLine 209 184 32>
+ <XBaseLine 209 184 32>
+ <Label Ver>
+ <StuffObject -1>
+> # 22
+<Label
+ <MCorner 247 185>
+ <WCorner 247 185>
+ <XCorner 247 185>
+ <Label Extension:>
+> # 23
+<EditBox
+ <MBaseLine 292 184 26>
+ <WBaseLine 292 184 26>
+ <XBaseLine 292 184 26>
+ <Label Ext>
+ <StuffObject -1>
+> # 24
+<Label
+ <MCorner 12 207>
+ <WCorner 12 207>
+ <XCorner 12 207>
+ <Label Archive ending params:>
+> # 25
+<EditBox
+ <MBaseLine 114 207 204>
+ <WBaseLine 114 207 204>
+ <XBaseLine 114 207 204>
+ <Label *.* \>\>logfile.txt>
+ <StuffObject -1>
+> # 26
+<Label
+ <MCorner 12 232>
+ <WCorner 12 232>
+ <XCorner 12 232>
+ <Label Copy finished archive to:>
+> # 27
+<EditBox
+ <MBaseLine 114 232 171>
+ <WBaseLine 114 232 171>
+ <XBaseLine 114 232 171>
+ <Label Ship\\path>
+ <StuffObject -1>
+> # 28
+<Button
+ <MBaseLine 295 231 24>
+ <WBaseLine 295 231 24>
+ <XBaseLine 295 231 24>
+ <Label ...>
+ <ShortcutPosition 0>
+ <Active No>
+> # 29
+<Rule
+ <MBRect 6 306 338 1>
+ <WBRect 8 242 315 1>
+ <XBRect 18 341 339 1>
+> # 30
+<Button
+ <MBaseLine 11 260 53>
+ <WBaseLine 11 260 53>
+ <XBaseLine 11 260 53>
+ <Label Huh?>
+ <Active No>
+> # 31
+<Button
+ <MBaseLine 10 327 92>
+ <WBaseLine 198 260 53>
+ <XBaseLine 63 368 64>
+ <Label OK>
+ <Active No>
+> # 32
+<Button
+ <MBaseLine 133 327 92>
+ <WBaseLine 266 260 53>
+ <XBaseLine 154 368 64>
+ <Label Cancel>
+ <Active No>
+> # 33

@@ -1,0 +1,81 @@
+<doc id="ud_minimize">
+<title>uDoc Tag Minimization
+<idx id="xmin">tags:minimizing</idx>
+<idx see="xmin">short tags</idx>
+</title>
+
+<p>uDoc is specifically intended for authoring.  When writing, you don't want to stop your flow of thought to figure out what tag to use, or to insert it.  When editing, you don't want your text broken up into little islands of content in a sea of tags. 
+
+In a paper on <xref src="http://www.balisage.net/Proceedings/vol10/html/Kay01/BalisageVol10-Kay01.html#d63596e2277">FtanML from Balisage 2013</xref>, Michael Kay commented:</p>
+
+<quote>Does verbosity matter? We think it does. The fact that XML is bulky and hard to read is a significant factor leading to the adoption of alternative syntaxes for languages such as RDF and RelaxNG, and is a big turn-off for people coming newly to XSLT. Even if specialist editors can reduce the burden of entering the markup, the amount of noise on the page affects the ability of a human reader to absorb information quickly. This is not to say that the most concise syntax is optimal, of course: we might have swung too far. XML had human readability as one of its goals, and we should remember that readability is not a binary attribute; there are degrees of readability, and readability also depends greatly on the familiarity of the reader with the notation.</quote>
+
+<p>So uDoc provides two "shorthands" for tag minimization, one using short tags, the other using symbols, to indicate "events" in the text flow.
+
+Note that some processors, particularly those based on XSLT, may not be able to handle these forms of tag minimization.  While uDoc2Go can, including minimization mixed with full tagging in any combination, find out if your processor can too.  If not, simply use the free `udx` utility we provide <xref src="ud_xform.mxd">to convert between full and minimized tags</xref>.
+
+The *short tags* generally have single-letter names, and replace the usual start tag in situations where the end tag location is unambiguous.  To keep to XML rules, they are empty tags that specify the start of a particular kind of content, <xref src="ud_events.mxd">an "event"</xref>.
+
+For example, normal table coding might look like this:</p>
+
+<coderef src="ud_minimize.mxd#line=28,35" />
+
+<p>But we know that a row ends where the next row starts, or at the end of a table.  And we know that a cell ends where the next cell starts, or at the end of the row.  So why have all that redundancy?  Here is the short-tag alternative:</p>
+
+<coderef src="ud_minimize.mxd#line=38,45" />
+
+<p>For *tables*, we still keep the outer ^table^ tags, and the ^col^ tags, but the rest shrinks dramatically.  We use ^t/^ to start the title, ^r/^ to start a row, and ^c/^ to start a cell.  It becomes much easier to read the content, which is, after all, the reason the document exists.  Here are the two tables, rendered:</p>
+<udx switch="nomin">
+<table id="tblfull" cols="3">
+<title>My Title</title>
+<col width="1in"/><col pos="*" width="2in"/>
+<row type="head"><cell>Head 1</cell><cell>Head 2</cell><cell>Head 3</cell></row>
+<row><cell>First cell</cell><cell>Second cell</cell><cell>Third cell</cell></row>
+<row><cell>Next row</cell><cell>Another cell</cell><cell>Yet more</cell></row>
+</table>
+</udx>
+<p>This is the one with short tags:</p>
+<udx switch="nofull">
+<table id="tblshort" cols="3">
+<t/>My Title
+<col width="1in"/><col pos="*" width="2in"/>
+<r type="head"/><c/>Head 1<c/>Head 2<c/>Head 3
+<r/><c/>First cell<c/>Second cell<c/>Third cell
+<r/><c/>Next row<c/>Another cell<c/>Yet more
+</table>
+</udx>
+<p>See any difference?  No, there isn't one.  
+
+For *lists*, there are two more short tags, ^l/^ to start a list item and ^d/^ to start a paragraph in the item.  Why have "^d/^"?  Because it is mostly used in pair lists for the second member of the pair, the "definition".  The first member, the "term", uses the short tag for title, "^t/^".  Here is the code for a short pairs list:</p>
+
+<coderef src="ud_minimize.mxd#line=54,59" />
+
+<p>And here is the result:</p>
+
+<pl>
+<l/><t/>First term<t/>A synonym<d/>Common definition
+<l/><t/>Second term<d/>First definition<d/>Second definition
+<l/><t/>Third term<d/>Its definition
+</pl>
+
+<p>Again, no difference in rendering.
+
+In addition to the short tags used in tables and lists, the *shorthand symbols* are usable throughout the doc text (but not within tags).  They can be used anywhere in the text in pairs, as toggles; the first turns on its feature, the second turns it off again.  Any still open at the end of a para are closed then, but it's best to use them in pairs, and not depend on that; otherwise, trailing space may be included before the closing symbol if that symbol is not explicit.
+<idx>symbols, shorthand for tags</idx>
+<idx>shorthand symbols for tags</idx>
+<idx>tags:shorthand symbols for</idx>
+</p>
+
+<ul>
+<l/>\* bold, ^b^
+<l/>\_ italic, ^i^
+<l/>\" quote, ^q^
+<l/>\` code, ^tt^
+<l/>\^ tag, `&amp;lt; &amp;gt;`
+</ul>
+
+<p>These symbols are familiar from text email usage (except for code and tag).  If you want to use any of them literally, escape them with a backslash.  You can also <xref src="ud_newshort.mxd">add, remove, and redefine</xref> them.</p>
+
+<relref subjects="lists tables shorthand" />
+
+</doc>

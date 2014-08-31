@@ -1,0 +1,71 @@
+<doc id="ud_map_file">
+<title>uDoc Map File
+<idx>maps:example map file</idx>
+</title>
+
+<p>This is what a uDoc map file might look like:</p>
+<pre>^map^
+</pre>
+<coderef src="ud_map_file.mxd#line=10,64"/>
+<comment>
+ <title>Map Name</title>
+ <title>Last updated July 12, 2013</title>
+
+ <!-- maps can have regular text content, here a subtitle and description. -->
+ <subtitle>Subtitle</subtitle>
+ <p>A description of what the map is for.</p>
+
+ <!-- this ref brings in key definitions used in the map -->
+ <keyref src="mystdlib.mxl" />
+
+ <!-- this ref applies conditions used in the map -->
+ <condref src="mystdlib.mxl" idref="projectconds"/>
+
+ <!-- this defines where keys from other projects that
+  reference this project's outputs should be redirected to -->
+ <output type="HTML" src="http://www.example.com/docs">
+  <keyref src="hkeys.mxl"/>
+  <!-- the referenced library, hkeys.mxl, contains only keys: 
+  <key keys="key1" src="filename.ext" idpx="fileid" />
+  <key keys="key2" src="part2/file2.ext" idpx="file2id" idsx="02" />
+  -->
+ </output>
+ <!-- there can be several outputs, one for each type used -->
+
+ <contents src="stdlists.mxl" idref="tocdef">
+  <title>Table of Contents</title>
+ </contents>
+
+ <!-- this points to the first doc in the project -->
+ <docref src="file1.mxd">
+  <title>Optional title used in the TOC</title>
+ </docref>
+
+ <!-- the following div can be re-used elsewhere by a ref
+  divs and refs can both nest, to any depth 
+  nesting divs does not create a new level of hierarchy; nesting refs does -->
+ <div type="map" id="submap1">
+  <!-- the first ref is at the same level as the previous one 
+   it gets its title from the doc referenced via the key -->
+  <docref key="keytwo" />
+  <!-- the second wraps the next level -->
+  <docref src="somefile.mxd">
+   <title>Heading used in the TOC</title>
+   <!-- the ref brings in map content at the next level here -->
+   <mapref src="map2.mxm"/>
+   <!-- more at the second level, same as the content of the map -->
+   <docref>...</docref>
+  </docref>
+  <!-- back to the top level -->
+  <docref>...</docref>
+ </div>
+ <!-- still at the top level -->
+ <docref>...</docref>
+
+</comment>
+<pre>^/map^
+</pre>
+
+<relref subjects="files" />
+
+</doc>

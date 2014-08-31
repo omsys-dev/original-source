@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA 1.1 Reference//EN"
+  "http://docs.oasis-open.org/dita/v1.1/OS/dtd/reference.dtd">
+<reference xml:lang="en-us" id="id">
+<title></title>
+<shortdesc></shortdesc>
+<refbody>
+<properties>
+<prophead>
+<proptypehd><p></p></proptypehd>
+<propvaluehd><p></p></propvaluehd>
+<propdeschd><p></p></propdeschd>
+</prophead>
+
+<property>
+<proptype>
+</proptype>
+<propvalue>
+</propvalue>
+<propdesc><p></p>
+</propdesc>
+</property>
+
+<property>
+<proptype>
+</proptype>
+<propvalue>
+</propvalue>
+<propdesc><p></p>
+</propdesc>
+</property>
+
+<property>
+<proptype>
+</proptype>
+<propvalue>
+</propvalue>
+<propdesc><p></p>
+</propdesc>
+</property>
+
+<property>
+<proptype>
+</proptype>
+<propvalue>
+</propvalue>
+<propdesc><p></p>
+</propdesc>
+</property>
+</properties>
+
+</refbody>
+</reference>

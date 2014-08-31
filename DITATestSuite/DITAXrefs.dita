@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA 1.1 Topic//EN"
+  "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd">
+<topic xml:lang="en-us" id="xrtest">
+<title>DITA Xrefs</title>
+<shortdesc>This contains xrefs to both internal and external
+information.</shortdesc>
+<body>
+<section>
+<title>Internal Xrefs</title>
+<p>This is to the title of the next section:
+<xref href="#xrtest/extrefs" type="section" format="dita"/></p>
+<p>This is '&lt;xref href="#xrtest/extrefs" type="section" format="dita"
+/&gt;' in the XML.</p>
+</section>
+<section id="extrefs">
+<title>External Xrefs</title>
+<p>This is to the next topic, on linking:
+<xref href="DITALinks.dita" type="topic" format="dita"
+outputclass="TitleXref" /></p>
+<p><![CDATA[This is '<xref href="DITALinks.dita" type="topic" format="dita"
+outputclass="TitleXref" />' in the XML.]]></p>
+</section>
+</body>
+<related-links>
+<link href="DITALinks.dita" role="next" format="dita"></link>
+</related-links>
+</topic>

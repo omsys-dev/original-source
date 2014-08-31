@@ -1,0 +1,51 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: mxl - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\jeremy\AppData\Local\Temp\RSP5D1E.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "NDEBUG" /D "WIN32" /D "_CONSOLE" /D "_MBCS" /D "MXLPARSER_EXPORTS" /FR"MxlRelease/" /Fo"MxlRelease/" /Fd"MxlRelease/" /FD /c 
+"C:\cvs\mxl\mxl.cpp"
+"C:\cvs\mxl\StdAfx.cpp"
+"C:\cvs\mxlparser\mxlparser.cpp"
+]
+Creating command line "cl.exe @C:\Users\jeremy\AppData\Local\Temp\RSP5D1E.tmp" 
+Creating temporary file "C:\Users\jeremy\AppData\Local\Temp\RSP5D1F.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib c:\cvs\mxlparser\MxlRelease\mxlparser.lib /nologo /subsystem:console /incremental:no /pdb:"MxlRelease/mxl.pdb" /machine:I386 /out:"MxlRelease/mxl.exe" 
+.\MxlRelease\mxl.obj
+.\MxlRelease\StdAfx.obj
+.\MxlRelease\mxlparser.obj
+]
+Creating command line "link.exe @C:\Users\jeremy\AppData\Local\Temp\RSP5D1F.tmp"
+Creating temporary file "C:\Users\jeremy\AppData\Local\Temp\RSP5D20.bat" with contents
+[
+@echo off
+copy .\MxlRelease\mxl.exe C:\omsys\common\bin
+]
+Creating command line "C:\Users\jeremy\AppData\Local\Temp\RSP5D20.bat"
+Compiling...
+mxl.cpp
+StdAfx.cpp
+mxlparser.cpp
+Generating Code...
+Linking...
+   Creating library MxlRelease/mxl.lib and object MxlRelease/mxl.exp
+<h3>Output Window</h3>
+Copying to omsyshome directory...
+        1 file(s) copied.
+Creating command line "bscmake.exe /nologo /o"MxlRelease/mxl.bsc"  .\MxlRelease\mxl.sbr .\MxlRelease\StdAfx.sbr .\MxlRelease\mxlparser.sbr"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+mxl.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

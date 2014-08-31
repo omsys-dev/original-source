@@ -1,0 +1,292 @@
+<DialogFile 5.5>
+<LongChar No>
+<Font 2 1 12>
+<DialogBox
+ <MBRect -1 -1 359 301>
+ <WBRect -1 -1 332 171>
+ <XBRect -1 -1 367 388>
+ <Platforms MWX>
+ <CurrentFocus 3>
+ <FirstFocus 3>
+ <OKButton 8>
+ <CancelButton -1>
+ <DefaultButton 8>
+ <HelpButton -1>
+ <TitleLabel 0>
+>
+<Label
+ <MCorner 470 956>
+ <WCorner 138 0>
+ <XCorner 18 26>
+ <Label Conversion Designer>
+> # 0
+<Label
+ <MCorner 7 12>
+ <WCorner 7 12>
+ <XCorner 7 12>
+ <Label Project:  Name of project, followed by a very long path name to the .ini file>
+> # 1
+<Label
+ <MCorner 7 26>
+ <WCorner 7 26>
+ <XCorner 7 26>
+ <Label Graphic Format:>
+> # 2
+<EditBox
+ <MBaseLine 7 38 63>
+ <WBaseLine 7 38 63>
+ <XBaseLine 7 38 63>
+ <Label FM Drawing>
+ <StuffObject 4>
+> # 3
+<ImagePopUp
+ <MBRect 75 28 6 9>
+ <WBRect 75 28 6 9>
+ <XBRect 75 28 6 9>
+ <Label tallarrowdn>
+ <StuffObject 3>
+> # 4
+<Label
+ <MCorner 7 54>
+ <WCorner 7 54>
+ <XCorner 7 54>
+ <Label Properties:>
+> # 5
+<PopUpMenu
+ <MBaseLine 7 67 80>
+ <WBaseLine 7 67 80>
+ <XBaseLine 7 67 80>
+ <StuffObject -1>
+> # 6
+<Rule
+ <MBRect 5 72 86 1>
+ <WBRect 5 72 86 1>
+ <XBRect 5 72 86 1>
+> # 7
+<Button
+ <MBaseLine 13 87 67>
+ <WBaseLine 13 87 67>
+ <XBaseLine 13 87 67>
+ <Label Apply>
+ <ShortcutPosition 0>
+ <Active No>
+> # 8
+<Label
+ <MCorner 21 101>
+ <WCorner 7 101>
+ <XCorner 21 101>
+ <Label To All Selected Styles>
+> # 9
+<Rule
+ <MBRect 5 103 86 1>
+ <WBRect 5 103 86 1>
+ <XBRect 5 103 86 1>
+> # 10
+<Button
+ <MBaseLine 13 119 67>
+ <WBaseLine 13 119 67>
+ <XBaseLine 13 119 67>
+ <Label Update All>
+ <ShortcutPosition 0>
+ <Active No>
+> # 11
+<Label
+ <MCorner 7 134>
+ <WCorner 7 134>
+ <XCorner 7 134>
+ <Label Properties in .ini ...>
+> # 12
+<Rule
+ <MBRect 5 147 86 1>
+ <WBRect 5 147 86 1>
+ <XBRect 5 147 86 1>
+> # 13
+<Label
+ <MCorner 7 161>
+ <WCorner 7 161>
+ <XCorner 7 161>
+ <Label Commands:>
+> # 14
+<ImagePopUp
+ <MBRect 73 150 6 9>
+ <WBRect 73 150 6 9>
+ <XBRect 73 150 6 9>
+ <Label tallarrowdn>
+ <StuffObject -1>
+> # 15
+<Rule
+ <MBRect 95 18 1 150>
+ <WBRect 95 19 1 149>
+ <XBRect 95 18 1 150>
+> # 16
+<Rule
+ <MBRect 102 14 224 1>
+ <WBRect 102 14 224 1>
+ <XBRect 102 14 224 1>
+> # 17
+<Label
+ <MCorner 101 30>
+ <WCorner 101 30>
+ <XCorner 101 30>
+ <Label Single-frame text: >
+> # 18
+<RadioButton
+ <MCorner 183 29>
+ <WCorner 183 29>
+ <XCorner 183 29>
+ <Label Embed in WMF>
+ <Active Yes>
+ <Group 1>
+ <StuffObject -1>
+> # 19
+<RadioButton
+ <MCorner 268 29>
+ <WCorner 268 29>
+ <XCorner 268 29>
+ <Label Frame text>
+ <Active No>
+ <Group 1>
+ <StuffObject -1>
+> # 20
+<Rule
+ <MBRect 100 34 228 1>
+ <WBRect 100 34 228 1>
+ <XBRect 100 34 228 1>
+> # 21
+<Label
+ <MCorner 101 51>
+ <WCorner 101 51>
+ <XCorner 101 51>
+ <Label Text below frame: >
+> # 22
+<RadioButton
+ <MCorner 183 50>
+ <WCorner 183 50>
+ <XCorner 183 50>
+ <Label Move>
+ <Active Yes>
+ <Group 2>
+ <StuffObject -1>
+> # 23
+<RadioButton
+ <MCorner 234 50>
+ <WCorner 234 50>
+ <XCorner 234 50>
+ <Label Show>
+ <Active No>
+ <Group 2>
+ <StuffObject -1>
+> # 24
+<RadioButton
+ <MCorner 283 50>
+ <WCorner 283 50>
+ <XCorner 283 50>
+ <Label Delete >
+ <Active No>
+ <Group 2>
+ <StuffObject -1>
+> # 25
+<Label
+ <MCorner 101 68>
+ <WCorner 101 68>
+ <XCorner 101 68>
+ <Label Maximum twips below frame for text to move:>
+> # 26
+<EditBox
+ <MBaseLine 293 66 32>
+ <WBaseLine 293 66 32>
+ <XBaseLine 293 66 32>
+ <Label twips>
+ <StuffObject -1>
+> # 27
+<Rule
+ <MBRect 100 73 228 1>
+ <WBRect 100 73 228 1>
+ <XBRect 100 73 228 1>
+> # 28
+<Label
+ <MCorner 101 93>
+ <WCorner 101 93>
+ <XCorner 101 93>
+ <Label Rescale text, percent:>
+> # 29
+<EditBox
+ <MBaseLine 196 91 32>
+ <WBaseLine 196 91 32>
+ <XBaseLine 196 91 32>
+ <Label pcent>
+ <StuffObject -1>
+> # 30
+<Label
+ <MCorner 234 93>
+ <WCorner 234 93>
+ <XCorner 234 93>
+ <Label Text vert adj:>
+> # 31
+<EditBox
+ <MBaseLine 293 91 32>
+ <WBaseLine 293 91 32>
+ <XBaseLine 293 91 32>
+ <Label twips>
+ <StuffObject -1>
+> # 32
+<CheckBox
+ <MCorner 102 110>
+ <WCorner 102 110>
+ <XCorner 102 110>
+ <Label Change text width, as percent of height:>
+ <Active No>
+ <StuffObject -1>
+> # 33
+<EditBox
+ <MBaseLine 293 111 32>
+ <WBaseLine 293 111 32>
+ <XBaseLine 293 111 32>
+ <Label pcent>
+ <StuffObject -1>
+> # 34
+<Rule
+ <MBRect 99 118 228 1>
+ <WBRect 99 118 228 1>
+ <XBRect 99 118 228 1>
+> # 35
+<Label
+ <MCorner 101 133>
+ <WCorner 101 133>
+ <XCorner 101 133>
+ <Label Text background: >
+> # 36
+<RadioButton
+ <MCorner 183 132>
+ <WCorner 183 132>
+ <XCorner 183 132>
+ <Label Transparent>
+ <Active Yes>
+ <Group 3>
+ <StuffObject -1>
+> # 37
+<RadioButton
+ <MCorner 268 132>
+ <WCorner 268 132>
+ <XCorner 268 132>
+ <Label Opaque>
+ <Active No>
+ <Group 3>
+ <StuffObject -1>
+> # 38
+<CheckBox
+ <MCorner 102 148>
+ <WCorner 102 148>
+ <XCorner 102 148>
+ <Label Use Space Above for para at top of text frames>
+ <Active No>
+ <StuffObject -1>
+> # 39
+<CheckBox
+ <MCorner 102 165>
+ <WCorner 102 165>
+ <XCorner 102 165>
+ <Label Show any blank text lines at top of text frames>
+ <Active No>
+ <StuffObject -1>
+> # 40

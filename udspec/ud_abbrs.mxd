@@ -1,0 +1,20 @@
+<doc id="ud_abbrs">
+<title>Abbreviations
+<idx>abbreviations, list of</idx>
+<idx>lists:generated:abbreviations</idx>
+<idx>trademarks, list of</idx>
+<idx>lists:generated:trademarks</idx>
+</title>
+
+<p>The ^abbreviations/^ and ^trademarks/^ dictionary lists use a process similar to that used for the <xref src="ud_glossary.mxd">^glossary/^</xref>.</p>
+
+<p>The ^abbreviations^ list uses the ^abbr^ elements in the project to select its content, ^abbrref^s to choose libraries (default library `stdabbrs.mxl`), and ^abbrdef^s for item definitions.  The ^abbrdef^s have a ^title^ which is the abbreviated form, and an `@id` that matches that of a glossary definition.  The corresponding ^glossdef^ supplies the full form (as its ^title^), and the ^desc^ displayed as a mouseover.  The ^abbr^ itself is linked to the glossary item, and the ^abbrdef^s also appear in the generated ^glossary^.</p>
+
+<p>Similarly, the ^trademarks^ list uses the ^tm^ elements in the project to select its content, ^tmarkref^s to choose libraries (default library `stdtmarks.mxl`), and ^tmarkdef^s for item definitions.  The ^tmarkdef^s have a ^title^ that adds the TM (or other) symbol, and optional text that specifies ownership that is used in the generated ^trademarks^ list. The ^tmarkdef^s also have an `@id` that matches that of a glossary definition.  The corresponding ^glossdef^ supplies the normal form (as its ^title^), and the ^desc^ displayed as a mouseover.  The ^tm^ itself is linked to the glossary item; unlike ^abbrdef^s, the ^tmarkdef^s do not appear in the ^glossary^.</p>
+
+<p>With this simple scheme, the processor can select the long form for the first instance, and the short form subsequently (with the ^glossdef^ ^desc^ as its mouseover).  The processor should allow resetting to the initial long form at varying levels of the project (such as each new chapter), and should optionally use the short form (even for the first instance) in ^title^s elsewhere.</p>
+
+
+<relref subjects="links" />
+
+</doc>

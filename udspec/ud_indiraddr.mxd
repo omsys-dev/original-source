@@ -1,0 +1,19 @@
+<doc id="ud_indiraddr">
+<title>Indirect Addressing
+<idx>indirect addressing</idx>
+<idx>addressing:indirect</idx>
+<idx>keys:for indirect addressing</idx>
+</title>
+
+<p>When you need to address a resource outside the current file, there are two basic cases.  In one, you know you will always need to go to the same place; in that case, you use `@src` to address the resource directly (usually via a URL).  The other case is when you know where you need to go today, but tomorrow it could be different.  For example, if you have a photo of a product, and your company produces a second version, you may want to use the new photo under some conditions, and the original photo under others.
+
+One way to handle this is <xref src="ud_condproc.mxd">conditional processing</xref>.  But the other, often better, way is to use indirection; instead of specifying `@src`, specify `@key`.  Then the editor or processor refers to a ^key^ definition element to get the `@src` you currently want.  You can also include a `@src` to be used if the ^key^ cannot be resolved.
+
+It gets even more flexible.  If the resource is in <xref src="ud_projaddr.mxd">another project</xref>, your ^key^ definition can specify another ^key^, in another project.  Then the processor goes to the definitions in the other project to get the correct reference.  For that, the ^key^ definition has `@project`, which specifies the root map of the other project, and another `@key` to use in that project.  You can even have projects that consist solely of ^key^ definitions, that redirect you to many other projects.
+
+The ultimate `@src` will specify a URL, usually a file.  If you want to refer to a specific element within that file, such as a ^div^ wrapper for a set of definitions, you also specify `@idref`.  This can be in the original referencing element, or can be added in any ^key^ definition along the way.  You don't need to tack anything onto the file/URL name to identify the element, like the hash (#) used in DITA.</p>
+
+
+<relref subjects="keys" />
+
+</doc>

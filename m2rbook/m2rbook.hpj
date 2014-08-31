@@ -1,0 +1,24 @@
+; This file is maintained by HCW. Do not modify this file directly.
+
+[OPTIONS]
+COMPRESS=12 Hall Zeck
+LCID=0x409 0x0 0x0 ; U.S. English
+REPORT=Yes
+CONTENTS=yourtoc
+TITLE=Your Title Here
+COPYRIGHT=Your Company Name %date
+HLP=.\your.hlp
+
+[FILES]
+.\yourtoc.rtf
+.\chap1.rtf
+.\chap2.rtf
+.\chap3.rtf
+.\chap4.rtf
+
+[WINDOWS]
+main="",(18,10,600,435),60672,(r14876671),(r12632256),f6
+proc="",(653,102,360,600),20740,(r14876671),(r12632256),f3
+
+[CONFIG]
+BrowseButtons()

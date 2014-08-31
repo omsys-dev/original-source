@@ -1,0 +1,24 @@
+<doc id="ud_libs">
+<title>uDoc Libs
+<idx>library files</idx>
+<idx>files:^lib^, for definitions and reusable content</idx>
+</title>
+
+<p>This is what a <xref src="ud_lib_file.mxd">uDoc library file</xref> looks like.
+
+In uDoc, ^lib^ (library) files are where you keep any fragments or definitions you want to use elsewhere.  They are little databases, in which the reusable items are identified by the "key" of their `@id`.
+
+Oddly, DITA has no equivalent.  If you want to bring in a common text fragment, for example, in DITA you need to `conref` it from another topic file, generally of the same type, and the instance of the fragment has to be in a valid context for its element.  While you can conref a range, the start and end elements must be the same, so you cannot conref a paragraph followed by a note in a single operation.  (This was a recent use case requested on [dita-users].)  You wind up with much more structure than should be needed for what is just a simple inclusion.  And for it to work at all, the referenced file itself has to be in the project map, as a "resource-only" topic.
+
+Libraries vastly simplify inclusion of anything you want; that is why programmers have used them for many, many years.  Libraries can contain elements normally used in ^map^s or in ^doc^s, it makes no difference which.  They can include arbitrary groups in ^div^ elements with `@id`s, where the ^div^s are purely envelopes that disappear when they have delivered their content where needed.  They can also include plain text as needed to document the use cases for the fragments in the library.
+
+Libraries also make including common definitions simpler.  For udoc itself, there are a number of standard libraries that define elements (`stdelems.mxl`), attributes (`stdattrs.mxl`), variables (`stdvars.mxl`), and ^doclist^s like the ^figures^ and ^tables^ lists (`stdlists.mxl`).  In addition, they define pools of definitions from which the ^glossary^ (`stdgloss.mxl`), ^abbreviations^ (`stdabbrs.mxl`), and ^trademarks^ (`stdtmarks.mxl`) lists can draw.  You can add your own definitions too, for any of these, in your own libraries, and your definitions will automatically override the standard ones.
+
+On a project level, libraries are convenient for containing definitions of ^conditions^ to apply.  You don't need a separate file, like DITA's `ditaval`, for each combination of conditions you may want to use.  Define them all in ^conditions^ elements in one library, and apply them as needed with <xref src="ud_condproc.mxd">^condrefs^</xref> in the maps.  You aren't limited to one set of conditions per project, as in DITA 1.2, either; you can use several different ones in the same root map with <xref src="ud_branch.mxd">branches</xref><idx>conditions:defining, in libraries</idx>.
+
+Similarly, libraries can contain sets of <xref src="ud_indiraddr.mxd">^key^ definitions</xref>, which in DITA are best contained in a map of their own referenced from the root map.  In uDoc, you also have special libraries for defining keys that can be <xref src="ud_projaddr">referenced from other projects</xref>, a capability DITA lacks entirely.  (In fact, the realization that this most basic need was not handled at all, and would not be added until DITA 1.3 at the earliest, was one of the drivers for creating uDoc.)<idx>keys:defining, in library files</idx></p>
+
+<relref subjects="files libraries" />
+
+</doc>
+

@@ -1,0 +1,51 @@
+<doc id="ud_mxldata">
+<title>Data Model</title>
+
+<p>The Data Model is returned as a structure by mxlparser.dll upon completion of the parse.  All text items in it are in UTF-32 strings, zero-terminated, for which length is also given in the structure:</p>
+
+<pre>typedef unsigned char unc;
+typedef unsigned long unl;
+
+struct element {  // data model uses one top element per doc
+ unl *name;       // array of UTF-32 chars
+ long namelen;
+ pair **attrs;    // array of attribute pairs
+ long attrcnt;
+ cont **content;  // arrays of element ptrs or UTF-32 chars
+ long contcnt;
+};
+
+struct pair {
+ unl *name;      // attribute name, UTF-32
+ long namelen;
+ unl *val;       // attribute value, UTF-32
+ long vallen;
+};
+
+struct cont {
+ void *it;       // ptr to array of UTF-32 chars or element
+ long cnt;       // count if chars, 0 if element
+};
+</pre>
+
+<p>For convenient study, the driver converts the structure to JSON format as used in the spec, and writes it to stdout (or to a specified file) at completion.  Here is what it produces for the sample in par. 3.1 of the spec:</p>
+
+<pre>[ "comment",
+	{	"lang": "en",
+		"date": "2012-09-11"
+	}, 
+	[	"\nI ",
+		[ "em", {}, [ "love" ]
+		],
+		" \u00B5XML!",
+		[ "br", {},  []
+		],
+		"\nIt's so clean &amp; simple."
+	]
+]
+</pre>
+
+<p>This is slightly different formatting from the spec, as we wanted to make all braces and brackets have matching start and end columns when they held more than one item.</p>
+
+</doc>
+

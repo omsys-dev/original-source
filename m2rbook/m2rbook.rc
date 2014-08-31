@@ -1,0 +1,252 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 4,1,115,0
+ PRODUCTVERSION 4,1,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "ClientName", "OmniBookExport\0"
+            VALUE "ClientProducts", "MakerSGML Maker\0"
+            VALUE "ClientType", "Standard\0"
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "Omni Systems, Inc.\0"
+            VALUE "FileDescription", "Mif2Go FrameMaker Plugin\0"
+            VALUE "FileVersion", "Ver 4.1, Build 115\0"
+            VALUE "InternalName", "m2rbook\0"
+            VALUE "LegalCopyright", "Copyright © 1999-2013 Omni Systems, Inc.; portions Copyright © 1986-1997 Adobe Systems Incorporated. All rights reserved.\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "m2rbook.dll\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Omni Systems, Inc. Mif2Go\0"
+            VALUE "ProductVersion", "Ver 4.1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""m2rdcnt.dlg""\r\n"
+    "#include ""m2rdcnt.xdi""\r\n"
+    "#include ""m2rdfnt.dlg""\r\n"
+    "#include ""m2rdfnt.xdi""\r\n"
+    "#include ""m2rdgi.dlg""\r\n"
+    "#include ""m2rdgi.xdi""\r\n"
+    "#include ""m2rdgr.dlg""\r\n"
+    "#include ""m2rdgr.xdi""\r\n"
+    "#include ""m2rdgra.dlg""\r\n"
+    "#include ""m2rdgra.xdi""\r\n"
+    "#include ""m2rdgrb.dlg""\r\n"
+    "#include ""m2rdgrb.xdi""\r\n"
+    "#include ""m2rdgt.dlg""\r\n"
+    "#include ""m2rdgt.xdi""\r\n"
+    "#include ""m2rdhmk.dlg""\r\n"
+    "#include ""m2rdhmk.xdi""\r\n"
+    "#include ""m2rdhpj.dlg""\r\n"
+    "#include ""m2rdhpj.xdi""\r\n"
+    "#include ""m2rdmf.dlg""\r\n"
+    "#include ""m2rdmf.xdi""\r\n"
+    "#include ""m2rdshb.dlg""\r\n"
+    "#include ""m2rdshb.xdi""\r\n"
+    "#include ""m2rdshs.dlg""\r\n"
+    "#include ""m2rdshs.xdi""\r\n"
+    "#include ""m2rdshh.dlg""\r\n"
+    "#include ""m2rdshh.xdi""\r\n"
+    "#include ""m2rdsht.dlg""\r\n"
+    "#include ""m2rdsht.xdi""\r\n"
+    "#include ""m2rdshm.dlg""\r\n"
+    "#include ""m2rdshm.xdi""\r\n"
+    "#include ""m2rdtxa.dlg""\r\n"
+    "#include ""m2rdtxa.xdi""\r\n"
+    "#include ""m2rdtxb.dlg""\r\n"
+    "#include ""m2rdtxb.xdi""\r\n"
+    "#include ""m2rdtxh.dlg""\r\n"
+    "#include ""m2rdtxh.xdi""\r\n"
+    "#include ""m2rdtbl.dlg""\r\n"
+    "#include ""m2rdtbl.xdi""\r\n"
+    "#include ""m2rdtl.dlg""\r\n"
+    "#include ""m2rdtl.xdi""\r\n"
+    "#include ""m2rdtpl.dlg""\r\n"
+    "#include ""m2rdtpl.xdi""\r\n"
+    "#include ""m2rdver.dlg""\r\n"
+    "#include ""m2rdver.xdi""\r\n"
+    "#include ""m2rinit.dlg""\r\n"
+    "#include ""m2rinit.xdi""\r\n"
+    "#include ""m2rproj.dlg""\r\n"
+    "#include ""m2rproj.xdi""\r\n"
+    "#include ""m2rseta.dlg""\r\n"
+    "#include ""m2rseta.xdi""\r\n"
+    "#include ""m2rsetb.dlg""\r\n"
+    "#include ""m2rsetb.xdi""\r\n"
+    "#include ""m2rsetc.dlg""\r\n"
+    "#include ""m2rsetc.xdi""\r\n"
+    "#include ""m2rsetd.dlg""\r\n"
+    "#include ""m2rsetd.xdi""\r\n"
+    "#include ""m2rsete.dlg""\r\n"
+    "#include ""m2rsete.xdi""\r\n"
+    "#include ""m2rsetf.dlg""\r\n"
+    "#include ""m2rsetf.xdi""\r\n"
+    "#include ""m2rseth.dlg""\r\n"
+    "#include ""m2rseth.xdi""\r\n"
+    "#include ""m2rsetj.dlg""\r\n"
+    "#include ""m2rsetj.xdi""\r\n"
+    "#include ""m2rsetm.dlg""\r\n"
+    "#include ""m2rsetm.xdi""\r\n"
+    "#include ""m2rsetn.dlg""\r\n"
+    "#include ""m2rsetn.xdi""\r\n"
+    "#include ""m2rsetw.dlg""\r\n"
+    "#include ""m2rsetw.xdi""\r\n"
+    "#include ""m2rvar.dlg""\r\n"
+    "#include ""m2rvar.xdi""\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "m2rdcnt.dlg"
+#include "m2rdcnt.xdi"
+#include "m2rdfnt.dlg"
+#include "m2rdfnt.xdi"
+#include "m2rdgi.dlg"
+#include "m2rdgi.xdi"
+#include "m2rdgr.dlg"
+#include "m2rdgr.xdi"
+#include "m2rdgra.dlg"
+#include "m2rdgra.xdi"
+#include "m2rdgrb.dlg"
+#include "m2rdgrb.xdi"
+#include "m2rdgt.dlg"
+#include "m2rdgt.xdi"
+#include "m2rdhmk.dlg"
+#include "m2rdhmk.xdi"
+#include "m2rdhpj.dlg"
+#include "m2rdhpj.xdi"
+#include "m2rdmf.dlg"
+#include "m2rdmf.xdi"
+#include "m2rdshb.dlg"
+#include "m2rdshb.xdi"
+#include "m2rdshs.dlg"
+#include "m2rdshs.xdi"
+#include "m2rdshh.dlg"
+#include "m2rdshh.xdi"
+#include "m2rdsht.dlg"
+#include "m2rdsht.xdi"
+#include "m2rdshm.dlg"
+#include "m2rdshm.xdi"
+#include "m2rdtxa.dlg"
+#include "m2rdtxa.xdi"
+#include "m2rdtxb.dlg"
+#include "m2rdtxb.xdi"
+#include "m2rdtxh.dlg"
+#include "m2rdtxh.xdi"
+#include "m2rdtbl.dlg"
+#include "m2rdtbl.xdi"
+#include "m2rdtl.dlg"
+#include "m2rdtl.xdi"
+#include "m2rdtpl.dlg"
+#include "m2rdtpl.xdi"
+#include "m2rdver.dlg"
+#include "m2rdver.xdi"
+#include "m2rinit.dlg"
+#include "m2rinit.xdi"
+#include "m2rproj.dlg"
+#include "m2rproj.xdi"
+#include "m2rseta.dlg"
+#include "m2rseta.xdi"
+#include "m2rsetb.dlg"
+#include "m2rsetb.xdi"
+#include "m2rsetc.dlg"
+#include "m2rsetc.xdi"
+#include "m2rsetd.dlg"
+#include "m2rsetd.xdi"
+#include "m2rsete.dlg"
+#include "m2rsete.xdi"
+#include "m2rsetf.dlg"
+#include "m2rsetf.xdi"
+#include "m2rseth.dlg"
+#include "m2rseth.xdi"
+#include "m2rsetj.dlg"
+#include "m2rsetj.xdi"
+#include "m2rsetm.dlg"
+#include "m2rsetm.xdi"
+#include "m2rsetn.dlg"
+#include "m2rsetn.xdi"
+#include "m2rsetw.dlg"
+#include "m2rsetw.xdi"
+#include "m2rvar.dlg"
+#include "m2rvar.xdi"
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

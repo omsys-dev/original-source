@@ -1,0 +1,135 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: dwhtm - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\jeremy\AppData\Local\Temp\RSP8B19.tmp" with contents
+[
+/nologo /Zp1 /MD /W3 /GX /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_WIN32" /D "_DLL" /FR"..\dll\WinRel/" /Fp"..\dll\WinRel/dwhtm.pch" /YX /Fo"..\dll\WinRel/" /Fd"..\dll\WinRel/" /FD /c 
+"C:\cvs\dwhtm\dwhtmfm.cpp"
+]
+Creating command line "cl.exe @C:\Users\jeremy\AppData\Local\Temp\RSP8B19.tmp" 
+Creating temporary file "C:\Users\jeremy\AppData\Local\Temp\RSP8B1A.tmp" with contents
+[
+icuuc.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib Shlwapi.lib /nologo /base:"0x67e00000" /subsystem:windows /dll /incremental:no /pdb:"..\dll\WinRel/dwhtm.pdb" /machine:I386 /out:"..\dll\WinRel/dwhtm.dll" /implib:"..\dll\WinRel/dwhtm.lib" 
+\cvs\dll\WinRel\dcappl.obj
+\cvs\dll\WinRel\dcauto.obj
+\cvs\dll\WinRel\dcbase.obj
+\cvs\dll\WinRel\dcctlg.obj
+\cvs\dll\WinRel\dcfile.obj
+\cvs\dll\WinRel\dcfili.obj
+\cvs\dll\WinRel\dcfilp.obj
+\cvs\dll\WinRel\dcfilr.obj
+\cvs\dll\WinRel\dcfilw.obj
+\cvs\dll\WinRel\dcfmtr.obj
+\cvs\dll\WinRel\dcglob.obj
+\cvs\dll\WinRel\dcicu.obj
+\cvs\dll\WinRel\dcini.obj
+\cvs\dll\WinRel\dclist.obj
+\cvs\dll\WinRel\dclog.obj
+\cvs\dll\WinRel\dcmacr.obj
+\cvs\dll\WinRel\dcmem.obj
+\cvs\dll\WinRel\dcmxl.obj
+\cvs\dll\WinRel\dcnode.obj
+\cvs\dll\WinRel\dcnodt.obj
+\cvs\dll\WinRel\dcport.obj
+\cvs\dll\WinRel\dctxfx.obj
+\cvs\dll\WinRel\dwhtm.obj
+\cvs\dll\WinRel\dwhtman.obj
+\cvs\dll\WinRel\dwhtmcn.obj
+\cvs\dll\WinRel\dwhtmd0.obj
+\cvs\dll\WinRel\dwhtmd1.obj
+\cvs\dll\WinRel\dwhtmdb.obj
+\cvs\dll\WinRel\dwhtmdd.obj
+\cvs\dll\WinRel\dwhtmdm.obj
+\cvs\dll\WinRel\dwhtmds.obj
+\cvs\dll\WinRel\dwhtmdt.obj
+\cvs\dll\WinRel\dwhtmfl.obj
+\cvs\dll\WinRel\dwhtmfm.obj
+\cvs\dll\WinRel\dwhtmgr.obj
+\cvs\dll\WinRel\dwhtmhr.obj
+\cvs\dll\WinRel\dwhtmin.obj
+\cvs\dll\WinRel\dwhtmpp.obj
+\cvs\dll\WinRel\dwhtmrf.obj
+\cvs\dll\WinRel\dwhtmsp.obj
+\cvs\dll\WinRel\dwhtmtb.obj
+\cvs\dll\WinRel\dwhtmtx.obj
+\cvs\dll\WinRel\dwhtmud.obj
+\cvs\dll\WinRel\dwhtmxf.obj
+\cvs\dll\WinRel\dwhtm.res
+]
+Creating command line "link.exe @C:\Users\jeremy\AppData\Local\Temp\RSP8B1A.tmp"
+Creating temporary file "C:\Users\jeremy\AppData\Local\Temp\RSP8B1B.bat" with contents
+[
+@echo off
+copy \cvs\dll\WinRel\dwhtm.dll %omsyshome%\common\bin
+]
+Creating command line "C:\Users\jeremy\AppData\Local\Temp\RSP8B1B.bat"
+Compiling...
+dwhtmfm.cpp
+Linking...
+   Creating library ..\dll\WinRel/dwhtm.lib and object ..\dll\WinRel/dwhtm.exp
+<h3>Output Window</h3>
+Copying to omsyshome directory...
+        1 file(s) copied.
+Creating temporary file "C:\Users\jeremy\AppData\Local\Temp\RSP976C.tmp" with contents
+[
+/nologo /o"..\dll\WinRel/dwhtm.bsc" 
+\cvs\dll\WinRel\dcappl.sbr
+\cvs\dll\WinRel\dcauto.sbr
+\cvs\dll\WinRel\dcbase.sbr
+\cvs\dll\WinRel\dcctlg.sbr
+\cvs\dll\WinRel\dcfile.sbr
+\cvs\dll\WinRel\dcfili.sbr
+\cvs\dll\WinRel\dcfilp.sbr
+\cvs\dll\WinRel\dcfilr.sbr
+\cvs\dll\WinRel\dcfilw.sbr
+\cvs\dll\WinRel\dcfmtr.sbr
+\cvs\dll\WinRel\dcglob.sbr
+\cvs\dll\WinRel\dcicu.sbr
+\cvs\dll\WinRel\dcini.sbr
+\cvs\dll\WinRel\dclist.sbr
+\cvs\dll\WinRel\dclog.sbr
+\cvs\dll\WinRel\dcmacr.sbr
+\cvs\dll\WinRel\dcmem.sbr
+\cvs\dll\WinRel\dcmxl.sbr
+\cvs\dll\WinRel\dcnode.sbr
+\cvs\dll\WinRel\dcnodt.sbr
+\cvs\dll\WinRel\dcport.sbr
+\cvs\dll\WinRel\dctxfx.sbr
+\cvs\dll\WinRel\dwhtm.sbr
+\cvs\dll\WinRel\dwhtman.sbr
+\cvs\dll\WinRel\dwhtmcn.sbr
+\cvs\dll\WinRel\dwhtmd0.sbr
+\cvs\dll\WinRel\dwhtmd1.sbr
+\cvs\dll\WinRel\dwhtmdb.sbr
+\cvs\dll\WinRel\dwhtmdd.sbr
+\cvs\dll\WinRel\dwhtmdm.sbr
+\cvs\dll\WinRel\dwhtmds.sbr
+\cvs\dll\WinRel\dwhtmdt.sbr
+\cvs\dll\WinRel\dwhtmfl.sbr
+\cvs\dll\WinRel\dwhtmfm.sbr
+\cvs\dll\WinRel\dwhtmgr.sbr
+\cvs\dll\WinRel\dwhtmhr.sbr
+\cvs\dll\WinRel\dwhtmin.sbr
+\cvs\dll\WinRel\dwhtmpp.sbr
+\cvs\dll\WinRel\dwhtmrf.sbr
+\cvs\dll\WinRel\dwhtmsp.sbr
+\cvs\dll\WinRel\dwhtmtb.sbr
+\cvs\dll\WinRel\dwhtmtx.sbr
+\cvs\dll\WinRel\dwhtmud.sbr
+\cvs\dll\WinRel\dwhtmxf.sbr]
+Creating command line "bscmake.exe @C:\Users\jeremy\AppData\Local\Temp\RSP976C.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+dwhtm.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,334 @@
+<DialogFile 5.5>
+<LongChar No>
+<Font 2 1 12>
+<DialogBox
+ <MBRect -1 -1 359 301>
+ <WBRect -1 -1 332 171>
+ <XBRect -1 -1 367 388>
+ <Platforms MWX>
+ <CurrentFocus 3>
+ <FirstFocus 3>
+ <OKButton 8>
+ <CancelButton -1>
+ <DefaultButton 8>
+ <HelpButton -1>
+ <TitleLabel 0>
+>
+<Label
+ <MCorner 470 956>
+ <WCorner 138 0>
+ <XCorner 18 26>
+ <Label Conversion Designer>
+> # 0
+<Label
+ <MCorner 7 12>
+ <WCorner 7 12>
+ <XCorner 7 12>
+ <Label Project:  Name of project, followed by a very long path name to the .ini file>
+> # 1
+<Label
+ <MCorner 7 26>
+ <WCorner 7 26>
+ <XCorner 7 26>
+ <Label Paragraph Format:>
+> # 2
+<EditBox
+ <MBaseLine 7 38 63>
+ <WBaseLine 7 38 63>
+ <XBaseLine 7 38 63>
+ <Label All>
+ <StuffObject 4>
+> # 3
+<ImagePopUp
+ <MBRect 75 28 6 9>
+ <WBRect 75 28 6 9>
+ <XBRect 75 28 6 9>
+ <Label tallarrowdn>
+ <StuffObject 3>
+> # 4
+<Label
+ <MCorner 7 54>
+ <WCorner 7 54>
+ <XCorner 7 54>
+ <Label Properties:>
+> # 5
+<PopUpMenu
+ <MBaseLine 7 67 80>
+ <WBaseLine 7 67 80>
+ <XBaseLine 7 67 80>
+ <StuffObject -1>
+> # 6
+<Rule
+ <MBRect 5 72 86 1>
+ <WBRect 5 72 86 1>
+ <XBRect 5 72 86 1>
+> # 7
+<Button
+ <MBaseLine 13 87 67>
+ <WBaseLine 13 87 67>
+ <XBaseLine 13 87 67>
+ <Label Apply>
+ <ShortcutPosition 0>
+ <Active No>
+> # 8
+<Label
+ <MCorner 21 101>
+ <WCorner 7 101>
+ <XCorner 21 101>
+ <Label To All Selected Styles>
+> # 9
+<Rule
+ <MBRect 5 103 86 1>
+ <WBRect 5 103 86 1>
+ <XBRect 5 103 86 1>
+> # 10
+<Button
+ <MBaseLine 13 119 67>
+ <WBaseLine 13 119 67>
+ <XBaseLine 13 119 67>
+ <Label Update All>
+ <ShortcutPosition 0>
+ <Active No>
+> # 11
+<Label
+ <MCorner 7 134>
+ <WCorner 7 134>
+ <XCorner 7 134>
+ <Label Properties in .ini ...>
+> # 12
+<Rule
+ <MBRect 5 147 86 1>
+ <WBRect 5 147 86 1>
+ <XBRect 5 147 86 1>
+> # 13
+<Label
+ <MCorner 7 161>
+ <WCorner 7 161>
+ <XCorner 7 161>
+ <Label Commands:>
+> # 14
+<ImagePopUp
+ <MBRect 73 150 6 9>
+ <WBRect 73 150 6 9>
+ <XBRect 73 150 6 9>
+ <Label tallarrowdn>
+ <StuffObject -1>
+> # 15
+<Rule
+ <MBRect 95 18 1 150>
+ <WBRect 95 19 1 149>
+ <XBRect 95 18 1 150>
+> # 16
+<Rule
+ <MBRect 102 14 224 1>
+ <WBRect 102 14 224 1>
+ <XBRect 102 14 224 1>
+> # 17
+<Label
+ <MCorner 101 27>
+ <WCorner 101 27>
+ <XCorner 101 27>
+ <Label Index markers: >
+> # 18
+<RadioButton
+ <MCorner 179 26>
+ <WCorner 179 26>
+ <XCorner 179 26>
+ <Label Standard>
+ <Active Yes>
+ <Group 1>
+ <StuffObject -1>
+> # 19
+<RadioButton
+ <MCorner 238 26>
+ <WCorner 238 26>
+ <XCorner 238 26>
+ <Label Help>
+ <Active No>
+ <Group 1>
+ <StuffObject -1>
+> # 20
+<RadioButton
+ <MCorner 280 26>
+ <WCorner 280 26>
+ <XCorner 280 26>
+ <Label None>
+ <Active No>
+ <Group 1>
+ <StuffObject -1>
+> # 21
+<Rule
+ <MBRect 99 31 228 1>
+ <WBRect 99 31 228 1>
+ <XBRect 99 31 228 1>
+> # 22
+<Label
+ <MCorner 101 45>
+ <WCorner 101 45>
+ <XCorner 101 45>
+ <Label Cross-references: >
+> # 23
+<RadioButton
+ <MCorner 179 44>
+ <WCorner 179 44>
+ <XCorner 179 44>
+ <Label Standard>
+ <Active Yes>
+ <Group 2>
+ <StuffObject -1>
+> # 24
+<RadioButton
+ <MCorner 238 44>
+ <WCorner 238 44>
+ <XCorner 238 44>
+ <Label Help>
+ <Active No>
+ <Group 2>
+ <StuffObject -1>
+> # 25
+<RadioButton
+ <MCorner 280 44>
+ <WCorner 280 44>
+ <XCorner 280 44>
+ <Label None>
+ <Active No>
+ <Group 2>
+ <StuffObject -1>
+> # 26
+<Label
+ <MCorner 115 59>
+ <WCorner 115 59>
+ <XCorner 115 59>
+ <Label Cross-reference type: >
+> # 27
+<RadioButton
+ <MCorner 216 58>
+ <WCorner 216 58>
+ <XCorner 216 58>
+ <Label Full>
+ <Active Yes>
+ <Group 3>
+ <StuffObject -1>
+> # 28
+<RadioButton
+ <MCorner 268 58>
+ <WCorner 268 58>
+ <XCorner 268 58>
+ <Label Numeric>
+ <Active No>
+ <Group 3>
+ <StuffObject -1>
+> # 29
+<Rule
+ <MBRect 99 61 228 1>
+ <WBRect 99 61 228 1>
+ <XBRect 99 61 228 1>
+> # 30
+<Label
+ <MCorner 101 76>
+ <WCorner 101 76>
+ <XCorner 101 76>
+ <Label Quotes: >
+> # 31
+<RadioButton
+ <MCorner 145 75>
+ <WCorner 145 75>
+ <XCorner 145 75>
+ <Label Standard>
+ <Active Yes>
+ <Group 4>
+ <StuffObject -1>
+> # 32
+<RadioButton
+ <MCorner 216 75>
+ <WCorner 216 75>
+ <XCorner 216 75>
+ <Label Help>
+ <Active No>
+ <Group 4>
+ <StuffObject -1>
+> # 33
+<RadioButton
+ <MCorner 268 75>
+ <WCorner 268 75>
+ <XCorner 268 75>
+ <Label Numeric>
+ <Active No>
+ <Group 4>
+ <StuffObject -1>
+> # 34
+<Rule
+ <MBRect 99 79 228 1>
+ <WBRect 99 79 228 1>
+ <XBRect 99 79 228 1>
+> # 35
+<Label
+ <MCorner 101 94>
+ <WCorner 101 94>
+ <XCorner 101 94>
+ <Label Occluded tabs: >
+> # 36
+<RadioButton
+ <MCorner 179 93>
+ <WCorner 179 93>
+ <XCorner 179 93>
+ <Label Remove>
+ <Active Yes>
+ <Group 5>
+ <StuffObject -1>
+> # 37
+<RadioButton
+ <MCorner 238 93>
+ <WCorner 238 93>
+ <XCorner 238 93>
+ <Label Space>
+ <Active No>
+ <Group 5>
+ <StuffObject -1>
+> # 38
+<RadioButton
+ <MCorner 286 93>
+ <WCorner 286 93>
+ <XCorner 286 93>
+ <Label Tab>
+ <Active No>
+ <Group 5>
+ <StuffObject -1>
+> # 39
+<Rule
+ <MBRect 99 98 228 1>
+ <WBRect 99 98 228 1>
+ <XBRect 99 98 228 1>
+> # 40
+<CheckBox
+ <MCorner 101 111>
+ <WCorner 101 111>
+ <XCorner 101 111>
+ <Label Adjust Space Above to give same spacing as  FM>
+ <Active No>
+ <StuffObject -1>
+> # 41
+<CheckBox
+ <MCorner 101 128>
+ <WCorner 101 128>
+ <XCorner 101 128>
+ <Label Include FM character styles in RTF stylesheet list>
+ <Active No>
+ <StuffObject -1>
+> # 42
+<CheckBox
+ <MCorner 101 145>
+ <WCorner 101 145>
+ <XCorner 101 145>
+ <Label Use section breaks before Help topics (not Altura)>
+ <Active No>
+ <StuffObject -1>
+> # 43
+<CheckBox
+ <MCorner 101 162>
+ <WCorner 101 162>
+ <XCorner 101 162>
+ <Label Use section breaks between text flows in Word>
+ <Active No>
+ <StuffObject -1>
+> # 44

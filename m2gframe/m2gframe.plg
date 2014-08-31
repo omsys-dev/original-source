@@ -1,0 +1,133 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: m2gframe - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"..\fdk\Release/m2gframe.res" /d "NDEBUG" "C:\cvs\m2gframe\m2gframe.rc"" 
+Creating temporary file "C:\Users\jeremy\AppData\Local\Temp\RSP2611.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "M2GFRAME" /FR"..\fdk\Release/" /Fp"..\fdk\Release/m2gframe.pch" /YX"m2gframe.h" /Fo"..\fdk\Release/" /Fd"..\fdk\Release/" /FD /c 
+"C:\cvs\base\dcbase.cpp"
+"C:\cvs\base\dcctlg.cpp"
+"C:\cvs\base\dcfile.cpp"
+"C:\cvs\base\dcfili.cpp"
+"C:\cvs\base\dcfilp.cpp"
+"C:\cvs\base\dcfilr.cpp"
+"C:\cvs\base\dcfilw.cpp"
+"C:\cvs\base\dcglob.cpp"
+"C:\cvs\base\dcini.cpp"
+"C:\cvs\base\dclist.cpp"
+"C:\cvs\base\dclog.cpp"
+"C:\cvs\base\dcmacr.cpp"
+"C:\cvs\base\dcmem.cpp"
+"C:\cvs\base\dcnode.cpp"
+"C:\cvs\base\dcnodt.cpp"
+"C:\cvs\base\dcport.cpp"
+"C:\cvs\m2gframe\m2gdlg.cpp"
+"C:\cvs\m2gframe\m2gframe.cpp"
+"C:\cvs\m2gframe\m2gini.cpp"
+"C:\cvs\m2gframe\m2gmacr.cpp"
+]
+Creating command line "cl.exe @C:\Users\jeremy\AppData\Local\Temp\RSP2611.tmp" 
+Creating temporary file "C:\Users\jeremy\AppData\Local\Temp\RSP2622.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib fdk.lib api.lib fmdbms32.lib shlwapi.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"..\fdk\Release/m2gframe.pdb" /machine:I386 /nodefaultlib:"libc.lib" /nodefaultlib:"msvcrt.lib" /out:"..\fdk\Release/m2gframe.dll" /implib:"..\fdk\Release/m2gframe.lib" 
+\cvs\fdk\Release\dcbase.obj
+\cvs\fdk\Release\dcctlg.obj
+\cvs\fdk\Release\dcfile.obj
+\cvs\fdk\Release\dcfili.obj
+\cvs\fdk\Release\dcfilp.obj
+\cvs\fdk\Release\dcfilr.obj
+\cvs\fdk\Release\dcfilw.obj
+\cvs\fdk\Release\dcglob.obj
+\cvs\fdk\Release\dcini.obj
+\cvs\fdk\Release\dclist.obj
+\cvs\fdk\Release\dclog.obj
+\cvs\fdk\Release\dcmacr.obj
+\cvs\fdk\Release\dcmem.obj
+\cvs\fdk\Release\dcnode.obj
+\cvs\fdk\Release\dcnodt.obj
+\cvs\fdk\Release\dcport.obj
+\cvs\fdk\Release\m2gdlg.obj
+\cvs\fdk\Release\m2gframe.obj
+\cvs\fdk\Release\m2gini.obj
+\cvs\fdk\Release\m2gmacr.obj
+\cvs\fdk\Release\m2gframe.res
+]
+Creating command line "link.exe @C:\Users\jeremy\AppData\Local\Temp\RSP2622.tmp"
+Creating temporary file "C:\Users\jeremy\AppData\Local\Temp\RSP2623.bat" with contents
+[
+@echo off
+copy \cvs\fdk\Release\m2gframe.dll C:\FM8\fminit\plugins
+del /q C:\FM8\fminit\plugins\.cache
+copy \cvs\fdk\Release\m2gframe.dll C:\FM9\fminit\plugins
+del /q C:\FM9\fminit\plugins\.cache
+]
+Creating command line "C:\Users\jeremy\AppData\Local\Temp\RSP2623.bat"
+Compiling resources...
+Compiling...
+dcbase.cpp
+dcctlg.cpp
+dcfile.cpp
+dcfili.cpp
+dcfilp.cpp
+dcfilr.cpp
+dcfilw.cpp
+dcglob.cpp
+dcini.cpp
+dclist.cpp
+dclog.cpp
+dcmacr.cpp
+dcmem.cpp
+dcnode.cpp
+dcnodt.cpp
+dcport.cpp
+m2gdlg.cpp
+m2gframe.cpp
+m2gini.cpp
+m2gmacr.cpp
+Linking...
+   Creating library ..\fdk\Release/m2gframe.lib and object ..\fdk\Release/m2gframe.exp
+<h3>Output Window</h3>
+Copying to FrameMaker directories...
+        1 file(s) copied.
+Could Not Find C:\FM8\fminit\plugins\.cache
+        1 file(s) copied.
+Could Not Find C:\FM9\fminit\plugins\.cache
+Creating temporary file "C:\Users\jeremy\AppData\Local\Temp\RSP31F6.tmp" with contents
+[
+/nologo /o"..\fdk\Release/m2gframe.bsc" 
+\cvs\fdk\Release\dcbase.sbr
+\cvs\fdk\Release\dcctlg.sbr
+\cvs\fdk\Release\dcfile.sbr
+\cvs\fdk\Release\dcfili.sbr
+\cvs\fdk\Release\dcfilp.sbr
+\cvs\fdk\Release\dcfilr.sbr
+\cvs\fdk\Release\dcfilw.sbr
+\cvs\fdk\Release\dcglob.sbr
+\cvs\fdk\Release\dcini.sbr
+\cvs\fdk\Release\dclist.sbr
+\cvs\fdk\Release\dclog.sbr
+\cvs\fdk\Release\dcmacr.sbr
+\cvs\fdk\Release\dcmem.sbr
+\cvs\fdk\Release\dcnode.sbr
+\cvs\fdk\Release\dcnodt.sbr
+\cvs\fdk\Release\dcport.sbr
+\cvs\fdk\Release\m2gdlg.sbr
+\cvs\fdk\Release\m2gframe.sbr
+\cvs\fdk\Release\m2gini.sbr
+\cvs\fdk\Release\m2gmacr.sbr]
+Creating command line "bscmake.exe @C:\Users\jeremy\AppData\Local\Temp\RSP31F6.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+m2gframe.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

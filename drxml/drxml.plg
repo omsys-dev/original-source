@@ -1,0 +1,127 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: drxml - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\jeremy\AppData\Local\Temp\RSPFD68.tmp" with contents
+[
+/nologo /Zp1 /MD /W3 /GX /D "NDEBUG" /D "MXLPARSER_EXPORTS" /D "WIN32" /D "_WINDOWS" /D "_WIN32" /D "_DLL" /D "DITA" /FR"..\dll\WinRel/" /Fp"..\dll\WinRel/drxml.pch" /YX /Fo"..\dll\WinRel/" /Fd"..\dll\WinRel/" /FD /c 
+"C:\cvs\drxml\drxmlel.cpp"
+]
+Creating command line "cl.exe @C:\Users\jeremy\AppData\Local\Temp\RSPFD68.tmp" 
+Creating temporary file "C:\Users\jeremy\AppData\Local\Temp\RSPFD69.tmp" with contents
+[
+libexpat.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib shlwapi.lib /nologo /base:"0x67e00000" /dll /incremental:no /pdb:"..\dll\WinRel/drxml.pdb" /machine:I386 /out:"..\dll\WinRel/drxml.dll" /implib:"..\dll\WinRel/drxml.lib" 
+\cvs\dll\WinRel\dcappl.obj
+\cvs\dll\WinRel\dcauto.obj
+\cvs\dll\WinRel\dcbase.obj
+\cvs\dll\WinRel\dcctlg.obj
+\cvs\dll\WinRel\dcelem.obj
+\cvs\dll\WinRel\dcfile.obj
+\cvs\dll\WinRel\dcfili.obj
+\cvs\dll\WinRel\dcfilp.obj
+\cvs\dll\WinRel\dcfilr.obj
+\cvs\dll\WinRel\dcfilw.obj
+\cvs\dll\WinRel\dcfmtr.obj
+\cvs\dll\WinRel\dcglob.obj
+\cvs\dll\WinRel\dcindx.obj
+\cvs\dll\WinRel\dcini.obj
+\cvs\dll\WinRel\dclist.obj
+\cvs\dll\WinRel\dclog.obj
+\cvs\dll\WinRel\dcmacr.obj
+\cvs\dll\WinRel\dcmem.obj
+\cvs\dll\WinRel\dcnode.obj
+\cvs\dll\WinRel\dcnodt.obj
+\cvs\dll\WinRel\dcport.obj
+\cvs\dll\WinRel\drxdvfl.obj
+\cvs\dll\WinRel\drxml.obj
+\cvs\dll\WinRel\drxmlan.obj
+\cvs\dll\WinRel\drxmlcn.obj
+\cvs\dll\WinRel\drxmldt.obj
+\cvs\dll\WinRel\drxmldv.obj
+\cvs\dll\WinRel\drxmlel.obj
+\cvs\dll\WinRel\drxmlfl.obj
+\cvs\dll\WinRel\drxmlgn.obj
+\cvs\dll\WinRel\drxmlgr.obj
+\cvs\dll\WinRel\drxmlin.obj
+\cvs\dll\WinRel\drxmlmp.obj
+\cvs\dll\WinRel\drxmlpi.obj
+\cvs\dll\WinRel\drxmlrl.obj
+\cvs\dll\WinRel\drxmlsm.obj
+\cvs\dll\WinRel\drxmltb.obj
+\cvs\dll\WinRel\drxmltx.obj
+\cvs\dll\WinRel\drxmlud.obj
+\cvs\dll\WinRel\mxlparser.obj
+\cvs\dll\WinRel\drxml.res
+]
+Creating command line "link.exe @C:\Users\jeremy\AppData\Local\Temp\RSPFD69.tmp"
+Creating temporary file "C:\Users\jeremy\AppData\Local\Temp\RSPFD6A.bat" with contents
+[
+@echo off
+copy \cvs\dll\WinRel\drxml.dll C:\omsys\common\bin
+]
+Creating command line "C:\Users\jeremy\AppData\Local\Temp\RSPFD6A.bat"
+Compiling...
+drxmlel.cpp
+Linking...
+   Creating library ..\dll\WinRel/drxml.lib and object ..\dll\WinRel/drxml.exp
+<h3>Output Window</h3>
+Copying to omsyshome directory...
+        1 file(s) copied.
+Creating temporary file "C:\Users\jeremy\AppData\Local\Temp\RSP299.tmp" with contents
+[
+/nologo /o"..\dll\WinRel/drxml.bsc" 
+\cvs\dll\WinRel\dcappl.sbr
+\cvs\dll\WinRel\dcauto.sbr
+\cvs\dll\WinRel\dcbase.sbr
+\cvs\dll\WinRel\dcctlg.sbr
+\cvs\dll\WinRel\dcelem.sbr
+\cvs\dll\WinRel\dcfile.sbr
+\cvs\dll\WinRel\dcfili.sbr
+\cvs\dll\WinRel\dcfilp.sbr
+\cvs\dll\WinRel\dcfilr.sbr
+\cvs\dll\WinRel\dcfilw.sbr
+\cvs\dll\WinRel\dcfmtr.sbr
+\cvs\dll\WinRel\dcglob.sbr
+\cvs\dll\WinRel\dcindx.sbr
+\cvs\dll\WinRel\dcini.sbr
+\cvs\dll\WinRel\dclist.sbr
+\cvs\dll\WinRel\dclog.sbr
+\cvs\dll\WinRel\dcmacr.sbr
+\cvs\dll\WinRel\dcmem.sbr
+\cvs\dll\WinRel\dcnode.sbr
+\cvs\dll\WinRel\dcnodt.sbr
+\cvs\dll\WinRel\dcport.sbr
+\cvs\dll\WinRel\drxdvfl.sbr
+\cvs\dll\WinRel\drxml.sbr
+\cvs\dll\WinRel\drxmlan.sbr
+\cvs\dll\WinRel\drxmlcn.sbr
+\cvs\dll\WinRel\drxmldt.sbr
+\cvs\dll\WinRel\drxmldv.sbr
+\cvs\dll\WinRel\drxmlel.sbr
+\cvs\dll\WinRel\drxmlfl.sbr
+\cvs\dll\WinRel\drxmlgn.sbr
+\cvs\dll\WinRel\drxmlgr.sbr
+\cvs\dll\WinRel\drxmlin.sbr
+\cvs\dll\WinRel\drxmlmp.sbr
+\cvs\dll\WinRel\drxmlpi.sbr
+\cvs\dll\WinRel\drxmlrl.sbr
+\cvs\dll\WinRel\drxmlsm.sbr
+\cvs\dll\WinRel\drxmltb.sbr
+\cvs\dll\WinRel\drxmltx.sbr
+\cvs\dll\WinRel\drxmlud.sbr
+\cvs\dll\WinRel\mxlparser.sbr]
+Creating command line "bscmake.exe @C:\Users\jeremy\AppData\Local\Temp\RSP299.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+drxml.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

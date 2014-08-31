@@ -1,0 +1,175 @@
+<DialogFile 5.5>
+<LongChar No>
+<Font 2 1 12>
+<DialogBox
+ <MBRect -1 -1 359 301>
+ <WBRect -1 -1 216 333>
+ <XBRect -1 -1 367 388>
+ <Platforms MWX>
+ <CurrentFocus 3>
+ <FirstFocus 3>
+ <OKButton 20>
+ <CancelButton 21>
+ <DefaultButton 20>
+ <HelpButton -1>
+ <TitleLabel 0>
+>
+<Label
+ <MCorner 470 956>
+ <WCorner 77 -1>
+ <XCorner 18 26>
+ <Label Mif2Go Export>
+> # 0
+<Label
+ <MCorner 18 12>
+ <WCorner 18 12>
+ <XCorner 18 12>
+ <Label Project name with path:  C:\\\\path\\\\to\\\\help>
+> # 1
+<Label
+ <MCorner 15 28>
+ <WCorner 46 32>
+ <XCorner 15 28>
+ <Label Select type of file to create:>
+> # 2
+<PopUpMenu
+ <MBaseLine 28 53 159>
+ <WBaseLine 28 53 159>
+ <XBaseLine 28 53 159>
+ <StuffObject -1>
+> # 3
+<Label
+ <MCorner 28 77>
+ <WCorner 28 77>
+ <XCorner 28 77>
+ <Label Suffix for created files:>
+> # 4
+<EditBox
+ <MBaseLine 131 76 56>
+ <WBaseLine 131 76 56>
+ <XBaseLine 131 76 56>
+ <Label .rtf>
+ <StuffObject -1>
+> # 5
+<CheckBox
+ <MCorner 17 198>
+ <WCorner 46 96>
+ <XCorner 165 275>
+ <Label Use existing MIF file if any>
+ <Active No>
+ <StuffObject -1>
+> # 6
+<CheckBox
+ <MCorner 46 131>
+ <WCorner 46 111>
+ <XCorner 46 131>
+ <Label Delete MIF when done>
+ <Active No>
+ <StuffObject -1>
+> # 7
+<Rule
+ <MBRect 63 119 115 1>
+ <WBRect 63 119 115 1>
+ <XBRect 63 119 115 1>
+> # 8
+<CheckBox
+ <MCorner 46 135>
+ <WCorner 46 135>
+ <XCorner 46 135>
+ <Label Use existing DCL file if any>
+ <Active No>
+ <StuffObject -1>
+> # 9
+<Rule
+ <MBRect 28 134 160 76>
+ <WBRect 14 143 188 100>
+ <XBRect 28 134 160 76>
+> # 10
+<RadioButton
+ <MCorner 47 152>
+ <WCorner 47 161>
+ <XCorner 47 152>
+ <Label Do not write graphics files>
+ <Active Yes>
+ <Group 1>
+ <StuffObject -1>
+> # 11
+<RadioButton
+ <MCorner 47 173>
+ <WCorner 47 179>
+ <XCorner 47 173>
+ <Label Write graphics for equations>
+ <Active No>
+ <Group 1>
+ <StuffObject -1>
+> # 12
+<RadioButton
+ <MCorner 47 195>
+ <WCorner 47 196>
+ <XCorner 47 195>
+ <Label Write for anchored frames>
+ <Active No>
+ <Group 1>
+ <StuffObject -1>
+> # 13
+<CheckBox
+ <MCorner 47 213>
+ <WCorner 47 218>
+ <XCorner 47 213>
+ <Label Use original graphic names>
+ <Active No>
+ <StuffObject -1>
+> # 14
+<CheckBox
+ <MCorner 47 201>
+ <WCorner 47 234>
+ <XCorner 47 201>
+ <Label Write only graphics, no text>
+ <Active No>
+ <StuffObject -1>
+> # 15
+<CheckBox
+ <MCorner 46 205>
+ <WCorner 46 260>
+ <XCorner 46 205>
+ <Label Make combined TOC / IX>
+ <Active No>
+ <StuffObject -1>
+> # 16
+<CheckBox
+ <MCorner 46 226>
+ <WCorner 46 276>
+ <XCorner 46 226>
+ <Label Compile Help>
+ <Active No>
+ <StuffObject -1>
+> # 17
+<CheckBox
+ <MCorner 46 292>
+ <WCorner 46 292>
+ <XCorner 46 292>
+ <Label Wrap and Ship>
+ <Active No>
+ <StuffObject -1>
+> # 18
+<Button
+ <MBaseLine 11 302 53>
+ <WBaseLine 11 321 53>
+ <XBaseLine 11 302 53>
+ <Label Huh?>
+ <Active No>
+> # 19
+<Button
+ <MBaseLine 68 287 92>
+ <WBaseLine 91 321 53>
+ <XBaseLine 63 368 64>
+ <Label OK>
+ <Active No>
+> # 20
+<Button
+ <MBaseLine 191 287 92>
+ <WBaseLine 149 321 53>
+ <XBaseLine 154 368 64>
+ <Label Cancel>
+ <Active No>
+> # 21

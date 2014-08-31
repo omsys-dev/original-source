@@ -1,0 +1,92 @@
+<doc id="ud_elemprops">
+<title>Element Properties
+<idx>elements:properties of</idx>
+<idx>properties of elements</idx>
+</title>
+
+<p>The following element properties can be assigned using the `@props` attribute in the ^element^ definition element.  Processors and editors should use the properties, not the element name, to determine how to handle the element and its content.
+
+The elements described in the uDoc documentation are all predefined in `stdelems.mxl`.  If a specific ^doc^, ^map^, or ^lib^ also defines any, the definition in the ^doc^ overrides the standard one.  The following set of properties should be understood by processors and editors:
+
+*Block* element properties:</p>
+<tset t1="2" t2="3" t3="4" t4="5"  t5="11" t6="12" t7="13">
+<pre><t2/>  Root<t5/>    defines the start and end of a uDoc file</pre>
+<pre><t3/>   Doc<t6/>     uDoc document file, with text content</pre>
+<pre><t3/>   Map<t6/>     uDoc map file, organizes doc files into a project</pre>
+<pre><t3/>   Lib<t6/>     uDoc library file, contains resources referenced by doc or map</pre>
+<pre><t2/>  Group<t5/>   groups consecutive elements for any purpose</pre>
+<pre><t2/>  NoLevel<t5/> does not affect the hierarchical level for nested content or docs</pre>
+<pre><t3/>  Start<t6/>   is a starting element</pre>
+<pre><t2/>  Num<t5/>     is numbered; used for ol lists or other numbered elements</pre>
+<pre><t2/>  Sub<t5/>     is used to distingish list types, cites, and subtitles</pre>
+<pre><t2/>  Seq<t5/>     is used to identify inline text sequences like menu selections</pre>
+<pre><t2/>  Sect<t5/>    is a section of mainly text elements that increases level and nests</pre>
+<pre><t2/>  Table<t5/>   groups elements in rows and columns</pre>
+<pre><t3/>   Col<t6/>     contains column properties</pre>
+<pre><t3/>   Row<t6/>     contains row properties and cells</pre>
+<pre><t3/>   Cell<t6/>    contains block and text elements</pre>
+<pre><t2/>  Fig<t5/>     contains an image or other non-text object; can be a table or example</pre>
+<pre><t3/>   Image<t6/>   is a graphic element used as a block</pre>
+<pre><t3/>   Object<t6/>  is a non-graphic and non-text element such as audio</pre>
+<pre><t4/>    Param<t7/>   is a parameter for an object</pre>
+<pre><t2/>  List<t5/>    is a sequential group of items that may be numbered, bulleted, or plain</pre>
+<pre><t2/>  PList<t5/>   is a sequential group of pairs of items</pre>
+<pre><t3/>   Item<t6/>    is a member of a list</pre>
+<pre><t2/>  Note<t5/>    is an element with title, text paragraphs, and possibly icon</pre> 
+<pre><t2/>  Comment<t5/> contains content not to be shown in the final doc</pre>
+<pre><t2/>  Short<t5/>   identifies a short tag used in tag minimization</pre>
+
+<p>*Text* contains inline elements and text, but not block or other text elements</p>
+<pre><t2/>  Text<t5/>    is allowed to contain text</pre>
+<pre><t2/>  Para<t5/>    contains a text paragraph where spaces are normalized</pre>
+<pre><t2/>  Pre<t5/>     is text in which line endings and spaces are preserved</pre>
+<pre><t2/>  Title<t5/>   contains text to be used in references to the containing element</pre>
+<pre><t2/>  Usage<t5/>   describes the purpose of an element or attribute; not rendered</pre>
+<pre><t2/>  Quote<t5/>   contains a quoted paragraph, language-dependent</pre>
+<pre><t2/>  Alt<t5/>     is a text element for use if graphic cannot be shown</pre>
+<pre><t2/>  Desc<t5/>    is a description used for mouseover</pre>
+
+<p>*Inline* contains other inline elements and text, but not block or text elements</p>
+<pre><t2/>  Inline<t5/>  is an inline element</pre>
+<pre><t2/>  Gloss<t5/>   is a term for which reference is made to the glossary</pre>
+<pre><t2/>  Abbr<t5/>    is an abbreviation which may have special processing</pre>
+<pre><t2/>  Tmark<t5/>   is a trademark, service mark, or the like</pre>
+<pre><t2/>  Marker<t5/>  is a data item associated with a particular text location</pre>
+<pre><t2/>  Index<t5/>   is an index term to be associated with the containing element</pre>
+<pre><t2/>  Var<t5/>     is a variable that provides text content</pre>
+<pre><t2/>  Fnote<t5/>   is a footnote or endnote</pre>
+<pre><t2/>  Break<t5/>   is a required break for a line, column, or page</pre>
+<pre><t2/>  Tab<t5/>     is a tab, left, center, right, or decimal at a fixed position</pre>
+<pre><t2/>  Typo<t5/>    is a typographic property applied to the contained text</pre>
+
+<p>*Data* is a block element that contains metadata not rendered as text</p>
+<pre><t2/>  Data<t5/>    contains data as opposed to text</pre>
+<pre><t2/>  Date<t5/>    is a general-purpose date element, default yyyy-mm-dd</pre>
+<pre><t2/>  CSH<t5/>     is an alias used for Context-Sensitive Help</pre>
+<pre><t2/>  Code<t5/>    contains the code associated with an element, such as CSS for typographics</pre>
+
+<p>*Ref* is a block element that references content, data, or definitions elsewhere</p>
+<pre><t2/>  Ref<t5/>     is a reference element</pre>
+<pre><t2/>  File<t5/>    is a reference to a file or URL</pre>
+<pre><t2/>  Dir<t5/>     is a reference to a directory to query</pre>
+<pre><t2/>  DB<t5/>      is a reference to a database to query</pre>
+<pre><t2/>  Web<t5/>     is a reference to a search engine to query</pre>
+<pre><t2/>  Elem<t5/>    is a reference to an element</pre>
+<pre><t2/>  Rel<t5/>     is a reference to a related document</pre>
+<pre><t2/>  Ext<t5/>     is a reference to an external preprocessed document</pre>
+
+<p>*Def* is a block element that contains a definition</p>
+<pre><t2/>  Def<t5/>     is a definition element</pre>
+<pre><t2/>  Cond<t5/>    is a definition of a condition to be used in the project</pre>
+<pre><t2/>  Output<t5/>  is a definition used for a specific type of output, like HTML</pre>
+<pre><t2/>  Attr<t5/>    is a definition of an attribute</pre>
+<pre><t2/>  Syn<t5/>     is a definition of a synonym for the containing item</pre>
+<pre><t2/>  Key<t5/>     is a definition of a reference key, possibly in another project</pre>
+</tset>
+
+<p>The groupings above are for convenience, and are not restrictive.  For example, the ^codeph^ element <xref src="ud_newelems.mxd" idref="codeph">defined earlier</xref> uses text, inline, and code, which are in three different groups.</p>
+
+
+<relref subjects="elements" />
+
+</doc>

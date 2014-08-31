@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA 1.1 Concept//EN"
+  "http://docs.oasis-open.org/dita/v1.1/OS/dtd/concept.dtd">
+<concept xml:lang="en-us" id="conrefs">
+<title>Original Conref Title</title>
+<shortdesc>This Conref concept topic contains conrefs to
+several element types: ph, li, p, and section.</shortdesc>
+<conbody>
+<section>
+<title>Conrefs to Phrases</title>
+<p>This is the <ph outputclass="RevisedConref"
+ conref="DITAConrefSources.dita#conrefsrc/revph" id="phref">original 
+phrase</ph>.</p>
+</section>
+<section>
+<title>Conrefs to List Items</title>
+<ol>
+<li>First item.</li>
+<li conref="DITAConrefSources.dita#conrefsrc/revli" id="liref">Original 
+second item.</li>
+<li>Third item.</li>
+</ol>
+</section>
+<section conref="DITAConrefSources.dita#conrefsrc/revsec" id="secref">
+<title>Conrefs to Sections</title>
+<p>This text should not be in the end result.</p>
+</section>
+</conbody>
+</concept>
+

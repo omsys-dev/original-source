@@ -1,0 +1,18 @@
+<lib id="localelems">
+
+<!-- localelems.mxl describes local overrides for standard uDoc elements -->
+<!-- Version 0.1, December 29, 2013 -->
+
+<!-- Template for new elements:
+ <element name="elementname" props="list of element props">
+  <usage>Brief description</usage>
+  <attr name="attrname" type="attrval type"/>
+ </element>
+
+ All elements have an implied attribute set in:
+  <defref src="stdattrs.mxl" idref="CommonAttrs"/>
+ If an attr there is redefined in the element, the
+ redefinition prevails. -->
+
+
+</lib>

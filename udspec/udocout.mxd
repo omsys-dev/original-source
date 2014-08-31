@@ -1,0 +1,52 @@
+<doc id="udocout.mxd">
+<title>uDoc Output from \*2Go</title>
+
+<ol>
+<l/>Transclusion (insets (m2g) and conrefs (d2g)):
+
+Provide option for flattening conrefs.  If set, the result is like the current one, with a ^div^ containing the included material, and ^data^ elements with the details of the source as in DITA.
+
+Normally, put in a textref to a lib file, and put the included material in that file in a div with id.
+
+If the lib exists, see if has that id already, using mxlparser and indexing it.  If so either update or skip (option). If it does not contain that ID, append new material. If the lib does not exist, create it.
+
+When appending, read the entire file into a buffer and look for "^/lib^".Write all up to that to a new dest file, write the new ^div^, then write the rest of the original file (which may contain comments and whitespace after ^/lib^).
+
+For FM, map [InsetFiles] using keys of filenames and ids, as in filename.fm#flowA.
+
+For DITA, map [ConrefSources] the same way, using the filename.dita#fileid/itemid syntax for the key.
+
+For both, key = library, id [, option]  The options, if file exists, are: update (which appends for new id) or skip (default).
+
+
+<l/>Minimization:
+
+Make full-tagged form; use `udx` later to minimize, running it as an [Automation] task.
+
+
+<l/>Formats:
+
+DITA and FM formats are used as keys to identify the uDoc element to use in context, and to assign a `@class` to it.  uDoc itself, like DITA, does not have formats.
+
+
+<l/>Generated files:
+
+By default, skip generated files like index and TOC, as they are best generated fresh.  But for Frame, allow conversion with [GeneratedFiles]name = destname.mxd.
+
+
+<l/>Tables:
+
+uDoc tables can be ordered by row or column.  [TableOrder]tableID=row or col specifies which; row is the default, so really only need to list col ones, unless row is an exception in a subsequent col ID group.
+
+We should add table switching from either order to the other in `udx`, as most other apps expect row ordering.  So -f would switch to row, and -m would switch to whichever the `@order` specified, row default, with ^udx switch="notblorder"^ to override.  Then we wouldn't need the code in`udoc2go`, though that already handles both orders in uDoc source.
+
+
+<l/>Desc (DITA shortdesc):
+
+We should add to uDoc a new inline ^dsc^ element, used as an empty tag, to mean "include the current ^desc^ content in the text here", so as to support DITA embedding of ^shortdesc^ in ^abstract^ without duplicating the text content.  This could also be helpful in ^glossdef^, or anywhere that ^desc^ content duplicates text content.
+
+
+
+</ol>
+
+</doc>

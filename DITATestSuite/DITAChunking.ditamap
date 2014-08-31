@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA 1.1 Map//EN"
+  "http://docs.oasis-open.org/dita/v1.1/OS/dtd/map.dtd">
+<map xml:lang="en-us" chunk="to-content">
+<topicref href="DITAChunkDoc.dita" type="topic" 
+navtitle="Single Doc with Nested Children" chunk="by-document">
+<topicmeta><shortdesc>This is chunked as a document.</shortdesc></topicmeta>
+</topicref>
+<topicref href="DITAChunkDoc.dita" type="topic" 
+navtitle="Doc Chunked by Topic" chunk="by-topic"/>
+<topicref href="DITAChunkDoc.dita#topic1" type="topic" 
+navtitle="Doc with Children Excluded" chunk="select-topic"/>
+<topicref href="DITAChunkDoc.dita#topic1a" type="topic" 
+navtitle="One Subtree from Doc" chunk="select-branch"/>
+</map>

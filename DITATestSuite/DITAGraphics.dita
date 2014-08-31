@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA 1.1 Concept//EN"
+  "http://docs.oasis-open.org/dita/v1.1/OS/dtd/concept.dtd">
+<concept xml:lang="en-us" id="graphics">
+<title>DITA Graphics</title>
+<shortdesc>This topic includes DITA graphics, figures,
+imagemaps, and objects such as Flash animations.</shortdesc>
+<conbody>
+<section>
+<title>Inline and Block Graphics</title>
+<p>Body paragraphs can contain inline figures: <image
+ alt="Einstein's most famous equation."
+ href="emc2.jpg" placement="inline" width="67" height="26" />. The 
+image below is a block of its own.</p>
+<image href="angel.jpg" placement="break" width="84" height="83">
+<alt>Rainbow Angel</alt></image>
+</section>
+<section>
+<title>Figures</title>
+<p>Figures can include block images, like the one above.  Here
+it is again, as a &lt;fig&gt; with a title this time:</p>
+<fig id="angel"><title>Angel</title>
+<image href="angel.jpg" placement="break" width="84" height="83">
+<alt>Rainbow Angel</alt></image></fig>
+<p>Figs can include many other objects as well, such as
+simpletables (but not complex tables):</p>
+<fig id="figtable"><title outputclass="TableTitle">Figure Containing a Table</title>
+<?dtrtf SimpleTableWidth="2.5in" ?>
+<simpletable relcolwidth="2* 2*" outputclass="FigTable">
+<sthead>
+<stentry>Type style</stentry>
+<stentry>Elements used</stentry>
+</sthead>
+<strow>
+<stentry>Bold</stentry>
+<stentry>b</stentry>
+</strow>
+<strow>
+<stentry>Italic</stentry>
+<stentry>i</stentry>
+</strow>
+<strow>
+<stentry>Underlined</stentry>
+<stentry>u</stentry>
+</strow>
+</simpletable>
+</fig>
+</section>
+<section>
+<title>Image Maps</title>
+<p>This image map lnks to other places in the Test Suite,
+and to the Web site for it. The paw on the left has a rect
+that links to the Test Suite Operation topic.  The paw on
+the right has a poly that links to the DITA Xrefs topic.
+The nose has a circle that links to the Web site.</p>
+<imagemap id="imap" >
+<title>Tai Shan</title>
+<image href="Tai_Shan.jpg" width="400" height="264" placement="break"/>
+<area><shape>rect</shape><coords>14,140,110,236</coords>
+<xref href="DITATestTask.dita">Operation</xref>
+</area>
+<area><shape>circle</shape><coords>200,184,48</coords>
+<xref href="http://sourceforge.net/projects/ditatestsuite/">Web Site</xref>
+</area>
+<area><shape>poly</shape>
+<coords>280,193,295,156,291,129,289,85,330,108,362,141,377,170,
+387,208,386,249,337,253,293,240,279,200</coords>
+<xref href="DITAXrefs.dita#xrtest/extrefs">External Xrefs</xref>
+</area>
+</imagemap>
+</section>
+<section>
+<title>Objects</title>
+<p>This Flash movie is from the DITA Reference spec:</p>
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0"
+data="eim.swf" height="400" width="500" id="eim">
+<desc>An example from the DITA reference spec.</desc>
+<param name="movie" value="eim.swf"/>
+<param name="quality" value="high"/>
+<param name="bgcolor" value="#FFFFFF"/>
+<param name="pluginspace"
+value="http://www.macromedia.com/go/getflashplayer"/>
+</object>
+</section>
+</conbody>
+</concept>
+

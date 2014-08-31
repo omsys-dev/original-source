@@ -1,0 +1,186 @@
+<doc id="ud_udxini">
+<title>The `udx.ini` File</title>
+
+<p>The `udx.ini` file sets the default options for a `udx` conversion. The options shown below are all built in to the `udx` program itself.  Therefore you do not need a `udx.ini` file unless you want something to work differently.  For example, if you add your own new elements, and want `udx` to do something with them (like support short tags for them), you will want to create a custom ini based on the `udx.ini` supplied with the software.
+
+If you do create a custom `udx.ini`, put it in the directory in which you invoke `udx`, usually the same directory as the source files.
+
+The rules `udx` uses for converting from minimized to full-tag form, the default operation, are controlled by these settings in `udx.ini`:</p>
+
+<pre>[udxFullTaggingOptions]
+AddPTagsInBlocks=Yes
+BlankLinesInTextConvert=Yes
+ListsConvert=Yes
+PairListsConvert=Yes
+TablesConvert=Yes
+WikiSymbolsConvert=Yes
+</pre>
+
+<p>For short tags, of the type ^x/^, the rules are:</p>
+
+<pre>[ShortTagContainers]
+; full tag = start of ini section names
+pl=pairlist
+ol=list
+ul=list
+sl=list
+table=table
+
+[ListShortTagReplacement]
+; in lists ol, ul, and sl:
+l=li
+
+[PairListShortTagReplacement]
+; in pair lists pl:
+l=li
+t=title
+d=p
+
+[TableShortTagReplacement]
+; in tables:
+t=title
+r=row
+c=cell
+
+[ListShortTagEnds]
+; all end at the end of the enclosing list
+l=l li
+
+[PairListShortTagEnds]
+; all end at the end of the enclosing pair list
+l=l li
+t=t title d p l li
+d=d p l li
+
+[TableShortTagEnds]
+; all end at the end of the enclosing table
+t=r row col
+r=r row col
+c=c cell r row col
+</pre>
+
+<p>The wiki symbol rules are:</p>
+
+<pre>[WikiSymbolReplacement]
+; toggles: first is start tag, next is end tag
+; symbol = tag (or -), start, end
+*=b
+_=i
+"=q
+\`=tt
+\^=tt &amp;lt; &amp;gt;
+</pre>
+
+<p>For ease of authoring and editing, the `udx` utility can also convert the other way, replacing full tag markup with minimizations wherever possible.  That option is selected by the "`-m`" command-line switch.  Either way, the conversion is lossless.  The options for minimization are:</p>
+
+<pre>[udxTagMinimizingOptions]
+RemovePTagsFromBlocks=Yes
+TextEndStartTagsToBlanklinesConvert=Yes
+ListsToShortTagsConvert=Yes
+PairListsToShortTagsConvert=Yes
+TablesToShortTagsConvert=Yes
+InlineTagsToWikiSymbolsConvert=Yes
+</pre>
+
+<p>For short tag minimization, the full start tag is replaced with an empty short tag, and the full end tag is discarded:</p>
+
+<pre>[ListLongTagReplacement]
+; in lists ol, ul, and sl:
+li=l
+
+[PairListLongTagReplacement]
+; in pair lists pl:
+li=l
+title=t
+p=d
+
+[TableLongTagReplacement]
+title=t
+row=r
+cell=c
+</pre>
+
+<p>For wiki symbol minimization, both the start tag and the end tag are replaced by the symbol:</p>
+
+<pre>[WikiTagReplacement]
+; tag (or char at start or end of text item) = symbol
+b=*
+i=_
+q="
+; the following ones disable the previous wiki symbols:
+tt=\`
+; these two also remove tt if the tt tags are adjacent
+; to the start/end tag symbols in inline content: 
+&lt;=\^
+&gt;=\^
+</pre>
+
+<p>These element properties are used for the wiki symbol processing and for AddPTagsInBlocks.  If you create new elements meant to contain code, or new text or inline elements, add them to `udx.ini` here:</p>
+
+<pre>[CodeElements]
+; name = type (block, text, or inline)
+pre=text
+code=block
+tt=inline
+
+[ElementTypes]
+p=text
+pre=text
+title=text
+subtitle=text
+t=text
+d=text
+usage=text
+quote=text
+cite=text
+desc=text
+alt=text
+area=text
+ph=inline
+term=inline
+abbr=inline
+tm=inline
+xref=inline
+seq=inline
+mark=inline
+idx=inline
+var=inline
+img=inline
+fn=inline
+br=inline
+b=inline
+i=inline
+u=inline
+du=inline
+o=inline
+s=inline
+sup=inline
+sub=inline
+tt=inline
+q=inline
+t1=inline
+t2=inline
+t3=inline
+t4=inline
+t5=inline
+t6=inline
+t7=inline
+t8=inline
+t9=inline
+t10=inline
+t11=inline
+t12=inline
+t13=inline
+t14=inline
+t15=inline
+t16=inline
+t17=inline
+t18=inline
+t19=inline
+t20=inline
+</pre>
+
+<relref subjects="udx shorthand"/>
+
+</doc>
+

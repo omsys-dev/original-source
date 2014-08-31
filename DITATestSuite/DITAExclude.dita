@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA 1.1 Concept//EN"
+  "http://docs.oasis-open.org/dita/v1.1/OS/dtd/concept.dtd">
+<concept xml:lang="en-us" id="exclusion">
+<title>Ditaval Exclusion</title>
+<shortdesc>This checks on ditaval exclusion for ph, p, section, fig,
+image, table, and xref. <ph platform="linux" audience="expert">This
+version is for the linux platform and an expert audience.</ph><ph
+ platform="windows" audience="beginner">This page is for Windows
+beginners.</ph></shortdesc>
+<conbody>
+<section platform="windows">
+<title>Windows Information</title>
+<p audience="expert">This para is for experts only, and should not be
+present.</p>
+<p audience="beginner">This para is for beginners. <ph audience="expert">Except for this
+sentence. </ph>It should remain.</p>
+<ul>
+<li>First item.</li>
+<li audience="expert">Excluded item.</li>
+<li audience="beginner">Included item.</li>
+<li>Last item.</li>
+</ul>
+</section>
+<section platform="linux">
+<title>Linux Information</title>
+<p>This section should be excluded.</p>
+<p audience="expert">This para is for experts, and should be present
+in the output.</p>
+<p audience="beginner">This para is for beginners, and should be
+excluded.</p>
+</section>
+<section>
+<title>Information for All Platforms</title>
+<p>This section contains figures and tables, some excluded,
+and some not.</p>
+<fig id="panda" platform="windows mac">
+<title>Panda in Windows</title>
+<image placement="break" href="Tai_Shan.jpg"/>
+</fig>
+<fig id="stress" platform="linux">
+<title>Linux Stress Test</title>
+<image platform="linux" placement="break" href="stresstest.jpg"/>
+</fig>
+<fig id="hummers" audience="expert beginner">
+<title>Hummingbirds</title><image href="hummers.jpg"/>
+</fig>
+<simpletable platform="windows linux">
+<sthead>
+<stentry>Type style</stentry>
+<stentry>Element used</stentry>
+<stentry>Audience</stentry>
+</sthead>
+<strow audience="beginner">
+<stentry>Bold</stentry>
+<stentry>b</stentry>
+<stentry>Beginner</stentry>
+</strow>
+<strow audience="beginner expert">
+<stentry>Italic</stentry>
+<stentry>i</stentry>
+<stentry>Everyone</stentry>
+</strow>
+<strow audience="expert">
+<stentry>Underlined</stentry>
+<stentry>u</stentry>
+<stentry>Expert</stentry>
+</strow>
+</simpletable>
+</section>
+</conbody>
+</concept>
+

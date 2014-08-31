@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA 1.1 Reference//EN"
+  "http://docs.oasis-open.org/dita/v1.1/OS/dtd/reference.dtd">
+<reference xml:lang="en-us" id="proptable">
+<title>DITA Properties Table</title>
+<shortdesc>This reference topic contains a properties table.</shortdesc>
+<prolog><keywords><indexterm end="tablesection"/></keywords></prolog>
+<refbody>
+<?dtrtf SimpleTableWidth="4in" ?>
+<properties id="aa999381" relcolwidth="1* 1* 3*">
+<prophead>
+<proptypehd><p outputclass="cellheading">Type</p></proptypehd>
+<propvaluehd><p outputclass="cellheading">Value</p></propvaluehd>
+<propdeschd><p outputclass="cellheading">Description</p></propdeschd>
+</prophead>
+<property>
+<proptype>Lead</proptype>
+<propvalue>Low</propvalue>
+<propdesc><p outputclass="cellbody">Starting point for alchemists.</p></propdesc>
+</property>
+<property>
+<proptype>Gold</proptype>
+<propvalue>High</propvalue>
+<propdesc><p outputclass="cellbody">The alchemist’s goal.</p></propdesc>
+</property>
+</properties>
+</refbody>
+<related-links>
+<link href="DITATables.dita" role="sibling" format="dita"></link>
+<link href="DITAChoiceTable.dita" role="sibling" format="dita"></link>
+</related-links>
+</reference>

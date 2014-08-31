@@ -1,0 +1,133 @@
+<map id="ud_spec_map">
+<title>uDoc Specification</title>
+<author>Omni Systems</author>
+<author>Jeremy H. Griffith</author>
+
+<elemref src="ud_lib_file.mxl" idref="newelements" />
+<condref src="ud_lib_file.mxl" idref="unconditional" />
+<varref src="ud_lib_file.mxl" idref="projectvars" />
+<output type="udoc">
+ <keyref src="ud_keydefs.mxl"/>
+</output>
+<output type="omnihelp">
+ <keyref src="ud_ohkeydefs.mxl"/>
+</output>
+
+<subtitle>Version 0.8, <var idref="date"/></subtitle>
+
+<p>This specification describes the <var idref="ud"/> document format, a new topic-oriented markup language based on <var idref="mxl"/> for technical and business publishing.  Pronounced "You-Doc", it is simple enough for writers who are inexperienced in XML, while still providing the structure needed for content standardization, collaboration, and re-use.
+
+This specification is published on <xref src="https://github.com/jeremygriffith/uDoc-Document-Markup-Language">GitHub</xref> as uDoc source, as a Word doc, and as <xref src="https://github.com/jeremygriffith/OmniHelp">OmniHelp</xref>.</p>
+
+<contents />
+<output type="rtf">
+ <figures toc="no" />
+ <tables toc="no" />
+</output>
+<output type="not rtf">
+ <figures />
+ <tables />
+</output>
+
+<preface src="ud_base.mxd" start="file">
+</preface>
+
+<chapter src="ud_intro.mxd" start="file">
+ <docref src="ud_alternatives.mxd" />
+ <docref src="ud_recover.mxd" />
+ <docref src="ud_interop.mxd" />
+ <docref src="ud_hierarchies.mxd" />
+ <docref src="ud_develop.mxd" />
+ <docref src="ud_minimize.mxd" />
+ <docref src="ud_metadata.mxd" />
+ <docref src="ud_elements.mxd" />
+ <docref src="ud_files.mxd">
+  <docref src="ud_maps.mxd" />
+   <doctext>
+    <p>Of course, there is more to creating docs that people are willing to read than that. If your topics do not have a consistent point of view, or if they are not written to the same level of understanding, they can't just be patched together with good results.  Technical writing is still a craft, not an industrial process.  The next topic addresses that.</p>
+   </doctext>
+  <docref src="ud_docs.mxd" />
+  <docref src="ud_libs.mxd" />
+ </docref>
+</chapter>
+
+<chapter src="ud_struct.mxd" start="file">
+ <docref src="ud_groups.mxd" />
+ <docref src="ud_lists.mxd" />
+ <docref src="ud_graphics.mxd" />
+ <docref src="ud_tables.mxd" />
+ <docref src="ud_tabs.mxd" />
+</chapter>
+
+<chapter src="ud_refs.mxd" start="file">
+ <docref src="ud_references.mxd" />
+ <docref src="ud_queries.mxd" />
+ <docref src="ud_related.mxd">
+  <relref subjects="metadata" />
+ </docref>
+ <docref src="ud_class.mxd" />
+ <mapref src="ud_conds.mxm" />
+ <docref src="ud_output.mxd" />
+</chapter>
+
+<chapter src="ud_addr.mxd" start="file">
+ <docref src="ud_refaddr.mxd" />
+ <docref src="ud_indiraddr.mxd" />
+ <docref src="ud_projaddr.mxd" />
+</chapter>
+
+<chapter src="ud_gen.mxd" start="file">
+ <docref src="ud_genlists.mxd" />
+ <docref src="ud_index.mxd" />
+ <docref src="ud_glossary.mxd" />
+ <docref src="ud_abbrs.mxd" />
+</chapter>
+
+<chapter src="ud_elems.mxd" start="file">
+ <docref src="ud_newelems.mxd" />
+ <docref src="ud_events.mxd" />
+ <docref src="ud_range.mxd" />
+ <docref src="ud_newshort.mxd" />
+ <docref src="ud_foreign.mxd" />
+ <docref src="ud_contmod.mxd" />
+ <docref src="ud_elemprops.mxd" />
+ <docref src="ud_elemattrs.mxd" />
+</chapter>
+
+<appendix src="ud_compare.mxd" start="file">
+</appendix>
+
+<appendix src="ud_samples.mxd" start="file">
+ <docref src="ud_map_file.mxd" start="file" />
+ <docref src="ud_doc_file.mxd" start="file" />
+ <docref src="ud_lib_file.mxd" start="file" />
+</appendix>
+
+<appendix src="ud_libraries.mxd" start="file">
+ <dirref src="C:\omsys\x2g\lib" query="*.mxl" results="codedocref" />
+</appendix>
+
+<appendix src="ud_mxlparser.mxd" start="file">
+ <docref src="ud_mxloperation.mxd" />
+ <docref src="ud_mxldata.mxd" />
+ <docref src="ud_mxlsax.mxd" />
+ <docref src="ud_mxllicense.mxd" />
+</appendix>
+
+<appendix src="ud_xform.mxd" start="file">
+  <doctext>
+<p>The `udx` utility is released as FOSS under the Apache 2 license to permit commercial use.  It uses and includes <xref src="ud_mxlparser.mxd">the MXL parser</xref>.  Downloads are available on the uDoc2Go site for <xref src="http://udoc2go.com/download/udxexe.zip">the Windows executable</xref> and <xref src="http://udoc2go.com/download/udxsrc.zip">the C++ source</xref>.  The utility is also hosted on <xref src="https://github.com/jeremygriffith/uDoc-UDX-Utility">GitHub</xref>.</p>
+  </doctext>
+
+ <docref src="ud_udxswitch.mxd" />
+ <docref src="ud_udxini.mxd" />
+ <docref src="ud_udxtag.mxd" />
+</appendix>
+
+<glossary />
+<abbreviations />
+<trademarks />
+<index />
+
+
+</map>

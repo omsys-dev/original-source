@@ -1,0 +1,78 @@
+<doc id="ud_tables">
+<title>Tables
+<idx>elements:for tables</idx>
+<idx>tables:configuring</idx>
+</title>
+
+<p>Tables may be ordered either by row, the usual way, or by column.  The `@order` attribute in the ^table^ element specifies which method is in use.  For row ordering, the ^col^ elements come first, containing only attributes applicable to the column, such as `@width` or those used for conditions.  Then the ^row^ elements contain the ^cell^s.  For column ordering, the ^row^ elements come first, with `@height` and conditions, then the ^col^ elements with the ^cell^s.  So you can build the ^table^ whichever way makes more sense for *your* use case.</p>
+
+<p>For the first group of elements, the ones without the ^cell^s, you only need to specify those which have non-default conditions or properties.   Each can have a `@pos` to specify which ^col^s or ^row^s it describes; the `@pos` can be a single number, or a space-delimited list where the items may be either single numbers or ranges, two numbers with a minus between them: `pos="1-3 10 25-30"` for example.  A wildcard `pos="*"` applies to all elements not otherwise specified.</p>
+
+<p>Any <xref src="ud_condproc.mxd">conditions</xref> desired may be applied to ^cell^ content, rows and columns.  If a ^cell^ spans rows or columns, it is kept if any of its rows or columns are.  If a ^cell^ itself is conditionally excluded, its space is left empty; if you simply want different content, apply the conditions to the content, not to the ^cell^.</p>
+
+<p>This ^table^ is ordered by ^row^ and has row and column spans.  The coding is much simpler than the <term idref="cals" /> used in DITA. Here is the code for the start and first two rows; the ^title^ uses a short tag:</p>
+
+<coderef src="ud_tables.mxd#line=24,36"/>
+
+<p>The body rows use uDoc _tag minimization_, using short tags for ^row^ and ^cell^ starts. They also use the shorthand symbol for tags, \^, in pairs.
+<idx>tags:minimizing:for tables</idx>
+</p>
+
+<coderef src="ud_tables.mxd#line=36,42"/>
+
+<p>Note that you can mix full and short tags freely, and use attributes normally in the short tags.  Here is the result:</p>
+<udx switch="none">
+<table id="ditalists" order="row" width="5in">
+<t/>DITA List Types
+<col width="96*" /><col pos="2-4" width="72*" />
+<row type="head">
+<cell rowspan="2" valign="middle"><p>Name</p></cell>
+<cell colspan="3" align="center"><p>Tags</p></cell>
+</row>
+<row type="head">
+<cell><p>List</p></cell>
+<cell><p>Entry</p></cell>
+<cell><p>Parts</p></cell>
+</row>
+<r/><c/>Simple<cell>^sl^</cell><c/>^sli^<c align="center" valign="middle" rowspan="3"/>None
+<r/><c/>Ordered<c/>^ol^<cell valign="middle" rowspan="2">^li^</cell>
+<row><c/>Unordered<c/>^ul^</row>
+<r/><c/>Definition<c/>^dl^<c/>^dlcell<c/>^dt^, ^dd^
+<r/><c/>Parameter<c/>^parml^<c/>^plcell<c/>^pt^, ^pd^
+</table>
+</udx>
+<p>Here is another ^table^, using column ordering and full tagging this time:</p>
+
+<coderef src="ud_tables.mxd#line=49,72"/>
+
+<p>The code shown above for the tables is the actual code in the ^doc^, added with a ^coderef^.  Here is how the second ^table^ comes out:</p>
+<udx switch="nomin">
+<table id="products" order="col">
+<title>Omni's Products</title>
+<row pos="1 2" type="head"/>
+<col type="head" width="96*">
+<cell rowspan="2"><p class="CellHead">Properties</p></cell>
+<cell><p>Inputs</p></cell>
+<cell><p>Outputs</p></cell>
+</col>
+<col width="72*">
+<cell colspan="3"><p class="CellHead">Products</p></cell>
+<cell><p class="CellHead">Mif2Go</p></cell>
+<cell><p>FrameMaker</p></cell>
+<cell align="center" colspan="3"><p>Word, HTML, XML, OLH</p></cell>
+</col>
+<col width="72*">
+<cell><p class="CellHead">DITA2Go</p></cell>
+<cell><p>DITA</p></cell>
+</col>
+<col width="72*">
+<cell><p class="CellHead">uDoc2Go</p></cell>
+<cell><p>uDoc</p></cell>
+</col>
+</table>
+</udx>
+
+<relref subjects="tables" />
+
+</doc>
+

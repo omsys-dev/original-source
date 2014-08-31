@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA 1.1 Task//EN"
+  "http://docs.oasis-open.org/dita/v1.1/OS/dtd/task.dtd">
+<task xml:lang="en-us" id="operation">
+<title>Test Suite Operation</title>
+<shortdesc>This Task topic descibes the process for running the 
+Test Suite.</shortdesc>
+<taskbody>
+<prereq>Obtain a working copy of the tool to be tested, with 
+documentation.</prereq>
+<context></context>
+<steps>
+<step><cmd>Modify the Test Suite as required for the tool under 
+test.</cmd>
+<info>Note that such modifications should never be to the DITA 
+coding itself, but only to the <?dita ... ?> Process Instructions
+in the document files.  Ideally, the tool should provide its own
+way of specifying options based on rules, and the PIs should be
+needed only to indicate local exceptions to those rules.</info>
+</step>
+<step id="req" importance="required"><cmd>Run the tool on the Test Suite files as instructed by
+the tool creator.</cmd>
+<info>If the tool provides a GUI, it may be operated from that, 
+but it's best if it also provides a method of running from the
+command line so that it can be incorporated in automated build
+processes.  Ideally, it should also handle checkout from any CMS,
+and checkin of any produced files that must be retained.</info>
+</step>
+<step><cmd>Compare the output files to the Test Suite expected
+result files.</cmd>
+<info>Use a differencing tool to make sure that no difference is
+overlooked. Many differences are to be expected, but none should
+result in output that violates the specified intent of the 
+Suite.</info>
+</step>
+<step id="opt" importance="optional"><cmd>Write a report on the process and the results.</cmd>
+<info>Identify the tool by name, version, build, and source. 
+Describe the ease or complexity of the setup and operation of
+the tool, and any postprocessing required.  Point out all the 
+differences between the files output by the tool and the Test 
+Suite's expected result files for that output type.</info>
+</step>
+</steps>
+<result>After running the tool on the Test Suite and reporting
+to the [dita-users] group on the results, you will have helped
+other users to decide if the tool will meet their needs, and 
+the tool creator to determine what improvements should be made 
+next.</result>
+<example></example>
+<postreq>File the final report on the DITATestSuite site on 
+<keyword keyref="sourceforge"/>.</postreq>
+</taskbody>
+</task>

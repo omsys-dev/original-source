@@ -1,0 +1,24 @@
+<doc id="ud_recover">
+<title>uDoc Error Recovery</title>
+<idx>errors, recovering from</idx>
+
+<p>What if a doc breaks the spec guidelines, and does something with an element that its properties don't allow?  For example:</p>
+
+<pre> &lt;li&gt;text&lt;/li&gt;</pre>
+
+<p>where ^li^ does not have the text property?  The processor (or editor) should wrap the text in an element that does have the text property, by default ^p^:</p>
+
+<pre> &lt;li&gt;&lt;p&gt;text&lt;/p&gt;&lt;/li&gt;</pre>
+
+<p>and proceed.  The editor can silently insert the element; the processor can warn, but need not.  The idea is to help the author move the project along, not make her jump through hoops.
+
+This is a top guiding principle for uDoc.  If a processor, or editor, can determine what the author likely intended, it must do whatever it can to further that intention.  This is the total opposite of error handling in many XML applications, where non-compliance with any rule causes immediate failure.  XML purists may gasp, but we took our cue from the Web, where browsers have used that approach for years.  If they had not, there might well be no Web, certainly not one as large and varied as what we have now.
+
+Another example; the uDoc root elements (`doc`, `map`, `lib`) are not supposed to be nested.  What if they are?  The processor should replace the nested root element with a ^div^ element, and continue.  There's no need to interrupt the writer's workflow when there's an obvious workaround.
+
+It's fine for a processor or editor to issue warnings when it makes such fixes.  After all, it may not have guessed the writer's intention correctly.  Or the writer might have started with one idea and ended with another, leaving inconsistent markup.  So warnings are good, but they must not prevent completion of the task at hand.  Imagine the writer's manager standing by the printer waiting for a PDF to emerge to take to a meeting in five minutes.  A minor formatting error matters a lot less than having nothing at all.</p>
+
+<relref subjects="basics errors" />
+
+</doc>
+

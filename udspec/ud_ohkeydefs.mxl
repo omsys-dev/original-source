@@ -1,0 +1,8 @@
+<lib id="ud_ohkeydefs">
+ <!-- Keydefs referencing OmniHelp output for uDoc spec -->
+ <!-- Last updated July 30, 2013 -->
+
+ <key keys="outputproc" src="ud_outputX001.htm"/>
+ <key keys="projaddr" src="ud_projaddr.htm"/>
+
+</lib>

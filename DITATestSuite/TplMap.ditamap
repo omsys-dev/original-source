@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA 1.1 Map//EN"
+  "http://docs.oasis-open.org/dita/v1.1/OS/dtd/map.dtd">
+<map xml:lang="en-us" id="map">
+<topicref href="" type="" format="dita"
+navtitle="">
+<topicmeta><shortdesc></shortdesc></topicmeta>
+</topicref>
+<topicref href="" type="" format="dita"
+navtitle="" />
+<topicref href="" type="" format="ditamap"
+navtitle="" />
+</map>

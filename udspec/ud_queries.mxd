@@ -1,0 +1,21 @@
+<doc id="ud_queries">
+<title>Queries
+<idx>references:query</idx>
+<idx>query references</idx>
+</title>
+
+<p>A uDoc document or map can run a query against a data source.  This feature exists as a direct result of <xref src="http://spfe.info/">Mark Baker's "SPFE"</xref>.  The queries are run at build time, not run time, so they reflect the state at the time of document processing.
+
+For ^dirref^, the `@query` is a wildcard applied to the directory in `@src` (or referenced via `@key`), and the results are sorted by filename.  For ^dbref^, the `@query` may be SQL or any other query language and is applied to the database specified in `@src` or `@key`.  For ^webref^, the `@query` is sent to the Web search engine specified in `@src` or `@key`.  While <tm idref="u2g"/> handles ^dirref^ itself, ^dbref^ and ^webref^ by their nature require additional application-specific processing.
+
+The usage of the results of the query depends on `@results`; if the attribute is not present, the results are presented as items in an ^sl^ list.  In a ^map^, the results could be ^docref^s or ^codedocref^s.  In a ^doc^, they could be items in a ^ul^ or ^ol^ as well as an ^sl^.  Here is an example of a ^dirref^:</p>
+
+<coderef src="ud_queries.mxd#line=16,17"/>
+
+<p>Here are the results of the ^dirref^, in the default simple list:</p>
+
+<dirref src="C:\omsys\x2g\system\config" query="*.ini" />
+
+<relref subjects="links queries" />
+
+</doc>

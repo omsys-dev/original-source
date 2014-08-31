@@ -1,0 +1,136 @@
+<DialogFile 5.5>
+<LongChar No>
+<Font 2 1 12>
+<DialogBox
+ <MBRect -1 -1 354 341>
+ <WBRect -1 -1 261 166>
+ <XBRect -1 -1 367 388>
+ <Platforms MWX>
+ <CurrentFocus 2>
+ <FirstFocus 2>
+ <OKButton 15>
+ <CancelButton 16>
+ <DefaultButton 15>
+ <HelpButton -1>
+ <TitleLabel 0>
+>
+<Label
+ <MCorner 470 996>
+ <WCorner 101 8>
+ <XCorner 18 26>
+ <Label Choose Project>
+> # 0
+<Label
+ <MCorner 11 29>
+ <WCorner 11 29>
+ <XCorner 11 29>
+ <Label Name>
+ <ShortcutPosition 0>
+> # 1
+<EditBox
+ <MBaseLine 9 44 80>
+ <WBaseLine 59 31 168>
+ <XBaseLine 18 77 80>
+ <Label Project Name>
+ <StuffObject 3>
+> # 2
+<ImagePopUp
+ <MBRect 93 28 16 22>
+ <WBRect 239 20 12 12>
+ <XBRect 105 63 14 21>
+ <Label tallarrowdn>
+ <StuffObject 2>
+> # 3
+<Label
+ <MCorner 6 157>
+ <WCorner 11 65>
+ <XCorner 18 186>
+ <Label Path>
+ <ShortcutPosition 0>
+> # 4
+<EditBox
+ <MBaseLine 234 50 102>
+ <WBaseLine 59 65 156>
+ <XBaseLine 241 85 102>
+ <Label X:\\project\\path>
+ <StuffObject 6>
+> # 5
+<Button
+ <MBaseLine 6 128 99>
+ <WBaseLine 222 65 22>
+ <XBaseLine 18 161 99>
+ <Label ...>
+ <ShortcutPosition 0>
+ <Active No>
+> # 6
+<Label
+ <MCorner 6 229>
+ <WCorner 11 100>
+ <XCorner 18 262>
+ <Label Format>
+ <ShortcutPosition 0>
+> # 7
+<PopUpMenu
+ <MBaseLine 6 88 87>
+ <WBaseLine 59 100 185>
+ <XBaseLine 18 122 87>
+ <StuffObject -1>
+> # 8
+<Button
+ <MBaseLine 11 127 53>
+ <WBaseLine 11 127 53>
+ <XBaseLine 11 127 53>
+ <Label Configure>
+ <ShortcutPosition 0>
+ <Active No>
+> # 9
+<Button
+ <MBaseLine 252 327 92>
+ <WBaseLine 72 127 53>
+ <XBaseLine 245 368 64>
+ <Label Add>
+ <ShortcutPosition 0>
+ <Active No>
+> # 10
+<Button
+ <MBaseLine 126 127 53>
+ <WBaseLine 132 127 53>
+ <XBaseLine 126 127 53>
+ <Label Modify>
+ <ShortcutPosition 0>
+ <Active No>
+> # 11
+<Button
+ <MBaseLine 132 127 53>
+ <WBaseLine 192 127 53>
+ <XBaseLine 132 127 53>
+ <Label Delete>
+ <ShortcutPosition 0>
+ <Active No>
+> # 12
+<Rule
+ <MBRect 6 306 338 1>
+ <WBRect 8 138 242 1>
+ <XBRect 18 341 339 1>
+> # 13
+<Button
+ <MBaseLine 11 156 53>
+ <WBaseLine 11 156 53>
+ <XBaseLine 11 156 53>
+ <Label Huh?>
+ <Active No>
+> # 14
+<Button
+ <MBaseLine 10 327 92>
+ <WBaseLine 126 156 53>
+ <XBaseLine 63 368 64>
+ <Label OK>
+ <Active No>
+> # 15
+<Button
+ <MBaseLine 133 327 92>
+ <WBaseLine 192 156 53>
+ <XBaseLine 154 368 64>
+ <Label Cancel>
+ <Active No>
+> # 16

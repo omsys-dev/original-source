@@ -1,0 +1,54 @@
+
+p.body { font: 12pt/14pt sans-serif }
+
+p.title { font: bold 18pt/20pt sans-serif;
+text-align: center }
+
+p.h1 { font: bold 16pt/18pt sans-serif;
+margin: 12pt 0 0 0pt }
+
+p.h2 { font: bold 12pt/14pt sans-serif;
+margin: 8pt 0 0 0pt }
+
+p.h3 { font: 12pt/14pt sans-serif;
+margin: 4pt 0 0 0pt }
+
+p.h4 { font: 12pt/14pt sans-serif;
+margin: 4pt 0 0 0pt }
+
+p.h5 { font: 12pt/14pt sans-serif;
+margin: 4pt 0 0 0pt }
+
+p.h6 { font: 12pt/14pt sans-serif;
+margin: 4pt 0 0 0pt }
+
+p.h7 { font: 12pt/14pt sans-serif;
+margin: 4pt 0 0 0pt }
+
+p.author { font: 12pt/14pt sans-serif;
+margin: 8pt 0 0 0; text-align: center }
+
+p.footnote { font: 10pt/12pt sans-serif;
+margin: 0 18pt 0 30pt; text-indent: -12pt }
+
+p.tabletitle { font: bold 12pt/14pt sans-serif;
+text-align: center }
+
+p.cellbody { font: 12pt/14pt sans-serif }
+
+p.cellheading { font: 12pt/14pt sans-serif;
+text-align: center }
+
+p.cellfooting { font: 12pt/14pt sans-serif;
+text-align: center }
+
+p.tablefootnote { font: 10pt/12pt sans-serif;
+margin: 0 18pt 0 30pt; text-indent: -12pt }
+
+p.mactest { font: 12pt/14pt sans-serif;
+margin: 4pt 0 0 54pt }
+
+span.hideme { display: inline }
+span.showme { display: inline }
+span.both { display: inline }
+span.proc { display: none }
